@@ -1,4 +1,4 @@
-#    README for shady-skin for vdr-plugin-skindesigner
+#    README for shady_KISS-skin for vdr-plugin-skindesigner
 #
 #    Copyright (C) 2015   Tomas Saxer <tsaxer@gmx.de> 
 #
@@ -33,14 +33,36 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 	c. A set of channellogos eg: http://creimer.net/channellogos/skindesigner-white-20150210.tar.bz2
 	
 	
-2. Setup:
+2. Install:
 
-	a. "Defaultcolumnwidth" yes or no.
+	a. First time:
+
+	cd /usr/share/vdr/plugins/skindesigner/skins
+	
+	git clone https://github.com/tomsax56/shady_KISS
+	
+	find -name *.theme -exec mv {} "/var/lib/vdr/themes" \ 
+	
+	b. Update:
+	
+	cd /usr/share/vdr/plugins/skindesigner/skins/shady_KISS
+	
+	git pull
+	
+		
+3. Setup:
+
+	a. "Defaultcolumnwidth" yes or no, default "yes"
 	
 		Preferably you test both settings with eg epgsearch-searchtimermenu or mailplugin which setting sweet your needs.
 		
 		If in doubt switch it to "no".
-	b. 
+		
+	b. "Show timers in mainmenu" yes or no, default "no"
+	
+	c. "Pixelgraphicbackground in menus" yes or no, default "yes"
+	
+		Smoother gradients of menubackgrounds, perhaps not recommended for "weak" systems, try both ;)
 
 
 
