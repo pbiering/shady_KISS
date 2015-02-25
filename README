@@ -41,7 +41,7 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 	
 	git clone https://github.com/tomsax56/shady_KISS
 	
-	find -name *.theme -exec mv {} "/var/lib/vdr/themes" \ 
+	find -name *.theme -exec mv {} "/var/lib/vdr/themes" \ ;
 	
 	b. Update:
 	
