@@ -18,6 +18,7 @@
 -->
 		<parameter type="bool" name="defaultcolumnwidth" displaytext="{tr(defaultcolumnwidth)}">0</parameter>
 		<parameter type="bool" name="channeldetails" displaytext="{tr(channeldetails)}">0</parameter>
+		<parameter type="bool" name="recordingtime" displaytext="{tr(recordingtime)}">0</parameter>		
 		<parameter type="bool" name="showtimers" displaytext="{tr(showtimers)}">0</parameter>
 		<parameter type="bool" name="gradientBGPNG" displaytext="{tr(gradientBGPNG)}">1</parameter>
     </menu>
@@ -30,10 +31,14 @@
             <trans lang="en_EN">Defaultcolumnwidth</trans>
             <trans lang="de_DE">Standardspaltenbreite</trans>
         </token>
-                <token name="tr(channeldetails)">
+        <token name="tr(channeldetails)">
             <trans lang="en_EN">Show details of channels</trans>
             <trans lang="de_DE">Zeige Kanaldetails</trans>
         </token>
+        <token name="tr(recordingtime)">
+            <trans lang="en_EN">Show time of recordings</trans>
+            <trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
+        </token>       
 		<token name="tr(showtimers)">
             <trans lang="en_EN">Show timers in mainmenu</trans>
             <trans lang="de_DE">Zeige Timer im Hauptmenü</trans>
