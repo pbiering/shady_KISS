@@ -3,6 +3,7 @@ shady-KISS-skin Revision History
 
 2015-02-28:
 
+- Added switch for setupmenuiconbar
 - Added switch for timersstoptime
 - Added switch for recordingtime
 - Changed position of messages

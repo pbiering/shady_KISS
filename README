@@ -69,6 +69,8 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 	d. "Pixelgraphicbackground in menus" yes or no, default "yes"
 	
 		Smoother gradients of menubackgrounds, perhaps not recommended for "weak" systems, try both ;)
+		
+	e. "Show iconbar in setup-menu" yes or no, default "no"
 
 
 
