@@ -60,6 +60,10 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 		
 	b. "Show details of channels"  yes or no, default "no"
 	
+	c. "Show timersstoptime" yes or no, default no
+	
+	d. "Show time of recordings" yes or no, default no
+	
 	c. "Show timers in mainmenu" yes or no, default "no"
 	
 	d. "Pixelgraphicbackground in menus" yes or no, default "yes"

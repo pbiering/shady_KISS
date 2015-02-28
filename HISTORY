@@ -3,14 +3,16 @@ shady-KISS-skin Revision History
 
 2015-02-28:
 
-Changed position of messages
-Added condition for schedules without EPG-data
-Changed bar of currentmenuentries
-Increased actorpics and fontsize of names
-Added shorttexts in menuentries of schedules
-Increased floatwidth in currentelementviews
-Added switch for channeldetails
-Rework of posters in displaymenurecordings
+- Added switch for timersstoptime
+- Added switch for recordingtime
+- Changed position of messages
+- Added switch for schedules without EPG-data
+- Changed bar of currentmenuentries
+- Increased actor-pics and fontsize of names
+- Added shorttexts in menuentries of schedules
+- Increased floatwidth in currentelementviews
+- Added switch for channeldetails
+- Rework of posters in displaymenurecordings
 
 
 2015-02-25: git-init 
