@@ -17,6 +17,7 @@
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
 -->
 		<parameter type="bool" name="defaultcolumnwidth" displaytext="{tr(defaultcolumnwidth)}">0</parameter>
+		<parameter type="bool" name="channeldetails" displaytext="{tr(channeldetails)}">0</parameter>
 		<parameter type="bool" name="showtimers" displaytext="{tr(showtimers)}">0</parameter>
 		<parameter type="bool" name="gradientBGPNG" displaytext="{tr(gradientBGPNG)}">1</parameter>
     </menu>
@@ -28,6 +29,10 @@
         <token name="tr(defaultcolumnwidth)">
             <trans lang="en_EN">Defaultcolumnwidth</trans>
             <trans lang="de_DE">Standardspaltenbreite</trans>
+        </token>
+                <token name="tr(channeldetails)">
+            <trans lang="en_EN">Show details of channels</trans>
+            <trans lang="de_DE">Zeige Kanaldetails</trans>
         </token>
 		<token name="tr(showtimers)">
             <trans lang="en_EN">Show timers in mainmenu</trans>
