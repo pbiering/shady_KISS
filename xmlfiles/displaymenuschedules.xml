@@ -38,7 +38,7 @@
             <area condition="not{separator}++{whatson}" x="49%" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="55%" color="{clrLightGray}" text="{start}" />
 			</area>
-            <areascroll condition="not{separator}++{whatson}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="38%" layer="4">
+            <areascroll condition="not{separator}++{whatson}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="37%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}  {shorttext}"/>			
             </areascroll>
 <!-- WHATSONNOW -->
@@ -51,7 +51,7 @@
             <area condition="not{separator}++{whatsonnow}" x="49%" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
 			</area>
-            <areascroll condition="not{separator}++{whatsonnow}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="38%" layer="4">
+            <areascroll condition="not{separator}++{whatsonnow}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="37%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}  {shorttext}"/>           
             </areascroll>
 <!-- WHATSONNEXT -->
@@ -61,17 +61,17 @@
             <area condition="not{separator}++{whatsonnext}" x="49%" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
 			</area>                     
-            <areascroll condition="not{separator}++{whatsonnext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="38%" layer="4">
+            <areascroll condition="not{separator}++{whatsonnext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="37%" layer="4">
                 <drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}  {shorttext}"/>                
             </areascroll>
 <!-- WHATSONFAVORITES -->           
               <area condition="not{separator}++{whatsonfavorites}" x="42%" width="6%" layer="4">
                 <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="10%" y="15%" width="70%" height="70%" />
             </area>
-            <area condition="not{separator}++{whatsonnext}" x="49%" width="5%" layer="4">
+            <area condition="not{separator}++{whatsonfavorites}" x="49%" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
 			</area>        
-            <areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="38%" layer="4">
+            <areascroll condition="not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="56%" width="37%" layer="4">
                 <drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}  {shorttext}"/>               
             </areascroll>               
 <!-- Separator -->
