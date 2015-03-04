@@ -75,8 +75,7 @@
                 <drawtextbox condition="not{hasposter}" x="2%" y="{posy(shorttext)}+{height(shorttext)}+20" width="94%" height="{areaheight} - {posy(poster)}" font="{light}" fontsize="7%" color="{clrLightGray}" text="{description}" />
             </area>
             <area condition="{folder}" x="0" y="0" width="40%" height="60%" layer="3">
-				<drawimage condition="not{hasposter}" x="0" y="1%" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="folder" />
-				<drawimage condition="{hasposter}" x="0" y="1%" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="folderPoster" />
+				<drawimage  x="0" y="1%" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="folder" />
             </area>
 			<area condition="{folder}++not{hasposter}" x="0" y="0" width="40%" height="60%" layer="4">
 				<drawtext condition="eq({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recording)}" />
@@ -90,6 +89,9 @@
             </area>
             <area condition="{folder}++{hasposter}" x="5%" y="0" width="21%" height="70%" layer="4">
 				<drawimage condition="{hasposter}" name="poster" x="0" y="12%" height="{areawidth}*0.75" width="{areawidth}*0.5" imagetype="image" path="{posterpath}" />
+			</area>
+			<area condition="{folder}++{hasposter}" x="0" y="0" width="40%" height="60%" layer="4">
+				<drawimage condition="{hasposter}" x="0" y="1%" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="posterFrame" />
 			</area>
         </currentelement>        
     </menuitems>
