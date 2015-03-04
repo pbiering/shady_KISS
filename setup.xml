@@ -16,12 +16,13 @@
 <!--
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
 -->
+		<parameter type="bool" name="brightbackground" displaytext="{tr(brightbackground)}">0</parameter>		
 		<parameter type="bool" name="defaultcolumnwidth" displaytext="{tr(defaultcolumnwidth)}">0</parameter>
 		<parameter type="bool" name="channeldetails" displaytext="{tr(channeldetails)}">0</parameter>
 		<parameter type="bool" name="timerstoptime" displaytext="{tr(timerstoptime)}">0</parameter>
 		<parameter type="bool" name="recordingtime" displaytext="{tr(recordingtime)}">0</parameter>		
 		<parameter type="bool" name="showtimers" displaytext="{tr(showtimers)}">0</parameter>
-		<parameter type="bool" name="gradientBGPNG" displaytext="{tr(gradientBGPNG)}">1</parameter>
+		<!--<parameter type="bool" name="gradientBGPNG" displaytext="{tr(gradientBGPNG)}">1</parameter>-->
 		<parameter type="bool" name="setupiconbar" displaytext="{tr(setupiconbar)}">0</parameter>		
     </menu>
 
@@ -29,6 +30,10 @@
     translations of displaytexts
     -->
     <translations>
+        <token name="tr(brightbackground)">
+            <trans lang="en_EN">Bright backgoundgradient</trans>
+            <trans lang="de_DE">Heller Hintergrundverlauf</trans>
+        </token>		
         <token name="tr(defaultcolumnwidth)">
             <trans lang="en_EN">Defaultcolumnwidth</trans>
             <trans lang="de_DE">Standardspaltenbreite</trans>
@@ -49,10 +54,10 @@
             <trans lang="en_EN">Show timers in mainmenu</trans>
             <trans lang="de_DE">Zeige Timer im Hauptmenü</trans>
 		</token>
-		<token name="tr(gradientBGPNG)">
+		<!--<token name="tr(gradientBGPNG)">
             <trans lang="en_EN">Pixelgraphicbackground in menus</trans>
             <trans lang="de_DE">Pixelgraphikhintergrund in den Menüs</trans>
-        </token>
+        </token>-->
 		<token name="tr(setupiconbar)">
             <trans lang="en_EN">Show iconbar in setup-menu</trans>
             <trans lang="de_DE">Zeige Icons im Setup-Menü</trans>

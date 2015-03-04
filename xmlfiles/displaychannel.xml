@@ -4,7 +4,8 @@
 <displaychannel x="0" y="0" width="100%" height="100%" fadetime="{fadeTime}">
     <background>
         <area x="0" y="75%" width="100%" height="25%" layer="1">
-            <drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannel"/>
+            <drawimage condition="not{brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannel"/>
+            <drawimage condition="{brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannelBright"/>           
         </area>		
         <area x="0" y="75%" width="100%" height="25%" layer="2">
             <drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsChannel"/>

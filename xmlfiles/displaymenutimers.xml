@@ -1,8 +1,9 @@
 <menutimers x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="1%" scaletvy="58%" scaletvwidth="40%" scaletvheight="40%">	
 	<background>
 		<area x="0" y="0" width="100%" height="100%" layer="1">
-			<drawimage condition="not{gradientBGPNG}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientBG" />
-            <drawimage condition="{gradientBGPNG}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+			<!--drawimage condition="not{gradientBGPNG}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientBG" />-->
+            <drawimage condition="not{brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+            <drawimage condition="{brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
             <drawrectangle  x="1%" y="59%" width="39%" height="39%" color="{clrTransparent}" />            
         </area>
         <area x="0" y="0" width="100%" height="100%" layer="2">

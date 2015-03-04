@@ -66,9 +66,7 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 	
 	c. "Show timers in mainmenu" yes or no, default "no"
 	
-	d. "Pixelgraphicbackground in menus" yes or no, default "yes"
-	
-		Smoother gradients of menubackgrounds, perhaps not recommended for "weak" systems, try both ;)
+	d. "Bright backgound gradient" yes or no, default "no"
 		
 	e. "Show iconbar in setup-menu" yes or no, default "no"
 
