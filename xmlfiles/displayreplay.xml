@@ -28,6 +28,9 @@
     -->
     
     <datetime>
+		<area x="34%" y="90%" width="32%" height="5%" layer="3">
+			<drawtext x="0" y="0" width="{areawidth}" valign="center" align="center" font="{light}" fontsize="75%" color="{clrLightGray}" text="{dayname} {dayleadingzero}. {monthnameshort}   {time}"/>
+		</area>
     </datetime>
 
     <!-- Available Variables scrapercontent:
