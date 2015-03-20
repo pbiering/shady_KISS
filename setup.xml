@@ -23,7 +23,8 @@
 		<parameter type="bool" name="recordingtime" displaytext="{tr(recordingtime)}">0</parameter>		
 		<parameter type="bool" name="showtimers" displaytext="{tr(showtimers)}">0</parameter>
 		<!--<parameter type="bool" name="gradientBGPNG" displaytext="{tr(gradientBGPNG)}">1</parameter>-->
-		<parameter type="bool" name="setupiconbar" displaytext="{tr(setupiconbar)}">0</parameter>		
+		<parameter type="bool" name="setupiconbar" displaytext="{tr(setupiconbar)}">0</parameter>
+		<parameter type="bool" name="tvgngdescriptionscroll" displaytext="{tr(tvgngdescriptionscroll)}">0</parameter>	
     </menu>
 
     <!--
@@ -61,7 +62,11 @@
 		<token name="tr(setupiconbar)">
             <trans lang="en_EN">Show iconbar in setup-menu</trans>
             <trans lang="de_DE">Zeige Icons im Setup-Menü</trans>
-        </token>        
+        </token>
+		<token name="tr(tvgngdescriptionscroll)">
+            <trans lang="en_EN">Scroll descriptions in TVGuideNG</trans>
+            <trans lang="de_DE">Scrolltext bei Beschreibungen in TVGuideNG</trans>
+        </token>               
               
     </translations>
 </setup>

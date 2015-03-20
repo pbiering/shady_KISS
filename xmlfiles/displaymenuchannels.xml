@@ -20,7 +20,7 @@
         </area>
     </header>	    
 	
-    <menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="14">
+    <menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="15">
         <!-- Available Variables channels menu listelement:
         {nummenuitem}             number of item in list, starts with 1
         {number}                  number of the displayed channel
@@ -45,9 +45,11 @@
             <area condition="not{separator}" x="42%" width="6%" layer="3">
                 <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" y="16%" width="70%" height="70%"  />
             </area>
-            <area  x="48%" width="48%" layer="3">
-				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels" />
-				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent" />
+            <area  x="48%" width="47%" layer="3">
+				<!--<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels" />
+				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent" />-->
+				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG" />
+				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuCurrentTVG" />
             </area>
              <areascroll condition="not{separator}++{channeldetails}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="23%" layer="3">
                 <drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{printf('%4d', number)}    {name}" />
@@ -122,9 +124,9 @@
     </menuitems>
 
     <scrollbar>
-		<area condition="lt({height},1000)" x="95%" y="15%" width="5%" height="73%" layer="3">
-			 <drawimage   x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
-			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+		<area condition="lt({height},1000)" x="95%" y="14%" width="3%" height="75%" layer="3">
+			 <drawimage   x="15%" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="28%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
     </scrollbar>
 </menuchannels>
