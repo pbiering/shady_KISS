@@ -20,8 +20,7 @@
 
     <viewelement name="time">
 		 <area x="60%" y="3%" width="35%" height="10%" layer="4">
-            <!--<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}   {dayleadingzero}. {monthnameshort}    {time}" />-->
-             <drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{time}" />         
+            <drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}   {dayleadingzero}. {monthnameshort}    {time}" />         
         </area>
     </viewelement>   
     

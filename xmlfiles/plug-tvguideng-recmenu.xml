@@ -8,14 +8,7 @@
     {menuheight}    menuheight in percent of screenheight
     {hasscrollbar}  true if menu needs a scrollbar
     -->
-    <!--<viewelement name="background">
-        <area x="0" y="0" width="100%" height="100%" layer="4">
-            <fill color="{clrMenuBGTVG}" />
-			<drawimage  x="6%" y="8%" width="88%" height="88%" imagetype="skinpart" path="gradientPNG" />           
-        </area>
-    </viewelement>-->
-
-
+    
 	<viewelement name="background">
 		<area x="0" y="0" width="100%" height="100%" layer="4">
             <fill color="{clrRecMenuHide}" />
@@ -26,28 +19,13 @@
       <area x="0" y="0" width="100%" height="100%" layer="5">
             <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrRecMenuBorderTop}" />
             <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2+2" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrBlack}" />
-            <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2+4" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrRecMenuBorderTop}" />
-            
-            
-            
-			<drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 + {menuheight}*{areaheight}/100/2-4" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrRecMenuBorderBottom}" />         
-                        
-            
-            <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 + {menuheight}*{areaheight}/100/2-2" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrBlack}" />                       
-            <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 + {menuheight}*{areaheight}/100/2" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrRecMenuBorderBottom}" />           	  
-            <!--<drawimage x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2" width="{menuwidth}*{areawidth}/100" height="{areaheight}/100" imagetype="skinpart" path="tvGuideButtonTop" />
-			<drawimage x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2" y="{areaheight}/2 + {menuheight}*{areaheight}/100/2" width="{menuwidth}*{areawidth}/100" height="{areaheight}/100" imagetype="skinpart" path="tvGuideButtonBottom" />-->
+            <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2+4" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrRecMenuBorderTop}" />  
+			<drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 + {menuheight}*{areaheight}/100/2-4" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrRecMenuBorderBottom}" />
+            <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 + {menuheight}*{areaheight}/100/2-2" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrBlack}" />
+            <drawrectangle x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2+{areaheight}/100" y="{areaheight}/2 + {menuheight}*{areaheight}/100/2" width="{menuwidth}*{areawidth}/100-{areaheight}/100" height="2" color="{clrRecMenuBorderBottom}" />
 			<drawimage x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2" width="{areaheight}/100" height="{menuheight}*{areaheight}/100" imagetype="skinpart" path="tvGuideButtonLeft" />
 			<drawimage x="{areawidth}/2 + {menuwidth}*{areawidth}/100/2" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2" width="{areaheight}/100" height="{menuheight}*{areaheight}/100" imagetype="skinpart" path="tvGuideButtonRight" />           
         </area>
-
-<!--        <area condition="not{hasscrollbar}" x="0" y="0" width="100%" height="100%" layer="4">
-            <drawimage x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2" width="{menuwidth}*{areawidth}/100" height="{menuheight}*{areaheight}/100" imagetype="skinpart" path="gradientPNG" />
-        </area>
-        <area condition="{hasscrollbar}" x="0" y="0" width="100%" height="100%" layer="4">
-            <drawimage x="{areawidth}/2 - {menuwidth}*{areawidth}/100/2" y="{areaheight}/2 - {menuheight}*{areaheight}/100/2" width="{menuwidth}*{areawidth}/100 + {areawidth}*0.03" height="{menuheight}*{areaheight}/100" imagetype="skinpart" path="gradientPNG" />
-        </area>-->
-        
     </viewelement>
     
     <!-- Available Variables Scrollbar:
@@ -210,27 +188,12 @@
         -->
         <area condition="{weekdayselector}" layer="6">
             <drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrWhite}" text="{text}" />
-            
-            <!--<drawrectangle x="{areawidth} - {areaheight}*4" y="25%" width="{areaheight}*3.5" height="50%" color="{clrWhite}" />-->
-
-
             <drawrectangle condition="{day0set}" x="{areawidth} - {areaheight}*4.0 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="{clrActive}" />
-            
-
             <drawrectangle condition="{day1set}" x="{areawidth} - {areaheight}*3.5 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="{clrActive}" />
-
-
             <drawrectangle condition="{day2set}" x="{areawidth} - {areaheight}*3.0 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="{clrActive}" />
-
-
             <drawrectangle condition="{day3set}" x="{areawidth} - {areaheight}*2.5 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="{clrActive}" />
-
             <drawrectangle condition="{day4set}" x="{areawidth} - {areaheight}*2.0 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="{clrActive}" />
-
-
             <drawrectangle condition="{day5set}" x="{areawidth} - {areaheight}*1.5 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="{clrActive}" />
-
-
             <drawrectangle condition="{day6set}" x="{areawidth} - {areaheight}*1.0 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="{clrActive}" />
         </area>
         <area condition="{weekdayselector}" layer="7">
@@ -241,7 +204,6 @@
             <drawrectangle condition="{current}++eq({dayselected}, 4)" x="{areawidth} - {areaheight}*2.0 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="FF000000" />
             <drawrectangle condition="{current}++eq({dayselected}, 5)" x="{areawidth} - {areaheight}*1.5 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="FF000000" />
             <drawrectangle condition="{current}++eq({dayselected}, 6)" x="{areawidth} - {areaheight}*1.0 + 2" y="{areaheight}*0.25+2" width="{areaheight}*0.5-4" height="{areaheight}*0.5-4" color="FF000000" />
-
             <drawtext name="day0" x="{areawidth} - {areaheight}*4.0 + {areaheight}/4 - {width(day0)}/2" valign="center" font="{light}" fontsize="50%" color="{clrWhite}" text="{day0abbr}" />
             <drawtext name="day1" x="{areawidth} - {areaheight}*3.5 + {areaheight}/4 - {width(day1)}/2" valign="center" font="{light}" fontsize="50%" color="{clrWhite}" text="{day1abbr}" />
             <drawtext name="day2" x="{areawidth} - {areaheight}*3.0 + {areaheight}/4 - {width(day2)}/2" valign="center" font="{light}" fontsize="50%" color="{clrWhite}" text="{day2abbr}" />
@@ -315,16 +277,11 @@
             <drawimage x="70%" y="0" width="{areaheight}/7" height="100%" imagetype="skinpart" path="tvGuideButtonLeftDark" />
             <drawimage x="99%" y="0" width="{areaheight}/7" height="100%" imagetype="skinpart" path="tvGuideButtonRightDark" />
             <drawrectangle x="71%" y="0" width="28%" height="100%" color="{clrBackGroundGray}"/>
-
             <drawrectangle x="70%" y="0" width="30%" height="1" color="{clrRecMenuConflTop}"/>
             <drawrectangle x="{areawidth}*0.7102 + {overlapstartpercent}*{areawidth}*0.3/100" y="0" width="{overlapwidthpercent}*{areawidth}*0.29/100" height="99%" color="{clrTransRed}"/>
             <drawrectangle x="{areawidth}*0.7102 + {timerstartpercent}*{areawidth}*0.3/100" y="30%" width="{timerwidthpercent}*{areawidth}*0.28/100" height="40%" color="{clrActive}"/>
-
-            
         </area>
-        <!--<area condition="{timerconflict}" layer="5">
-            <drawrectangle x="{areawidth}*0.709 + {overlapstartpercent}*{areawidth}*0.3/100" y="0" width="{overlapwidthpercent}*{areawidth}*0.29/100" height="100%" color="{clrTransRed}"/>
-        </area>-->
+        
         <!-- Event 
         {event}              true
         {title}              title of event
@@ -402,8 +359,7 @@
         {eventstart}                start time of according event
         {eventstop}                 end time of according event
         -->
-        <!--Tagesübersicht-->
-        
+       
         <area condition="{timelineheader}" layer="5">
 			<drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="0" y="0" width="100%" height="100%"/>
             <drawtext align="center" y="1%" font="{light}" fontsize="35%" color="{clrWhite}" text="Timer for {date}" />
