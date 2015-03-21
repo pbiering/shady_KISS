@@ -266,7 +266,7 @@
 
     <viewelement name="timeindicator_ver">
         <area x="6%" y="22%" width="90%" height="68%" layer="3">
-            <drawimage x="0" y="{percenttotal}*{areaheight}/1000" width="100%" height="3" imagetype="skinpart" path="scrollBar" />
+            <drawimage x="0" y="{percenttotal}*{areaheight}/1000" width="100%" height="3" imagetype="skinpart" path="scrollBarVer" />
         </area>
     </viewelement>
 
@@ -351,12 +351,9 @@
 			<drawrectangle x="2" y="0" width="2" height="100%" color="{clrRecMenuBorderTop}" />			
         </area>			
         <area layer="2">
-            <drawtext condition="not{dummy}++not{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrWhite}" text="{title}" />
+            <drawtext condition="not{dummy}++not{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
             <drawtext condition="not{dummy}++{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrRed}" text="{title}" />            
-            <drawtext condition="{dummy}" x="5%" valign="center" width="94%" font="{light}" fontsize="65%" color="{clrWhite}" text="{title}" />
-            <drawimage condition="{timer}" imagetype="icon" path="ico_rec_on" x="{areawidth} - {areaheight}*0.42" y="58%" width="{areaheight}*0.4" height="{areaheight}*0.4"/>
-            <drawimage condition="{switchtimer}++not{timer}" imagetype="icon" path="ico_switchtimer" x="{areawidth} - {areaheight}*0.42" y="58%" width="{areaheight}*0.4" height="{areaheight}*0.4"/>
-            <drawimage condition="{switchtimer}++{timer}" imagetype="icon" path="ico_switchtimer" x="{areawidth} - {areaheight}*0.84" y="58%" width="{areaheight}*0.4" height="{areaheight}*0.4"/>
+            <drawtext condition="{dummy}" x="5%" valign="center" width="94%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
         </area>
     </grid>
 
@@ -368,12 +365,9 @@
 			<drawrectangle x="0" y="2" width="100%" height="2" color="{clrRecMenuBorderTop}" />
         </area>
         <area layer="2">
-            <drawtextbox name="title" condition="not{dummy}++not{timer}" x="2%" y="0" width="96%" font="{light}" fontsize="{areawidth}*0.15" color="{clrWhite}" text="{title}" />
-            <drawtextbox name="title" condition="not{dummy}++{timer}" x="2%" y="0" width="96%" font="{light}" fontsize="{areawidth}*0.15" color="{clrRed}" text="{title}" />
-            <drawtextbox condition="{dummy}" x="2%" y="5%" width="96%" font="{light}" fontsize="{areawidth}*0.2" color="{clrWhite}" text="{title}" />
-            <drawimage condition="{timer}" imagetype="icon" path="ico_rec_on" x="82%" y="{areaheight}-{areawidth}*0.18" width="15%" height="{areawidth}*0.15"/>
-            <drawimage condition="{switchtimer}++not{timer}" imagetype="icon" path="ico_switchtimer" x="82%" y="{areaheight}-{areawidth}*0.18" width="15%" height="{areawidth}*0.15"/>
-            <drawimage condition="{switchtimer}++{timer}" imagetype="icon" path="ico_switchtimer" x="65%" y="{areaheight}-{areawidth}*0.18" width="15%" height="{areawidth}*0.15"/>
+            <drawtextbox name="title" condition="not{dummy}++not{timer}" x="2%" y="8%" width="96%" font="{light}" fontsize="{areawidth}*0.1" color="{clrLightGray}" text="{title}" />
+            <drawtextbox name="title" condition="not{dummy}++{timer}" x="2%" y="8%" width="96%" font="{light}" fontsize="{areawidth}*0.1" color="{clrRed}" text="{title}" />
+            <drawtextbox condition="{dummy}" x="2%" y="5%" width="96%" font="{light}" fontsize="{areawidth}*0.14" color="{clrLightGray}" text="{title}" />
         </area>
     </grid>
 
