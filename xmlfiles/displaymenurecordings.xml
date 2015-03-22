@@ -20,7 +20,7 @@
 				<!--<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
 				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>-->
 				<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuCurrentTVG"/>					
+				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>					
             </area>
             <area condition="not{folder}" x="41%" width="7%" layer="3">
                 <drawtext x="5%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
@@ -47,7 +47,7 @@
 				<!--<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
 				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>-->
 				<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuCurrentTVG"/>				
+				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>				
             </area>
             <area condition="not{folder}++{recordingtime}" x="49%" width="5%" layer="3">
                 <drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />

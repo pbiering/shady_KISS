@@ -29,7 +29,7 @@
 				<!--<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
 				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>-->
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuCurrentTVG"/>				
+				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>				
             </area>
             <area  x="54%" width="2%" layer="4">           				
 				<drawimage condition="{timerfull}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
@@ -48,8 +48,8 @@
 			<area condition="not{separator}++{whatsonnow}" x="42%" width="6%" layer="4">
 				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="10%" y="15%" width="70%" height="70%"  />
             </area>   
-            <area condition="not{separator}++{whatsonnow}++{running}" x="53%" width="41%" layer="4">
-                <drawimage  x="3%" y="{areaheight}-8" width="{areawidth} * {elapsed} / {duration}" height="{areaheight}/8" imagetype="skinpart" path="nowBar" />
+            <area condition="not{separator}++{whatsonnow}++{running}" x="53%" width="43%" layer="4">
+                <drawimage  x="2%" y="{areaheight}-3" width="{areawidth} * {elapsed} / {duration}" height="{areaheight}/18" imagetype="skinpart" path="nowBar" />
             </area>
             <area condition="not{separator}++{whatsonnow}" x="49%" width="5%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
