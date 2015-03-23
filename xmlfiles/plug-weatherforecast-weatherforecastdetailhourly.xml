@@ -72,7 +72,7 @@
 
     <tab name="hourly" x="2%" y="14%" width="54%" height="72%" layer="4" scrollheight="{areaheight}/5">
 		<loop name="hourly" x="0" y="{rowheight}-4" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/5">
-            <drawimage condition="eq({hourly[num]}, 1)"  imagetype="skinpart" path="weatherDivider" width="{areawidth}" height="{rowheight}*0.02"/>
+            <drawimage  imagetype="skinpart" path="weatherDivider" width="{areawidth}" height="{rowheight}*0.02"/>
         </loop>			
         <loop name="hourly" x="0" y="0" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/5">
             <drawtext x="0" y="0" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{hourly[timestamp]}  {hourly[summary]}" />         
