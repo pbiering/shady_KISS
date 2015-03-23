@@ -8,7 +8,7 @@
             <drawimage condition="{brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />                    
         </area>
         <area x="0" y="0" width="100%" height="100%" layer="2">
-            <drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />           
+            <drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsWeatherCurrentMain" />           
         </area>
         <area x="0" y="0" width="100%" height="11%" layer="3">
             <drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />     
@@ -69,21 +69,24 @@
     </detailheader>
 
     <tab name="current" x="2%" y="14%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
-        <drawtext x="0" y="0" font="{light}" fontsize="7%" color="{clrLightGray}" text="{tr(conditions)} {tr(for)} {city}" />
-        <drawtext x="0" y="8%" font="{light}" fontsize="7%" color="{clrLightGray}" text="({latitude}, {longitude})" />
-        <drawtext x="0" y="16%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{summary}" />
+        <drawtext x="0" y="0" font="{light}" fontsize="6%" color="{clrLightGray}" text="{tr(conditions)} {tr(for)} {city}" />
+        <drawtext x="0" y="7%" font="{light}" fontsize="6%" color="{clrLightGray}" text="Lat: {latitude}, Lon: {longitude})" />
+        <drawtext x="0" y="14%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{summary}" />
+        
         <drawtext x="0" y="28%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(temp)}: {temperature}°C" />
         <drawtext x="0" y="33%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(apparenttemp)}: {apparenttemperature}°C" />
         <drawtext x="0" y="38%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(todaymin)}: {mintemperature}°C" />
         <drawtext x="0" y="43%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(todaymax)}: {maxtemperature}°C" />
-        <drawtext x="0" y="48%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationprobability)}: {precipitationprobability} %" />
-        <drawtext x="0" y="53%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationintensity)}: {precipitationintensity} l/qm" />
-        <drawtext x="0" y="58%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(humidity)}: {humidity} %" />
-        <drawtext x="0" y="63%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windspeed)}: {windspeed} km/h aus {windbearingstring}" />
-        <drawtext x="0" y="68%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(visibility)}: {visibility} km" />
-        <drawtext x="0" y="73%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(cloudcover)}: {cloudcover} %" />
-        <drawtext x="0" y="78%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(pressure)}: {pressure} HPa" />
-        <drawtext x="0" y="83%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(ozone)}: {ozone} DU" />
+        
+        <drawtext x="0" y="50%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationprobability)}: {precipitationprobability} %" />
+        <drawtext x="0" y="55%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationintensity)}: {precipitationintensity} l/qm" />        
+        <drawtext x="0" y="60%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(humidity)}: {humidity} %" />
+
+        <drawtext x="0" y="67%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(visibility)}: {visibility} km" />
+        <drawtext x="0" y="72%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(cloudcover)}: {cloudcover} %" />
+        <drawtext x="0" y="77%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(pressure)}: {pressure} HPa" />
+        <drawtext x="0" y="82%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(ozone)}: {ozone} DU" />
+        <drawtext x="0" y="87%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windspeed)}: {windspeed} km/h aus {windbearingstring}" />
     </tab>
 	<colorbuttons>
 		<area x="0" y="0" layer="0">
