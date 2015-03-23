@@ -129,14 +129,14 @@
 			</area>   
 			<area condition="{iscurrent}" x="0" y="22%" width="94%" height="88%" layer="3">
                 <drawtext x="2%" y="74%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(visibility)}: {visibility}km" />
-                <drawtext x="2%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(pressure)}: {pressure}HPa" />
-                <drawtext x="2%" y="84%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(ozone)}: {ozone}DU" />
-                
-                <drawtext x="31%" y="74%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(humidity)}: {humidity}%" />
-                <drawtext x="31%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windspeed)}: {windspeed}km/h"/>
+                <drawtext x="2%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(ozone)}: {ozone}DU" />
+                <drawtext x="2%" y="84%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(pressure)}: {pressure}HPa" />
+
+               	<drawtext x="31%" y="74%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{precipitationtype}{tr(cloudcover)}: {cloudcover} %" />                
+                <drawtext x="31%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(humidity)}: {humidity}%" />
                 <drawtext x="31%" y="84%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windbearing)}: {windbearingstring} ({windbearing} °)" />
-               	<drawtext x="31%" y="89%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{precipitationtype}{tr(cloudcover)}: {cloudcover} %" />			
-      
+                <drawtext x="31%" y="89%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windspeed)}: {windspeed}km/h"/>
+                
                 <drawtext x="60%" y="74%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(apparenttemp)}: {apparenttemperature}°C" />
                 <drawtext x="60%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationprobability)}: {precipitationprobability} %" />
                 <drawtext x="60%" y="84%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationintensity)}: {precipitationintensity}l/qm" />
