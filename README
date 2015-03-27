@@ -15,7 +15,7 @@
 #    MA 02110, USA
 
 
-Latest version is available at: http://www.anthra.de/shady/
+Latest version is available via git: https://github.com/tomsax56/shady_KISS
 
 Screenshots: http://www.anthra.de/shady-skin
 
@@ -54,7 +54,9 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 
 	a. "Defaultcolumnwidth" yes or no, default "yes"
 	
-		Preferably you test both settings with eg epgsearch-searchtimermenu or mailplugin which setting sweet your needs.
+		Preferably you test both settings with eg 
+		epgsearch-searchtimermenu or mailplugin
+		which setting sweet your needs.
 		
 		If in doubt switch it to "no".
 		
@@ -69,6 +71,12 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 	d. "Bright backgound gradient" yes or no, default "no"
 		
 	e. "Show iconbar in setup-menu" yes or no, default "no"
+		
+	f. "Fadetime in ms" is used in displaychannel,
+		-message, -audiotracks, -replay and -volume.
+		0 - 300 ms, default="0"
+	
+	g. "Scroll descriptions in TVGuideNG" yes or no, default "no"
 
 
 
