@@ -22,6 +22,7 @@
 		<parameter type="bool" name="timerstoptime" displaytext="{tr(timerstoptime)}">0</parameter>
 		<parameter type="bool" name="recordingtime" displaytext="{tr(recordingtime)}">0</parameter>		
 		<parameter type="bool" name="showtimers" displaytext="{tr(showtimers)}">0</parameter>
+		<parameter type="int" name="fadetime" min="0" max="500" displaytext="{tr(fadetime)}">0</parameter>
 		<!--<parameter type="bool" name="gradientBGPNG" displaytext="{tr(gradientBGPNG)}">1</parameter>-->
 		<parameter type="bool" name="setupiconbar" displaytext="{tr(setupiconbar)}">0</parameter>
 		<parameter type="bool" name="tvgngdescriptionscroll" displaytext="{tr(tvgngdescriptionscroll)}">0</parameter>	
@@ -55,6 +56,10 @@
             <trans lang="en_EN">Show timers in mainmenu</trans>
             <trans lang="de_DE">Zeige Timer im Hauptmenü</trans>
 		</token>
+		<token name="tr(fadetime)">
+            <trans lang="en_EN">Fade time in ms</trans>
+            <trans lang="de_DE">Einblendzeit in ms</trans>
+        </token>
 		<!--<token name="tr(gradientBGPNG)">
             <trans lang="en_EN">Pixelgraphicbackground in menus</trans>
             <trans lang="de_DE">Pixelgraphikhintergrund in den Menüs</trans>
