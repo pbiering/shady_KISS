@@ -29,7 +29,8 @@
 				<!--<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
 				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>-->
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
-				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
+				<drawimage condition="{current}++{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
+				<drawimage condition="{current}++not{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
 			</area>
 			<area  x="54%" width="2%" layer="4">
 				<drawimage condition="{timerfull}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
@@ -111,7 +112,7 @@
 
 	<scrollbar>
 		<area condition="lt({height},1000)" x="95%" y="14%" width="3%" height="75%" layer="3">
-			 <drawimage   x="15%" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage   x="15%" y="0" width="{areawidth}*0.7" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
 			 <drawimage x="28%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</scrollbar>

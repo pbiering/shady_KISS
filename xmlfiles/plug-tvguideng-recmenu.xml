@@ -50,7 +50,8 @@
         -->
         <area condition="not{info}++not{buttonyesno}++not{timerconflictheader}++not{timerconflict}++not{timelineheader}++not{timelinetimer}" layer="5">
             <drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="0" y="0" width="100%" height="100%"/>
-            <drawimage condition="{current}" imagetype="skinpart" path="buttonRecMenuCurrentTVG1" x="0" y="0" width="100%" height="100%"/>
+            <drawimage condition="{current}++not{coloredbuttons}" imagetype="skinpart" path="buttonRecMenuCurrentTVG1" x="0" y="0" width="100%" height="100%"/>
+            <drawimage condition="{current}++{coloredbuttons}" imagetype="skinpart" path="buttonRecMenuCurrentTVG1_Color" x="0" y="0" width="100%" height="100%"/>
         </area>
         <!-- info item 
         {info}          true

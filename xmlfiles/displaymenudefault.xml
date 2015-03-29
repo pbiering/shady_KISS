@@ -145,7 +145,8 @@
 				<!--<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong" />
 				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongCurrent" />-->
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
-				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />				
+				<drawimage condition="{current}++{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
+				<drawimage condition="{current}++not{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
             </area>
             <areascroll scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="{column1width}" layer="3">
                 <drawtext name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />

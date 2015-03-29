@@ -1,7 +1,11 @@
 shady-KISS-skin (Revision) History
 -------------------------------------------
+2015-03-29:
+- Added setup-parameter "Colored active buttons" and corresponding graphics
 
 2015-03-27:
+- Updated README an HISTORY
+- Some cleanups
 - Renamed nowBar to elapsedBar and fixed its width
 - Added elapsedBar.svg
 - Added setup-parameter "fadetime" used in

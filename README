@@ -77,6 +77,8 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 		0 - 300 ms, default="0"
 	
 	g. "Scroll descriptions in TVGuideNG" yes or no, default "no"
+	
+	h. "Colored active buttons" yes or no, default "no"
 
 
 
