@@ -75,10 +75,14 @@
             <drawimage  imagetype="skinpart" path="weatherDivider" width="{areawidth}" height="{rowheight}*0.02"/>
         </loop>			
         <loop name="hourly" x="0" y="0" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/5">
-            <drawtext x="0" y="0" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{hourly[timestamp]}  {hourly[summary]}" />         
-            <drawtext x="0" y="{rowheight}*0.34" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.26" color="{clrLightGray}" text="{tr(precipitationprobability)} {hourly[precipitationprobability]}%, {hourly[precipitationintensity]} l/qm" />
-            <drawtext x="0" y="{rowheight}*0.64" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.26" color="{clrLightGray}" text="{tr(windspeed)} {hourly[windspeed]} km/h {tr(from)} {hourly[windbearingstring]}" />
-            <drawimage imagetype="icon" path="{hourly[icon]}" x="60%" y="5%" width="{rowheight}*0.6" height="{rowheight}*0.6"/>
+            <drawtext x="1%" y="{rowheight}*0.03" font="{light}" fontsize="{rowheight}*0.28" color="{clrLightGray}" text="{hourly[timestamp]}" />
+            <drawtext x="{rowheight}*0.8" y="1%" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{hourly[summary]}" />
+            
+            <drawimage imagetype="icon" path="{hourly[icon]}" x="0" y="7%" width="{rowheight}*0.6" height="{rowheight}*0.6"/>
+                     
+            <drawtext x="{rowheight}*0.8" y="{rowheight}*0.34" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(precipitationprobability)} {hourly[precipitationprobability]}%, {hourly[precipitationintensity]} l/qm" />
+            <drawtext x="{rowheight}*0.8" y="{rowheight}*0.64" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(windspeed)} {hourly[windspeed]} km/h {tr(from)} {hourly[windbearingstring]}" />
+            
             <drawtext name="temp" x="0.7*{columnwidth} + 0.15*{columnwidth} - {width(temp)}/2" font="{light}" y="5%" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{hourly[temperature]}°C" />
             <drawtext name="felt" x="0.72*{columnwidth} + 0.15*{columnwidth} - {width(temp)}/2" font="{light}" y="{rowheight}*0.6" fontsize="{rowheight}*0.26" color="{clrLightGray}" text="{tr(felt)} {hourly[apparenttemperature]}°C" />            
         </loop>

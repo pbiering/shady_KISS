@@ -77,11 +77,11 @@
             <drawimage imagetype="skinpart" path="weatherDivider" width="{areawidth}" height="{rowheight}*0.02"/>
         </loop>			
         <loop name="daily" x="0" y="0" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/5">
-            <drawtext x="0" y="0" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{daily[dayname]} {daily[day]}" />
-			<drawtext x="19%" y="1%" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.24" color="{clrLightGray}" text="{daily[summary]}" />
-			<drawtext x="0" y="{rowheight}*0.34" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.24" color="{clrLightGray}" text="{tr(precipitationprobability)} {daily[precipitationprobability]}%, {tr(cloudcover)} {daily[cloudcover]}%" />
-            <drawtext x="0" y="{rowheight}*0.64" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.24" color="{clrLightGray}" text="{tr(visibility)} {daily[visibility]} km, {tr(pressure)} {daily[pressure]} HPa, {tr(ozone)} {daily[ozone]} DU" />
-            <drawimage imagetype="icon" path="{daily[icon]}" x="64%" y="5%" width="{rowheight}*0.6" height="{rowheight}*0.6"/>
+            <drawtext x="0" y="{rowheight}*0.03" font="{light}" fontsize="{rowheight}*0.28" color="{clrLightGray}" text="{daily[dayname]} {daily[day]}" />
+			<drawtext x="15%" y="1%" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{daily[summary]}" />
+			<drawimage imagetype="icon" path="{daily[icon]}" x="0" y="7%" width="{rowheight}*0.6" height="{rowheight}*0.6"/>
+			<drawtext x="{rowheight}*0.8" y="{rowheight}*0.34" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(precipitationprobability)} {daily[precipitationprobability]}%, {tr(cloudcover)} {daily[cloudcover]}%" />
+            <drawtext x="{rowheight}*0.8" y="{rowheight}*0.64" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(visibility)} {daily[visibility]} km, {tr(pressure)} {daily[pressure]} HPa, {tr(ozone)} {daily[ozone]} DU" />
             <drawtext name="temp" x="0.7*{columnwidth} + 0.15*{columnwidth} - {width(temp)}/2" font="{light}" y="5%" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{tr(min)}. {daily[temperaturemin]}°C" />
             <drawtext name="felt" x="0.72*{columnwidth} + 0.15*{columnwidth} - {width(temp)}/2" font="{light}" y="{rowheight}*0.6" fontsize="{rowheight}*0.26" color="{clrLightGray}" text="{tr(max)}. {daily[temperaturemax]}°C" />            
         </loop>
