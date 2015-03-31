@@ -82,8 +82,10 @@
 			<drawimage imagetype="icon" path="{daily[icon]}" x="0" y="7%" width="{rowheight}*0.6" height="{rowheight}*0.6"/>
 			<drawtext x="{rowheight}*0.8" y="{rowheight}*0.34" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(precipitationprobability)} {daily[precipitationprobability]}%, {tr(cloudcover)} {daily[cloudcover]}%" />
             <drawtext x="{rowheight}*0.8" y="{rowheight}*0.64" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(visibility)} {daily[visibility]} km, {tr(pressure)} {daily[pressure]} HPa, {tr(ozone)} {daily[ozone]} DU" />
-            <drawtext name="temp" x="0.7*{columnwidth} + 0.15*{columnwidth} - {width(temp)}/2" font="{light}" y="5%" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{tr(min)}. {daily[temperaturemin]}°C" />
-            <drawtext name="felt" x="0.72*{columnwidth} + 0.15*{columnwidth} - {width(temp)}/2" font="{light}" y="{rowheight}*0.6" fontsize="{rowheight}*0.26" color="{clrLightGray}" text="{tr(max)}. {daily[temperaturemax]}°C" />            
+            
+            
+            <drawtext name="temp" x="0.7*{columnwidth} + 0.17*{columnwidth} - {width(temp)}/2" y="{rowheight}*0.34" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(min)}. {daily[temperaturemin]}°C" />
+            <drawtext name="felt" x="0.72*{columnwidth} + 0.17*{columnwidth} - {width(temp)}/2" y="{rowheight}*0.64" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(max)}. {daily[temperaturemax]}°C" />            
         </loop>
     </tab>
 
