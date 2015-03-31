@@ -17,8 +17,6 @@
    <menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="15">      
         <listelement>
 			<area  condition="not{recordingtime}" x="50%" width="45%" layer="3">
-				<!--<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
-				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>-->
 				<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
 				<drawimage condition="{current}++not{coloredbuttons}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
 				<drawimage condition="{current}++{coloredbuttons}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
@@ -45,8 +43,6 @@
             </areascroll>
 <!--recordingtime-->
 			<area  condition="{recordingtime}" x="55%" width="39%" layer="3">
-				<!--<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
-				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>-->
 				<drawimage condition="not{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
 				<drawimage condition="{current}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>				
             </area>

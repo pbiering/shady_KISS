@@ -45,8 +45,6 @@
                 <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="0" y="16%" width="70%" height="70%"  />
             </area>
             <area  x="48%" width="47%" layer="3">
-				<!--<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels" />
-				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent" />-->
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG" />
 				<drawimage condition="{current}++{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
 				<drawimage condition="{current}++not{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />

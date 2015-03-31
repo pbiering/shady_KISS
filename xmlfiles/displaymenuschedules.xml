@@ -26,8 +26,6 @@
 	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="15"> 
 		<listelement>
 			<area  x="53%" width="42%" layer="3">
-				<!--<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannels"/>
-				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonChannelsCurrent"/>-->
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
 				<drawimage condition="{current}++{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
 				<drawimage condition="{current}++not{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />

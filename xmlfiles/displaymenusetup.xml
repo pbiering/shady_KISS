@@ -106,8 +106,6 @@
         -->
         <listelement>
             <area x="57%" width="38%" layer="3">
-				<!--<drawimage  condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMain" />
-				<drawimage  condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMainCurrent" />-->
 				<drawimage  condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG" />
 				<drawimage  condition="{current}++{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
 				<drawimage  condition="{current}++not{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
