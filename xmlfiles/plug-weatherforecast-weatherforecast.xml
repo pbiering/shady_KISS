@@ -133,7 +133,7 @@
                 <drawtext x="2%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(ozone)}: {ozone}DU" />
                 <drawtext x="2%" y="84%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(pressure)}: {pressure}HPa" />
 
-               	<drawtext x="31%" y="74%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{precipitationtype}{tr(cloudcover)}: {cloudcover} %" />                
+               	<drawtext x="31%" y="74%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(cloudcover)}: {cloudcover} %" />                
                 <drawtext x="31%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(humidity)}: {humidity}%" />
                 <drawtext x="31%" y="84%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windbearing)}: {windbearingstring} ({windbearing} °)" />
                 <drawtext x="31%" y="89%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windspeed)}: {windspeed}km/h"/>
@@ -141,7 +141,7 @@
                 <drawtext x="60%" y="74%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(apparenttemp)}: {apparenttemperature}°C" />
                 <drawtext x="60%" y="79%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationprobability)}: {precipitationprobability} %" />
                 <drawtext x="60%" y="84%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationintensity)}: {precipitationintensity}l/qm" />
-                <drawtext condition="isset{precipitationtype}" x="60%" y="89%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationtype): {precipitationtype}" />
+                <drawtext condition="isset{precipitationtype}" x="60%" y="89%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationtype)}: {precipitationtype}" />
                 <drawtext condition="empty{precipitationtype}" x="60%" y="89%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationtype)}: Kein Niederschlag" />
             </area>
             
