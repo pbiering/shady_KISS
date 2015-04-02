@@ -68,19 +68,12 @@
  			<area condition="{ishourly}||{isdaily}" x="0" y="82%" width="100%" height="32%" layer="3">           
 				<drawimage x="0" width="100%" height="100%" imagetype="skinpart" path="shadowsWeatherDaily" />
 			</area>
-			
-			
-			
 			<area condition="{ishourly}" x="0" y="85%" width="97%" height="23%" layer="4">
 				<loop name="hourly" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/56" rowheight="{areaheight}" overflow="cut">
 					<drawtext condition="eq({hourly[num]}, 1)" x="2%" y="5%" font="{light}" fontsize="18%"  color="{clrLightGray}" text="{hourly[timestamp]}" />
 					<drawtext condition="eq({hourly[num]}, 8) || eq({hourly[num]}, 16) || eq({hourly[num]}, 24) || eq({hourly[num]}, 32) || eq({hourly[num]}, 40) || eq({hourly[num]}, 48)" x="4%" y="5%" font="{light}" fontsize="18%"  color="{clrLightGray}" text="{hourly[timestamp]}" />
 					<drawimage condition="eq({hourly[num]}, 1)" imagetype="icon" path="{hourly[icon]}" x="8%" y="6%" width="{columnwidth}*3.3" height="{columnwidth}*3.3"/>
 					<drawimage condition="eq({hourly[num]}, 8) || eq({hourly[num]}, 16) || eq({hourly[num]}, 24) || eq({hourly[num]}, 32) || eq({hourly[num]}, 40) || eq({hourly[num]}, 48)" imagetype="icon" path="{hourly[icon]}" x="10%" y="6%" width="{columnwidth}*3.3" height="{columnwidth}*3.3"/>
-					
-					
-					
-					
 					<drawtext condition="eq({hourly[num]}, 1)" x="3%" y="{rowheight}*0.3" font="{light}" fontsize="17%" color="{clrLightGray}" text="{hourly[temperature]}°C" />
 					<drawtext condition="eq({hourly[num]}, 8) || eq({hourly[num]}, 16) || eq({hourly[num]}, 24) || eq({hourly[num]}, 32) || eq({hourly[num]}, 40) || eq({hourly[num]}, 48)" x="5%" y="{rowheight}*0.3" font="{light}" fontsize="17%" color="{clrLightGray}" text="{hourly[temperature]}°C" />
 					<drawtext condition="eq({hourly[num]}, 1)" x="3%" y="{columnwidth}*2.1 + {rowheight}*0.35" width="{columnwidth}*7.5"  font="{light}" fontsize="16%" color="{clrLightGray}" text="{hourly[summary]}" />

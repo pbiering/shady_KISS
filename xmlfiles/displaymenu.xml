@@ -89,14 +89,14 @@
 			<drawimage  condition="{blue4}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />            
 		</area>
 	</colorbuttons>
-    &displaymenudefault;
-    &displaymenumain;
-    &displaymenusetup;
-    &displaymenuschedules;
-    &displaymenutimers;
-    &displaymenuchannels;
-    &displaymenurecordings;
-    &displaymenudetailepg;
-    &displaymenudetailrecording;
-    &displaymenudetailtext;
+	&displaymenudefault;
+	&displaymenumain;
+	&displaymenusetup;
+	&displaymenuschedules;
+	&displaymenutimers;
+	&displaymenuchannels;
+	&displaymenurecordings;
+	&displaymenudetailepg;
+	&displaymenudetailrecording;
+	&displaymenudetailtext;
 </displaymenu>
