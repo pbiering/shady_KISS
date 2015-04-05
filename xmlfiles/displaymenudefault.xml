@@ -1,8 +1,8 @@
  <menudefault x="0" y="0" width="100%" height="100%" fadetime="0">
 	<background>
 		<area x="0" y="0" width="100%" height="100%" layer="1">
-			<drawimage condition="not{brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
-			<drawimage condition="{brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />                    
+			<drawimage condition="not{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+			<drawimage condition="{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />                    
 		</area>
 		<area x="0" y="0" width="100%" height="100%" layer="2">
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />           
@@ -78,13 +78,14 @@
 		<listelement>
 				<area x="2%" width="93%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
-				<drawimage condition="{current}++{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
-				<drawimage condition="{current}++not{coloredbuttons}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
+				<drawimage condition="{current}++eq({05_coloredbuttons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
+				<drawimage condition="{current}++eq({05_coloredbuttons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
+				<drawimage condition="{current}++eq({05_coloredbuttons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 			</area>
 			<areascroll scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="{column1width}" layer="3">
 				<drawtext name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
-			<area condition="not{defaultcolumnwidth}" x="5%" width="87%" layer="3">
+			<area condition="not{08_defaultcolumnwidth}" x="5%" width="87%" layer="3">
 				<!--VDR-Setup-->
 				<drawtext condition="{column2set}++not{column3set}" x="{column2x}" align="right" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrLightGray}" text="{column2}" />
 				<!--mail-plugin-->
@@ -101,7 +102,7 @@
 				<drawtext condition="{column6set}" x="{column5x}" valign="center" font="{light}" fontsize="70%" width="{column5width}" color="{clrLightGray}" text="{column5}" />
 				<drawtext condition="{column6set}" x="{column6x}" valign="center" font="{light}" fontsize="70%" width="{column6width}" color="{clrLightGray}" text="{column6}" />
 			</area>            
-			<area condition="{defaultcolumnwidth}" x="5%" width="87%" layer="3">
+			<area condition="{08_defaultcolumnwidth}" x="5%" width="87%" layer="3">
 				<drawtext condition="{column2set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrWhite}" text="{column2}" />
 				<drawtext condition="{column3set}" x="{column3x}" valign="center" font="{light}" fontsize="70%" width="{column3width}" color="{clrWhite}" text="{column3}" />
 				<drawtext condition="{column4set}" x="{column4x}" valign="center" font="{light}" fontsize="70%" width="{column4width}" color="{clrWhite}" text="{column4}" />

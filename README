@@ -52,33 +52,40 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 		
 3. Setup:
 
-	a. "Defaultcolumnwidth" yes or no, default "yes"
+	a. Number of items in main and setup menu: min=8, max=10, default=10
+	
+	b. Number of items in submenus (long): min=12, max=18, default=14
+		
+	c. Number of items in submenus (short): min=12, max=18, default =15
+	
+	d. Bright backgoundgradient: yes, no, default=no
+	
+	e. Colored active buttons: 0=no, 1=only border, 2=gradient, default=no
+	
+	f. Show iconbar in setup-menu: yes, no, default=no
+	
+	g. Fade time in ms: min=0, max=500, default=0
+	
+		Used in displaychannel, -message, -audiotracks, -replay and -volume.
+		0 - 500 ms
+	
+	h. Defaultcolumnwidth: yes, no, default=no
 	
 		Preferably you test both settings with eg 
 		epgsearch-searchtimermenu or mailplugin
 		which setting sweet your needs.
-		
-		If in doubt switch it to "no".
-		
-	b. "Show details of channels"  yes or no, default "no"
 	
-	c. "Show timersstoptime" yes or no, default no
+	If in doubt switch it to "no".
 	
-	d. "Show time of recordings" yes or no, default no
+	i. Show timers in mainmenu: yes, no, default=no
 	
-	c. "Show timers in mainmenu" yes or no, default "no"
+	j. Show details (transponder) of channels: yes, no, default=no
 	
-	d. "Bright backgound gradient" yes or no, default "no"
-		
-	e. "Show iconbar in setup-menu" yes or no, default "no"
-		
-	f. "Fadetime in ms" is used in displaychannel,
-		-message, -audiotracks, -replay and -volume.
-		0 - 300 ms, default="0"
+	k. Show timersstoptime: yes, no, default=no
 	
-	g. "Scroll descriptions in TVGuideNG" yes or no, default "no"
+	l. Show time of recordings: yes, no, default=no
 	
-	h. "Colored active buttons" yes or no, default "no"
+	m. Scroll descriptions in TVGuideNG: yes, no, default=no
 
 
 

@@ -1,5 +1,27 @@
 shady-KISS-skin (Revision) History
 -------------------------------------------
+
+2015-04-05:
+- Added third option for active menubars (gradient)
+- Added divider (hyphen) between title ad shorttetxts
+- Rearranged setup
+- Some cleanups
+
+2015-04-03:
+- Small fix for coloredbuttons
+
+2015-04-02:
+- Rearranged Weatherforecast-Main-View
+- Added setupparameter for setting up numbers of menuitemsitems in all menus; cleanups
+
+2015-02-31:
+- Fixed bug in plug-weatherforecast-weatherforecast.xml
+- Improved position and fontsize of temps in weatherforecast
+- Removed some useless pics and code
+
+2015-03-30:
+- Changed some positions in weatherforecastdetails
+
 2015-03-29:
 - Added setup-parameter "Colored active buttons" and corresponding graphics
 

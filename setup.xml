@@ -20,16 +20,16 @@
 		<parameter type="int" name="01_numshortmenuitems" min="8" max="10" displaytext="{tr(numshortmenuitems)}">10</parameter>
 		<parameter type="int" name="02_numlongsubmenuitems" min="12" max="18" displaytext="{tr(numlongsubmenuitems)}">14</parameter>
 		<parameter type="int" name="03_numshortsubmenuitems" min="12" max="18" displaytext="{tr(numshortsubmenuitems)}">15</parameter>
-		<parameter type="bool" name="brightbackground" displaytext="{tr(brightbackground)}">0</parameter>
-		<parameter type="int" name="fadetime" min="0" max="500" displaytext="{tr(fadetime)}">0</parameter>
-		<parameter type="bool" name="defaultcolumnwidth" displaytext="{tr(defaultcolumnwidth)}">0</parameter>
-		<parameter type="bool" name="showtimers" displaytext="{tr(showtimers)}">0</parameter>
-		<parameter type="bool" name="channeldetails" displaytext="{tr(channeldetails)}">0</parameter>
-		<parameter type="bool" name="timerstoptime" displaytext="{tr(timerstoptime)}">0</parameter>
-		<parameter type="bool" name="recordingtime" displaytext="{tr(recordingtime)}">0</parameter>
-		<parameter type="bool" name="setupiconbar" displaytext="{tr(setupiconbar)}">0</parameter>
-		<parameter type="bool" name="coloredbuttons" displaytext="{tr(colordbuttons)}">0</parameter>
-		<parameter type="bool" name="tvgngdescriptionscroll" displaytext="{tr(tvgngdescriptionscroll)}">0</parameter>
+		<parameter type="bool" name="04_brightbackground" displaytext="{tr(brightbackground)}">0</parameter>
+		<parameter type="int" name="05_coloredbuttons" min="0" max="2" displaytext="{tr(coloredbuttons)}">0</parameter>
+		<parameter type="bool" name="06_setupiconbar" displaytext="{tr(setupiconbar)}">0</parameter>
+		<parameter type="int" name="07_fadetime" min="0" max="500" displaytext="{tr(fadetime)}">0</parameter>
+		<parameter type="bool" name="08_defaultcolumnwidth" displaytext="{tr(defaultcolumnwidth)}">0</parameter>
+		<parameter type="bool" name="09_showtimers" displaytext="{tr(showtimers)}">0</parameter>
+		<parameter type="bool" name="10_channeldetails" displaytext="{tr(channeldetails)}">0</parameter>
+		<parameter type="bool" name="11_timerstoptime" displaytext="{tr(timerstoptime)}">0</parameter>
+		<parameter type="bool" name="12_recordingtime" displaytext="{tr(recordingtime)}">0</parameter>
+		<parameter type="bool" name="13_tvgngdescriptionscroll" displaytext="{tr(tvgngdescriptionscroll)}">0</parameter>
     </menu>
 
     <!--
@@ -80,9 +80,9 @@
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>
 			<trans lang="de_DE">Zeige Icons im Setup-Menü</trans>
 		</token>
-		<token name="tr(colordbuttons)">
-			<trans lang="en_EN">Colored active buttons</trans>
-			<trans lang="de_DE">Farbige Auswahlbalken</trans>
+		<token name="tr(coloredbuttons)">
+			<trans lang="en_EN">Colored active buttons (0= no, 1= only border, 2= gradient)</trans>
+			<trans lang="de_DE">Farbige Auswahlbalken (0= nein, 1= nur Rand, 2= Farbverlauf)</trans>
 		</token>
 		<token name="tr(tvgngdescriptionscroll)">
 			<trans lang="en_EN">Scroll descriptions in TVGuideNG</trans>
