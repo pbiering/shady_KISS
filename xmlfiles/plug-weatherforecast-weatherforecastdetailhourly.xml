@@ -53,8 +53,8 @@
 			<drawimage imagetype="icon" path="{hourly[icon]}" x="0" y="7%" width="{rowheight}*0.6" height="{rowheight}*0.6"/>
 			<drawtext x="{rowheight}*0.8" y="{rowheight}*0.34" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(precipitationprobability)} {hourly[precipitationprobability]}%, {hourly[precipitationintensity]} l/qm" />
 			<drawtext x="{rowheight}*0.8" y="{rowheight}*0.64" width="{columnwidth}" font="{light}" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(windspeed)} {hourly[windspeed]} km/h {tr(from)} {hourly[windbearingstring]}" />
-			<drawtext name="temp" x="0.7*{columnwidth} + 0.17*{columnwidth} - {width(temp)}/2" font="{light}" y="{rowheight}*0.34" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{hourly[temperature]}°C" />
-			<drawtext name="felt" x="0.72*{columnwidth} + 0.17*{columnwidth} - {width(temp)}/2" font="{light}" y="{rowheight}*0.64" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(felt)} {hourly[apparenttemperature]}°C" />            
+			<drawtext name="temp" x="0.62*{columnwidth} + 0.17*{columnwidth} - {width(temp)}/2" font="{light}" y="{rowheight}*0.34" fontsize="{rowheight}*0.3" color="{clrLightGray}" text="{hourly[temperature]}°C" />
+			<drawtext name="felt" x="0.68*{columnwidth} + 0.17*{columnwidth} - {width(temp)}/2" font="{light}" y="{rowheight}*0.64" fontsize="{rowheight}*0.25" color="{clrLightGray}" text="{tr(felt)} {hourly[apparenttemperature]}°C" />            
 		</loop>
 	</tab>
 	<colorbuttons>

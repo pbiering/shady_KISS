@@ -25,11 +25,12 @@
 		<parameter type="bool" name="06_setupiconbar" displaytext="{tr(setupiconbar)}">0</parameter>
 		<parameter type="int" name="07_fadetime" min="0" max="500" displaytext="{tr(fadetime)}">0</parameter>
 		<parameter type="bool" name="08_defaultcolumnwidth" displaytext="{tr(defaultcolumnwidth)}">0</parameter>
-		<parameter type="bool" name="09_showtimers" displaytext="{tr(showtimers)}">0</parameter>
-		<parameter type="bool" name="10_channeldetails" displaytext="{tr(channeldetails)}">0</parameter>
-		<parameter type="bool" name="11_timerstoptime" displaytext="{tr(timerstoptime)}">0</parameter>
-		<parameter type="bool" name="12_recordingtime" displaytext="{tr(recordingtime)}">0</parameter>
-		<parameter type="bool" name="13_tvgngdescriptionscroll" displaytext="{tr(tvgngdescriptionscroll)}">0</parameter>
+		<parameter type="bool" name="09_showonlytimers" displaytext="{tr(showonlytimers)}">0</parameter>
+		<parameter type="bool" name="10_showtimersandinfos" displaytext="{tr(showtimersandinfos)}">0</parameter>
+		<parameter type="bool" name="11_channeldetails" displaytext="{tr(channeldetails)}">0</parameter>
+		<parameter type="bool" name="12_timerstoptime" displaytext="{tr(timerstoptime)}">0</parameter>
+		<parameter type="bool" name="13_recordingtime" displaytext="{tr(recordingtime)}">0</parameter>
+		<parameter type="bool" name="14_tvgngdescriptionscroll" displaytext="{tr(tvgngdescriptionscroll)}">0</parameter>
     </menu>
 
     <!--
@@ -68,9 +69,13 @@
 			<trans lang="en_EN">Show time of recordings</trans>
 			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
 		</token>       
-		<token name="tr(showtimers)">
-			<trans lang="en_EN">Show timers in mainmenu</trans>
-			<trans lang="de_DE">Zeige Timer im Hauptmenü</trans>
+		<token name="tr(showonlytimers)">
+			<trans lang="en_EN">Show only timers in mainmenu</trans>
+			<trans lang="de_DE">Zeige nur Timer im Hauptmenü</trans>
+		</token>
+		<token name="tr(showtimersandinfos)">
+			<trans lang="en_EN">Show timers and infos in mainmenu</trans>
+			<trans lang="de_DE">Zeige Timer und Infos im Hauptmenü</trans>
 		</token>
 		<token name="tr(fadetime)">
 			<trans lang="en_EN">Fade time in ms</trans>

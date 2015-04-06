@@ -24,7 +24,7 @@ Description:
 The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-skindesigner.
 
 
-1. Requirements:
+I. Requirements:
 
 	a. vdr-plugin-skindesigner
 	
@@ -33,7 +33,7 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 	c. A set of channellogos eg: http://creimer.net/channellogos/skindesigner-white-20150210.tar.bz2
 	
 	
-2. Install:
+II. Install:
 
 	a. First time:
 
@@ -50,43 +50,50 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 	git pull
 	
 		
-3. Setup:
+III. Setup:
 
-	a. Number of items in main and setup menu: min=8, max=10, default=10
+	1. "Number of items in main and setup menu": min=8, max=10, default=10
 	
-	b. Number of items in submenus (long): min=12, max=18, default=14
-		
-	c. Number of items in submenus (short): min=12, max=18, default =15
+	2. "Number of items in submenus (long)": min=12, max=18, default=14
 	
-	d. Bright backgoundgradient: yes, no, default=no
+	3. "Number of items in submenus (short)": min=12, max=18, default =15
 	
-	e. Colored active buttons: 0=no, 1=only border, 2=gradient, default=no
+	4. "Bright backgoundgradient": yes, no, default=no
 	
-	f. Show iconbar in setup-menu: yes, no, default=no
+	5. "Colored active buttons": 0=no, 1=only border, 2=gradient, default=no
 	
-	g. Fade time in ms: min=0, max=500, default=0
+	6. "Show iconbar in setup-menu": yes, no, default=no
+	
+	7. "Fade time in ms": min=0, max=500, default=0
 	
 		Used in displaychannel, -message, -audiotracks, -replay and -volume.
 		0 - 500 ms
 	
-	h. Defaultcolumnwidth: yes, no, default=no
+	8. "Defaultcolumnwidth": yes, no, default=no
 	
 		Preferably you test both settings with eg 
 		epgsearch-searchtimermenu or mailplugin
 		which setting sweet your needs.
+		If in doubt switch it to "no".
 	
-	If in doubt switch it to "no".
+	9. "Show only timers in mainmenu": yes, no, default=no
+		
+			Shows a list up to eight next timers in main menu. 
 	
-	i. Show timers in mainmenu: yes, no, default=no
+	10. "Show timers and infos in mainmenu": yes, no, default=no
 	
-	j. Show details (transponder) of channels: yes, no, default=no
+			shows up to seven timers and temps of CPU, GPU, load, wearherinfo.
+			
+	!!! take care to choose only one of 9. and 10. or set both to no !!!
+			
 	
-	k. Show timersstoptime: yes, no, default=no
+	11. "Show details (transponder) of channels": yes, no, default=no
 	
-	l. Show time of recordings: yes, no, default=no
+	12. "Show timersstoptime": yes, no, default=no
 	
-	m. Scroll descriptions in TVGuideNG: yes, no, default=no
-
+	13. "Show time of recordings": yes, no, default=no
+	
+	14. "Scroll descriptions in TVGuideNG": yes, no, default=no
 
 
 If you encounter any bugs, problems, or have any issues,

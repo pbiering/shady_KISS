@@ -1,9 +1,12 @@
 shady-KISS-skin (Revision) History
 -------------------------------------------
+2015-04-06:
+- Fixed areas in weatherforecast
 
 2015-04-05:
+- Added setupparameter "Show timers and infos in mainmenu"
 - Added third option for active menubars (gradient)
-- Added divider (hyphen) between title ad shorttetxts
+- Added divider (hyphen) between title and shorttetxts
 - Rearranged setup
 - Some cleanups
 
