@@ -21,15 +21,15 @@
     <linearGradient
        id="linearGradient2987">
       <stop
-         style="stop-color:#002938;stop-opacity:1;"
+         style="stop-color:#3d1000;stop-opacity:1;"
          offset="0"
          id="stop2989" />
       <stop
          id="stop2995"
          offset="0.49999776"
-         style="stop-color:#005e82;stop-opacity:1;" />
+         style="stop-color:#9a2a00;stop-opacity:1;" />
       <stop
-         style="stop-color:#002938;stop-opacity:1;"
+         style="stop-color:#3d1000;stop-opacity:1;"
          offset="1"
          id="stop2991" />
     </linearGradient>
@@ -93,7 +93,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

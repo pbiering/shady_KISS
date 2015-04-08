@@ -35,9 +35,9 @@
 			<areascroll condition="not{folder}++not{12_recordingtime}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="54%" width="40%" layer="4">
 				<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>
-			<!--<area condition="{folder}++not{12_recordingtime}" x="40%" width="8%" layer="3">
+			<area condition="{folder}++not{12_recordingtime}" x="40%" width="8%" layer="3">
 				<drawimage name="foldericon" imagetype="icon" path="ico_recfolder" x="0" width="{areawidth}" height="{areaheight}" valign="center" align="center"/>
-			</area>-->
+			</area>
 			<areascroll  condition="{folder}++not{12_recordingtime}++not{shorttext}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="54%" width="40%" layer="4">
 				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>
@@ -94,8 +94,10 @@
 			</area>
 			<area condition="{folder}++{hasposter}" x="17%" y="0" width="20%" height="60%" layer="4">				
 				<drawtext condition="eq({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recording)}" />
-				<drawtext condition="gt({numrecordingsfolder}, 1)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recordings)}" />
-				<drawtext name="newrecordingsfolder" x="0" y="55%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{newrecordingsfolder} {tr(new)}" />
+				<drawtext condition="gt({numrecordingsfolder}, 1)++lt({numrecordingsfolder}, 99)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recordings)}" />
+				<drawtext name="newrecordingsfolder" condition="gt({numrecordingsfolder}, 1)++lt({numrecordingsfolder}, 99)" x="0" y="55%" align="center" width="100%" font="{light}" fontsize="12%" color="{clrLightGray}" text="{newrecordingsfolder} {tr(new)}" />
+				<drawtext condition="gt({numrecordingsfolder}, 99)" name="numrecordingsfolder" x="0" y="40%" align="center" width="100%" font="{light}" fontsize="10%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recordings)}" />
+				<drawtext name="newrecordingsfolder" condition="gt({numrecordingsfolder}, 99)" x="0" y="55%" align="center" width="100%" font="{light}" fontsize="10%" color="{clrLightGray}" text="{newrecordingsfolder} {tr(new)}" />
 			</area>
 			<area condition="{folder}++{hasposter}" x="5%" y="0" width="21%" height="70%" layer="4">
 				<drawimage condition="{hasposter}" name="poster" x="0" y="12%" height="{areawidth}*0.75" width="{areawidth}*0.5" imagetype="image" path="{posterpath}" />

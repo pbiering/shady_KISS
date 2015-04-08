@@ -165,7 +165,7 @@
 	<scrollbar>
 		<area condition="lt({height},1000)" x="95%" y="20%" width="3%" height="50%" layer="3">
 			<drawimage   x="15%" width="{areawidth}*0.9" height="{areaheight}" imagetype="skinpart" path="shadowScrollMain" />
-			<drawimage x="28%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.15" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
+			<drawimage x="28%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</scrollbar>
 </menumain>

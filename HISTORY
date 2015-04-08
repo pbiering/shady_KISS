@@ -1,5 +1,11 @@
-shady-KISS-skin (Revision) History
+shady-KISS-skin History
 -------------------------------------------
+2015-04-08:
+- Fixed area of setupiconbar
+
+2015-04-07:
+- Fixed fontsize of {numrecordingsfolder} > 99
+
 2015-04-06:
 - Fixed areas in weatherforecast
 

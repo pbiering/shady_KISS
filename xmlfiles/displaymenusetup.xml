@@ -10,9 +10,9 @@
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMainKiss" />           
 		</area>        
 		<area x="0" y="0" width="100%" height="11%" layer="3">
-			<drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />           
+			<drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
-		<area condition="{06_setupiconbar}" x="0" y="78%" width="100%" height="24%" layer="3">
+		<area condition="{06_setupiconbar}" x="0" y="79%" width="100%" height="20%" layer="3">
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="setupIcons" />           
 		</area>             
 	</background>
@@ -36,7 +36,7 @@
 			<drawtext condition="{yellow1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{yellow}" />
 			<drawimage  condition="{yellow1}++isset{yellow}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonYellowMain" />           
 			<drawtext condition="{blue1}" x="0" y="{areaheight}*0.07" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{blue}" />
-			<drawimage  condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />           
+			<drawimage  condition="{blue1}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 		<area x="14%" y="73%" width="13%" height="5%" layer="3">
 			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
@@ -92,9 +92,9 @@
 		</listelement>
 
 		<currentelement delay="0" fadetime="300">
-			<area condition="{06_setupiconbar}" x="0" y="110%" width="100%" height="60%" layer="4">
-				<drawimage imagetype="menuicon" path="{icon}" width="{areawidth}" height="{areaheight}"/>
-			</area>        
+			<area x="0" y="100%" width="100%" height="60%" layer="4">
+				<drawimage imagetype="menuicon" path="{icon}" width="100%" height="100%"/>
+			</area>
 		</currentelement>
 	</menuitems>
 
