@@ -33,7 +33,7 @@
 			</area>
 			<area  x="54%" width="2%" layer="4">
 				<drawimage condition="{timerfull}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
-			</area>       		
+			</area>
 <!-- WHATSON -->
 			<area condition="not{separator}++{whatson}" x="42%" width="7%" layer="4">
 				<drawtext x="0" width="100%" valign="center" font="{light}" fontsize="55%" color="{clrLightGray}" text="{day} {printf('%02d.%02d', daynumeric, month)}."/>

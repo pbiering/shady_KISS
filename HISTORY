@@ -1,5 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
+
+2015-04-09:
+- Increased fontsize of current and nexttitle in displaychannel if subtitles are empty 
+
 2015-04-08:
 - Reworked messagesbars
 - Fixed area of setupiconbar

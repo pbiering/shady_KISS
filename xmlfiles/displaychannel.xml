@@ -22,26 +22,31 @@
 
 	<epginfo>
 		 <area x="19%" y="77%" width="15%" height="7%" layer="3">
-			<drawtext x="0" width="{areawidth}" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}"/>
+			<drawtext x="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}"/>
+		</area>
+		<area condition="isset{currentsubtitle}" x="31%" y="77%" width="55%" height="7%" layer="3">
+			<drawtext x="0" y="0" font="{light}" fontsize="53%" color="{clrLightGray}" text="{currenttitle}"/>
+			<drawtext x="0" y="55%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{currentsubtitle}"/>
+		</area>
+		<area condition="empty{currentsubtitle}" x="31%" y="77%" width="55%" height="7%" layer="3">
+			<drawtext x="0" y="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currenttitle}"/>
 		</area>
 		<area x="85%" y="77%" width="13%" height="7%" layer="3">
 			<drawtext align="right" y="0" font="{light}" fontsize="50%" color="{clrLightGray}" text="{currentduration} min" />
 			<drawtext align="right" y="45%" font="{light}" fontsize="50%" color="{clrLightGray}" text="+ {currentremaining} min" />
 		</area>
-		<area x="31%" y="77%" width="55%" height="7%" layer="3">
-			<drawtext x="0" y="0" width="100%"  font="{light}" fontsize="53%" color="{clrLightGray}" text="{currenttitle}"/>
-			<drawtext x="0" y="55%" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{currentsubtitle}"/>
-		</area>
-
 		<area x="19%" y="87%" width="15%" height="7%" layer="3">
-			<drawtext x="0" y="10%" width="{areawidth}" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nextstart} - {nextstop}"/>
+			<drawtext x="0" y="10%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nextstart} - {nextstop}"/>
 		</area>
-		<area x="85%" y="87%" width="13%" height="7%" layer="3">
+		<area condition="empty{nextsubtitle}" x="31%" y="87%" width="55%" height="7%" layer="3">
+			<drawtext x="0" y="10%" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nexttitle}"/>
+		</area>
+		<area condition="isset{nextsubtitle}" x="31%" y="87%" width="55%" height="7%" layer="3">
+			<drawtext x="0" y="10%" font="{light}" fontsize="53%" color="{clrLightGray}" text="{nexttitle}"/>
+			<drawtext x="0" y="65%"  font="{light}" fontsize="40%" color="{clrLightGray}" text="{nextsubtitle}"/>
+		</area>
+				<area x="85%" y="87%" width="13%" height="7%" layer="3">
 			<drawtext align="right" y="10%" font="{light}" fontsize="50%" color="{clrLightGray}" text="{nextduration} min" />
-		</area>
-		<area x="31%" y="87%" width="55%" height="7%" layer="3">
-			<drawtext x="0" y="10%" width="100%"  font="{light}" fontsize="53%" color="{clrLightGray}" text="{nexttitle}"/>
-			<drawtext x="0" y="65%" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{nextsubtitle}"/>
 		</area>
 	</epginfo>
 
