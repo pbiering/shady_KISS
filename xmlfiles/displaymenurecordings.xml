@@ -59,11 +59,6 @@
 				<drawimage condition="not{folder}++{cutted}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueFL" />
 				<drawimage condition="not{folder}++{cutted}++{new}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="green_blueFL" />
 			</area>
-			
-			
-			<areascroll condition="not{folder}++{13_recordingtime}++empty{shorttext}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="58%" width="34%" layer="4">
-				<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-			</areascroll>
 			<areascroll condition="not{folder}++{13_recordingtime}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="58%" width="34%" layer="4">
 				<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>

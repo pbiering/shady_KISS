@@ -15,7 +15,7 @@
         <color name="clrTransWhite">C0FFFFFF</color>
         <color name="clrWhite">FFFFFFFF</color>
         <color name="clrDarkGray">FF808080</color>
-        <color name="clrLightGray">FFD2D2D2</color>     
+        <color name="clrLightGray">FFD2D2D2</color>
         <color name="clrTransparent">00000000</color>
         <color name="clrHigh">C8FF4500</color>
         <color name="clrActive">C8FF4500</color>
