@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2015-04-10:
+- Added recchannelname in displaymenudetailrecordings
+
 
 2015-04-09:
 - Increased fontsize of current and nexttitle in displaychannel if subtitles are empty
