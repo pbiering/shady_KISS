@@ -5,6 +5,7 @@ shady-KISS-skin History
 - Lightened textcolor
 - Removed useless bracket in weatherforecastdetailcurrent
 - New shadowbackgound for weatherforecastdetailcurrent
+- Removed {visibility} in weatherforecastcurrent
 
 
 2015-04-09:

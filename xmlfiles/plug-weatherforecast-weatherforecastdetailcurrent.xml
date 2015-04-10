@@ -82,11 +82,11 @@
         <drawtext x="0" y="56%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(precipitationintensity)}: {precipitationintensity} l/qm" />        
         <drawtext x="0" y="61%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(humidity)}: {humidity} %" />
 
-        <drawtext x="0" y="70%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(visibility)}: {visibility} km" />
-        <drawtext x="0" y="75%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(cloudcover)}: {cloudcover} %" />
-        <drawtext x="0" y="80%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(pressure)}: {pressure} HPa" />
-        <drawtext x="0" y="85%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(ozone)}: {ozone} DU" />
-        <drawtext x="0" y="90%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windspeed)}: {windspeed} km/h aus {windbearingstring}" />
+        <!--<drawtext x="0" y="70%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(visibility)}: {visibility} km" />-->
+        <drawtext x="0" y="71%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(cloudcover)}: {cloudcover} %" />
+        <drawtext x="0" y="76%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(pressure)}: {pressure} HPa" />
+        <drawtext x="0" y="81%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(ozone)}: {ozone} DU" />
+        <drawtext x="0" y="86%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{tr(windspeed)}: {windspeed} km/h aus {windbearingstring}" />
     </tab>
 	<colorbuttons>
 		<area x="0" y="0" layer="0">
