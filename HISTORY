@@ -3,6 +3,8 @@ shady-KISS-skin History
 2015-04-10:
 - Added recchannelname in displaymenudetailrecordings
 - Lightened textcolor
+- Removed useless bracket in weatherforecastdetailcurrent
+- New shadowbackgound for weatherforecastdetailcurrent
 
 
 2015-04-09:
