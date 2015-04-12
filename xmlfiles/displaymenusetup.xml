@@ -7,14 +7,14 @@
 			<drawrectangle  x="0%" y="18%" width="54%" height="54%" color="{clrTransparent}" />        
 		</area>
 		<area x="0" y="0" width="100%" height="100%" layer="2">
-			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMainKiss" />           
+			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMainKiss" />
 		</area>        
 		<area x="0" y="0" width="100%" height="11%" layer="3">
 			<drawimage  x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
 		<area condition="{06_setupiconbar}" x="0" y="79%" width="100%" height="20%" layer="3">
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="setupIcons" />           
-		</area>             
+		</area>
 	</background>
 
 	<header>
@@ -92,7 +92,7 @@
 		</listelement>
 
 		<currentelement delay="0" fadetime="300">
-			<area x="0" y="100%" width="100%" height="60%" layer="4">
+			<area condition="{06_setupiconbar}" x="0" y="100%" width="100%" height="60%" layer="4">
 				<drawimage imagetype="menuicon" path="{icon}" width="100%" height="100%"/>
 			</area>
 		</currentelement>
