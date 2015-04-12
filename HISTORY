@@ -1,11 +1,15 @@
 shady-KISS-skin History
 -------------------------------------------
+2015-04-12:
+- Fixed conditions for shorttext in displaymenuschedules
+
 2015-04-10:
 - Added recchannelname in displaymenudetailrecordings
 - Lightened textcolor
 - Removed useless bracket in weatherforecastdetailcurrent
 - New shadowbackgound for weatherforecastdetailcurrent
 - Removed {visibility} in weatherforecastcurrent
+- Some improvements for favorites in displaymenuschedules
 
 
 2015-04-09:
