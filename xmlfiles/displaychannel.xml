@@ -90,7 +90,7 @@
 			<drawtext condition="not{hasVT}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="VTX"/>
 		</area>      
 		<area x="78%" y="95%" width="9%" height="4%" layer="3">     
-			<drawtext condition="{isRecording}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrRed}" text="REC" />
+			<drawtext condition="{isRecording}" x="0" y="0" animtype="blink" animfreq="1000" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrRed}" text="REC" />
 			<drawtext condition="not{isRecording}" x="0" y="0" width="{areawidth}"  valign="center" align="center" font="{light}" fontsize="65%" color="{clrDarkGray}" text="REC"/>
 		</area>
 	</statusinfo>
