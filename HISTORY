@@ -1,7 +1,12 @@
 shady-KISS-skin History
 -------------------------------------------
 2015-04-12:
+- Reworked setup
+
+2015-04-12:
 - Fixed conditions for shorttext in displaymenuschedules
+- Fixed displaymenusetup
+- Added dedicated columnhandling to systeminfo, fritzbox and setup in displaymenudefault
 
 2015-04-10:
 - Added recchannelname in displaymenudetailrecordings
@@ -10,7 +15,6 @@ shady-KISS-skin History
 - New shadowbackgound for weatherforecastdetailcurrent
 - Removed {visibility} in weatherforecastcurrent
 - Some improvements for favorites in displaymenuschedules
-
 
 2015-04-09:
 - Increased fontsize of current and nexttitle in displaychannel if subtitles are empty

@@ -1,8 +1,8 @@
  <menudefault x="0" y="0" width="100%" height="100%" fadetime="0">
 	<background>
 		<area x="0" y="0" width="100%" height="100%" layer="1">
-			<drawimage condition="not{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
-			<drawimage condition="{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />                    
+			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />                    
 		</area>
 		<area x="0" y="0" width="100%" height="100%" layer="2">
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />           
@@ -74,13 +74,13 @@
 	<!-- IMPORTANT: menuitemwidth and determinatefont have to be defined here. menuitemwidth defines the total width of the 
 	default menu items, determinatefont the function which sets the actual font to use. With that it is possible to determinate
 	the correct column widths -->
-	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" menuitemwidth="94%" determinatefont="column1" numlistelements="{02_numlongsubmenuitems}">
+	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" menuitemwidth="94%" determinatefont="column1" numlistelements="{numLongSubmenuitems}">
 		<listelement>
 				<area condition="not{separator}" x="2%" width="92%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
+				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
+				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
+				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 			</area>
 <!--separators-->
 			<area condition="{separator}" x="2%" width="92%" layer="3">

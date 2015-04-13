@@ -2,8 +2,8 @@
 	
 	<background>
 		<area x="0" y="0" width="100%" height="100%" layer="1">
-			<drawimage condition="not{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
-			<drawimage condition="{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
+			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
 			<drawrectangle  x="1%" y="59%" width="39%" height="39%" color="{clrTransparent}" />           
 		</area>
 		<area x="0" y="0" width="100%" height="100%" layer="2">
@@ -22,14 +22,14 @@
 		</area>
 	</header>
 
-	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{03_numshortsubmenuitems}"> 
+	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{numShortSubmenuitems}"> 
 		<listelement>
 			<area  condition="not{whatsonfavorites}" x="53%" width="42%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
 				<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
+				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
+				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
+				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
 			</area>
 			<area  x="54%" width="2%" layer="4">
 				<drawimage condition="{timerfull}++not{whatsonfavorites}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
@@ -37,9 +37,9 @@
 			<area  condition="{whatsonfavorites}" x="55%" width="39%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG"/>
 				<drawimage condition="not{current}++{separator}" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonSeparator"/>
-				<drawimage condition="{current}++eq({05_coloredbuttons},0)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 2)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
-				<drawimage condition="{current}++eq({05_coloredbuttons},1)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
+				<drawimage condition="{current}++eq({coloredButtons},0)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG"/>
+				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient"/>
+				<drawimage condition="{current}++eq({coloredButtons},1)" x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color"/>
 			</area>
 			<area  x="57%" width="2%" layer="4">
 				<drawimage condition="{timerfull}++{whatsonfavorites}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />

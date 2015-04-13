@@ -1,8 +1,8 @@
 <menuchannels x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="1%" scaletvy="58%" scaletvwidth="40%" scaletvheight="40%">
 	<background>
 		<area x="0" y="0" width="100%" height="100%" layer="1">
-			<drawimage condition="not{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
-			<drawimage condition="{04_brightbackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />            
+			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />            
 			<drawrectangle  x="1%" y="59%" width="39%" height="39%" color="{clrTransparent}" />  
 		</area>
 		<area x="0" y="0" width="100%" height="100%" layer="2">
@@ -19,7 +19,7 @@
 		</area>
 	</header>	    
 
-	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{03_numshortsubmenuitems}">
+	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{numShortSubmenuitems}">
 
 		<listelement>
 			<area condition="not{separator}" x="42%" width="6%" layer="3">
@@ -28,17 +28,17 @@
 			<area  x="48%" width="47%" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG" />
 				<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparator" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
-				<drawimage condition="{current}++eq({05_coloredbuttons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
+				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
+				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />
+				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
 			</area>
-			<areascroll condition="not{separator}++{10_channeldetails}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="23%" layer="3">
+			<areascroll condition="not{separator}++{showChannelDetails}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="23%" layer="3">
 				<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{printf('%4d', number)}    {name}" />
 			</areascroll>
-			<area condition="not{separator}++{10_channeldetails}" x="73%" width="21%" layer="3">
+			<area condition="not{separator}++{showChannelDetails}" x="73%" width="21%" layer="3">
 				<drawtext name="menutext" x="0" align="right" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{sourcedescription}, Transp. {transponder}" />
 			</area>
-			<areascroll condition="not{separator}++not{10_channeldetails}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="44%" layer="3">
+			<areascroll condition="not{separator}++not{showChannelDetails}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="50%" width="44%" layer="3">
 				<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{printf('%4d', number)}    {name}" />
 			</areascroll>                      
 			<area condition="{separator}" x="48%" width="48%" layer="3">
