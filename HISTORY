@@ -2,8 +2,9 @@ shady-KISS-skin History
 -------------------------------------------
 2015-04-12:
 - Reworked setup
-- Added blink for REC-text in displayshannel
+- Added blink for REC-text in displaychannel
 - Small changes of messages
+- Added three last recordings to showTimersRecordingsandInfos-option in main menu
 
 2015-04-12:
 - Fixed conditions for shorttext in displaymenuschedules
