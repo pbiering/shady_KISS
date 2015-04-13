@@ -120,7 +120,7 @@
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column3}" />
 			</area>
 <!--fritzbox-->
-<!--epgsearch-suchtimer-->
+<!--epgsearch-->
 <!--default-->
 			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
 				<drawtext name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />

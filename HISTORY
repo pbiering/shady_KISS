@@ -2,6 +2,8 @@ shady-KISS-skin History
 -------------------------------------------
 2015-04-12:
 - Reworked setup
+- Added blink for REC-text in displayshannel
+- Small changes of messages
 
 2015-04-12:
 - Fixed conditions for shorttext in displaymenuschedules
