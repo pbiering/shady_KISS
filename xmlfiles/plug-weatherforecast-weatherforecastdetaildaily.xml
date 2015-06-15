@@ -23,18 +23,6 @@
 	</scrollbar>
 
 		<colorbuttons>
-		<area  x="43%" y="92%" width="13%" height="5%" layer="3">
-			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />         
-		</area>
-		<area x="56%" y="92%" width="13%" height="5%" layer="3">
-			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
-		</area>
-		<area x="69%" y="92%" width="13%" height="5%" layer="3">
-			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
-		</area>
-		<area x="82%" y="92%" width="13%" height="5%" layer="3">
-			<drawimage x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlancMain" />
-		</area>
 	</colorbuttons>
 
 	<detailheader>

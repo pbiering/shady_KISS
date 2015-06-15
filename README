@@ -52,6 +52,8 @@ II. Install:
 		
 III. Setup:
 
+!!! TODO!!! NOT CURRENT STATUS OF shady_KISS !!!
+
 	1. "Number of items in main and setup menu": min=8, max=10, default=10
 	
 	2. "Number of items in submenus (long)": min=12, max=18, default=14
