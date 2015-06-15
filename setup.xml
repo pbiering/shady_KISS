@@ -24,16 +24,16 @@
 			<parameter type="int" name="numShortMenuitems" min="8" max="10" displaytext="{tr(numShortMenuitems)}">10</parameter>
 			<parameter type="int" name="numLongSubmenuitems" min="12" max="18" displaytext="{tr(numLongSubmenuitems)}">15</parameter>
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
-			<parameter type="bool" name="currentInfo" displaytext="{tr(currentInfo)}">0</parameter>
+			<parameter type="bool" name="currentInfo" displaytext="{tr(currentInfo)}">1</parameter>
 		</submenu>
 		<submenu name="miscellaneous" displaytext="{tr(miscellaneous)}">
-			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">1</parameter>
-			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">0</parameter>
+			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
+			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">0</parameter>
-			<parameter type="int" name="menuFadetime" min="0" max="500" displaytext="{tr(menuFadetime)}">0</parameter>
+			<!--<parameter type="int" name="menuFadetime" min="0" max="500" displaytext="{tr(menuFadetime)}">0</parameter>
 			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
 			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">0</parameter>
-			<parameter type="bool" name="showRecordingTime" displaytext="{tr(showRecordingTime)}">0</parameter>
+			<parameter type="bool" name="showRecordingTime" displaytext="{tr(showRecordingTime)}">0</parameter>-->
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 		</submenu>
     </menu>
@@ -47,8 +47,8 @@
 			<trans lang="de_DE">Hauptmenü</trans>
 		</token>
 		<token name="tr(menuItems)">
-			<trans lang="en_EN">Number of menu items </trans>
-			<trans lang="de_DE">Anzahl der Menüpunkte</trans>
+			<trans lang="en_EN">VDR-Lists-Setup </trans>
+			<trans lang="de_DE">VDR-Listen-Setup</trans>
 		</token>
 		<token name="tr(miscellaneous)">
 			<trans lang="en_EN">Miscellaneous </trans>
