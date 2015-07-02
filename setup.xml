@@ -16,32 +16,47 @@
 <!--
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
 -->
-		<submenu name="mainMenu" displaytext="{tr(mainMenu)}">
+		<submenu name="Main-Menu" displaytext="{tr(mainMenu)}">
 			<parameter type="bool" name="showOnlyTimers" displaytext="{tr(showOnlyTimers)}">0</parameter>
 			<parameter type="bool" name="showTimersRecordingsandInfos" displaytext="{tr(showTimersRecordingsandInfos)}">0</parameter>
 		</submenu>
-		<submenu name="menuItems" displaytext="{tr(menuItems)}">
+		<submenu name="Channel-Info" displaytext="{tr(channelInfo)}">
+			<parameter type="bool" name="channelName" displaytext="{tr(channelName)}">1</parameter>
+			<parameter type="bool" name="dateTime" displaytext="{tr(dateTime)}">1</parameter>
+			<parameter type="bool" name="weatherInfo" displaytext="{tr(weatherInfo)}">0</parameter>
+			<parameter type="bool" name="ecmInfo" displaytext="{tr(ecmInfo)}">0</parameter>
+			<parameter type="bool" name="showChannelinfoPoster" displaytext="{tr(showChannelinfoPoster)}">0</parameter>
+		</submenu>
+		<submenu name="Recordings" displaytext="{tr(recordingsmarker)}">
+			<parameter type="int" name="00_numRecordingsmenuitems" min="12" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
+			<parameter type="int" name="03_newNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(03_newNotCutted-recordingsMarker)}">2</parameter>
+			<parameter type="int" name="04_newCutted-recordingsMarker" min="0" max="9" displaytext="{tr(04_newCutted-recordingsMarker)}">4</parameter>
+			<parameter type="int" name="05_notNewNotWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(05_notNewNotWatchedNotCutted-recordingsMarker)}">9</parameter>
+			<parameter type="int" name="06_notNewNotWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(06_notNewNotWatchedCutted-recordingsMarker)}">5</parameter>
+			<parameter type="int" name="07_notNewWatchedNotCutted-recordingsMarker" min="0" max="9" displaytext="{tr(07_notNewWatchedNotCutted-recordingsMarker)}">6</parameter>
+			<parameter type="int" name="08_notNewWatchedCutted-recordingsMarker" min="0" max="9" displaytext="{tr(08_notNewWatchedCutted-recordingsMarker)}">1</parameter>
+		</submenu>
+		<submenu name="Lists-Setup" displaytext="{tr(menuItems)}">
 			<parameter type="int" name="numShortMenuitems" min="8" max="10" displaytext="{tr(numShortMenuitems)}">10</parameter>
 			<parameter type="int" name="numLongSubmenuitems" min="12" max="18" displaytext="{tr(numLongSubmenuitems)}">15</parameter>
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
 			<parameter type="bool" name="currentInfo" displaytext="{tr(currentInfo)}">1</parameter>
 		</submenu>
-		<submenu name="miscellaneous" displaytext="{tr(miscellaneous)}">
+		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">0</parameter>
-			<!--<parameter type="int" name="menuFadetime" min="0" max="500" displaytext="{tr(menuFadetime)}">0</parameter>
-			<parameter type="bool" name="showChannelDetails" displaytext="{tr(showChannelDetails)}">0</parameter>
-			<parameter type="bool" name="showTimerStopTime" displaytext="{tr(showTimerStopTime)}">0</parameter>
-			<parameter type="bool" name="showRecordingTime" displaytext="{tr(showRecordingTime)}">0</parameter>-->
+			<parameter type="int" name="fontSizeDescr" min="34" max="50" displaytext="{tr(fontSizeDescr)}">34</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
+			<parameter type="bool" name="showReplayPoster" min="30" max="50" displaytext="{tr(showReplayPoster)}">0</parameter>
+			
 		</submenu>
-    </menu>
+	</menu>
 
     <!--
     translations of displaytexts
     -->
-    <translations>
+	<translations>
 		<token name="tr(mainMenu)">
 			<trans lang="en_EN">Main menu</trans>
 			<trans lang="de_DE">Hauptmenü</trans>
@@ -66,21 +81,13 @@
 			<trans lang="en_EN">Number of items in submenus (short)</trans>
 			<trans lang="de_DE">Anzahl der Elemente in Submenüs (kurz)</trans>
 		</token>
+		<token name="tr(00_numRecordingsmenuitems)">
+			<trans lang="en_EN">Number of items in recordingsmenu (default=15)</trans>
+			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmenü (default=15)</trans>
+		</token>
 		<token name="tr(brightBackground)">
 			<trans lang="en_EN">Bright backgroundgradient</trans>
 			<trans lang="de_DE">Heller Hintergrundverlauf</trans>
-		</token>
-		<token name="tr(showChannelDetails)">
-			<trans lang="en_EN">Show details of channels</trans>
-			<trans lang="de_DE">Zeige Kanaldetails</trans>
-		</token>
-		<token name="tr(showTimerStopTime)">
-			<trans lang="en_EN">Show timersstoptime</trans>
-			<trans lang="de_DE">Zeige Endzeit für Timer</trans>
-		</token>        
-		<token name="tr(showRecordingTime)">
-			<trans lang="en_EN">Show time of recordings</trans>
-			<trans lang="de_DE">Zeige Uhrzeit der Aufnahmen</trans>
 		</token>       
 		<token name="tr(showOnlyTimers)">
 			<trans lang="en_EN">Show only timers in mainmenu</trans>
@@ -89,10 +96,6 @@
 		<token name="tr(showTimersRecordingsandInfos)">
 			<trans lang="en_EN">Show timers, last recordings and infos in mainmenu</trans>
 			<trans lang="de_DE">Zeige Timer, letzte Aufnahmen und Infos im Hauptmenü</trans>
-		</token>
-		<token name="tr(menuFadetime)">
-			<trans lang="en_EN">Fadetime of menus in ms</trans>
-			<trans lang="de_DE">Einblendzeit der Menüs in ms</trans>
 		</token>
 		<token name="tr(setupIconbar)">
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>
@@ -106,9 +109,71 @@
 			<trans lang="en_EN">Scroll descriptions in TVGuideNG</trans>
 			<trans lang="de_DE">Scrolltext bei Beschreibungen in TVGuideNG</trans>
 		</token>
+		<token name="tr(showReplayPoster)">
+			<trans lang="en_EN">Show posters in replay-panel</trans>
+			<trans lang="de_DE">Zeige Poster im Wiedergabe-Paneel</trans>
+		</token>
 		<token name="tr(currentInfo)">
 			<trans lang="en_EN">Info for active listentry</trans>
 			<trans lang="de_DE">Info für aktiven Listeneintrag</trans>
+		</token>
+		<token name="tr(fontSizeDescr)">
+			<trans lang="en_EN">Fontsize descriptions</trans>
+			<trans lang="de_DE">Schriftgröße Beschreibungen</trans>
+		</token>
+<!--channelInfo-->
+		<token name="tr(channelInfo)">
+			<trans lang="en_EN">Channel-Info</trans>
+			<trans lang="de_DE">Kanal-Info</trans>
+		</token>
+		<token name="tr(channelName)">
+			<trans lang="en_EN">Show Channelname</trans>
+			<trans lang="de_DE">Zeige Kanalnamen</trans>
+		</token>
+		<token name="tr(dateTime)">
+			<trans lang="en_EN">Show date and time</trans>
+			<trans lang="de_DE">Zeige Datum und Zeit</trans>
+		</token>
+		<token name="tr(weatherInfo)">
+			<trans lang="en_EN">Show weatherinfos</trans>
+			<trans lang="de_DE">Zeige Wetterinfos</trans>
+		</token>
+		<token name="tr(ecmInfo)">
+			<trans lang="en_EN">Show ecm-infos</trans>
+			<trans lang="de_DE">Zeige ecm-Infos</trans>
+		</token>
+		<token name="tr(showChannelinfoPoster)">
+			<trans lang="en_EN">Shows Posters in Channel-Info</trans>
+			<trans lang="de_DE">Zeige Poster in der Kanalinfo</trans>
+		</token>
+<!--RecordingMarkersProgress-->
+		<token name="tr(recordingsmarker)">
+			<trans lang="en_EN">Settings menu Recordings</trans>
+			<trans lang="de_DE">Einstellungen Menü Aufzeichnungen</trans>
+		</token>
+		<token name="tr(03_newNotCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for unseen, not cutted recordings</trans>
+			<trans lang="de_DE">Marker für ungesehene, nicht geschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(04_newCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for unseen, cutted recordings</trans>
+			<trans lang="de_DE">Marker für ungesehene, geschnittene Aufnahmen</trans>
+		</token>        
+		<token name="tr(05_notNewNotWatchedNotCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &lt; 85% not cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &lt; 85%, nicht geschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(06_notNewNotWatchedCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &lt; 85% cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &lt; 85%, geschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(07_notNewWatchedNotCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &gt; 85% not cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &gt; 85%, nicht geschnittene Aufnahmen</trans>
+		</token>
+		<token name="tr(08_notNewWatchedCutted-recordingsMarker)">
+			<trans lang="en_EN">Marker for seen &gt; 85% cutted recordings</trans>
+			<trans lang="de_DE">Marker für gesehen &gt; 85%, geschnittene Aufnahmen</trans>
 		</token>
 	</translations>
 </setup>

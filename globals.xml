@@ -191,6 +191,10 @@
             <trans lang="en_EN">Pause</trans>
             <trans lang="de_DE">Pause</trans>
         </token>
+        <token name="tr(recs)">
+            <trans lang="en_EN">recs</trans>
+            <trans lang="de_DE">Aufn</trans>
+        </token>
          <token name="tr(new)">
             <trans lang="en_EN">new</trans>
             <trans lang="de_DE">neu</trans>
@@ -288,8 +292,8 @@
             <trans lang="de_DE">für</trans>
         </token>
         <token name="tr(recordedat)">
-        <trans lang="en_EN">rec at</trans>
-            <trans lang="de_DE">rec am</trans>
+        <trans lang="en_EN">Recorded at</trans>
+            <trans lang="de_DE">Aufgenommen am</trans>
         </token>
        <token name="tr(replayends)">
             <trans lang="en_EN">Replay ends</trans>

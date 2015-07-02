@@ -3,7 +3,7 @@
 
 <displayvolume x="0" y="93%" width="100%" height="7%" fadetime="{menuFadetime}">
 	<background>
-		<area x="0" y="0" width="100%" height="100%" layer="1">
+		<area x="0" y="0" width="100%" height="100%" transparency="15" layer="1">
 			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayControl"/>
 		</area>
 		<area x="24%" y="0" width="52%" height="100%" layer="2">
@@ -18,6 +18,6 @@
 		</area>
 		<area x="25%" y="40%" width="50%" height="30%" layer="3">
 			<drawimage condition="not{mute}" x="0" y="0" width="{volume}/{maxvolume}*{areawidth}" height="{areaheight}*0.7" imagetype="skinpart" path="replayProgress"/>
-		</area>        
+		</area>
 	</volume>
 </displayvolume>

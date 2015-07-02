@@ -14,7 +14,7 @@
    height="270"
    id="svg4915"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91+devel r13930"
    sodipodi:docname="gradientChannel.svg">
   <defs
      id="defs4917">
@@ -47,11 +47,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="948.69801"
-     inkscape:cy="146.03077"
+     inkscape:zoom="0.59479167"
+     inkscape:cx="960"
+     inkscape:cy="135"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -79,14 +79,34 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-782.36218)">
+     transform="translate(0,-782.36218)"
+     style="opacity:0.95">
     <rect
-       style="fill:url(#linearGradient4931);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:url(#linearGradient4931);fill-opacity:1;fill-rule:nonzero;stroke:none;opacity:1"
        id="rect4923"
        width="1920"
        height="270"
        x="-1920"
        y="-1052.3622"
        transform="scale(-1,-1)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Ebene 2">
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.43600002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4153"
+       width="1920"
+       height="1.0000001"
+       x="0"
+       y="-1.5694755e-07" />
+    <rect
+       style="opacity:1;fill:#373938;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.43599999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4155"
+       width="1920"
+       height="1.0000001"
+       x="0"
+       y="269" />
   </g>
 </svg>

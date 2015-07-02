@@ -14,19 +14,19 @@
    height="3"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91+devel r13930"
    sodipodi:docname="timeBar.svg">
   <defs
      id="defs4">
     <linearGradient
        id="linearGradient2987">
       <stop
-         style="stop-color:#002938;stop-opacity:1;"
+         style="stop-color:#00161f;stop-opacity:1"
          offset="0"
          id="stop2989" />
       <stop
          id="stop2995"
-         offset="0.51751161"
+         offset="0.60001081"
          style="stop-color:#005e82;stop-opacity:1;" />
       <stop
          style="stop-color:#002938;stop-opacity:1;"
@@ -36,13 +36,12 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient2987"
-       id="linearGradient3000"
-       gradientUnits="userSpaceOnUse"
-       x1="185"
-       y1="1056.6511"
-       x2="185"
-       y2="1017.9984"
-       gradientTransform="matrix(3,0,0,0.1,0,947.1247)" />
+       id="linearGradient4152"
+       x1="1.4977219"
+       y1="1052.3696"
+       x2="1.4977219"
+       y2="1049.189"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -51,16 +50,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="63.356768"
-     inkscape:cx="5.3179748"
+     inkscape:zoom="193.04015"
+     inkscape:cx="1.7124713"
      inkscape:cy="1.6166616"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1005"
-     inkscape:window-x="-2"
-     inkscape:window-y="25"
+     inkscape:window-width="1680"
+     inkscape:window-height="966"
+     inkscape:window-x="-4"
+     inkscape:window-y="32"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -84,7 +83,7 @@
      id="layer1"
      transform="translate(0,-1049.3622)">
     <path
-       style="fill:url(#linearGradient3000);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:url(#linearGradient4152);fill-opacity:1;fill-rule:nonzero;stroke:none"
        d="m 0,1049.3622 0,3 3,0 0,-3 -3,0 z"
        id="rect2985"
        inkscape:connector-curvature="0" />
