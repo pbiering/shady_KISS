@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 2015-07-04:
 - New displayreplay and displaychannel
+- Removed test- and debug-code
 
 2015-07-02:
 - Some more stuff for new design

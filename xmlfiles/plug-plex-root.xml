@@ -252,7 +252,7 @@
 			<drawimage condition="not{current}" x="0" y="0" width="96%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0%" width="96%" height="100%" imagetype="skinpart" path="buttonPlexActiveDetail" />
 			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0%" width="96%" height="100%" imagetype="skinpart" path="buttonPlexActiveDetailColor" />
-			<drawimage debug="true" condition="{current}++eq({coloredButtons}, 2)" x="0" y="0%" width="96%" height="100%" imagetype="skinpart" path="buttonPlexCurrent_Gradient_ver" />
+			<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0%" width="96%" height="100%" imagetype="skinpart" path="buttonPlexCurrent_Gradient_ver" />
 		</area> 
 		<area condition="{ismovie}" layer="4">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" x="1%" y="0" width="{areaheight}*0.6" height="{areaheight}" />
