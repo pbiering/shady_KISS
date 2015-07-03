@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE menuplugin SYSTEM "../../../dtd/displaymenuplugin.dtd">
 
-<menuplugin x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="0%" scaletvy="18%" scaletvwidth="56%" scaletvheight="56%">
+<menuplugin x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="0" scaletvy="18%" scaletvwidth="56%" scaletvheight="56%">
 
 	<background>
 		<area x="0" y="0" width="100%" height="100%" layer="1">

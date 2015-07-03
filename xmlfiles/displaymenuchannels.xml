@@ -1,7 +1,7 @@
 <menuchannels x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="0" scaletvy="0" scaletvwidth="100%" scaletvheight="100%">
 
 	<background>
-		<area x="0" y="0" width="100%" height="100%" transparency="15" layer="1">
+		<area x="0" y="0" width="100%" height="100%" transparency="{transBackground}" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
 		</area>
@@ -11,7 +11,7 @@
 		<area x="0" y="0" width="100%" height="11%" layer="3">
 			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
-		<area condition="{currentInfo}" transparency="10" x="70%" y="14%" width="25%" height="75%" layer="3">
+		<area condition="{currentInfo}" x="70%" y="14%" width="25%" height="75%" transparency="{transLists}" layer="3">
 				<drawimage x="0" y="0" height="100%" width="100%" imagetype="skinpart" path="currentElementHeader" />
 		</area>
 	</background>
@@ -25,7 +25,7 @@
 	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{numShortSubmenuitems}">
 		<listelement>
 <!--not{currentInfo}-->
-			<area condition="not{currentInfo}" x="17%" width="78%" transparency="10" layer="3">
+			<area condition="not{currentInfo}" x="17%" width="78%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong"/>
 				<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorLong"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
@@ -36,17 +36,17 @@
 				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
 			</area>
 <!--{currentInfo}-->
-			<area condition="{currentInfo}" x="17%" width="52%" transparency="10" layer="3">
+			<area condition="{currentInfo}" x="17%" width="52%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
 				<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient" />
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 			</area>
-			<area condition="not{separator}" x="0" width="16%" layer="3">
+			<area condition="not{separator}" x="0" width="16%" transparency="{transLists}" layer="3">
 				<drawimage x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellBackgroundChannels" />
 			</area>
-			<area condition="{separator}" x="0" width="16%" layer="3">
+			<area condition="{separator}" x="0" width="16%" transparency="{transLists}" layer="3">
 				<drawimage x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackground" />
 			</area>
 			<area condition="not{separator}" x="1%" width="4%" layer="4">

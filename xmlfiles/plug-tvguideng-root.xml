@@ -4,7 +4,7 @@
 <displayplugin x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="0" scaletvy="0" scaletvwidth="100%" scaletvheight="100%">
 
 	<viewelement name="background_hor">
-		<area x="0" y="0" width="100%" height="100%" transparency="15" layer="1">
+		<area x="0" y="0" width="100%" height="100%" transparency="{transBackground}" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
 		</area>
@@ -333,7 +333,7 @@
     {stop}                   stop time in hh:dd
     -->
 	<grid name="schedules_hor" x="12%" y="18%" width="84%" height="71%">
-		<area layer="1">
+		<area transparency="{transLists}" layer="2">
 			<drawimage condition="not{current}" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_hor" />
 			<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_hor" />
 			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_hor" /> 
@@ -349,7 +349,7 @@
 	</grid>
 
 	<grid name="schedules_ver" x="6%" y="22%" width="90%" height="68%">
-		<area layer="1">
+		<area transparency="{transLists}" layer="2">
 			<drawimage condition="not{current}" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 			<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_ver" />
 			<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_ver" />

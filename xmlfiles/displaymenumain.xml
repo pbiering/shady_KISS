@@ -1,7 +1,7 @@
 <menumain x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="0%" scaletvy="18%" scaletvwidth="54%" scaletvheight="54%">
 
 	<background>
-		<area x="0" y="0" width="100%" height="100%" transparency="15" layer="1">
+		<area x="0" y="0" width="100%" height="100%" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
 			<drawrectangle x="0%" y="18%" width="54%" height="54%" color="{clrTransparent}" />
@@ -160,7 +160,7 @@
 
 	<menuitems x="0" y="20%" orientation="vertical" width="100%" height="50%" align="center" numlistelements="{numShortMenuitems}">
 		<listelement>
-			<area x="57%" width="38%" transparency="15" layer="3">
+			<area x="57%" width="38%" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG" />
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" />
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" />

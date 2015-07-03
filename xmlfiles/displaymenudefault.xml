@@ -1,6 +1,6 @@
  <menudefault x="0" y="0" width="100%" height="100%" fadetime="0">
 	<background>
-		<area x="0" y="0" width="100%" height="100%" transparency="15" layer="1">
+		<area x="0" y="0" width="100%" height="100%" transparency="{transBackground}" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
 		</area>
@@ -36,14 +36,14 @@
 	the correct column widths -->
 	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" menuitemwidth="100%" determinatefont="column1" numlistelements="{numLongSubmenuitems}">
 		<listelement>
-			<area condition="not{separator}" x="1%" width="94%" transparency="7" layer="3">
+			<area condition="not{separator}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFull" />
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive_Gradient" />
 				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActiveColor" />
 				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
 			</area>
 <!--separators-->
-			<area condition="{separator}" x="1%" width="94%" layer="3">
+			<area condition="{separator}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullSeparator" />
 			</area>
 			<area condition="{separator}" x="1%" width="94%" layer="4">
@@ -60,7 +60,7 @@
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
 			</area>
 
-			<area condition="not{separator}++{current}" x="1%" width="94%" transparency="7" layer="3">
+			<area condition="not{separator}++{current}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '0')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActiveColor" />
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '2')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive_Gradient" />

@@ -9,9 +9,15 @@
 	</background>
 
 	<scrapercontent >
-		<area condition="{hasposter}++{showChannelinfoPoster}" x="68%" y="79%" width="{areaheight}*{posterwidth}/{posterheight}" height="15%" layer="4">
+		<area condition="{hasposter}++{showChannelinfoPosterInline}" x="68%" y="79%" width="{areaheight}*{posterwidth}/{posterheight}" height="15%" layer="4">
 			<drawimage x="2%" valign="center" width="{areawidth}" height="{areaheight}" imagetype="image" path="{posterpath}" />
 		</area>
+		<!--<area condition="{hasposter}++{showChannelinfoPosterExtern}" x="0" y="40%" width="15%" height="34%" layer="1">
+			<drawimage imagetype="skinpart" path="posterReplayBG" width="{areawidth}" height="{areaheight}"/>
+		</area>
+		<area debug="true" condition="{hasposter}++{showChannelinfoPosterExtern}" x="2%" y="42%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
+			<drawimage imagetype="image" path="{posterpath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
+		</area>-->
 	</scrapercontent>
 
 	<channelinfo>
@@ -33,9 +39,9 @@
 		<area condition="{dateTime}" x="80%" y="73%" width="19%" height="4%" layer="3">
 			<drawtext x="0" y="30%" align="right" font="{light}" fontsize="70%" color="{clrLightGray}" text="{dayleadingzero}.{month}.{year}      {time}" />
 		</area>
-		<!--<area x="59%" y="96%" width="40%" height="4%" layer="3">
+		<area x="59%" y="96%" width="40%" height="4%" layer="3">
 			<drawtext x="0" y="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="System: {cardsystem}   CAID: {caid}   Reader: {reader}   Hops: {hops}   ECM: {ecmtime}ms" />
-		</area>-->
+		</area>
 	</datetime>
 
 	<!-- Available Variables currentweather:
@@ -61,7 +67,7 @@
 	<currentweather>
 		<area condition="{weatherInfo}" x="1%" y="96%" width="40%" height="4%" layer="3">
 			<drawimage name ="icon" x="0" y="0" valign="center" width="{areaheight}*0.9" height="{areaheight}*0.9" imagetype="icon" path="{icon}" />
-			<drawtext x="6%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="min: {mintemperature}°C   max: {maxtemperature}°C   act: {temperature}°C" />
+			<drawtext x="10%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="min: {mintemperature}°C    max: {maxtemperature}°C    act: {temperature}°C" />
 		</area>
 	</currentweather>
 

@@ -4,11 +4,10 @@
 	<displayreplay x="0" y="0" width="100%" height="100%" fadetime="{00_menuFadetime}" shifttime="250" shifttype="bottom" shiftmode="slowed">
 		<background>
 			<area x="0" y="79%" width="100%" height="18%" layer="1">
-				<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannelPNG"/>
+				<drawimage condition="not{showReplayPoster}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayPNGT"/>
 			</area>
 			<area x="0" y="74%" width="100%" height="25%" layer="2">
-				<drawimage condition="{showReplayPoster}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsReplayControl"/>
-				<drawimage condition="not{showReplayPoster}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsReplayControl1"/>
+				<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsReplayControl1"/>
 			</area>
 	</background>
 
@@ -16,68 +15,37 @@
 	</backgroundmodeonly>
 
 	<scrapercontent detached="true" delay="500" shifttime="500" shifttype="left" shiftmode="slowed">
-		<area condition="{hasposter}++{showReplayPoster}" x="2%" y="70%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
-			<drawimage imagetype="image" path="{posterpath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
+		<area condition="{hasposter}" x="0" y="46%" width="15%" height="34%" layer="1">
+			<drawimage imagetype="skinpart" path="posterReplayBG" width="{areawidth}" height="{areaheight}"/>
 		</area>
-		<area condition="not{hasposter}++{showReplayPoster}" x="1%" y="77%" width="{areaheight}*0.22" height="22%" layer="2">
-			<drawimage width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="recDummy" />
+		<area debug="true" condition="{hasposter}" x="2%" y="48%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
+			<drawimage imagetype="image" path="{posterpath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
 		</area>
 	</scrapercontent>
 
 	<rectitle>
 <!--single-line display-->
-		<area condition="{showReplayPoster}" x="14%" y="79%" width="74%" height="6%" layer="3">
-			<drawtext condition="isset{recsubtitle}" x="1%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
-			<drawtext condition="empty{recsubtitle}" x="1%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{rectitle}" />
+		<area x="20%" y="79%" width="61%" height="6%" layer="3">
+			<drawtext condition="isset{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
+			<drawtext condition="empty{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle}" />
 		</area>
-		<area condition="not{showReplayPoster}" x="14%" y="79%" width="72%" height="6%" layer="3">
-			<drawtext condition="isset{recsubtitle}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
-			<drawtext condition="empty{recsubtitle}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{rectitle}" />
-		</area>
-<!--two-line display-->
-		<!--<area condition="{twoLineDisplayReplay}" x="3%" y="77%" width="94%" height="8%" layer="3">
-			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" y="7%" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="50%" color="{clrLightGray}" text="{rectitle}" />
-			<drawtext condition="isset{recsubtitle}" x="{width(title)}+10" y="50%" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="40%" color="{clrLightGray}" text="{recsubtitle}" />
-			<drawtext condition="empty{recsubtitle}" x="{width(title)}+10" valign="center" align="center" width="{areawidth}-{width(title)}-10" font="{light}" fontsize="60%" color="{clrLightGray}" text="{rectitle}" />
-		</area>-->
-
-		<area condition="{showReplayPoster}" x="15%" y="91%" width="14%" height="7%" layer="3">
-			<drawtext y="0" valign="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="2%" y="91%" width="14%" height="7%" layer="3">
-			<drawtext y="0" valign="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
+		<area x="1%" y="91%" width="14%" height="7%" layer="3">
+			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
 		</area>
 	</rectitle>
 
 	<progressbar>
-		<area condition="not{timeshift}++{showReplayPoster}" x="21%" y="86%" width="72%" height="3%" layer="3">
+		<area condition="not{timeshift}" x="7%" y="87%" width="86%" height="3%" layer="3">
 			<drawimage x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayProgress" />
 		</area>
-		<area condition="{timeshift}++{showReplayPoster}" x="21%" y="86%" width="72%" height="3%" layer="3">
-			<drawimage x="0" y="0" width="{total}/{timeshifttotal}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayTimeshift" />
-			<drawimage x="0" y="0" width="{current}/{timeshifttotal}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayProgress" />
-		</area>
-		<area condition="not{timeshift}++not{showReplayPoster}" x="8%" y="86%" width="85%" height="3%" layer="3">
-			<drawimage x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayProgress" />
-		</area>
-		<area condition="{timeshift}++not{showReplayPoster}" x="8%" y="86%" width="85%" height="3%" layer="3">
+		<area condition="{timeshift}" x="7%" y="87%" width="86%" height="3%" layer="3">
 			<drawimage x="0" y="0" width="{total}/{timeshifttotal}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayTimeshift" />
 			<drawimage x="0" y="0" width="{current}/{timeshifttotal}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayProgress" />
 		</area>
 	</progressbar>
 
 	<cutmarks>
-		<area condition="not{timeshift}++{showReplayPoster}" x="21%" y="86%" width="72%" height="3%" layer="4">
-			<loop name="marks" x="0" y="0" orientation="absolute">
-				<!-- draw mark -->
-				<drawrectangle condition="not{marks[active]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
-				<!-- draw active mark -->
-				<drawrectangle condition="{marks[active]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="2" height="100%" color="{clrGreen}" />
-				<!-- draw bar to next mark if mark is startmark-->
-				<drawrectangle condition="{marks[startmark]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="40%" width="{marks[endposition]}/{marks[total]}*{areawidth} - {marks[position]}/{marks[total]}*{areawidth}" height="30%" color="{clrBlack}" />
-			</loop>
-		</area>
-		<area condition="not{timeshift}++not{showReplayPoster}" x="8%" y="86%" width="85%" height="3%" layer="4">
+		<area condition="not{timeshift}" x="7%" y="87%" width="86%" height="3%" layer="4">
 			<loop name="marks" x="0" y="0" orientation="absolute">
 				<!-- draw mark -->
 				<drawrectangle condition="not{marks[active]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
@@ -88,17 +56,7 @@
 			</loop>
 		</area>
 
-		<area condition="{timeshift}++{showReplayPoster}" x="21%" y="86%" width="72%" height="3%" layer="4">
-			<loop name="marks" x="0" y="0" orientation="absolute">
-				<!-- draw mark -->
-				<drawrectangle condition="not{marks[active]}" x="{marks[position]}/{marks[timeshifttotal]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
-				<!-- draw active mark -->
-				<drawrectangle condition="{marks[active]}" x="{marks[position]}/{marks[timeshifttotal]}*{areawidth}" y="0" width="2" height="100%" color="{clrGreen}" />
-				<!-- draw bar to next mark if mark is startmark-->
-				<drawrectangle condition="{marks[startmark]}" x="{marks[position]}/{marks[timeshifttotal]}*{areawidth}" y="37%" width="{marks[endposition]}/{marks[timeshifttotal]}*{areawidth} - {marks[position]}/{marks[timeshifttotal]}*{areawidth}" height="30%" color="{clrBlack}" />
-			</loop>
-		</area>
-		<area condition="{timeshift}++not{showReplayPoster}" x="8%" y="86%" width="85%" height="3%" layer="4">
+		<area condition="{timeshift}" x="7%" y="87%" width="85%" height="3%" layer="4">
 			<loop name="marks" x="0" y="0" orientation="absolute">
 				<!-- draw mark -->
 				<drawrectangle condition="not{marks[active]}" x="{marks[position]}/{marks[timeshifttotal]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
@@ -111,83 +69,55 @@
 	</cutmarks>
 	
 	<currenttime>
-		<area condition="{showReplayPoster}" x="14%" y="85%" width="6%" height="5%" layer="3">
-			<drawtext x="0" y="12%" align="right" font="{light}" fontsize="75%" color="{clrLightGray}" text="{reccurrent}" />
-		</area>
-		<area condition="not{showReplayPoster}" x="1%" y="85%" width="6%" height="5%" layer="3">
+		<area x="0" y="86%" width="6%" height="5%" layer="3">
 			<drawtext x="0" y="12%" align="right" font="{light}" fontsize="75%" color="{clrLightGray}" text="{reccurrent}" />
 		</area>
 	</currenttime>
 	
 	<datetime>
-		<area x="88%" y="78%" width="11%" height="7%" layer="3">
-			<drawtext x="0" y="0" align="center" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="{dayleadingzero}.{month}.{year}   {time}"/>
+		<area x="88%" y="80%" width="11%" height="5%" layer="3">
+			<drawtext x="0" y="0" align="right" font="{light}" fontsize="60%" color="{clrLightGray}" text="{dayleadingzero}.{month}.{year}   {time}"/>
 		</area>
 	</datetime>
 	
 	<controlicons>
-		<area condition="{showReplayPoster}" x="49%" y="90%" width="3%" height="6%" layer="3">
+		<area x="1%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{rewind}++ not{rewind1x}++not{rewind2x}++ not{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWD"/>
 		</area>
-		<area condition="{showReplayPoster}" x="49%" y="90%" width="3%" height="6%" layer="3">
+		<area x="1%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{rewind}||{rewind1x}||{rewind2x}||{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWDActive"/>
 		</area>
-		<area condition="{showReplayPoster}" x="53%" y="90%" width="3%" height="6%" layer="3">
+		<area x="4%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPause"/>
 		</area>
-		<area condition="{showReplayPoster}" x="53%" y="90%" width="3%" height="6%" layer="3">
+		<area x="4%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPauseActive"/>
 		</area>
-		<area condition="{showReplayPoster}" x="57%" y="90%" width="3%" height="6%" layer="3">
+		<area x="7%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlay"/>
 		</area>
-		<area condition="{showReplayPoster}" x="57%" y="90%" width="3%" height="6%" layer="3">
+		<area x="7%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlayActive"/>
 		</area>
-		<area condition="{showReplayPoster}" x="61%" y="90%" width="3%" height="6%" layer="3">
+		<area x="11%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{forward}++ not{forward1x}++not{forward2x}++ not{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWD"/>
 		</area>
-		<area condition="{showReplayPoster}" x="61%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="{forward}||{forward1x}||{forward2x}||{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWDActive"/>
-		</area>
-
-		<area condition="not{showReplayPoster}" x="43%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="not{rewind}++ not{rewind1x}++not{rewind2x}++ not{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWD"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="43%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="{rewind}||{rewind1x}||{rewind2x}||{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWDActive"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="47%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="not{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPause"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="47%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPauseActive"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="51%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="not{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlay"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="51%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlayActive"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="55%" y="90%" width="3%" height="6%" layer="3">
-			<drawimage condition="not{forward}++ not{forward1x}++not{forward2x}++ not{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWD"/>
-		</area>
-		<area condition="not{showReplayPoster}" x="55%" y="90%" width="3%" height="6%" layer="3">
+		<area x="11%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{forward}||{forward1x}||{forward2x}||{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWDActive"/>
 		</area>
 	</controlicons>
 	
 	<endtime>
 		<area x="85%" y="91%" width="14%" height="7%" layer="3">
-			<drawtext align="right" valign="center" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(replayends)}: {recend}" />
+			<drawtext y="37%" align="right" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(replayends)}: {recend}" />
 		</area>
 	</endtime>
 
 	<totaltime>
-		<area x="93%" y="85%" width="6%" height="5%" layer="3">
+		<area x="93%" y="86%" width="6%" height="5%" layer="3">
 			<drawtext y="12%" align="right" font="{light}" fontsize="75%" color="{clrLightGray}" text="{rectotal}" />
 		</area>
-		<area condition="{timeshift}" x="82%" y="85%" width="11%" height="5%" layer="4">
+		<area condition="{timeshift}" x="82%" y="86%" width="11%" height="5%" layer="4">
 			<drawtext align="right" valign="center" font="{light}" fontsize="60%" color="{clrWhite}" text="total: {timeshifttotal}h" />
 		</area>
 	</totaltime>

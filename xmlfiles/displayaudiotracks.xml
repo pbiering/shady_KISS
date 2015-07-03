@@ -13,7 +13,7 @@
 
 		<listelement>
 			<!-- Background -->
-			<area x="0" width="100%" transparency="15" layer="2">
+			<area x="0" width="100%" transparency="{transLists}" layer="2">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuTVG" />
 				<drawimage condition="{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonRecMenuActiveTVG" />
 			</area>

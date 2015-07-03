@@ -25,7 +25,8 @@
 			<parameter type="bool" name="dateTime" displaytext="{tr(dateTime)}">1</parameter>
 			<parameter type="bool" name="weatherInfo" displaytext="{tr(weatherInfo)}">0</parameter>
 			<parameter type="bool" name="ecmInfo" displaytext="{tr(ecmInfo)}">0</parameter>
-			<parameter type="bool" name="showChannelinfoPoster" displaytext="{tr(showChannelinfoPoster)}">0</parameter>
+			<parameter type="bool" name="showChannelinfoPosterInline" displaytext="{tr(showChannelinfoPosterInline)}">0</parameter>
+			<!--<parameter type="bool" name="showChannelinfoPosterExtern" displaytext="{tr(showChannelinfoPosterExtern)}">0</parameter>-->
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarker)}">
 			<parameter type="int" name="00_numRecordingsmenuitems" min="12" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
@@ -49,7 +50,8 @@
 			<parameter type="int" name="fontSizeDescr" min="34" max="50" displaytext="{tr(fontSizeDescr)}">34</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 			<parameter type="bool" name="showReplayPoster" min="30" max="50" displaytext="{tr(showReplayPoster)}">0</parameter>
-			
+			<parameter type="int" name="transBackground" min="0" max="25" displaytext="{tr(transBackground)}">10</parameter>
+			<parameter type="int" name="transLists" min="0" max="20" displaytext="{tr(transLists)}">5</parameter>
 		</submenu>
 	</menu>
 
@@ -121,6 +123,14 @@
 			<trans lang="en_EN">Fontsize descriptions</trans>
 			<trans lang="de_DE">Schriftgröße Beschreibungen</trans>
 		</token>
+		<token name="tr(transBackground)">
+			<trans lang="en_EN">Transparency backgrounds</trans>
+			<trans lang="de_DE">Transparenz Hintergründe</trans>
+		</token>
+		<token name="tr(transLists)">
+			<trans lang="en_EN">Transparency menulists</trans>
+			<trans lang="de_DE">Transparenz Menülisten</trans>
+		</token>
 <!--channelInfo-->
 		<token name="tr(channelInfo)">
 			<trans lang="en_EN">Channel-Info</trans>
@@ -142,9 +152,13 @@
 			<trans lang="en_EN">Show ecm-infos</trans>
 			<trans lang="de_DE">Zeige ecm-Infos</trans>
 		</token>
-		<token name="tr(showChannelinfoPoster)">
-			<trans lang="en_EN">Shows Posters in Channel-Info</trans>
-			<trans lang="de_DE">Zeige Poster in der Kanalinfo</trans>
+		<token name="tr(showChannelinfoPosterInline)">
+			<trans lang="en_EN">Show posters in Channel-Info (inline)</trans>
+			<trans lang="de_DE">Zeige Poster in der Kanalinfo (inline)</trans>
+		</token>
+		<token name="tr(showChannelinfoPosterExtern)">
+			<trans lang="en_EN">Show posters in Channel-Info (extern)</trans>
+			<trans lang="de_DE">Zeige Poster in der Kanalinfo (extern)</trans>
 		</token>
 <!--RecordingMarkersProgress-->
 		<token name="tr(recordingsmarker)">
