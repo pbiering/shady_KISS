@@ -211,8 +211,9 @@
 			</area>
 				
 			<area condition="not{folder}++{currentInfo}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
+				<drawimage condition="{hasposter}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 				<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-				<drawtextbox condition="{hasposter}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.1" floatheight="{height(poster)}*1.1" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
+				<drawtextbox condition="{hasposter}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
 				<drawtextbox condition="not{hasposter}" x="4%" y="2%" width="92%" height="96%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
 			</area>
 
