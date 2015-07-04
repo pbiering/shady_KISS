@@ -14,8 +14,8 @@
 		<area x="0" y="0" width="100%" height="11%" layer="3">
 			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
-		<area x="11%" y="15%" width="2%" height="76%" layer="3">
-			<drawimage x="30%" width="{areawidth}*0.2" height="{areaheight}*0.975" imagetype="skinpart" path="tvGuideButtonLeft" />
+		<area x="11%" y="17%" width="2%" height="73%" layer="3">
+			<drawimage x="30%" y="1%" width="{areawidth}*0.2" height="{areaheight}*0.978" imagetype="skinpart" path="tvGuideButtonLeft" />
 		</area>
 		<area x="95%" y="15%" width="1%" height="76%" layer="3">
 			<drawimage x="70%" width="{areawidth}*0.2" height="{areaheight}*0.972" imagetype="skinpart" path="tvGuideButtonRight" />
@@ -62,18 +62,18 @@
     {posterpath}              absolute path of scraped poster
     -->
 	<viewelement name="header_hor">
-			<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
-			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
+		<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
+			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}.        {start} - {stop}"/>
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
 		<area condition="not{isdummy}++{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
-			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
+			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}.        {start} - {stop}"/>
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
 
 	</viewelement>
 	<viewelement name="header_ver">
-			<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
+		<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
 			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
@@ -231,7 +231,7 @@
     -->
 	<viewelement name="datetimeline_hor">
 		<area x="0" y="12%" width="11%" height="4%" layer="3">
-			<drawtext x="0" align="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{weekday} {date}" />
+			<drawtext x="0" align="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{weekday} {date}." />
 		</area>
 	</viewelement>
 
@@ -248,7 +248,7 @@
     {percenttotal}            position of current time indicator in tenth of a percent of complete time shown
     -->
 	<viewelement name="timeindicator_hor">
-		<area x="12%" y="15%" width="84%" height="74%" layer="3">
+		<area x="12%" y="18%" width="84%" height="71%" layer="3">
 			<drawimage x="{percenttotal}*{areawidth}/1000" y="0" width="3" height="100%" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</viewelement>
@@ -298,9 +298,9 @@
 
 	<grid name="channels_ver" x="6%" y="15%" width="90%" height="9%">
 		<area layer="2">
-			<drawrectangle x="0" y="22%" width="1" height="54%" color="{clrBlack}" />			
+			<drawrectangle x="0" y="22%" width="1" height="54%" color="{clrBlack}" />
 			<drawrectangle x="1" y="22%" width="1" height="54%" color="{clrRecMenuBorderTop}" />
-			<drawrectangle x="{areawidth}-1" y="22%" width="1" height="54%" color="{clrBlack}" />			
+			<drawrectangle x="{areawidth}-1" y="22%" width="1" height="54%" color="{clrBlack}" />
 			<drawimage condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" align="center" valign="center" width="40%" height="40%" />
 			<drawtext condition="not{channellogoexists}" align="center" valign="center" width="98%" font="{light}" fontsize="30%" color="{clrLightGray}" text="{name}" />
 		</area>
