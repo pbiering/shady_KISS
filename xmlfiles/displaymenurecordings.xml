@@ -202,7 +202,7 @@
 			</areascroll>
 		</listelement>
 
-		<currentelement delay="0" fadetime="0">
+		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
 			<area condition="{currentInfo}" x="71%" y="1%" width="23%" height="6%" layer="4">
 				<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="75%" color="{clrLightGray}" text="{name}" />
 			</area>

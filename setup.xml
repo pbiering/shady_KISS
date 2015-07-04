@@ -43,6 +43,13 @@
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
 			<parameter type="bool" name="currentInfo" displaytext="{tr(currentInfo)}">1</parameter>
 		</submenu>
+		<submenu name="Shift-and-fade-times" displaytext="{tr(shiftFadeTimes)}">
+			<parameter type="int" name="volumeShiftTime" min="0" max="500" displaytext="{tr(volumeShiftTime)}">300</parameter>
+			<parameter type="int" name="messageShiftTime" min="0" max="500" displaytext="{tr(messageShiftTime)}">300</parameter>
+			<parameter type="int" name="audioShiftTime" min="0" max="500" displaytext="{tr(audioShiftTime)}">300</parameter>
+			<parameter type="int" name="channelShiftTime" min="0" max="500" displaytext="{tr(channelShiftTime)}">300</parameter>
+			<parameter type="int" name="currentelementsFadeTime" min="0" max="500" displaytext="{tr(currentelementsFadeTime)}">0</parameter>
+		</submenu>
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
@@ -54,7 +61,6 @@
 			<parameter type="int" name="transLists" min="0" max="20" displaytext="{tr(transLists)}">5</parameter>
 		</submenu>
 	</menu>
-
     <!--
     translations of displaytexts
     -->
@@ -188,6 +194,47 @@
 		<token name="tr(08_notNewWatchedCutted-recordingsMarker)">
 			<trans lang="en_EN">Marker for seen &gt; 85% cutted recordings</trans>
 			<trans lang="de_DE">Marker für gesehen &gt; 85%, geschnittene Aufnahmen</trans>
+		</token>
+<!--Shift- and fade-times-->
+		<token name="tr(shiftFadeTimes)">
+			<trans lang="en_EN">Shift- and fade-times</trans>
+			<trans lang="de_DE">Einfahr- und Einblendzeiten</trans>
+		</token>
+		<token name="tr(volumeShiftTime)">
+			<trans lang="en_EN">Shift-time volume</trans>
+			<trans lang="de_DE">Einfahrzeit Lautstärke</trans>
+		</token>
+		<token name="tr(messageShiftTime)">
+			<trans lang="en_EN">Shift-time messages</trans>
+			<trans lang="de_DE">Einfahrzeit Meldungen</trans>
+		</token>
+		<token name="tr(audioShiftTime)">
+			<trans lang="en_EN">Shift-time audio</trans>
+			<trans lang="de_DE">Einfahrzeit Audio</trans>
+		</token>
+		<token name="tr(channelShiftTime)">
+			<trans lang="en_EN">Shift-time channel-panel</trans>
+			<trans lang="de_DE">Einfahrzeit Kanal-Paneel</trans>
+		</token>
+		<token name="tr(channelPosterDelay)">
+			<trans lang="en_EN">Delay posters in channel-panel</trans>
+			<trans lang="de_DE">Verzögerung Poster im Kanal-Paneel</trans>
+		</token>
+		<token name="tr(channelPosterFadeTime)">
+			<trans lang="en_EN">Fade-time posters in channel-panel</trans>
+			<trans lang="de_DE">Einblendzeit Poster im Kanal-Paneel</trans>
+		</token>
+		<token name="tr(channelWeatherDelay)">
+			<trans lang="en_EN">Delay weatherinfo in channel-panel</trans>
+			<trans lang="de_DE">Verzögerung Wetterinfo im Kanal-Paneel</trans>
+		</token>
+		<token name="tr(channelWeatherFadeTime)">
+			<trans lang="en_EN">Fade-time weatherinfo in channel-panel</trans>
+			<trans lang="de_DE">Einblendzeit Wetterinfo im Kanal-Paneel</trans>
+		</token>
+		<token name="tr(currentelementsFadeTime)">
+			<trans lang="en_EN">Fade-time infos beside lists</trans>
+			<trans lang="de_DE">Einblendzeit Infos neben Listen</trans>
 		</token>
 	</translations>
 </setup>

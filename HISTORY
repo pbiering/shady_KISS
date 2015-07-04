@@ -5,6 +5,7 @@ shady-KISS-skin History
 - Removed test- and debug-code
 - Added posterbackgrounds
 - Fixed bug in displayreplay
+- Added setup for shift- and fade-times
 
 2015-07-02:
 - Some more stuff for new design

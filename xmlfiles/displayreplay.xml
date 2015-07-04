@@ -24,9 +24,9 @@
 	</scrapercontent>
 
 	<rectitle>
-		<areascroll x="20%" y="79%" width="61%" height="6%" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" layer="3">
-			<drawtext condition="isset{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
-			<drawtext condition="empty{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle}" />
+		<areascroll x="20%" y="79%" scrollelement="titel" width="60%" height="6%" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" layer="3">
+			<drawtext name="titel" condition="isset{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
+			<drawtext name="titel" condition="empty{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle}" />
 		</areascroll>
 		<area x="1%" y="91%" width="14%" height="7%" layer="3">
 			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
