@@ -4,6 +4,7 @@ shady-KISS-skin History
 - Fixed condition for markers in menurecordings
 - Reorganized markers for recordings
 - Removed cutted-symbol for recordings-folders
+- Added time-tag
 
 2015-07-05:
 - Added channelname if no channelogo exists in schedules-list
