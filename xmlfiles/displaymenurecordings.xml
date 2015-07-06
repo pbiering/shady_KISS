@@ -132,7 +132,7 @@
 				<drawimage condition="{current}++eq({coloredButtons},1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
 			</area>
 
-			<area condition="not{currentinfo}" x="66%" width="2%" layer="4">
+			<area condition="{currentInfo}" x="66%" width="2%" layer="4">
 				<drawimage condition="{new}++not{cutted}++eq({03_newNotCutted-recordingsMarker}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
 				<drawimage condition="{new}++not{cutted}++eq({03_newNotCutted-recordingsMarker}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
 				<drawimage condition="{new}++not{cutted}++eq({03_newNotCutted-recordingsMarker}, 3)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />

@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
-2014-04-05:
+2015-07-06:
+- Fixed condition for markers in menurecordings
+
+2015-07-05:
 - Added channelname if no channelogo exists in schedules-list
 
 2015-07-04:
