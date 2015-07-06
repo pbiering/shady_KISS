@@ -61,7 +61,7 @@
 				<drawimage condition="not{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cut" />
 			</area>
 
-			<area condition="not{currentInfo}" x="91%" width="2%" layer="4">
+			<area condition="not{currentInfo}++not{folder}" x="91%" width="2%" layer="4">
 				<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
 				<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
 				<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
@@ -93,10 +93,10 @@
 				<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 			</area>
 
-			<areascroll condition="{folder}++not{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="71%" layer="4">
+			<areascroll condition="{folder}++not{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
 				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>
-			<areascroll condition="not{folder}++not{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="71%" layer="4">
+			<areascroll condition="not{folder}++not{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
 				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>
 <!--{currentInfo}-->
@@ -107,7 +107,7 @@
 				<drawimage condition="{current}++eq({coloredButtons},1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
 			</area>
 
-			<area condition="{currentInfo}" x="64%" width="{areaheight}" transparency="15" layer="4">
+			<area condition="{currentInfo}++not{folder}" x="64%" width="{areaheight}" transparency="15" layer="4">
 				<drawimage condition="{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cutActive" />
 				<drawimage condition="not{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cut" />
 			</area>
@@ -144,10 +144,10 @@
 				<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 			</area>
 
-			<areascroll condition="{folder}++{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="45%" layer="4">
+			<areascroll condition="{folder}++{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
 				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>
-			<areascroll condition="not{folder}++{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="45%" layer="4">
+			<areascroll condition="not{folder}++{currentInfo}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
 				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 			</areascroll>
 		</listelement>
