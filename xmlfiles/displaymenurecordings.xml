@@ -112,7 +112,7 @@
 				<drawimage condition="not{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cut" />
 			</area>
 
-			<area condition="{currentInfo}" x="66%" width="2%" layer="4">
+			<area condition="{currentInfo}++not{folder}" x="66%" width="2%" layer="4">
 				<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
 				<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
 				<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />

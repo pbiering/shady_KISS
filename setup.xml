@@ -59,6 +59,7 @@
 			<parameter type="bool" name="showReplayPoster" min="30" max="50" displaytext="{tr(showReplayPoster)}">0</parameter>
 			<parameter type="int" name="transBackground" min="0" max="25" displaytext="{tr(transBackground)}">10</parameter>
 			<parameter type="int" name="transLists" min="0" max="20" displaytext="{tr(transLists)}">5</parameter>
+			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
 		</submenu>
 	</menu>
     <!--
@@ -136,6 +137,10 @@
 		<token name="tr(transLists)">
 			<trans lang="en_EN">Transparency menulists</trans>
 			<trans lang="de_DE">Transparenz Menülisten</trans>
+		</token>
+		<token name="tr(sysinfoPBtheme)">
+			<trans lang="en_EN">Bars in systeminfo-plugin in themecolors</trans>
+			<trans lang="de_DE">Balken im systeminfo-plugin in Themefarben</trans>
 		</token>
 <!--channelInfo-->
 		<token name="tr(channelInfo)">
