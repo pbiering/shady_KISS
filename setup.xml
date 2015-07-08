@@ -17,8 +17,8 @@
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
 -->
 		<submenu name="Main-Menu" displaytext="{tr(mainMenu)}">
-			<parameter type="bool" name="showOnlyTimers" displaytext="{tr(showOnlyTimers)}">0</parameter>
-			<parameter type="bool" name="showTimersRecordingsandInfos" displaytext="{tr(showTimersRecordingsandInfos)}">0</parameter>
+			<parameter type="bool" name="showInfosAndTimers" displaytext="{tr(showInfosAndTimers)}">0</parameter>
+			<parameter type="bool" name="showInfosAndTimersAndLastrecs" displaytext="{tr(showInfosAndTimersAndLastrecs)}">0</parameter>
 		</submenu>
 		<submenu name="Channel-Info" displaytext="{tr(channelInfo)}">
 			<parameter type="bool" name="channelName" displaytext="{tr(channelName)}">1</parameter>
@@ -98,13 +98,13 @@
 			<trans lang="en_EN">Bright backgroundgradient</trans>
 			<trans lang="de_DE">Heller Hintergrundverlauf</trans>
 		</token>       
-		<token name="tr(showOnlyTimers)">
-			<trans lang="en_EN">Show only timers in mainmenu</trans>
-			<trans lang="de_DE">Zeige nur Timer im Hauptmenü</trans>
+		<token name="tr(showInfosAndTimers)">
+			<trans lang="en_EN">Show infos and primarily timers</trans>
+			<trans lang="de_DE">Zeige Infos und vorrangig Timer</trans>
 		</token>
-		<token name="tr(showTimersRecordingsandInfos)">
-			<trans lang="en_EN">Show timers, last recordings and infos in mainmenu</trans>
-			<trans lang="de_DE">Zeige Timer, letzte Aufnahmen und Infos im Hauptmenü</trans>
+		<token name="tr(showInfosAndTimersAndLastrecs)">
+			<trans lang="en_EN">Show infos, timers and at least last three recordings</trans>
+			<trans lang="de_DE">Zeige Infos, Timer und mind. die letzten drei Aufnahmen</trans>
 		</token>
 		<token name="tr(setupIconbar)">
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>
