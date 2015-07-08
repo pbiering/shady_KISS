@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2015-07-08:
+- Added fritzbox-plugin-section to displaymenudefault (patch provided by beinhart@vdrportal) 
+
 2015-07-07:
 - Small fixes
 
