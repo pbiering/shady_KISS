@@ -32,7 +32,7 @@
 			<area condition="not{folder}" x="15%" width="4%" layer="4">
 				<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
 			</area>
-			<area condition="not{folder}" x="14%" y="1%" width="5%" height="6%" layer="4">
+			<area condition="not{folder}++not{longElapsedBar}" x="14%" y="1%" width="5%" height="6%" layer="4">
 				<drawrectangle x="0" y="{areaheight}*0.92" width="{areawidth}*0.9*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
 			</area>
 
@@ -55,7 +55,9 @@
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
 				<drawimage condition="{current}++eq({coloredButtons},1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
 			</area>
-
+			<area condition="not{folder}++{longElapsedBar}++not{currentInfo}" x="20%" width="74%" layer="4">
+				<drawrectangle x="0" y="{areaheight}*0.92" width="{areawidth}*0.995*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
+			</area>
 			<area condition="not{currentInfo}" x="89%" width="{areaheight}" transparency="15" layer="4">
 				<drawimage condition="{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cutActive" />
 				<drawimage condition="not{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cut" />
@@ -105,6 +107,9 @@
 				<drawimage condition="{current}++eq({coloredButtons},0)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive"/>
 				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
 				<drawimage condition="{current}++eq({coloredButtons},1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
+			</area>
+			<area condition="not{folder}++{longElapsedBar}++{currentInfo}" x="20%" width="49%" layer="4">
+				<drawrectangle x="0" y="{areaheight}*0.92" width="{areawidth}*0.99*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
 			</area>
 
 			<area condition="{currentInfo}++not{folder}" x="64%" width="{areaheight}" transparency="15" layer="4">

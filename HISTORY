@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2015-07-09:
+- Added setup for long elapsedbars
+
 2015-07-08:
 - Added fritzbox-plugin-section to displaymenudefault (patch provided by beinhart@vdrportal)
 - Reorganized timers, lastrecs and infos in mainmenu

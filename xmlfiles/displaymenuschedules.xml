@@ -88,8 +88,14 @@
 			<area condition="not{separator}++{whatsonnow}" x="11%" width="7%" layer="4">
 				<drawtext condition="isset{title}" name="menutext" x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start}" />
 			</area>
-			<area condition="not{separator}++{whatsonnow}++{running}" x="9%" width="7%" layer="4">
+			<area condition="not{separator}++{whatsonnow}++{running}++not{longElapsedBar}" x="9%" width="7%" layer="4">
 				<drawrectangle x="12%" y="{areaheight}*0.96" width="{areawidth}*0.84*{elapsed}/{duration}" height="{areaheight}*0.01" color="{clrHigh}" />
+			</area>
+			<area condition="not{separator}++{whatsonnow}++{running}++{longElapsedBar}++{currentInfo}" x="17%" width="52%" layer="4">
+				<drawrectangle x="1%" y="{areaheight}*0.96" width="{areawidth}*0.98*{elapsed}/{duration}" height="{areaheight}*0.01" color="{clrHigh}" />
+			</area>
+			<area condition="not{separator}++{whatsonnow}++{running}++{longElapsedBar}++not{currentInfo}" x="17%" width="78%" layer="4">
+				<drawrectangle x="1%" y="{areaheight}*0.96" width="{areawidth}*0.98*{elapsed}/{duration}" height="{areaheight}*0.01" color="{clrHigh}" />
 			</area>
 <!--{currentInfo}-->
 			<areascroll condition="{currentInfo}++not{separator}++{whatsonnow}++empty{shorttext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="19%" width="47%" layer="4">
