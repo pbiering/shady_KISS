@@ -4,6 +4,7 @@ shady-KISS-skin History
 - Added setup for long elapsedbars
 - Added bar for livebuffer in displaychannel
 - Added setup for timeshifttotal in displayreplay
+- Fixed scaletv in plug-tvguideng-detail
 
 2015-07-08:
 - Added fritzbox-plugin-section to displaymenudefault (patch provided by beinhart@vdrportal)
