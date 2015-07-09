@@ -144,9 +144,11 @@
 		<area x="0" y="83%" width="100%" height="15%" layer="3">
 			<drawimage width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="channelProgress" />
 		</area>
-		
 		<area x="24%" y="86%" width="60%" height="1%" layer="3">
 			<drawimage x="0" y="20%" width="{elapsed}/{duration}*{areawidth}" height="{areaheight}" imagetype="skinpart" path="timeBar" />
+		</area>
+		<area condition="{permashift}" x="24%" y="85%" width="60%" height="3%" layer="4">
+			<drawimage x="{elapsed}/{duration}*{areawidth} - {livebuffer}/{duration}*{areawidth}" y="20%" width="{livebuffer}/{duration}*{areawidth}" height="{areaheight}*0.65" imagetype="skinpart" path="replayTimeshift" />
 		</area>
 	</progressbar>
 

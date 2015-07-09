@@ -61,6 +61,7 @@
 			<parameter type="int" name="transLists" min="0" max="20" displaytext="{tr(transLists)}">5</parameter>
 			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
 			<parameter type="bool" name="longElapsedBar" displaytext="{tr(longElapsedBar)}">0</parameter>
+			<parameter type="bool" name="showTimeshiftTotal" displaytext="{tr(showTimeshiftTotal)}">1</parameter>
 		</submenu>
 	</menu>
     <!--
@@ -146,6 +147,10 @@
 		<token name="tr(longElapsedBar)">
 			<trans lang="en_EN">Show elapsedbar beneath events (recordings, whatsonnow)</trans>
 			<trans lang="de_DE">Zeige Balken für abgelaufene Zeit unterhalb der Titel (Aufzeichnungen, Jetzt)</trans>
+		</token>
+		<token name="tr(showTimeshiftTotal)">
+			<trans lang="en_EN">Show total time of timeshift-event in displayreplay</trans>
+			<trans lang="de_DE">Zeige Dauer (Zeitangabe) des Timeshift-Events im Wiedergabepaneel</trans>
 		</token>
 <!--channelInfo-->
 		<token name="tr(channelInfo)">
