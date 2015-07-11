@@ -89,17 +89,17 @@
 	</viewelement>
 
 	<viewelement name="infopane">
-		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="71%" y="14%" width="25%" height="75%" transparency="{transLists}" layer="3">
+		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="70%" y="14%" width="25%" height="75%" transparency="{transLists}" layer="3">
 			<drawimage condition="isset{summary}" x="0" y="0" height="100%" width="100%" imagetype="skinpart" path="currentElementHeader" />
 		</area>
-		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="72%" y="14%" width="23%" height="6%" layer="4">
+		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="71%" y="14%" width="23%" height="6%" layer="4">
 			<drawtext condition="isset{title}" x="0" y="15%" width="100%" align="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{title}" />
 		</area>
-		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="72%" y="5%" width="23%" height="38%" layer="4">
+		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="71%" y="5%" width="23%" height="38%" layer="4">
 			<drawimage condition="{hasart}++not{isepisode}" imagetype="image" path="{art}" x="0" y="20%" width="100%" height="100%" />
 			<drawimage condition="{hasthumb}++{isepisode}" imagetype="image" path="{thumb}" x="0" y="20%" width="100%" height="100%" />
 		</area>
-		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="71%" y="14%" width="25%" height="6%" layer="4">
+		<area condition="eq({viewmode}, 0)||eq({viewmode}, 1)" x="70%" y="14%" width="25%" height="6%" layer="4">
 				<drawrectangle x="2%" y="{areaheight}*0.82" width="{viewoffset}/{duration}*{areawidth}*0.96" height="{areaheight}*0.01" color="{clrHigh}" />
 		</area>
 
@@ -109,7 +109,7 @@
 			</loop>
 		</area>-->
 
-		<areascroll condition="eq({viewmode}, 0)||eq({viewmode}, 1)" orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="72%" y="44%" width="23%" height="43%" layer="4">
+		<areascroll condition="eq({viewmode}, 0)||eq({viewmode}, 1)" orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="71%" y="44%" width="23%" height="43%" layer="4">
 			<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{summary}" />
 		</areascroll>
 	</viewelement>
@@ -175,7 +175,7 @@
 	{banner}
 	-->
 
-	<grid name="coverbrowser" x="1%" y="14%" width="69%" height="75%">
+	<grid name="coverbrowser" x="1%" y="14%" width="68%" height="75%">
 		<area condition="lt({rows}, 2)||gt({rows}, 2)||lt({columns}, 6)||gt({columns}, 6)" layer="7">
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
@@ -239,7 +239,7 @@
 		</area>
 	</grid>
 	
-	<grid name="detailbrowser" x="1%" y="14%" width="99%" height="75%">
+	<grid name="detailbrowser" x="1%" y="14%" width="98%" height="75%">
 		<area condition="lt({rows}, 4)||gt({rows}, 4)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonRootTVG_ver" />
 		</area>
@@ -306,7 +306,7 @@
 		</area>
 	</grid>
 
-	<grid name="listbrowser" x="1%" y="14%" width="69%" height="75%">
+	<grid name="listbrowser" x="1%" y="14%" width="68%" height="75%">
 		<area condition="lt({rows}, 15)||gt({rows}, 15)||lt({columns}, 1)||gt({columns}, 1)" layer="7">
 			<drawimage x="0" y="0%" width="100%" height="100%" imagetype="skinpart" path="buttonLong" />
 		</area>
@@ -372,6 +372,13 @@
 			<!--<drawtext x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="15%" color="{clrLightGray}" text="{serverstartpointname}" />-->
 		</area>
 	</grid>
+	
+	<viewelement name="scrollbar">
+		<area condition="lt({height},100)" x="95%" y="14%" width="5%" height="75%" layer="5">
+			 <drawimage debug="true" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 100" width="{areawidth}*0.1" height="{areaheight} * {height} / 100" imagetype="skinpart" path="scrollBar" />
+		</area>
+	</viewelement>
 
 	<!-- Available Variables Footer:
 	{red1}				true if red button is button 1
