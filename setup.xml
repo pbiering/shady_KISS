@@ -183,8 +183,8 @@
 		</token>
 <!--RecordingMarkersProgress-->
 		<token name="tr(recordingsmarker)">
-			<trans lang="en_EN">Settings menu Recordings</trans>
-			<trans lang="de_DE">Einstellungen Menü Aufzeichnungen</trans>
+			<trans lang="en_EN">Menu Recordings</trans>
+			<trans lang="de_DE">Menü Aufzeichnungen</trans>
 		</token>
 		<token name="tr(03_new-recordingsMarker)">
 			<trans lang="en_EN">Marker for new recordings</trans>
