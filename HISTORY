@@ -4,6 +4,8 @@ shady-KISS-skin History
 - Some small fixes
 - Added scrollbars for plex-plugin
 - Fixed time-format 
+- Test areacontainer in displaymenurecordings
+- Added new buttonPlexCover
 
 2015-07-09:
 - Added setup for long elapsedbars
