@@ -4,6 +4,7 @@ shady-KISS-skin History
 - Added svg-templates
 - Added condition for recdate in displayreplay
 - Removed obsolte colours
+- Fixed scrollbars in main- and setup-menu
 
 2015-07-11:
 - Some small fixes
