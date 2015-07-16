@@ -193,7 +193,7 @@
 		<area condition="{ismovie}" layer="4">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="70%" />
 			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="70%" />
-			<drawrectangle x="10%" y="70%" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrBlue}" />
+			<drawrectangle x="10%" y="70%" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrHigh}" />
 			<drawtext name="title" x="5%" y="73%" width="90%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 			<drawtext x="10%" y="{posy(title)} + {height(title)}*2.2" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{container}" />
 			<drawtext x="65%" y="{posy(title)} + {height(title)}*2.2" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{audioCodec}" />
