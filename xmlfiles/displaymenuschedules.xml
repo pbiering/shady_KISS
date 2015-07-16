@@ -165,13 +165,13 @@
 				<drawimage x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackground" />
 			</area>
 			<area condition="{separator}++{whatson}" x="0%" width="16%" layer="4">
-				<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrHigh}" text="{title}" />
+				<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrSeparatorText}" text="{title}" />
 			</area>
 			<area condition="not{currentInfo}++{separator}++isset{title}" x="19%" width="73%" layer="4">
-				<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
+				<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
 			</area>
 			<area condition="{currentInfo}++{separator}++isset{title}" x="18%" width="47%" layer="4">
-				<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{title}" />
+				<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
 			</area>
 		</listelement>
 

@@ -66,14 +66,14 @@
 				<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
 			</areascroll>
 			<area condition="{separator}++not{currentInfo}" x="19%" width="73%" layer="3">
-				<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{name}" />
+				<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{name}" />
 			</area>
 <!--{currentInfo}-->
 			<areascroll condition="not{separator}++{currentInfo}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="19%" width="47%" layer="3">
 				<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
 			</areascroll>
 			<area condition="{separator}++{currentInfo}" x="19%" width="47%" layer="3">
-				<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrHigh}" text="{name}" />
+				<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{name}" />
 			</area>
 		</listelement>
 
