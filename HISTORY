@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 5015-07-15:
 - Added svg-templates
+- Added condition for recdate in displayreplay
 
 2015-07-11:
 - Some small fixes

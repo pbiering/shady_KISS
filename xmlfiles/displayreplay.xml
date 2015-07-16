@@ -28,7 +28,7 @@
 			<drawtext name="titel" condition="isset{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
 			<drawtext name="titel" condition="empty{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle}" />
 		</areascroll>
-		<area x="1%" y="91%" width="14%" height="7%" layer="3">
+		<area condition="isset{recdate}" x="1%" y="91%" width="14%" height="7%" layer="3">
 			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
 		</area>
 	</rectitle>
