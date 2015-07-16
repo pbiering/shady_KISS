@@ -4,10 +4,10 @@
 <globals>
     <colors>
 		<!-- theme-colors for svgtemplates-->
-		<color name="clrDown">FF000000</color>
-		<color name="clrUp">FF00007e</color>
+		<color name="clrDown">FF00002F</color>
+		<color name="clrUp">FF00007E</color>
 		<!--same as clrUp- should be tested-->
-		<color name="clrHigh">FF00007e</color>
+		<color name="clrHigh">FF0000FC</color>
 		<!--##############################-->
         <color name="clrRed">FFFF0000</color>
         <color name="clrGreen">FF5FE200</color>

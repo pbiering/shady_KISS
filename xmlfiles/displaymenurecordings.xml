@@ -31,7 +31,7 @@
 					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
 				</area>
 				<area condition="not{longElapsedBar}" x="14%" y="1%" width="5%" height="6%" layer="4">
-					<drawrectangle x="0" y="{areaheight}*0.92" width="{areawidth}*0.9*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
+					<drawrectangle x="0" y="{areaheight}*0.96" width="{areawidth}*0.9*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
 				</area>
 			</areacontainer>
 			
@@ -61,7 +61,7 @@
 					<drawimage condition="{current}++eq({coloredButtons},1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
 				</area>
 				<area condition="not{folder}++{longElapsedBar}" x="20%" width="74%" layer="4">
-					<drawrectangle x="0" y="{areaheight}*0.92" width="{areawidth}*0.995*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
+					<drawrectangle x="0" y="{areaheight}*0.92" width="{areawidth}*0.995*{percentseen}/100" height="{areaheight}*0.01" color="{clrHigh}" />
 				</area>
 				<area x="89%" width="{areaheight}" transparency="15" layer="4">
 					<drawimage condition="{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cutActive" />
@@ -116,7 +116,7 @@
 					<drawimage condition="{current}++eq({coloredButtons},1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
 				</area>
 				<area condition="not{folder}++{longElapsedBar}" x="20%" width="49%" layer="4">
-					<drawrectangle x="0" y="{areaheight}*0.92" width="{areawidth}*0.99*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
+					<drawrectangle x="0" y="{areaheight}*0.96" width="{areawidth}*0.99*{percentseen}/100" height="{areaheight}*0.01" color="{clrHigh}" />
 				</area>
 
 				<area condition="not{folder}" x="64%" width="{areaheight}" transparency="15" layer="4">
