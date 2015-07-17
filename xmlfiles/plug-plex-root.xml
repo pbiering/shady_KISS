@@ -208,7 +208,7 @@
 		<area condition="{isepisode}" layer="3">
 			<drawimage name="thumb" condition="not{hasseriesthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="70%" />
 			<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" align="center" x="0" y="0" width="80%" height="70%" />
-			<drawrectangle x="10%" y="{height(thumb)}*0.92" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrBlue}" />
+			<drawrectangle x="10%" y="{height(thumb)}*0.92" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrHigh}" />
 			<drawtext condition="eq({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 			<drawtext condition="lt({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{seriestitle}" />
 			<drawtext name="season" x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{printf('S%02d E%02d', season, episode)}" />

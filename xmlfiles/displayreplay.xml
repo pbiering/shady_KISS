@@ -158,7 +158,7 @@
 
 	<jump>
 		<area x="35%" y="45%" width="30%" height="10%" layer="1">
-			<fill color="{clrTransBlack}" />
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayControl"/>
 		</area>
 		<area x="35%" y="45%" width="30%" height="10%" layer="2">
 			<drawtext align="center" valign="center" font="{light}" fontsize="80%" color="{clrWhite}" text="{jump}" />

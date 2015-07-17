@@ -1,6 +1,10 @@
 shady-KISS-skin History
 -------------------------------------------
-5015-07-15:
+2015-07-17:
+- Commented colors in theme.xml
+- Small fixes
+
+2015-07-15:
 - Added svg-templates
 - Added condition for recdate in displayreplay
 - Removed obsolte colours
