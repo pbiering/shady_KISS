@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2015-07-27:
+- Fixed area of currenttime in displayreplay
+
 2015-07-17:
 - Commented colors in theme.xml
 - Small fixes
