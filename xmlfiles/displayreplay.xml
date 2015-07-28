@@ -38,7 +38,7 @@
 			<drawimage x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayProgress" />
 		</area>
 		<area condition="{timeshift}" x="9%" y="87%" width="82%" height="3%" layer="3">
-			<drawimage x="0" y="0" width="{total}/{timeshifttotal}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayTimeshift" />
+			<drawimage x="0" y="20%" width="{total}/{timeshifttotal}*{areawidth}" height="60%" imagetype="skinpart" path="replayTimeshift" />
 			<drawimage x="0" y="0" width="{current}/{timeshifttotal}*{areawidth}" height="{areaheight}*0.98" imagetype="skinpart" path="replayProgress" />
 		</area>
 	</progressbar>

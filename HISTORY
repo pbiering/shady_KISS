@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 2015-07-27:
+- Improved visibility of timeshift-progressbar
+
+2015-07-27:
 - Fixed area of currenttime in displayreplay
 - Switched font to Open Sans
 
