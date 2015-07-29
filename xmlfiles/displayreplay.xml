@@ -118,7 +118,7 @@
 	</endtime>
 
 	<totaltime>
-		<area x="91%" y="86%" width="6%" height="5%" layer="3">
+		<area x="91%" y="86%" width="6%" height="5%" layer="5">
 			<drawtext y="12%" align="right" font="{light}" fontsize="75%" color="{clrLightGray}" text="{rectotal}" />
 		</area>
 		<area condition="{timeshift}++{showTimeshiftTotal}" x="80%" y="86%" width="11%" height="5%" layer="4">
