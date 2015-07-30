@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 2015-07-30:
 - Added percentseenbar in currentelement of recordings
+- Added progressmodeonly in displayreplay
 
 2015-07-29:
 - Fixed layer for timeshifttotal

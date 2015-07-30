@@ -127,34 +127,47 @@
 	</totaltime>
 
 	<controliconsmodeonly>
-		<area x="40%" y="94%" width="20%" height="6%" layer="1">
-			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayControl"/>
+		<area x="0" y="90%" width="100%" height="5%" layer="1">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayControlsBG"/>
 		</area>
-				<area x="43%" y="94%" width="3%" height="6%" layer="3">
+		<area x="13%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{rewind}++ not{rewind1x}++not{rewind2x}++ not{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWD"/>
 		</area>
-		<area x="43%" y="94%" width="3%" height="6%" layer="3">
+		<area x="13%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="{rewind}||{rewind1x}||{rewind2x}||{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWDActive"/>
 		</area>
-		<area x="47%" y="94%" width="3%" height="6%" layer="3">
+		<area x="17%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPause"/>
 		</area>
-		<area x="47%" y="94%" width="3%" height="6%" layer="3">
+		<area x="17%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPauseActive"/>
 		</area>
-		<area x="51%" y="94%" width="3%" height="6%" layer="3">
+		<area x="21%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlay"/>
 		</area>
-		<area x="51%" y="94%" width="3%" height="6%" layer="3">
+		<area x="21%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlayActive"/>
 		</area>
-		<area x="55%" y="94%" width="3%" height="6%" layer="3">
+		<area x="25%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{forward}++ not{forward1x}++not{forward2x}++ not{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWD"/>
 		</area>
-		<area x="55%" y="94%" width="3%" height="6%" layer="3">
+		<area x="25%" y="90%" width="3%" height="4%" layer="3">
 			<drawimage condition="{forward}||{forward1x}||{forward2x}||{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWDActive"/>
 		</area>
 	</controliconsmodeonly>
+	
+	<progressmodeonly>
+		<area x="30%" y="90%" width="7%" height="5%" layer="2">
+			<drawtext x="0" align="right" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{timecurrent}" />
+		</area>
+		<area x="80%" y="90%" width="7%" height="5%" layer="2">
+			<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{timetotal}" />
+		</area>
+
+		<area x="38%" y="92%" width="41%" height="1%" layer="2">
+			<drawimage x="0" y="0" width="{areawidth}*{current}/{total}" height="{areaheight}" imagetype="skinpart" path="timeBar" />
+		</area>
+	</progressmodeonly>
 
 	<jump>
 		<area x="35%" y="45%" width="30%" height="10%" layer="1">
