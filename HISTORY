@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2015-07-31:
+- Switched vdrusagestring to graphical usedpercent
+
 2015-07-30:
 - Added percentseenbar in currentelement of recordings
 - Added progressmodeonly in displayreplay
