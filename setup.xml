@@ -62,6 +62,7 @@
 			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
 			<parameter type="bool" name="longElapsedBar" displaytext="{tr(longElapsedBar)}">0</parameter>
 			<parameter type="bool" name="showTimeshiftTotal" displaytext="{tr(showTimeshiftTotal)}">1</parameter>
+			<parameter type="bool" name="showDiscUsage" displaytext="{tr(showDiscUsage)}">1</parameter>
 		</submenu>
 	</menu>
     <!--
@@ -151,6 +152,10 @@
 		<token name="tr(showTimeshiftTotal)">
 			<trans lang="en_EN">Show total time of timeshift-event in displayreplay</trans>
 			<trans lang="de_DE">Zeige Dauer (Zeitangabe) des Timeshift-Events im Wiedergabepaneel</trans>
+		</token>
+		<token name="tr(showDiscUsage)">
+			<trans lang="en_EN">Show discusage in recordings- and timersmenu</trans>
+			<trans lang="de_DE">Zeige Festplattenausnutzung im Aufnahmen- und Timermenü</trans>
 		</token>
 <!--channelInfo-->
 		<token name="tr(channelInfo)">

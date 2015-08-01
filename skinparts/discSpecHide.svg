@@ -43,7 +43,7 @@
        y1="238.94286"
        x2="7.9394379"
        y2="238.94286"
-       gradientTransform="matrix(0.26458333,0,0,0.26458333,23.01875,218.41853)" />
+       gradientTransform="matrix(0.52916669,0,0,0.26458333,23.01875,218.41853)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -52,9 +52,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="6.0325047"
-     inkscape:cx="69.85322"
-     inkscape:cy="58.452924"
+     inkscape:zoom="6.4984131"
+     inkscape:cx="87.822304"
+     inkscape:cy="9.2101324"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -90,15 +90,15 @@
        y="267.6312"
        x="23.018749"
        height="29.36875"
-       width="2.1166666"
+       width="4.2333331"
        id="rect4155"
        style="opacity:1;fill:url(#linearGradient4157);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.41499996;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
        y="267.63123"
        x="23.018749"
        height="0.26458332"
-       width="2.1166666"
+       width="4.2333331"
        id="rect4169"
-       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.41499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.41500002;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>
