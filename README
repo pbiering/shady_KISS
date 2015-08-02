@@ -26,77 +26,32 @@ The shady-skin is a skin for Klaus Schmidingers VDR and Louis Brauns vdr-plugin-
 
 I. Requirements:
 
-	a. vdr-plugin-skindesigner
-	
-	b. Font: Open Sans, many other fonts are to fat and don't fit in some areas!
-	
-	c. A set of channellogos eg: http://creimer.net/channellogos/skindesigner-white-20150210.tar.bz2
-	
-	
+	1.	vdr-plugin-skindesigner
+
+	2.	Font: Open Sans, many other fonts are to fat and don't fit in some areas!
+
+	3.	A set of channellogos eg: http://creimer.net/channellogos/skindesigner-white-20150607.tar.bz2
+
+
 II. Install:
 
-	a. First time:
+	1. Simplest via setup of skindesigner-plugin
 
-	cd /usr/share/vdr/plugins/skindesigner/skins
-	
-	git clone https://github.com/tomsax56/shady_KISS
-	
-	find -name *.theme -exec mv {} "/var/lib/vdr/themes" \ ;
-	
-	b. Update:
-	
-	cd /usr/share/vdr/plugins/skindesigner/skins/shady_KISS
-	
-	git pull
-	
-		
-III. Setup:
+	2. Via Shell
 
-!!! TODO!!! NOT CURRENT STATUS OF shady_KISS !!!
+		a.	First time:
 
-	1. "Number of items in main and setup menu": min=8, max=10, default=10
-	
-	2. "Number of items in submenus (long)": min=12, max=18, default=14
-	
-	3. "Number of items in submenus (short)": min=12, max=18, default =15
-	
-	4. "Bright backgoundgradient": yes, no, default=no
-	
-	5. "Colored active buttons": 0=no, 1=only border, 2=gradient, default=no
-	
-	6. "Show iconbar in setup-menu": yes, no, default=no
-	
-	7. "Fade time in ms": min=0, max=500, default=0
-	
-		Used in displaychannel, -message, -audiotracks, -replay and -volume.
-		0 - 500 ms
-	
-	8. "Defaultcolumnwidth": yes, no, default=no
-	
-		Preferably you test both settings with eg 
-		epgsearch-searchtimermenu or mailplugin
-		which setting sweet your needs.
-		If in doubt switch it to "no".
-	
-	9. "Show only timers in mainmenu": yes, no, default=no
-		
-			Shows a list up to eight next timers in main menu. 
-	
-	10. "Show timers and infos in mainmenu": yes, no, default=no
-	
-			shows up to seven timers and temps of CPU, GPU, load, wearherinfo.
-			
-	!!! take care to choose only one of 9. and 10. or set both to no !!!
-			
-	
-	11. "Show details (transponder) of channels": yes, no, default=no
-	
-	12. "Show timersstoptime": yes, no, default=no
-	
-	13. "Show time of recordings": yes, no, default=no
-	
-	14. "Scroll descriptions in TVGuideNG": yes, no, default=no
+			cd /usr/share/vdr/plugins/skindesigner/skins
 
+			git clone https://github.com/tomsax56/shady_KISS
+
+			find -name *.theme -exec mv {} "/var/lib/vdr/themes" \ ;
+
+		b.	Update:
+
+			cd /usr/share/vdr/plugins/skindesigner/skins/shady_KISS
+
+			git pull
 
 If you encounter any bugs, problems, or have any issues,
 please don't hesitate to contact me or place a post at vdrportal.de
