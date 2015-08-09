@@ -10,7 +10,7 @@
 		<area x="0" y="0" width="100%" height="11%" layer="2">
 			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
-		<area condition="{currentInfo}" x="70%" y="14%" width="25%" height="75%" transparency="{transLists}" layer="3">
+		<area condition="{currentInfo}++strequal({recmenuorientation}, 'vertical')" x="70%" y="14%" width="25%" height="75%" transparency="{transLists}" layer="3">
 				<drawimage x="0" y="0" height="100%" width="100%" imagetype="skinpart" path="currentElementHeader" />
 		</area>
 	</background>
@@ -30,8 +30,60 @@
 			<drawtext x="1%" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
 		</area>
 	</header>
+	
+	<menuitems condition="strequal({recmenuorientation}, 'horizontal')" x="1%" y="13%" orientation="horizontal" width="95%" height="79%" align="center" numlistelements="7">
+		<listelement>
+			<area y="54%" height="46%" layer="3">
+				<drawimage condition="{current}" x="0" y="0" width="100%" height="96%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_ver" />
+				<drawimage condition="not{current}" x="4%" y="15%" width="92%" height="80%" imagetype="skinpart" path="buttonPlexCover" />
+			</area>
+			<area condition="{folder}" y="51%" height="46%" layer="4">
+				<drawimage condition="not{current}" name="foldericon" align="center" y="14%" width="{areaheight}*0.7*0.68" height="{areaheight}*0.7" imagetype="icon" path="ico_recfolder"  />
+				<drawimage condition="{current}" name="foldericon" align="center" y="0" width="{areaheight}*0.9*0.68" height="{areaheight}*0.9" imagetype="icon" path="ico_recfolder"  />
+				<drawtextbox align="center" maxlines="2" x="5%" y="80%" width="90%" height="25%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{name}" />
+				<drawtext align="center" x="5%" y="70%" width="98%" font="{light}" fontsize="8%" color="{clrLightGray}" text="({numrecordingsfolder}, {newrecordingsfolder} {tr(new)})" />
+			</area>
+			<areacontainer condition="not{folder}">
+				<area condition="not{current}" y="64%" height="36%" layer="4">
+					<drawimage condition="{hasposterthumbnail}" y="0" align="center" width="{areaheight}*0.7*0.68" height="{areaheight}*0.7" imagetype="image" path="{thumbnailpath}" />
+					<drawrectangle x="22%" y="72%" width="{areawidth}*0.56*{percentseen}/100" height="{areaheight}*0.01" color="{clrHigh}" />
+					<!--<drawimage condition="not{hasposterthumbnail}" y="3%" width="{areaheight}*0.7*0.68" height="{areaheight}*0.7"  imagetype="icon" path="ico_recording"/>-->
+					<drawtextbox align="center" maxlines="2" x="4%" y="75%" width="92%" height="38%" font="{light}" fontsize="9%" color="{clrLightGray}" text="{name}" />
+				</area>
+				<area condition="{current}" y="54%" height="46%" layer="4">
+					<drawtextbox align="center" maxlines="3" x="5%" y="10%" width="90%" height="38%" font="{light}" fontsize="9%" color="{clrLightGray}" text="{name}" />
+					<drawtext x="35%" y="47%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{percentseen}%" />
+					<drawtext x="35%" y="71%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{duration} min" />
+					<drawtext x="5%" y="87%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{date}" />
+					<drawtext y="87%" align="right" font="{light}" fontsize="7%" color="{clrLightGray}" text="{time}   " />
+				</area>
+				<area condition="{current}" y="54%" height="46%" transparency="40" layer="4">
+					<drawimage condition="gt({percentseen}, 0)" x="8%" y="46%" width="{areaheight}*0.1" height="{areaheight}*0.1" imagetype="icon" path="seenActive" />
+					<drawimage condition="eq({percentseen}, 0)" x="8%" y="46%" width="{areaheight}*0.1" height="{areaheight}*0.1" imagetype="icon" path="seen" />
+					<drawimage condition="{cutted}" x="3%" y="60%" width="{areaheight}*0.2" height="{areaheight}*0.2" imagetype="icon" path="cutActive" />
+					<drawimage condition="not{cutted}" x="3%" y="60%" width="{areaheight}*0.2" height="{areaheight}*0.2" imagetype="icon" path="cut" />
+				</area>
+			</areacontainer>
+		</listelement>
 
-	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{00_numRecordingsmenuitems}">
+		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
+			<area condition="{hasposter}" x="0" y="0" width="98%" height="52%" layer="3">
+				<drawimage imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.203" height="{areawidth}*0.27"/>
+				<drawimage name="poster" imagetype="image" path="{posterpath}" x="0" y="0" width="{areaheight}*0.95*{posterwidth}/{posterheight}" height="95%"/>
+				<drawrectangle x="0" y="98%" width="{width(poster)}*{percentseen}/100" height="{areaheight}*0.006" color="{clrHigh}" />
+				<drawtext name="title" x="{width(poster)}*1.2" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
+				<drawtext name="shorttext" x="{width(poster)}*1.2" y="{height(title)}" width="0.96*{areawidth} - {width(poster)}" font="{light}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
+				<drawtextbox x="{width(poster)}*1.2" y="23%" valign="center" width="{areawidth}*0.94 - {width(poster)}" height="{areaheight}*0.92 - {posy(datetime)}" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
+			</area>
+			<area condition="not{hasposter}" x="0" y="0" width="98%" height="52%" layer="3">
+				<drawtext condition="not{hasposter}" name="title" x="1%" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
+				<drawtext condition="not{hasposter}" name="shorttext" x="1%" y="{height(title)}" width="98%" font="{semibold}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
+				<drawtextbox condition="not{hasposter}" x="1%" y="23%" valign="center" width="{areawidth}*0.98" height="{areaheight}*0.92 - {posy(datetime)}" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
+			</area>
+		</currentelement>
+	</menuitems>
+
+	<menuitems condition="strequal({recmenuorientation}, 'vertical')" x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{00_numRecordingsmenuitems}">
 		<listelement>
 			<areacontainer condition="not{folder}">
 				<area x="0" width="19%" transparency="{transLists}" layer="3">
@@ -210,7 +262,7 @@
 		</currentelement>
 	</menuitems>
 
-	<scrollbar>
+	<scrollbar condition="strequal({recmenuorientation}, 'vertical')" >
 		<area condition="lt({height},1000)" x="95%" y="14%" width="5%" height="75%" layer="3">
 			 <drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
 			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />

@@ -28,6 +28,7 @@
 			<parameter type="bool" name="showChannelinfoPosterInline" displaytext="{tr(showChannelinfoPosterInline)}">0</parameter>
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarker)}">
+			<parameter type="string" name="recmenuorientation" displaytext="{tr(recmenuorientation)}" options="horizontal,vertical">1</parameter>
 			<parameter type="int" name="00_numRecordingsmenuitems" min="12" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
 			<parameter type="int" name="03_new-recordingsMarker" min="0" max="9" displaytext="{tr(03_new-recordingsMarker)}">2</parameter>
 			<parameter type="int" name="05_notNewNotWatched-recordingsMarker" min="0" max="9" displaytext="{tr(05_notNewNotWatched-recordingsMarker)}">9</parameter>
@@ -183,6 +184,10 @@
 			<trans lang="de_DE">Zeige Poster in der Kanalinfo (extern)</trans>
 		</token>
 <!--RecordingMarkersProgress-->
+		<token name="tr(recmenuorientation)">
+			<trans lang="en_EN">Direction menu recordings</trans>
+			<trans lang="de_DE">Ausrichtung Menü Aufzeichnungen</trans>
+		</token>
 		<token name="tr(recordingsmarker)">
 			<trans lang="en_EN">Menu Recordings</trans>
 			<trans lang="de_DE">Menü Aufzeichnungen</trans>
