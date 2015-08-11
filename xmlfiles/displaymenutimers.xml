@@ -51,9 +51,9 @@
 <!--not{currentInfo}-->
 			<area condition="not{currentInfo}" x="24%" width="71%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive"/>
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
 			</area>
 			<area condition="not{currentInfo}" x="91%" width="2%" layer="4">
 				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
@@ -66,9 +66,9 @@
 <!--{currentInfo}-->
 			<area condition="{currentInfo}" x="24%" width="45%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
-				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive"/>
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
 			</area>
 			<area condition="{currentInfo}" x="66%" width="2%" layer="4">
 				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />

@@ -49,7 +49,7 @@
 		</submenu>
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
-			<parameter type="int" name="coloredButtons" min="0" max="2" displaytext="{tr(coloredButtons)}">2</parameter>
+			<parameter type="string" name="coloredButtons" displaytext="{tr(coloredButtons)}" options="no,border,gradient">2</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">0</parameter>
 			<parameter type="int" name="fontSizeDescr" min="34" max="50" displaytext="{tr(fontSizeDescr)}">34</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
@@ -111,8 +111,20 @@
 			<trans lang="de_DE">Zeige Leiste mit Icons im Setup-Menü</trans>
 		</token>
 		<token name="tr(coloredButtons)">
-			<trans lang="en_EN">Colored active buttons (0=no, 1=only border, 2=gradient)</trans>
-			<trans lang="de_DE">Farbige Auswahlbalken (0=nein, 1=nur Rand, 2=Farbverlauf)</trans>
+			<trans lang="en_EN">Colored active buttons</trans>
+			<trans lang="de_DE">Farbige Auswahlbalken</trans>
+		</token>
+		<token name="tr(no)">
+			<trans lang="en_EN">no</trans>
+			<trans lang="de_DE">nein</trans>
+		</token>
+		<token name="tr(border)">
+			<trans lang="en_EN">only colored border</trans>
+			<trans lang="de_DE">nur farbiger Rand</trans>
+		</token>
+		<token name="tr(gradient)">
+			<trans lang="en_EN">extensive gradient</trans>
+			<trans lang="de_DE">vollflächiger Farbverlauf</trans>
 		</token>
 		<token name="tr(tvgngDescriptionScroll)">
 			<trans lang="en_EN">Scroll descriptions in TVGuideNG</trans>
@@ -188,6 +200,14 @@
 			<trans lang="en_EN">Direction menu recordings</trans>
 			<trans lang="de_DE">Ausrichtung Menü Aufzeichnungen</trans>
 		</token>
+		<token name="tr(horizontal)">
+            <trans lang="en_EN">horizontal</trans>
+            <trans lang="de_DE">horizontal</trans>
+        </token>
+        <token name="tr(vertical)">
+            <trans lang="en_EN">vertical</trans>
+            <trans lang="de_DE">vertikal</trans>
+        </token>
 		<token name="tr(recordingsmarker)">
 			<trans lang="en_EN">Menu Recordings</trans>
 			<trans lang="de_DE">Menü Aufzeichnungen</trans>

@@ -50,9 +50,9 @@
         -->
 		<area condition="not{info}++not{buttonyesno}++not{timerconflictheader}++not{timerconflict}++not{timelineheader}++not{timelinetimer}" layer="5">
 			<drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="0" y="0" width="100%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuCurrentTVG1" x="0" y="0" width="100%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuCurrentTVG1_Color" x="0" y="0" width="100%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuCurrentTVG1_Gradient" x="0" y="0" width="100%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuCurrentTVG1" x="0" y="0" width="100%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuCurrentTVG1_Color" x="0" y="0" width="100%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuCurrentTVG1_Gradient" x="0" y="0" width="100%" height="100%"/>
 		</area>
         <!-- info item 
         {info}          true
@@ -95,14 +95,14 @@
 			<fill color="FF2a2a2a" />
 			<drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="2" y="5%" width="50%" height="90%"/>
 			<drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="51%" y="5%" width="49%" height="90%"/>
-			<drawimage condition="{current}++{yes}++eq({coloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="2" y="5%" width="50%" height="90%"/>
-			<drawimage condition="{current}++{yes}++eq({coloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="2" y="5%" width="50%" height="90%"/>
-			<drawimage condition="{current}++{yes}++eq({coloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="2" y="5%" width="50%" height="90%"/>
+			<drawimage condition="{current}++{yes}++eq({indexcoloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="2" y="5%" width="50%" height="90%"/>
+			<drawimage condition="{current}++{yes}++eq({indexcoloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="2" y="5%" width="50%" height="90%"/>
+			<drawimage condition="{current}++{yes}++eq({indexcoloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="2" y="5%" width="50%" height="90%"/>
 			<drawimage condition="{current}++{yes}" imagetype="skinpart" path="buttonRecMenuTVG" x="51%" y="5%" width="49%" height="90%"/>
 			<drawimage condition="{current}++not{yes}" imagetype="skinpart" path="buttonRecMenuTVG" x="2" y="5%" width="50%" height="90%"/>
-			<drawimage condition="{current}++not{yes}++eq({coloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="51%" y="5%" width="49%" height="90%"/>
-			<drawimage condition="{current}++not{yes}++eq({coloredButtons},1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="51%" y="5%" width="49%" height="90%"/>
-			<drawimage condition="{current}++not{yes}++eq({coloredButtons},2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="51%" y="5%" width="49%" height="90%"/>
+			<drawimage condition="{current}++not{yes}++eq({indexcoloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="51%" y="5%" width="49%" height="90%"/>
+			<drawimage condition="{current}++not{yes}++eq({indexcoloredButtons},1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="51%" y="5%" width="49%" height="90%"/>
+			<drawimage condition="{current}++not{yes}++eq({indexcoloredButtons},2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="51%" y="5%" width="49%" height="90%"/>
 		</area>
 		<area condition="{buttonyesno}" layer="6">
 			<drawtext name="yestext" x="{areawidth}/4 - {width(yestext)}/2" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{textyes}" />
@@ -267,9 +267,9 @@
         -->
 		<area condition="{timerconflict}" layer="5">
 			<drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="0" y="0" width="70%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="0" y="0" width="70%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="0" y="0" width="70%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="0" y="0" width="70%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="0" y="0" width="70%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="0" y="0" width="70%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="0" y="0" width="70%" height="100%"/>
 		</area>
 		<area condition="{timerconflict}" layer="6">
 			<drawimage condition="{current}++{infoactive}" imagetype="icon" path="iconInfoActive" x="{areaheight}*0.25" valign="center" width="{areaheight}*0.5" height="{areaheight}*0.5"/>
@@ -434,9 +434,9 @@
         -->
 		<area condition="{timelinetimer}" layer="5">
 			<drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="0" y="0" width="100%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="0" y="0" width="100%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="0" y="0" width="100%" height="100%"/>
-			<drawimage condition="{current}++eq({coloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="0" y="0" width="100%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" imagetype="skinpart" path="buttonRecMenuActiveTVG" x="0" y="0" width="100%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Color" x="0" y="0" width="100%" height="100%"/>
+			<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" imagetype="skinpart" path="buttonRecMenuActiveTVG_Gradient" x="0" y="0" width="100%" height="100%"/>
 			<drawrectangle x="5%" y="{areaheight}-1" width="90%" height="1" color="{clrBlack}"/>
 		</area>
 		<area condition="{timelinetimer}" layer="6">

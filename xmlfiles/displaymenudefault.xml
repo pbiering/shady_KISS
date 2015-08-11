@@ -35,9 +35,9 @@
 		<listelement>
 			<area condition="not{separator}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFull" />
-				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive_Gradient" />
-				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActiveColor" />
-				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive_Gradient" />
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActiveColor" />
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
 			</area>
 <!--separators-->
 			<area condition="{separator}++not{fritzbox}" x="1%" width="94%" transparency="{transLists}" layer="3">
@@ -49,9 +49,9 @@
 <!--separators-fritzbox-Anrufdetails-->
 			<area condition="{separator}++{fritzbox}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />
-				<drawimage condition="{current}++eq({coloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
-				<drawimage condition="{current}++eq({coloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
-				<drawimage condition="{current}++eq({coloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
+				<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 			</area>
 			<areascroll condition="{separator}++{fritzbox}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="25%" layer="4">
 				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
@@ -70,11 +70,11 @@
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
 			</area>
 
-			<area condition="not{separator}++{current}" x="1%" width="94%" transparency="{transLists}" layer="3">
+			<!--<area condition="not{separator}++{current}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '0')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActiveColor" />
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '2')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive_Gradient" />
-			</area>
+			</area>-->
 				
 <!--recordings-->
 			<!--<area condition="{setup}++strcontains({column1}, '(4 = Detail')++strequal({column2}, '4')" x="50%" y="0" width="42%" layer="4">
