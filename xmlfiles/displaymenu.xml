@@ -18,13 +18,13 @@
 	</background>
 
 	<header>
-		<area x="3%" y="2%" width="65%" height="7%" layer="4">
+		<area x="3%" y="2%" width="62%" height="7%" layer="4">
 			<drawtext x="0" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
 		</area>
 	</header>
 
 	<datetime>
-		<area x="68%" y="3%" width="20%" height="10%" layer="4">
+		<area x="65%" y="3%" width="23%" height="10%" layer="4">
 			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}   {dayleadingzero}. {monthnameshort}." />
 		</area>
 	</datetime>

@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2015-08-31:
+- Fixed scrollheight of actor-thumbs, fixed areawidht of datetime in menus
+
 2015-08-11:
 - Changed setup of menubars
 
