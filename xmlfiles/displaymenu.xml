@@ -25,7 +25,7 @@
 
 	<datetime>
 		<area x="65%" y="3%" width="23%" height="10%" layer="4">
-			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}   {dayleadingzero}. {monthnameshort}." />
+			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}, {dayleadingzero}. {monthnameshort}." />
 		</area>
 	</datetime>
 	<time>
