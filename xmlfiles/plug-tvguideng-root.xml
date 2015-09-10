@@ -62,26 +62,14 @@
     {posterpath}              absolute path of scraped poster
     -->
 	<viewelement name="header_hor">
-		<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
-			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}.        {start} - {stop}"/>
-			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
-		</area>
-		<area condition="not{isdummy}++{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
+		<area condition="not{isdummy}" x="3%" y="1%" width="54%" height="9%" layer="3">
 			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}.        {start} - {stop}"/>
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
 
 	</viewelement>
 	<viewelement name="header_ver">
-		<area condition="not{isdummy}++not{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
-			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
-			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
-		</area>
-		<area condition="not{isdummy}++{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
-			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
-			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
-		</area>
-		<area condition="not{isdummy}++{hasposter}" x="3%" y="1%" width="54%" height="9%" layer="3">
+		<area condition="not{isdummy}" x="3%" y="1%" width="54%" height="9%" layer="3">
 			<drawtext x="0" y="0" font="{light}" width="100%" fontsize="45%" color="{clrLightGray}" text="{day} {daynumeric}.{month}. {start} - {stop}"/>
 			<drawtext x="0" y="50%" font="{light}" width="100%" fontsize="45%" color="{clrWhite}" text="{title}  {shorttext}" />
 		</area>
