@@ -1,6 +1,6 @@
 <menudetailedepg x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="0" scaletvy="0" scaletvwidth="0" scaletvheight="0">
 	<background>
-		<area x="0" y="0" width="100%" height="100%" transparency="7" layer="1">
+		<area x="0" y="0" width="100%" height="100%" transparency="transBackground" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
 		</area>
@@ -27,6 +27,7 @@
 			<drawtext condition="isset{shorttext}" name="title" x="0" y="0" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{title} - {shorttext}"/>
 			<drawtext condition="empty{shorttext}" name="title" x="0" y="0" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{title}"/>
 			<drawtext name="startstop" x="0" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="{day} {date}   {start} - {stop}   {durationhours}:{durationminutes}h"/>
+			<!--<drawimage condition="{epgpicavailable}" imagetype="image" path="{epgpicpath}" x="{areawidth} - {areaheight}*8/10 * 174 / 130" width="{areaheight}*8/10 * 174 / 130" height="{areaheight}*8 / 10"/>-->
 		</area>
 	</detailheader>
 
@@ -38,7 +39,17 @@
 	</scrollbar>
 
 	<!-- TAB EPGINFO -->
-	<tab name="EPG Info" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
+	<tab condition="isset{epgpic1path}" name="EPG Info" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
+		<drawimage condition="empty{seriesposter1path}++empty{posterpath}" name="epgpic" imagetype="image" path="{epgpic1path}" x="1%" y="0" width="{areawidth}*0.2" height="{areawidth}*0.2*130/174"/>
+		<drawtextbox condition="empty{seriesposter1path}++empty{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(epgpic)}*1.2" floatheight="{height(epgpic)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+		<!--<drawimage condition="{isseries}||{ismovie}" imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.205" height="{areawidth}*0.26"/>-->
+		<drawimage condition="{isseries}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{seriesposter1height}/{seriesposter1width}" />
+		<drawimage condition="{ismovie}" name="movieposter" imagetype="image" path="{posterpath}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{posterheight}/{posterwidth}" />
+		<drawimage condition="isset{seriesposter1path}||isset{posterpath}" imagetype="image" path="{epgpic1path}" x="1%" y="70%" width="{areawidth}*0.15" height="{areawidth}*0.15*130/174"/>
+		<drawtextbox condition="isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.2" floatheight="{height(seriesposter)}*1.9" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+		<drawtextbox condition="isset{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.2" floatheight="{height(movieposter)}*1.9" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+	</tab>
+	<tab condition="empty{epgpic1path}" name="EPG Info" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
 		<drawtextbox condition="not{isseries}++not{ismovie}" x="0" y="0" width="96%" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
 		<drawimage condition="{isseries}||{ismovie}" imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.205" height="{areawidth}*0.26"/>
 		<drawimage condition="{isseries}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{seriesposter1height}/{seriesposter1width}" />
