@@ -102,6 +102,7 @@
 		</area>
 	</timers>
 	<lastrecordings condition="{showInfosAndTimers}||{showInfosAndTimersAndLastrecs}" detached="true" delay="100" fadetime="500">
+		<!--TODO areacontainer mit showNoRecordings-->
 		<area condition="eq({numtimers}, 6)++not{showInfosAndTimersAndLastrecs}" x="68%" y="80%" width="11%" height="18%" layer="3">
 			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/1" rowheight="{areaheight}" overflow="cut">
 				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />

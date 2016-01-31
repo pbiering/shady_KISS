@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 2016-01-31:
 - Fixed area of {timerstart} - {timerstop} in displaymenutimers
+- Fixed needless display of posterbackgrounds in currentelements
 
 2016-01-21:
 - Fixed conditions for neutrinoepg

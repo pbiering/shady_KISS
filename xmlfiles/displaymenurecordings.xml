@@ -67,7 +67,7 @@
 		</listelement>
 
 		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
-			<area condition="{hasposter}" x="0" y="0" width="98%" height="52%" layer="3">
+			<area condition="isset{posterpath}" x="0" y="0" width="98%" height="52%" layer="3">
 				<drawimage imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.203" height="{areawidth}*0.27"/>
 				<drawimage name="poster" imagetype="image" path="{posterpath}" x="0" y="0" width="{areaheight}*0.95*{posterwidth}/{posterheight}" height="95%"/>
 				<drawrectangle x="0" y="98%" width="{width(poster)}*{percentseen}/100" height="{areaheight}*0.006" color="{clrHigh}" />
@@ -75,10 +75,10 @@
 				<drawtext name="shorttext" x="{width(poster)}*1.2" y="{height(title)}" width="0.96*{areawidth} - {width(poster)}" font="{light}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
 				<drawtextbox x="{width(poster)}*1.2" y="23%" valign="center" width="{areawidth}*0.94 - {width(poster)}" height="{areaheight}*0.79" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
 			</area>
-			<area condition="not{hasposter}" x="0" y="0" width="98%" height="52%" layer="3">
-				<drawtext condition="not{hasposter}" name="title" x="1%" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
-				<drawtext condition="not{hasposter}" name="shorttext" x="1%" y="{height(title)}" width="98%" font="{semibold}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
-				<drawtextbox condition="not{hasposter}" x="1%" y="23%" valign="center" width="{areawidth}*0.98" height="{areaheight}*0.79" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
+			<area condition="empty{posterpath}" x="0" y="0" width="98%" height="52%" layer="3">
+				<drawtext name="title" x="1%" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
+				<drawtext name="shorttext" x="1%" y="{height(title)}" width="98%" font="{semibold}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
+				<drawtextbox x="1%" y="23%" valign="center" width="{areawidth}*0.98" height="{areaheight}*0.79" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
 			</area>
 		</currentelement>
 	</menuitems>
@@ -242,10 +242,10 @@
 				<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="75%" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
 				</area>
 				<area condition="not{folder}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
-					<drawimage condition="{hasposter}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
-					<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-					<drawtextbox condition="{hasposter}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
-					<drawtextbox condition="not{hasposter}" x="4%" y="2%" width="92%" height="96%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
+					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
+					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="96%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
 				</area>
 				<area condition="not{folder}++{currentInfo}" x="70%" y="1%" width="25%" height="6%" layer="6">
 					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{percentseen}/100" height="{areaheight}*0.05" color="{clrHigh}" />
@@ -255,8 +255,8 @@
 					<drawtext condition="gt({numrecordingsfolder}, 1)" x="0" y="0" align="center" width="100%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{numrecordingsfolder} {tr(recordings)}" />
 					<drawtext name="newrecordingsfolder" x="0" y="45%" align="center" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{newrecordingsfolder} {tr(new)}" />
 				</area>
-				<area condition="{folder}++{hasposter}" x="71%" y="21%" width="23%" height="70%" layer="4">
-					<drawimage condition="{hasposter}" x="10%" y="0" height="{areawidth}*0.8*{posterheight}/{posterwidth}" width="{areawidth}*0.8" imagetype="image" path="{posterpath}" />
+				<area condition="{folder}++isset{posterpath}" x="71%" y="21%" width="23%" height="70%" layer="4">
+					<drawimage x="10%" y="0" height="{areawidth}*0.8*{posterheight}/{posterwidth}" width="{areawidth}*0.8" imagetype="image" path="{posterpath}" />
 				</area>
 			</areacontainer>
 		</currentelement>
