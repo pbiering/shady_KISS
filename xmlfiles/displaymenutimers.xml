@@ -39,14 +39,11 @@
 			<area x="1%" width="6%" layer="4">
 				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="13%" y="20%" width="65%" height="65%" />
 			</area>
-			<area x="7%" width="4%" layer="4">
-				<drawtext x="4%" width="100%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{dayname}" />
+			<area x="5%" width="10%" layer="4">
+				<drawtext x="25%" width="100%" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{dayname} {printf('%02d.%02d', day, month)}." />
 			</area>
-			<area x="8%" width="6%" layer="4">
-				<drawtext x="25%" width="100%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d', day, month)}." />
-			</area>
-			<area x="13%" width="10%" layer="4">
-				<drawtext condition="isset{title}" name="menutext" x="20%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{timerstart} - {timerstop}" />
+			<area x="{areawidth}*0.135" width="10%" layer="4">
+				<drawtext condition="isset{title}" x="20%" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{timerstart} - {timerstop}" />
 			</area>
 <!--not{currentInfo}-->
 			<area condition="not{currentInfo}" x="24%" width="71%" transparency="{transLists}" layer="3">
@@ -71,9 +68,9 @@
 				<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
 			</area>
 			<area condition="{currentInfo}" x="66%" width="2%" layer="4">
-				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
-				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+				<drawimage condition="{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="redFL" />
+				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="greenFL" />
+				<drawimage condition="not{flagactive}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
 			</area>
 			<areascroll condition="{currentInfo}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="39%" layer="3">
 				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
