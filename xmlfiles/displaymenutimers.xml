@@ -10,8 +10,11 @@
 		<area x="0" y="0" width="100%" height="11%" layer="3">
 			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
-		<area condition="{currentInfo}" x="70%" y="14%" width="25%" height="75%" transparency="{transLists}" layer="3">
-				<drawimage x="0" y="0" height="100%" width="100%" imagetype="skinpart" path="currentElementHeader" />
+		<area condition="eq({indexcurrentInfo}, 1)" x="70%" y="14%" width="25%" height="75%" transparency="{transLists}" layer="3">
+			<drawimage x="0" y="0" height="100%" width="100%" imagetype="skinpart" path="currentElementHeader" />
+		</area>
+		<area condition="eq({indexcurrentInfo}, 2)" x="65%" y="14%" width="30%" height="75%" transparency="{transLists}" layer="3">
+			<drawimage x="0" y="0" height="100%" width="100%" imagetype="skinpart" path="currentElementHeader" />
 		</area>
 	</background>
 
@@ -45,54 +48,96 @@
 			<area x="{areawidth}*0.135" width="10%" layer="4">
 				<drawtext condition="isset{title}" x="20%" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{timerstart} - {timerstop}" />
 			</area>
-<!--not{currentInfo}-->
-			<area condition="not{currentInfo}" x="24%" width="71%" transparency="{transLists}" layer="3">
-				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong"/>
-				<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive"/>
-				<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
-				<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
-			</area>
-			<area condition="not{currentInfo}" x="91%" width="2%" layer="4">
-				<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
-				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-				<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
-			</area>
-			<areascroll condition="not{currentInfo}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="65%" layer="3">
-				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-			</areascroll>
-<!--{currentInfo}-->
-			<area condition="{currentInfo}" x="24%" width="45%" transparency="{transLists}" layer="3">
-				<drawimage condition="not{current}" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
-				<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive"/>
-				<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
-				<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
-			</area>
-			<area condition="{currentInfo}" x="66%" width="2%" layer="4">
-				<drawimage condition="{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="redFL" />
-				<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-				<drawimage condition="not{flagactive}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
-			</area>
-			<areascroll condition="{currentInfo}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="39%" layer="3">
-				<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-			</areascroll>
+<!--noCurrentInfo-->
+			<areacontainer condition="eq({indexcurrentInfo}, 0)">
+				<area x="24%" width="71%" transparency="{transLists}" layer="3">
+					<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
+				</area>
+				<area x="91%" width="2%" layer="4">
+					<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
+					<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+				</area>
+				<areascroll scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="65%" layer="3">
+					<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+				</areascroll>
+			</areacontainer>
+<!--tallCurrentInfo-->
+			<areacontainer condition="eq({indexcurrentInfo}, 1)">
+				<area x="24%" width="45%" transparency="{transLists}" layer="3">
+					<drawimage condition="not{current}" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
+				</area>
+				<area x="66%" width="2%" layer="4">
+					<drawimage condition="{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="redFL" />
+					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="greenFL" />
+					<drawimage condition="not{flagactive}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+				</area>
+				<areascroll scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="39%" layer="3">
+					<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+				</areascroll>
+			</areacontainer>
+<!--wideCurrentInfo-->
+			<areacontainer condition="eq({indexcurrentInfo}, 2)">
+				<area x="24%" width="40%" transparency="{transLists}" layer="3">
+					<drawimage condition="not{current}" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
+					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
+				</area>
+				<area x="61%" width="2%" layer="4">
+					<drawimage condition="{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="redFL" />
+					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="greenFL" />
+					<drawimage condition="not{flagactive}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+				</area>
+				<areascroll scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="34%" layer="3">
+					<drawtext name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+				</areascroll>
+			</areacontainer>
 		</listelement>
 
 		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
-			<area condition="{currentInfo}" x="71%" y="{areaheight}*0.001" width="23%" height="6%" layer="4">
-				<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="75%" color="{clrLightGray}" text="{eventtitle}" />
-			</area>
-			<area condition="{currentInfo}" x="70%" y="7%" width="25%" height="5%" layer="4">
-				<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="75%" color="{clrLightGray}" text="{channelnumber} - {channelname}     {day}.{month}.   {timerstart} - {timerstop}" />
-			</area>
-			<area condition="{currentInfo}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
-				<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
-				<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-				<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
-				<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="96%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
-			</area>
-			<area condition="{currentInfo}++{running}" x="70%" y="1%" width="25%" height="6%" layer="4">
-				<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{elapsed}/{duration}" height="{areaheight}*0.03" color="{clrHigh}" />
-			</area>
+<!--tallCurrentInfo-->
+			<areacontainer condition="eq({indexcurrentInfo}, 1)">
+				<area x="71%" y="{areaheight}*0.001" width="23%" height="6%" layer="4">
+					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{eventtitle}" />
+				</area>
+				<area x="70%" y="7%" width="25%" height="5%" layer="4">
+					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}     {day}.{month}.   {timerstart} - {timerstop}" />
+				</area>
+				<area x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
+					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
+					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="empty{posterpath}" x="{fontSizeInfoDescription}" y="2%" width="92%" height="96%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
+				</area>
+				<area condition="{currentInfo}++{running}" x="70%" y="1%" width="25%" height="6%" layer="4">
+					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{elapsed}/{duration}" height="{areaheight}*0.03" color="{clrHigh}" />
+				</area>
+			</areacontainer>
+<!--wideCurrentInfo-->
+			<areacontainer condition="eq({indexcurrentInfo}, 2)">
+				<area x="66%" y="{areaheight}*0.001" width="28%" height="6%" layer="4">
+					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{eventtitle}" />
+				</area>
+				<area x="65%" y="7%" width="30%" height="5%" layer="4">
+					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}     {day}.{month}.   {timerstart} - {timerstop}" />
+				</area>
+				<area x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
+					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
+					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="96%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+				</area>
+				<area condition="{currentInfo}++{running}" x="65%" y="1%" width="30%" height="6%" layer="4">
+					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{elapsed}/{duration}" height="{areaheight}*0.03" color="{clrHigh}" />
+				</area>
+			</areacontainer>
 		</currentelement>
 	</menuitems>
 

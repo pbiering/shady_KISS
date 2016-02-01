@@ -1,5 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
+2016-02-01
+- Added {date} for WHATSONFAVORITES
+- Added wide currentelement in schedules, timers and recordings
+
 2016-01-31:
 - Fixed area of {timerstart} - {timerstop} in displaymenutimers
 - Fixed needless display of posterbackgrounds in currentelements

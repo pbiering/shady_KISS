@@ -38,7 +38,10 @@
 			<parameter type="int" name="numShortMenuitems" min="8" max="10" displaytext="{tr(numShortMenuitems)}">10</parameter>
 			<parameter type="int" name="numLongSubmenuitems" min="12" max="18" displaytext="{tr(numLongSubmenuitems)}">15</parameter>
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
-			<parameter type="bool" name="currentInfo" displaytext="{tr(currentInfo)}">1</parameter>
+			<parameter type="string" name="currentInfo" displaytext="{tr(currentInfo)}" options="noCurrentInfo,tallCurrentInfo,wideCurrentInfo">1</parameter>
+			<parameter type="int" name="fontSizeInfoTitle" min="34" max="54" displaytext="{tr(fontSizeInfoTitle)}">34</parameter>
+			<parameter type="int" name="fontSizeInfoDetails" min="30" max="36" displaytext="{tr(fontSizeInfoDetails)}">30</parameter>
+			<parameter type="int" name="fontSizeInfoDescription" min="30" max="54" displaytext="{tr(fontSizeInfoDescription)}">30</parameter>
 		</submenu>
 		<submenu name="Shift-and-fade-times" displaytext="{tr(shiftFadeTimes)}">
 			<parameter type="int" name="volumeShiftTime" min="0" max="500" displaytext="{tr(volumeShiftTime)}">300</parameter>
@@ -136,12 +139,36 @@
 			<trans lang="de_DE">Zeige Poster im Wiedergabe-Paneel</trans>
 		</token>
 		<token name="tr(currentInfo)">
-			<trans lang="en_EN">Info for active listentry</trans>
-			<trans lang="de_DE">Info für aktiven Listeneintrag</trans>
+			<trans lang="en_EN">Info for active listitem</trans>
+			<trans lang="de_DE">Info für aktives Listenelement</trans>
+		</token>
+		<token name="tr(noCurrentInfo)">
+			<trans lang="en_EN">No</trans>
+			<trans lang="de_DE">Nein</trans>
+		</token>
+		<token name="tr(tallCurrentInfo)">
+			<trans lang="en_EN">Tall</trans>
+			<trans lang="de_DE">Schmal</trans>
+		</token>
+		<token name="tr(wideCurrentInfo)">
+			<trans lang="en_EN">Wide</trans>
+			<trans lang="de_DE">Breit</trans>
+		</token>
+		<token name="tr(fontSizeInfoTitle)">
+			<trans lang="en_EN">Fontsize title in info for active listelement</trans>
+			<trans lang="de_DE">Schriftgröße Titel in Info zum aktiven Listenelement</trans>
+		</token>
+		<token name="tr(fontSizeInfoDetails)">
+			<trans lang="en_EN">Fontsize date, time...in info for active listelement </trans>
+			<trans lang="de_DE">Schriftgröße Datum, Zeit ... in Info zum aktiven Listenelement</trans>
+		</token>
+		<token name="tr(fontSizeInfoDescription)">
+			<trans lang="en_EN">Fontsize description in info for active listelement</trans>
+			<trans lang="de_DE">Schriftgröße Beschreibung in Info zum aktiven Listenelement</trans>
 		</token>
 		<token name="tr(fontSizeDescr)">
-			<trans lang="en_EN">Fontsize descriptions</trans>
-			<trans lang="de_DE">Schriftgröße Beschreibungen</trans>
+			<trans lang="en_EN">Fontsize detaildescriptions</trans>
+			<trans lang="de_DE">Schriftgröße Detail-Beschreibungen</trans>
 		</token>
 		<token name="tr(transBackground)">
 			<trans lang="en_EN">Transparency backgrounds</trans>
