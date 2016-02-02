@@ -37,7 +37,7 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 				</area>
 				<area condition="{timerfull}" x="92%" width="2%" layer="4">
-				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+				<drawimage x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
 				</area>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -50,7 +50,7 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="66%" width="2%" layer="4">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+					<drawimage x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
 				</area>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -63,7 +63,7 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="61%" width="2%" layer="4">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+					<drawimage x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
 				</area>
 			</areacontainer>
 <!--noCurrentInfo-->
@@ -76,7 +76,7 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 				</area>
 				<area condition="{timerfull}" x="92%" width="2%" layer="4">
-				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+				<drawimage x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
 				</area>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -89,7 +89,7 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="66%" width="2%" layer="4">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+					<drawimage x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
 				</area>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -102,7 +102,7 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="61%" width="2%" layer="4">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
+					<drawimage x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
 				</area>
 			</areacontainer>
 <!-- WHATSON -->

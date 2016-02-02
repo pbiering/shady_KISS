@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2016-02-02:
+- Fixed width of Markers
+
 2016-02-01
 - Added {date} for WHATSONFAVORITES
 - Added wide currentelement in schedules, timers and recordings
