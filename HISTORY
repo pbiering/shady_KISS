@@ -1,7 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 2016-02-02:
-- Fixed width of Markers
+- Fixed width of markers
+- Fixed columns in displaymenurecordings
+- Added setup to show only timers and infos in mainmenu
 
 2016-02-01
 - Added {date} for WHATSONFAVORITES

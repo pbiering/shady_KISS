@@ -17,8 +17,7 @@
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
 -->
 		<submenu name="Main-Menu" displaytext="{tr(mainMenu)}">
-			<parameter type="bool" name="showInfosAndTimers" displaytext="{tr(showInfosAndTimers)}">0</parameter>
-			<parameter type="bool" name="showInfosAndTimersAndLastrecs" displaytext="{tr(showInfosAndTimersAndLastrecs)}">0</parameter>
+			<parameter type="string" name="panelMain" displaytext="{tr(panelMain)}" options="none,showInfosAndOnlyTimers,showInfosAndTimers,showInfosAndTimersAndLastrecs">3</parameter>
 		</submenu>
 		<submenu name="Channel-Info" displaytext="{tr(channelInfo)}">
 			<parameter type="bool" name="channelName" displaytext="{tr(channelName)}">1</parameter>
@@ -101,14 +100,26 @@
 		<token name="tr(brightBackground)">
 			<trans lang="en_EN">Bright backgroundgradient</trans>
 			<trans lang="de_DE">Heller Hintergrundverlauf</trans>
-		</token>       
+		</token>
+		<token name="tr(panelMain)">
+			<trans lang="en_EN">Panel with infos, timers and lastrecs</trans>
+			<trans lang="de_DE">Paneel mit Infos, Timern und Aufnahmen</trans>
+		</token>
+		<token name="tr(none)">
+			<trans lang="en_EN">No</trans>
+			<trans lang="de_DE">Nein</trans>
+		</token>
+		<token name="tr(showInfosAndOnlyTimers)">
+			<trans lang="en_EN">Show infos and only timers</trans>
+			<trans lang="de_DE">Zeige Infos und nur Timer</trans>
+		</token>
 		<token name="tr(showInfosAndTimers)">
 			<trans lang="en_EN">Show infos and primarily timers</trans>
 			<trans lang="de_DE">Zeige Infos und vorrangig Timer</trans>
 		</token>
 		<token name="tr(showInfosAndTimersAndLastrecs)">
-			<trans lang="en_EN">Show infos, timers and at least last three recordings</trans>
-			<trans lang="de_DE">Zeige Infos, Timer und mind. die letzten drei Aufnahmen</trans>
+			<trans lang="en_EN">Show infos, timers + at least last three recordings</trans>
+			<trans lang="de_DE">Zeige Infos, Timer + mind. letzte drei Aufnahmen</trans>
 		</token>
 		<token name="tr(setupIconbar)">
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>

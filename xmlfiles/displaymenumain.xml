@@ -9,7 +9,7 @@
 		<area x="0" y="0" width="100%" height="100%" layer="2">
 			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMainKiss" />
 		</area>
-		<area condition="{showInfosAndTimers}||{showInfosAndTimersAndLastrecs}" x="0" y="73%" width="100%" height="27%" layer="3">
+		<area condition="gt({indexpanelMain},0)" x="0" y="73%" width="100%" height="27%" layer="3">
 			<drawimage  x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMainBottom" />
 		</area>
 		<area x="0" y="0" width="100%" height="11%" layer="3">
@@ -71,6 +71,13 @@
 			<drawimage condition="{blue4}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 	</colorbuttons>
+	
+	
+	
+	
+	
+	
+	
 
 	<timers detached="true" delay="100" fadetime="500" >
 		<area condition="not{numtimerconflicts}" x="61%" y="73%" width="12%" height="6%" layer="3">
@@ -82,7 +89,13 @@
 			<drawtext condition="gt({numtimerconflicts}, 1)" x="5%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
 		</area>
 
-		<area condition="{showInfosAndTimers}++not{showInfosAndTimersAndLastrecs}" x="1%" y="80%" width="78%" height="18%" layer="3">
+
+
+
+
+
+
+		<area condition="eq({indexpanelMain}, 1)||eq({indexpanelMain}, 2)" x="1%" y="80%" width="78%" height="18%" layer="3">
 			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/7" rowheight="{areaheight}" overflow="cut">
 				<drawimage  cache="true" name="logo" y="{areaheight}*0.09" width="{columnwidth}*0.5" height="17%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
 				<drawtextbox x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
@@ -91,7 +104,7 @@
 				<drawimage condition="{timers[isremotetimer]}" x="{columnwidth}*0.78" y="78%" width="{columnwidth}*0.16" height="20%" imagetype="skinpart" path="remoteTimers" />
 			</loop>
 		</area>
-		<area condition="not{showInfosAndTimers}++{showInfosAndTimersAndLastrecs}" x="1%" y="80%" width="44%" height="18%" layer="3">
+		<area condition="eq({indexpanelMain}, 3)" x="1%" y="80%" width="44%" height="18%" layer="3">
 			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
 				<drawimage  cache="true" name="logo" y="{areaheight}*0.09" width="{columnwidth}*0.5" height="17%" align="center" imagetype="channellogo" path="{timers[channelid]}" />
 				<drawtextbox x="2%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="2" font="{light}" fontsize="15%" color="{clrLightGray}" text="{timers[title]}" />
@@ -101,71 +114,71 @@
 			</loop>
 		</area>
 	</timers>
-	<lastrecordings condition="{showInfosAndTimers}||{showInfosAndTimersAndLastrecs}" detached="true" delay="100" fadetime="500">
-		<!--TODO areacontainer mit showNoRecordings-->
-		<area condition="eq({numtimers}, 6)++not{showInfosAndTimersAndLastrecs}" x="68%" y="80%" width="11%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/1" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="4%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="4%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
 
-		<area condition="eq({numtimers}, 5)++not{showInfosAndTimersAndLastrecs}" x="56%" y="80%" width="23%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/2" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="5%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="5%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
+	<lastrecordings condition="gt({indexpanelMain}, 1)" detached="true" delay="100" fadetime="500">
+			<area condition="eq({numtimers}, 6)++eq({indexpanelMain}, 2)" x="68%" y="80%" width="11%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/1" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="4%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="4%" y="40%" width="{columnwidth}*0.85" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
 
-		<area condition="gt({numtimers}, 4)++{showInfosAndTimersAndLastrecs}" x="45%" y="80%" width="34%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
+			<area condition="eq({numtimers}, 5)++eq({indexpanelMain}, 2)" x="56%" y="80%" width="23%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/2" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="5%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="5%" y="40%" width="{columnwidth}*0.8" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
 
-		<area condition="eq({numtimers}, 4)" x="45%" y="80%" width="34%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
+			<area condition="gt({numtimers}, 4)++eq({indexpanelMain}, 3)" x="45%" y="80%" width="34%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
 
-		<area condition="eq({numtimers}, 3)" x="34%" y="80%" width="45%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
+			<area condition="eq({numtimers}, 4)" x="45%" y="80%" width="34%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
 
-		<area condition="eq({numtimers}, 2)" x="23%" y="80%" width="56%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
+			<area condition="eq({numtimers}, 3)" x="34%" y="80%" width="45%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="2%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
 
-		<area condition="eq({numtimers}, 1)" x="12%" y="80%" width="67%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/6" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
+			<area condition="eq({numtimers}, 2)" x="23%" y="80%" width="56%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/5" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.9" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
 
-		<area condition="eq({numtimers}, 0)" x="1%" y="80%" width="78%" height="18%" layer="3">
-			<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/7" rowheight="{areaheight}" overflow="cut">
-				<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
-				<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
-				<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
-			</loop>
-		</area>
+			<area condition="eq({numtimers}, 1)" x="12%" y="80%" width="67%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/6" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
+
+			<area condition="eq({numtimers}, 0)" x="1%" y="80%" width="78%" height="18%" layer="3">
+				<loop name="recordings" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/7" rowheight="{areaheight}" overflow="cut">
+					<drawtext x="0" y="10%" align="center" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[date]} {recordings[time]}" />
+					<drawtextbox condition="isset{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[seriesname]} - {recordings[name]}" />
+					<drawtextbox condition="empty{recordings[seriesname]}" x="1%" y="40%" width="{columnwidth}*0.875" align="center" maxlines="3" font="{light}" fontsize="15%" color="{clrLightGray}" text="{recordings[name]}" />
+				</loop>
+			</area>
 	</lastrecordings>
 
 	<discusage detached="true" delay="150" fadetime="500">
@@ -177,7 +190,7 @@
 	<devices> 
 	</devices>
 
-	<currentweather condition="{showInfosAndTimers}||{showInfosAndTimersAndLastrecs}" detached="true" delay="200" fadetime="500" >
+	<currentweather condition="gt({indexpanelMain},0)" detached="true" delay="200" fadetime="500" >
 		<area x="81%" y="92%" width="7%" height="6%" layer="3">
 			<drawimage name="weathericon" x="0" valign="center" width="{areaheight}*0.7" height="{areaheight}*0.7" imagetype="icon" path="{icon}" />
 			<drawtext name="temperature" x="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{temperature}°C" />
@@ -188,7 +201,7 @@
 		</area>
 	</currentweather>
 
-	<systemload condition="{showInfosAndTimers}||{showInfosAndTimersAndLastrecs}" detached="true" delay="200" fadetime="500" >
+	<systemload condition="gt({indexpanelMain},0)" detached="true" delay="200" fadetime="500" >
 		<area x="79%" y="80%" width="21%" height="20%" layer="3">
 		</area>
 		<area x="81%" y="86%" width="14%" height="6%" layer="3">
@@ -196,7 +209,7 @@
 		</area>
 	</systemload>
 	
-	<temperatures condition="{showInfosAndTimers}||{showInfosAndTimersAndLastrecs}" detached="true" delay="200" fadetime="500" >
+	<temperatures condition="gt({indexpanelMain},0)" detached="true" delay="200" fadetime="500" >
 		<area x="81%" y="80%" width="14%" height="6%" layer="3">		
 			<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="CPU: {cputemp}°C   GPU: {gputemp}°C"/>
 		</area>
