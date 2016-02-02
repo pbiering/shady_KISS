@@ -92,14 +92,17 @@
 				<area x="0" width="19%" transparency="{transLists}" layer="3">
 					<drawimage x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="cellRecordings" />
 				</area>
-				<area x="2%" width="8%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
+				<area condition="eq({00_numRecordingsmenuitems}, 12)" x="{areawidth}*0.01" width="8%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="57%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
 				</area>
-				<area x="10%" width="4%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />
+				<area condition="gt({00_numRecordingsmenuitems}, 12)" x="{areawidth}*0.01" width="8%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
 				</area>
-				<area x="15%" width="4%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
+				<area x="9%" width="5%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />
+				</area>
+				<area x="14%" width="5%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
 				</area>
 				<area condition="not{longElapsedBar}" x="14%" y="1%" width="5%" height="6%" layer="4">
 					<drawrectangle x="0" y="{areaheight}*0.96" width="{areawidth}*0.9*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
@@ -110,17 +113,11 @@
 				<area x="0" width="19%" transparency="{transLists}" layer="3">
 					<drawimage x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="cellRecordingsFolderDark" />
 				</area>
-				<area x="6%" width="3%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tr(recs)}: " />
+				<area x="5%" width="4%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{numrecordingsfolder}" />
 				</area>
-				<area x="9%" width="2%" layer="4">
-					<drawtext x="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{numrecordingsfolder}," />
-				</area>
-				<area x="12%" width="3%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tr(new)}: " />
-				</area>
-				<area x="16%" width="{areawidth}*0.0128" layer="4">
-					<drawtext x="0" valign="center" align="right" font="{light}" fontsize="60%" color="{clrLightGray}" text="{newrecordingsfolder}" />
+				<area x="10%" width="7%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{tr(new)}: {newrecordingsfolder}" />
 				</area>
 			</areacontainer>
 <!--noCurrentInfo-->
