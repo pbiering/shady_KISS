@@ -113,8 +113,8 @@
 				<area x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
-					<drawtextbox condition="empty{posterpath}" x="{fontSizeInfoDescription}" y="2%" width="92%" height="96%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
 				</area>
 				<area condition="{currentInfo}++{running}" x="70%" y="1%" width="25%" height="6%" layer="4">
 					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{elapsed}/{duration}" height="{areaheight}*0.03" color="{clrHigh}" />
@@ -131,8 +131,8 @@
 				<area x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="96%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
-					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="96%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
 				</area>
 				<area condition="{currentInfo}++{running}" x="65%" y="1%" width="30%" height="6%" layer="4">
 					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{elapsed}/{duration}" height="{areaheight}*0.03" color="{clrHigh}" />

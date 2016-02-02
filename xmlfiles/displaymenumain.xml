@@ -71,13 +71,6 @@
 			<drawimage condition="{blue4}++isset{blue}" x="0" y="93%" width="{areawidth}" height="{areaheight}/9" imagetype="skinpart" path="buttonBlueMain" />
 		</area>
 	</colorbuttons>
-	
-	
-	
-	
-	
-	
-	
 
 	<timers detached="true" delay="100" fadetime="500" >
 		<area condition="not{numtimerconflicts}" x="61%" y="73%" width="12%" height="6%" layer="3">
@@ -88,12 +81,6 @@
 			<drawtext condition="eq({numtimerconflicts}, 1)" x="5%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />
 			<drawtext condition="gt({numtimerconflicts}, 1)" x="5%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
 		</area>
-
-
-
-
-
-
 
 		<area condition="eq({indexpanelMain}, 1)||eq({indexpanelMain}, 2)" x="1%" y="80%" width="78%" height="18%" layer="3">
 			<loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/7" rowheight="{areaheight}" overflow="cut">
