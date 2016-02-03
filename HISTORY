@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 2016-02-03:
 - Added wide currentelement in channelsmenu
+- Fixed presenteventduration in channelsmenu
 
 2016-02-02:
 - Fixed width of markers

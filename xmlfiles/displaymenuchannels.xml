@@ -114,7 +114,7 @@
 					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{presenteventtitle}" />
 				</area>
 				<area condition="isset{presenteventtitle}" x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{presenteventstart} - {presenteventstop}      {presenteventdurationminutes}min" />
+					<drawtext align="center" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{presenteventstart} - {presenteventstop}      {presenteventduration}min" />
 				</area>
 				<area condition="isset{presenteventtitle}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
@@ -131,7 +131,7 @@
 					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{presenteventtitle}" />
 				</area>
 				<area condition="isset{presenteventtitle}" x="65%" y="7%" width="30%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{presenteventstart} - {presenteventstop}      {presenteventdurationminutes}min" />
+					<drawtext align="center" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{presenteventstart} - {presenteventstop}      {presenteventduration}min" />
 				</area>
 				<area condition="isset{presenteventtitle}" x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
