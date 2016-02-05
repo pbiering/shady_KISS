@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2016-02-05:
+- Fixed conditions in displaymenudetailrecording
+
 2016-02-03:
 - Added wide currentelement in channelsmenu
 - Fixed presenteventduration in channelsmenu
