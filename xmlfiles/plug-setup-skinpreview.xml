@@ -70,7 +70,7 @@
 		<drawtext x="75%" y="{posy(headerfonts)} + {height(headerfonts)}*1.2" font="{light}" fontsize="7%" color="{clrLightGray}" text="{tr(Large_Screenshots)}:" />
 		<drawimage x="91%" y="12%" width="{areaheight}*0.1" height="{areaheight}*0.1" imagetype="skinpart" path="arrowRight" />
 		
-		<loop name="screenshots" x="0" y="42%" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}/2">
+		<loop name="screenshots" x="0" y="42%" orientation="horizontal" columnwidth="{areawidth}/3" rowheight="{areaheight}/8">
 			<drawimage imagetype="image" path="{screenshots[path]}" align="center" x="0" y="0" width="{areawidth}*0.3" height="{areawidth}*0.1688"/>
 			<drawtext name="desc" align="center" y="50%" font="{light}" fontsize="5%" color="{clrLightGray}" text="{screenshots[desc]}" />
 		</loop>

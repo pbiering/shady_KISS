@@ -47,7 +47,7 @@
 			<parameter type="int" name="messageShiftTime" min="0" max="500" displaytext="{tr(messageShiftTime)}">300</parameter>
 			<parameter type="int" name="audioShiftTime" min="0" max="500" displaytext="{tr(audioShiftTime)}">300</parameter>
 			<parameter type="int" name="channelShiftTime" min="0" max="500" displaytext="{tr(channelShiftTime)}">300</parameter>
-			<parameter type="int" name="currentelementsFadeTime" min="0" max="500" displaytext="{tr(currentelementsFadeTime)}">0</parameter>
+			<!--<parameter type="int" name="currentelementsFadeTime" min="0" max="500" displaytext="{tr(currentelementsFadeTime)}">0</parameter>-->
 		</submenu>
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>

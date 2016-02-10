@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE displayreplay SYSTEM "../../../dtd/displayreplay.dtd">
 
-	<displayreplay x="0" y="0" width="100%" height="100%" fadetime="{00_menuFadetime}" shifttime="300" shifttype="bottom" shiftmode="slowed">
+	<displayreplay x="0" y="0" width="100%" height="100%" fadetime="0" shifttime="300" shifttype="bottom" shiftmode="slowed">
 		<background>
 			<area x="0" y="79%" width="100%" height="18%" layer="1">
 				<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayPNGT"/>
@@ -14,7 +14,7 @@
 	<backgroundmodeonly>
 	</backgroundmodeonly>
 
-	<scrapercontent detached="true" delay="500" shifttime="500" shifttype="left" shiftmode="slowed" >
+	<scrapercontent delay="500" shifttime="500" shifttype="left" shiftmode="slowed" >
 		<area condition="{hasposter}++{showReplayPoster}" x="0" y="45%" width="15%" height="34%" layer="1">
 			<drawimage imagetype="skinpart" path="posterReplayBG" width="{areawidth}" height="{areaheight}"/>
 		</area>
@@ -24,10 +24,12 @@
 	</scrapercontent>
 
 	<rectitle>
-		<areascroll x="20%" y="79%" scrollelement="titel" width="60%" height="6%" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" layer="3">
-			<drawtext name="titel" condition="isset{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />
-			<drawtext name="titel" condition="empty{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle}" />
-		</areascroll>
+		<!--<areascroll x="20%" y="79%" scrollelement="titel" width="60%" height="6%" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" layer="3">
+			<drawtext condition="isset{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />-->
+			<!--<drawtext condition="not{current}" condition="isset{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle} - {recsubtitle}" />-->
+			<!--<drawtext condition="empty{recsubtitle}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle}" />-->
+			<!--<drawtext condition="empty{recsubtitle}++not{current}" x="0" y="8%" align="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{rectitle}" />-->
+		<!--</areascroll>-->
 		<area condition="isset{recdate}" x="1%" y="91%" width="14%" height="7%" layer="3">
 			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(recordedat)}: {recdate}"/>
 		</area>
@@ -184,7 +186,7 @@
 		</area>
 	</onpause>
 
-	<onpausemodeonly delay="20" fadetime="{onPauseFadetime}">
+	<onpausemodeonly delay="20" fadetime="0">
 		<area x="0" y="0" width="100%" height="100%" layer="7">
 			<fill color="{clrSemiTransBlack}" />
 		</area>

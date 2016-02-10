@@ -32,23 +32,23 @@
 			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</scrollbar>
-
-	<tab condition="isset{recimg1path}" name="Info" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
-		<drawimage condition="empty{seriesposter1path}++empty{posterpath}" name="epgpic" imagetype="image" path="{recimg1path}" x="1%" y="0" width="{areawidth}*0.2" height="{areawidth}*0.2*130/174"/>
-		<drawtextbox condition="empty{seriesposter1path}++empty{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(epgpic)}*1.2" floatheight="{height(epgpic)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+	<tab name="Info" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
+		<drawimage condition="{recimg1avaialble}++empty{seriesposter1path}++empty{posterpath}" name="epgpic" imagetype="image" path="{recimg1path}" x="1%" y="0" width="{areawidth}*0.2" height="{areawidth}*0.2*130/174"/>
+		<drawtextbox condition="{recimg1avaialble}++empty{seriesposter1path}++empty{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(epgpic)}*1.2" floatheight="{height(epgpic)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
 		<drawimage condition="isset{seriesposter1path}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{seriesposter1height}/{seriesposter1width}" />
 		<drawimage condition="isset{posterpath}" name="movieposter" imagetype="image" path="{posterpath}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{posterheight}/{posterwidth}" />
-		<drawimage condition="isset{seriesposter1path}||isset{posterpath}" imagetype="image" path="{recimg1path}" x="1%" y="70%" width="{areawidth}*0.15" height="{areawidth}*0.15*130/174"/>
-		<drawtextbox condition="isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.2" floatheight="{height(seriesposter)}*1.9" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
-		<drawtextbox condition="isset{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.2" floatheight="{height(movieposter)}*1.9" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
-	</tab>
-	<tab condition="empty{recimg1path}" name="Info" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
-		<drawtextbox condition="empty{seriesposter1path}++empty{posterpath}" x="0" y="0" width="96%" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
-		<drawimage condition="isset{seriesposter1path}||isset{posterpath}" imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.205" height="{areawidth}*0.26"/>
-		<drawimage condition="isset{seriesposter1path}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{seriesposter1height}/{seriesposter1width}" />
-		<drawimage condition="isset{posterpath}" name="movieposter" imagetype="image" path="{posterpath}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{posterheight}/{posterwidth}" />
-		<drawtextbox condition="isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.2" floatheight="{height(seriesposter)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
-		<drawtextbox condition="isset{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.2" floatheight="{height(movieposter)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+		<drawimage condition="{recimg1avaialble}++isset{posterpath}" imagetype="image" path="{recimg1path}" x="1%" y="70%" width="{areawidth}*0.15" height="{areawidth}*0.15*130/174"/>
+		<drawimage condition="{recimg1avaialble}++isset{seriesposter1path}" imagetype="image" path="{recimg1path}" x="1%" y="70%" width="{areawidth}*0.15" height="{areawidth}*0.15*130/174"/>
+		<drawtextbox condition="{recimg1avaialble}++isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.2" floatheight="{height(seriesposter)}*1.9" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+		<drawtextbox condition="{recimg1avaialble}++isset{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.2" floatheight="{height(movieposter)}*1.9" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+		
+		<drawtextbox condition="not{recimg1avaialble}++empty{posterpath}++empty{seriesposter1path}" x="0" y="0" width="96%" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+		<drawimage condition="not{recimg1avaialble}++isset{seriesposter1path}" imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.205" height="{areawidth}*0.26"/>
+		<drawimage condition="not{recimg1avaialble}++isset{posterpath}" imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.205" height="{areawidth}*0.26"/>
+		<drawimage condition="not{recimg1avaialble}++isset{seriesposter1path}" name="seriesposter" imagetype="image" path="{seriesposter1path}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{seriesposter1height}/{seriesposter1width}" />
+		<drawimage condition="not{recimg1avaialble}++isset{posterpath}" name="movieposter" imagetype="image" path="{posterpath}" x="1%" y="1%" width="{areawidth}*0.15" height="{areawidth}*0.15*{posterheight}/{posterwidth}" />
+		<drawtextbox condition="not{recimg1avaialble}++isset{seriesposter1path}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(seriesposter)}*1.2" floatheight="{height(seriesposter)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
+		<drawtextbox condition="not{recimg1avaialble}++isset{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.2" floatheight="{height(movieposter)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
 	</tab>
 
 	<tab name="{tr(recinfo)}" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
@@ -94,7 +94,7 @@
 
 	<tablabels>
 		<area x="0" y="38%" width="3%" height="25%" layer="4">
-			<drawtextvertical x="30%" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="{currenttab}" />
+			<drawtextvertical align="center" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="{currenttab}" />
 		</area>
 		<area x="0" y="12%" width="3%" height="25%" layer="4">
 			<drawtextvertical align="center" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="{prevtab}" />

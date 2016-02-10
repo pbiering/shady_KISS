@@ -1,5 +1,5 @@
-<menurecordings x="0" y="0" width="100%" height="100%" fadetime="0" scaletvx="0" scaletvy="0" scaletvwidth="100%" scaletvheight="100%">
-	<background>
+<menurecordings x="0" y="0" width="100%" height="100%" orientation="{recmenuorientation}" fadetime="0" >
+	<background orientation="vertical">
 		<area x="0" y="0" width="100%" height="100%" transparency="{transBackground}" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
@@ -15,6 +15,19 @@
 		</area>
 		<area condition="eq({indexcurrentInfo}, 2)" x="65%" y="14%" width="30%" height="75%" transparency="{transLists}" layer="3">
 			<drawimage x="0" y="0" height="100%" width="100%" imagetype="skinpart" path="currentElementHeader" />
+		</area>
+	</background>
+	
+	<background orientation="horizontal">
+		<area x="0" y="0" width="100%" height="100%" transparency="{transBackground}" layer="1">
+			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
+			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
+		</area>
+		<area x="0" y="0" width="100%" height="100%" layer="2">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowsMenuDefault" />
+		</area>
+		<area x="0" y="0" width="100%" height="11%" layer="2">
+			<drawimage x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 		</area>
 	</background>
 
@@ -34,7 +47,7 @@
 		</area>
 	</header>
 	
-	<menuitems condition="strequal({recmenuorientation}, 'horizontal')" x="1%" y="13%" orientation="horizontal" width="95%" height="79%" align="center" numlistelements="7">
+	<menuitems x="1%" y="12%" orientation="horizontal" width="95%" height="79%" align="center" numlistelements="7">
 		<listelement>
 			<area y="54%" height="46%" layer="3">
 				<drawimage condition="{current}" x="0" y="0" width="100%" height="96%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_ver" />
@@ -50,7 +63,6 @@
 				<area condition="not{current}" y="64%" height="36%" layer="4">
 					<drawimage condition="{hasposterthumbnail}" y="0" align="center" width="{areaheight}*0.7*0.68" height="{areaheight}*0.7" imagetype="image" path="{thumbnailpath}" />
 					<drawrectangle x="22%" y="72%" width="{areawidth}*0.56*{percentseen}/100" height="{areaheight}*0.01" color="{clrHigh}" />
-					<!--<drawimage condition="not{hasposterthumbnail}" y="3%" width="{areaheight}*0.7*0.68" height="{areaheight}*0.7"  imagetype="icon" path="ico_recording"/>-->
 					<drawtextbox align="center" maxlines="2" x="4%" y="75%" width="92%" height="38%" font="{light}" fontsize="9%" color="{clrLightGray}" text="{name}" />
 				</area>
 				<area condition="{current}" y="54%" height="46%" layer="4">
@@ -69,24 +81,24 @@
 			</areacontainer>
 		</listelement>
 
-		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
-			<area condition="isset{posterpath}" x="0" y="0" width="98%" height="52%" layer="3">
+		<currentelement delay="200" fadetime="0">
+			<area condition="isset{posterpath}" x="0" y="1%" width="98%" height="52%" layer="3">
 				<drawimage imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.203" height="{areawidth}*0.27"/>
 				<drawimage name="poster" imagetype="image" path="{posterpath}" x="0" y="0" width="{areaheight}*0.95*{posterwidth}/{posterheight}" height="95%"/>
 				<drawrectangle x="0" y="98%" width="{width(poster)}*{percentseen}/100" height="{areaheight}*0.006" color="{clrHigh}" />
 				<drawtext name="title" x="{width(poster)}*1.2" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
 				<drawtext name="shorttext" x="{width(poster)}*1.2" y="{height(title)}" width="0.96*{areawidth} - {width(poster)}" font="{light}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
-				<drawtextbox x="{width(poster)}*1.2" y="23%" valign="center" width="{areawidth}*0.94 - {width(poster)}" height="{areaheight}*0.79" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
+				<drawtextbox x="{width(poster)}*1.2" y="23%" width="{areawidth}*0.94 - {width(poster)}" height="{areaheight}*0.77" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
 			</area>
-			<area condition="empty{posterpath}" x="0" y="0" width="98%" height="52%" layer="3">
+			<area condition="empty{posterpath}" x="0" y="1%" width="98%" height="52%" layer="3">
 				<drawtext name="title" x="1%" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
 				<drawtext name="shorttext" x="1%" y="{height(title)}" width="98%" font="{semibold}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
-				<drawtextbox x="1%" y="23%" valign="center" width="{areawidth}*0.98" height="{areaheight}*0.79" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
+				<drawtextbox x="1%" y="23%" width="{areawidth}*0.98" height="{areaheight}*0.77" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
 			</area>
 		</currentelement>
 	</menuitems>
 
-	<menuitems condition="strequal({recmenuorientation}, 'vertical')" x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{00_numRecordingsmenuitems}">
+	<menuitems x="0" y="14%" orientation="vertical" width="100%" height="75%" align="center" numlistelements="{00_numRecordingsmenuitems}">
 		<listelement>
 			<areacontainer condition="not{folder}">
 				<area x="0" width="19%" transparency="{transLists}" layer="3">
@@ -168,11 +180,13 @@
 					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 				</area>
 
-				<areascroll condition="{folder}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
-				<areascroll condition="not{folder}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -224,11 +238,13 @@
 					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 				</area>
 
-				<areascroll condition="{folder}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
-				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
-				<areascroll condition="not{folder}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
 				</areascroll>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -280,28 +296,30 @@
 					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
 				</area>
 
-				<areascroll condition="{folder}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">
-				<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
-				<areascroll condition="not{folder}" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">
-					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
 				</areascroll>
 			</areacontainer>
 		</listelement>
-
-		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
+		
+		<currentelement delay="300" fadetime="0">
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
 				<area x="71%" y="1%" width="23%" height="6%" layer="4">
-					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
+					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{epgname}" />
 				</area>
 				<area condition="not{folder}" x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
+					<drawtext x="0" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
 				</area>
 				<area condition="not{folder}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
 					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
 				</area>
 				<area condition="not{folder}++{currentInfo}" x="70%" y="1%" width="25%" height="6%" layer="6">
@@ -319,15 +337,15 @@
 <!--wideCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 2)">
 				<area x="66%" y="1%" width="28%" height="6%" layer="4">
-					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
+					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{epgname}" />
 				</area>
 				<area condition="not{folder}" x="65%" y="7%" width="30%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
+					<drawtext x="0" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
 				</area>
 				<area condition="not{folder}" x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.2" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
 					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
 				</area>
 				<area condition="not{folder}++{currentInfo}" x="65%" y="1%" width="30%" height="6%" layer="6">
@@ -345,10 +363,19 @@
 		</currentelement>
 	</menuitems>
 
-	<scrollbar condition="strequal({recmenuorientation}, 'vertical')" >
+	<scrollbar orientation="vertical">
 		<area condition="lt({height},1000)" x="95%" y="14%" width="5%" height="75%" layer="3">
 			 <drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
 			 <drawimage x="15%" y="{areaheight} * {offset} / 1000" width="{areawidth}*0.1" height="{areaheight} * {height} / 1000" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</scrollbar>
+	<scrollbar orientation="horizontal">
+		<area x="0" y="{areaheight}*0.895" width="97%" height="1%" layer="3">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowVol" />
+		</area>
+		<area x="{areawidth}*0.015" y="89%" width="94%" height="2%" layer="3">
+			<drawimage x="{areawidth} * {offset} / 1000" valign="center" width="{areawidth}*{height}/1000" height="{areaheight}/4" imagetype="skinpart" path="scrollBarVer"/>
+		</area>
+	</scrollbar>
+	
 </menurecordings>

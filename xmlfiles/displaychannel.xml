@@ -8,11 +8,11 @@
 			</area>
 	</background>
 
-	<scrapercontent detached="true" delay="300" fadetime="500" >
-		<area condition="{hasposter}++{showChannelinfoPosterInline}" x="84%" y="78%" width="8%" height="18%" layer="2">
+	<scrapercontent delay="300" fadetime="500" >
+		<area condition="isset{posterpath}++{showChannelinfoPosterInline}" x="84%" y="78%" width="8%" height="18%" layer="2">
 				<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="posterBG"/>
 			</area>
-		<area condition="{hasposter}++{showChannelinfoPosterInline}" x="68%" y="79%" width="{areaheight}*{posterwidth}/{posterheight}" height="15%" layer="3">
+		<area condition="isset{posterpath}++{showChannelinfoPosterInline}" x="68%" y="79%" width="{areaheight}*{posterwidth}/{posterheight}" height="15%" layer="3">
 			<drawimage x="2%" valign="center" width="{areawidth}" height="{areaheight}" imagetype="image" path="{posterpath}" />
 		</area>
 		<!--<area condition="{hasposter}++{showChannelinfoPosterExtern}" x="0" y="40%" width="15%" height="34%" layer="1">
@@ -69,7 +69,7 @@
     {pressure}                  pressure in HPo
     {ozone}                     ozone value in DU
     -->
-	<currentweather  detached="true" delay="300" fadetime="500" >
+	<currentweather delay="300" fadetime="500" >
 		<area condition="{weatherInfo}" x="1%" y="96%" width="40%" height="4%" layer="3">
 			<drawimage name ="icon" x="0" y="0" valign="center" width="{areaheight}*0.9" height="{areaheight}*0.9" imagetype="icon" path="{icon}" />
 			<drawtext x="10%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="min: {mintemperature}°C    max: {maxtemperature}°C    act: {temperature}°C" />
@@ -151,9 +151,6 @@
 			<drawimage x="{elapsed}/{duration}*{areawidth} - {livebuffer}/{duration}*{areawidth}" y="20%" width="{livebuffer}/{duration}*{areawidth}" height="{areaheight}*0.65" imagetype="skinpart" path="replayTimeshift" />
 		</area>
 	</progressbar>
-
-	<signalqualityback>
-	</signalqualityback>
 	
 	<screenresolution >
 		<area x="90%" y="78%" width="10%" height="21%" layer="3">

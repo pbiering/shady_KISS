@@ -40,8 +40,10 @@
 					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
 				</area>
 				<areascroll condition="not{separator}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="19%" width="73%" layer="3">
-					<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
+					<drawtext condition="{current}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
 				</areascroll>
+				
 				<area condition="{separator}" x="19%" width="73%" layer="3">
 					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{name}" />
 				</area>
@@ -56,7 +58,8 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<areascroll condition="not{separator}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="19%" width="47%" layer="3">
-					<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
+					<drawtext condition="{current}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
 				</areascroll>
 				<area condition="{separator}" x="19%" width="47%" layer="3">
 					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{name}" />
@@ -72,7 +75,8 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<areascroll condition="not{separator}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="19%" width="42%" layer="3">
-					<drawtext name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
+					<drawtext condition="{current}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}" />
 				</areascroll>
 				<area condition="{separator}" x="19%" width="42%" layer="3">
 					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{name}" />
@@ -107,7 +111,7 @@
 			</area>-->
 		</listelement>
 
-		<currentelement delay="0" fadetime="0">
+		<currentelement delay="200" fadetime="0">
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
 				<area condition="isset{presenteventtitle}" x="71%" y="1%" width="23%" height="6%" layer="4">
