@@ -55,7 +55,7 @@
 		<drawtextbox x="0" y="3%" width="96%" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{tr(recsize)}: {recordingsize}&#10;{tr(recsizecutted)}: {recordingsizecutted}&#10;{tr(reclength)}: {recordinglength}&#10;{tr(reclengthcutted)}: {recordinglengthcutted}&#10;{tr(bitrate)}: {recordingbitrate}&#10;{tr(format)}: {recordingformat}&#10;{tr(searchtimer)}: {searchtimer}&#10;" />
 	</tab>
 
-	<tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="5%" y="27%" width="93%" height="63%" layer="3" scrollheight="{areaheight}">
+	<tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="5%" y="27%" width="93%" height="63%" layer="3" scrollheight="{areaheight}*0.625">
 		<loop name="actors" x="0" y="0" width="{areawidth}" orientation="horizontal" columnwidth="{areawidth}/4.2" rowheight="{areawidth}/4.2*1.6" overflow="linewrap">
 			<drawimage name="thumb" imagetype="image" path="{actors[thumb]}" x="20" y="0" width="{columnwidth}*0.9" height="{columnwidth} * {actors[thumbheight]} / {actors[thumbwidth]}*0.9"/>
 			<drawtext align="center" y="{height(thumb)} + 10" width="{columnwidth}" name="actorname" font="{light}" fontsize="5%" color="{clrLightGray}" text="{actors[name]}" />
