@@ -4,6 +4,7 @@ shady-KISS-skin History
 - Fixed scaling of videowindow in weatherforecast
 - Changed {epgname} to {name} menurecordings
 - Adjusted scrollheight in tab actors
+- Fixed rectitle in displayreplay 
 
 2016-02-10:
 - Adapted for skindesigner-0.8.x
