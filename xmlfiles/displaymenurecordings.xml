@@ -86,12 +86,12 @@
 				<drawimage imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.203" height="{areawidth}*0.27"/>
 				<drawimage name="poster" imagetype="image" path="{posterpath}" x="0" y="0" width="{areaheight}*0.95*{posterwidth}/{posterheight}" height="95%"/>
 				<drawrectangle x="0" y="98%" width="{width(poster)}*{percentseen}/100" height="{areaheight}*0.006" color="{clrHigh}" />
-				<drawtext name="title" x="{width(poster)}*1.2" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
+				<drawtext name="title" x="{width(poster)}*1.2" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{name}" />
 				<drawtext name="shorttext" x="{width(poster)}*1.2" y="{height(title)}" width="0.96*{areawidth} - {width(poster)}" font="{light}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
 				<drawtextbox x="{width(poster)}*1.2" y="23%" width="{areawidth}*0.94 - {width(poster)}" height="{areaheight}*0.77" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
 			</area>
 			<area condition="empty{posterpath}" x="0" y="1%" width="98%" height="52%" layer="3">
-				<drawtext name="title" x="1%" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{epgname}" />
+				<drawtext name="title" x="1%" y="0" font="{semibold}" fontsize="12%" color="{clrLightGray}" text="{name}" />
 				<drawtext name="shorttext" x="1%" y="{height(title)}" width="98%" font="{semibold}" fontsize="10%" color="{clrLightGray}" text="{shorttext}" />
 				<drawtextbox x="1%" y="23%" width="{areawidth}*0.98" height="{areaheight}*0.77" font="{light}" fontsize="9%" color="{clrLightGray}" text="{description}" />
 			</area>
@@ -243,8 +243,8 @@
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
-					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -301,8 +301,8 @@
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">
-					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 			</areacontainer>
 		</listelement>
@@ -311,7 +311,7 @@
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
 				<area x="71%" y="1%" width="23%" height="6%" layer="4">
-					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{epgname}" />
+					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
 				</area>
 				<area condition="not{folder}" x="70%" y="7%" width="25%" height="5%" layer="4">
 					<drawtext x="0" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
@@ -337,7 +337,7 @@
 <!--wideCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 2)">
 				<area x="66%" y="1%" width="28%" height="6%" layer="4">
-					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{epgname}" />
+					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
 				</area>
 				<area condition="not{folder}" x="65%" y="7%" width="30%" height="5%" layer="4">
 					<drawtext x="0" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />

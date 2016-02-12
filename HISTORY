@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 2016-02-12:
 - Fixed scaling of videowindow in weatherforecast
+- Changed {epgname} to {name} menurecordings
 
 2016-02-10:
 - Adapted for skindesigner-0.8.x
