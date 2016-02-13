@@ -18,6 +18,8 @@
 -->
 		<submenu name="Main-Menu" displaytext="{tr(mainMenu)}">
 			<parameter type="string" name="panelMain" displaytext="{tr(panelMain)}" options="none,showInfosAndOnlyTimers,showInfosAndTimers,showInfosAndTimersAndLastrecs">3</parameter>
+			<parameter type="int" name="fadetimeTempsLoadWeatherDisc" min="0" max="500" displaytext="{tr(fadetimeTempsLoadWeatherDisc)}">0</parameter>
+			<parameter type="int" name="fadetimeTimersAndLastrecs" min="0" max="500" displaytext="{tr(fadetimeTimersAndLastrecs)}">0</parameter>
 		</submenu>
 		<submenu name="Channel-Info" displaytext="{tr(channelInfo)}">
 			<parameter type="bool" name="channelName" displaytext="{tr(channelName)}">1</parameter>
@@ -271,6 +273,15 @@
 		<token name="tr(shiftFadeTimes)">
 			<trans lang="en_EN">Shift- and fade-times</trans>
 			<trans lang="de_DE">Einfahr- und Einblendzeiten</trans>
+		</token>
+		<token name="tr(fadetimeTempsLoadWeatherDisc)">
+			<trans lang="en_EN">Fade-time Temps, load, weather and disc</trans>
+			<trans lang="de_DE">Einblendzeit Temperatur, Load, Wetter und HDD</trans>
+		</token>
+		
+		<token name="tr(fadetimeTimersAndLastrecs)">
+			<trans lang="en_EN">Fade-time timers ans lastrecs</trans>
+			<trans lang="de_DE">Einblendzeit Timer und letzte Aufnahmen</trans>
 		</token>
 		<token name="tr(volumeShiftTime)">
 			<trans lang="en_EN">Shift-time volume</trans>

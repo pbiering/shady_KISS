@@ -8,6 +8,7 @@ shady-KISS-skin History
 - Reactivated fadetimes
 - Deactivated shift- and fadetime in audiotracks (actually in this view not supported by skindesigner)
 - Enlarged fontsize of reruns in menudetetailepg if only 12 listitems are shown
+- Setup for fadetimes of timers and lastrecs, disc, temps, load and weather in mainmenu
 
 2016-02-12:
 - Fixed scaling of videowindow in weatherforecast
