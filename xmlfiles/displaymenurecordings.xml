@@ -81,7 +81,7 @@
 			</areacontainer>
 		</listelement>
 
-		<currentelement delay="200" fadetime="0">
+		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
 			<area condition="isset{posterpath}" x="0" y="1%" width="98%" height="52%" layer="3">
 				<drawimage imagetype="skinpart" path="posterBGDetail" x="0" y="0" width="{areawidth}*0.203" height="{areawidth}*0.27"/>
 				<drawimage name="poster" imagetype="image" path="{posterpath}" x="0" y="0" width="{areaheight}*0.95*{posterwidth}/{posterheight}" height="95%"/>
@@ -307,7 +307,7 @@
 			</areacontainer>
 		</listelement>
 		
-		<currentelement delay="300" fadetime="0">
+		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
 				<area x="71%" y="1%" width="23%" height="6%" layer="4">

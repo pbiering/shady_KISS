@@ -5,6 +5,7 @@ shady-KISS-skin History
 - Special treatment for div views with only one column (displaymenudefault)
 - Adjusted scrollheight in tab actors (hopefully fixed)
 - Reduced fontsize of timerstart-timerstop in timersmenu if only 12 listitems are shown
+- Reactivated fadetimes
 
 2016-02-12:
 - Fixed scaling of videowindow in weatherforecast
