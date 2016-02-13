@@ -71,6 +71,11 @@
 			<area x="3%" condition="not{separator}++{setup}++not{column2set}" width="93%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
 			</area>
+<!--div einspaltig-->
+			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++not{column2set}"  scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="98%" layer="4">
+				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+			</areascroll>
 
 			<!--<area condition="not{separator}++{current}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '0')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
@@ -166,7 +171,7 @@
 <!--fritzbox-->
 <!--epgsearch-->
 <!--default-->
-			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
+			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
 				<drawtext condition="{current}" name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				<drawtext condition="not{current}" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>

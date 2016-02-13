@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 2016-02-13:
 - Fixed posterBGDetail in detailepg
+- Special treatment for div columns with only one column
 
 2016-02-12:
 - Fixed scaling of videowindow in weatherforecast
