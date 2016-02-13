@@ -61,10 +61,15 @@
 	<!-- TAB RERUNS -->
 	<tab condition="{hasreruns}" name="{tr(reruns)}" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
 		<loop name="reruns" x="0" y="0" width="{areawidth}" orientation="vertical">
-			<drawimage name="logo" condition="{reruns[channellogoexists]}" imagetype="channellogo" path="{reruns[channelid]}" x="0" y="3%" width="6%" height="8%" />
-			<drawtext name="channelname" condition="not{reruns[channellogoexists]}" x="0" font="{light}" fontsize="5%" color="{clrLightGray}" text="{reruns[channelname]}" />
-			<drawtext condition="{reruns[channellogoexists]}" x="{width(logo)}+20" y="4%" width="{areawidth} - {width(logo)} - 20" font="{light}" fontsize="6%" color="{clrLightGray}" text="{reruns[day]} {reruns[date]} {reruns[start]} - {reruns[stop]}: {reruns[title]}  {reruns[shorttext]}" />
-			<drawtext condition="not{reruns[channellogoexists]}" x="{width(channelname)}+20" y="4%" width="{areawidth} - {width(logo)} - 20" font="{light}" fontsize="6%" color="{clrLightGray}" text="{reruns[day]} {reruns[date]} {reruns[start]} - {reruns[stop]}: {reruns[title]}  {reruns[shorttext]}" />
+			<drawimage condition="{reruns[channellogoexists]}++gt({numShortSubmenuitems}, 12)" name="logo" imagetype="channellogo" path="{reruns[channelid]}" x="0" y="3%" width="6%" height="8%" />
+			<drawtext condition="not{reruns[channellogoexists]}++gt({numShortSubmenuitems}, 12)" name="channelname" x="0" font="{light}" fontsize="5%" color="{clrLightGray}" text="{reruns[channelname]}" />
+			<drawtext condition="{reruns[channellogoexists]}++gt({numShortSubmenuitems}, 12)" x="{width(logo)}+20" y="4%" width="{areawidth} - {width(logo)} - 20" font="{light}" fontsize="6%" color="{clrLightGray}" text="{reruns[day]} {reruns[date]} {reruns[start]} - {reruns[stop]}: {reruns[title]}  {reruns[shorttext]}" />
+			<drawtext condition="not{reruns[channellogoexists]}++gt({numShortSubmenuitems}, 12)" x="{width(channelname)}+20" y="4%" width="{areawidth} - {width(logo)} - 20" font="{light}" fontsize="6%" color="{clrLightGray}" text="{reruns[day]} {reruns[date]} {reruns[start]} - {reruns[stop]}: {reruns[title]}  {reruns[shorttext]}" />
+<!--12 menuitems-->
+			<drawimage condition="{reruns[channellogoexists]}++eq({numShortSubmenuitems}, 12)" name="logo" imagetype="channellogo" path="{reruns[channelid]}" x="0" y="3%" width="6%" height="8%" />
+			<drawtext condition="not{reruns[channellogoexists]}++eq({numShortSubmenuitems}, 12)" name="channelname" x="0" y="3%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{reruns[channelname]}" />
+			<drawtext condition="{reruns[channellogoexists]}++eq({numShortSubmenuitems}, 12)" x="{width(logo)}+20" y="3%" width="{areawidth} - {width(logo)} - 20" font="{light}" fontsize="7%" color="{clrLightGray}" text="{reruns[day]} {reruns[date]} {reruns[start]} - {reruns[stop]}: {reruns[title]}  {reruns[shorttext]}" />
+			<drawtext condition="not{reruns[channellogoexists]}++eq({numShortSubmenuitems}, 12)" x="{width(channelname)}*1.5" y="3%" width="{areawidth} - {width(channelname)}*1.5" font="{light}" fontsize="7%" color="{clrLightGray}" text="{reruns[day]} {reruns[date]} {reruns[start]} - {reruns[stop]}: {reruns[title]}  {reruns[shorttext]}" />
 		</loop>
 	</tab>
 	<!-- TAB ACTORS -->

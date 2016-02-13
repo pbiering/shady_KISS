@@ -111,7 +111,7 @@
 			</area>-->
 		</listelement>
 
-		<currentelement delay="200" fadetime="0">
+		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
 				<area condition="isset{presenteventtitle}" x="71%" y="1%" width="23%" height="6%" layer="4">
