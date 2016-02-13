@@ -46,7 +46,8 @@
 				<drawtext x="25%" width="100%" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{dayname} {printf('%02d.%02d', day, month)}." />
 			</area>
 			<area x="{areawidth}*0.135" width="10%" layer="4">
-				<drawtext condition="isset{title}" x="20%" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{timerstart} - {timerstop}" />
+				<drawtext condition="isset{title}++gt({numShortSubmenuitems}, 12)" x="20%" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{timerstart} - {timerstop}" />
+				<drawtext condition="isset{title}++eq({numShortSubmenuitems}, 12)" x="20%" align="center" valign="center" font="{light}" fontsize="55%" color="{clrLightGray}" text="{timerstart} - {timerstop}" />
 			</area>
 <!--noCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 0)">

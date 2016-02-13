@@ -2,8 +2,9 @@ shady-KISS-skin History
 -------------------------------------------
 2016-02-13:
 - Fixed posterBGDetail in detailepg
-- Special treatment for div columns with only one column
+- Special treatment for div views with only one column (displaymenudefault)
 - Adjusted scrollheight in tab actors (hopefully fixed)
+- Reduced fontsize of timerstart-timerstop in timersmenu if only 12 listitems are shown
 
 2016-02-12:
 - Fixed scaling of videowindow in weatherforecast
