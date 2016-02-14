@@ -1,5 +1,8 @@
 shady-KISS-skin History
 -------------------------------------------
+2016-02-14:
+- Fixed typo in displaymenumain
+
 2016-02-13:
 - Fixed posterBGDetail in detailepg
 - Special treatment for div views with only one column (displaymenudefault)

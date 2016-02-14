@@ -194,7 +194,7 @@
 		</area>
 	</currentweather>
 
-	<systemload condition="gt({indexpanelMain},0)" delay="0" fadetime="{fadetimeTempsLoadWeatheDisc}" >
+	<systemload condition="gt({indexpanelMain},0)" delay="0" fadetime="{fadetimeTempsLoadWeatherDisc}" >
 		<area x="79%" y="80%" width="21%" height="20%" layer="3">
 		</area>
 		<area x="81%" y="86%" width="14%" height="6%" layer="3">
