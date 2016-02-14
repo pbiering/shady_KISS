@@ -56,6 +56,7 @@
 			<parameter type="string" name="coloredButtons" displaytext="{tr(coloredButtons)}" options="no,border,gradient">2</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">0</parameter>
 			<parameter type="int" name="fontSizeDescr" min="34" max="50" displaytext="{tr(fontSizeDescr)}">34</parameter>
+			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyOnlyPoster,posterAndEPGpic">0</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 			<parameter type="bool" name="showReplayPoster" min="30" max="50" displaytext="{tr(showReplayPoster)}">0</parameter>
 			<parameter type="int" name="transBackground" min="0" max="25" displaytext="{tr(transBackground)}">10</parameter>
@@ -182,6 +183,18 @@
 		<token name="tr(fontSizeDescr)">
 			<trans lang="en_EN">Fontsize detaildescriptions</trans>
 			<trans lang="de_DE">Schriftgröße Detail-Beschreibungen</trans>
+		</token>
+		<token name="tr(showPosterAndEPGpic)">
+			<trans lang="en_EN">Poster and EPGpic in Details</trans>
+			<trans lang="de_DE">Poster und EPGpic in Details</trans>
+		</token>
+		<token name="tr(primarilyOnlyPoster)">
+			<trans lang="en_EN">Primarily only poster</trans>
+			<trans lang="de_DE">Vorrangig nur Poster</trans>
+		</token>
+		<token name="tr(posterAndEPGpic)">
+			<trans lang="en_EN">If available both</trans>
+			<trans lang="de_DE">Wenn vorhanden beides</trans>
 		</token>
 		<token name="tr(transBackground)">
 			<trans lang="en_EN">Transparency backgrounds</trans>

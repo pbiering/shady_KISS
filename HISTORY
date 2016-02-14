@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 2016-02-14:
 - Fixed typo in displaymenumain
+- Added setup for poster and EPGpic in detailinfos 
 
 2016-02-13:
 - Fixed posterBGDetail in detailepg
