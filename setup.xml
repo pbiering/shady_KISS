@@ -18,6 +18,7 @@
 -->
 		<submenu name="Main-Menu" displaytext="{tr(mainMenu)}">
 			<parameter type="string" name="panelMain" displaytext="{tr(panelMain)}" options="none,showInfosAndOnlyTimers,showInfosAndTimers,showInfosAndTimersAndLastrecs">3</parameter>
+			<parameter type="string" name="mainMenuOrientation" displaytext="{tr(mainMenuOrientation)}" options="right, left">0</parameter>
 			<parameter type="int" name="fadetimeTempsLoadWeatherDisc" min="0" max="500" displaytext="{tr(fadetimeTempsLoadWeatherDisc)}">0</parameter>
 			<parameter type="int" name="fadetimeTimersAndLastrecs" min="0" max="500" displaytext="{tr(fadetimeTimersAndLastrecs)}">0</parameter>
 		</submenu>
@@ -75,6 +76,18 @@
 		<token name="tr(mainMenu)">
 			<trans lang="en_EN">Main menu</trans>
 			<trans lang="de_DE">Hauptmenü</trans>
+		</token>
+		<token name="tr(mainMenuOrientation)">
+			<trans lang="en_EN">Position list main- and setupmenu</trans>
+			<trans lang="de_DE">Position Liste Haupt- und Setupmenü</trans>
+		</token>
+		<token name="tr(left)">
+			<trans lang="en_EN">left</trans>
+			<trans lang="de_DE">links</trans>
+		</token>
+		<token name="tr(right)">
+			<trans lang="en_EN">right</trans>
+			<trans lang="de_DE">rechts</trans>
 		</token>
 		<token name="tr(menuItems)">
 			<trans lang="en_EN">VDR-Lists-Setup </trans>

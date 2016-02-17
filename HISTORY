@@ -1,5 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
+
+2016-02-17:
+- Added setup for main- and setupmenulist on the left or right side
+
 2016-02-14:
 - Fixed typo in displaymenumain
 - Added setup for poster and EPGpic in detailinfos 
