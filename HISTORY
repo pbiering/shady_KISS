@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-02-18:
+- Changed scrapercontent in displayreplay from shifting to fading
+
 2016-02-17:
 - Added setup for main- and setupmenulist on the left or right side
 

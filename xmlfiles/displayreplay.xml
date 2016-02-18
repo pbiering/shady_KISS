@@ -14,11 +14,12 @@
 	<backgroundmodeonly>
 	</backgroundmodeonly>
 
-	<scrapercontent delay="500" shifttime="500" shifttype="left" shiftmode="slowed" >
-		<area condition="{hasposter}++{showReplayPoster}" x="0" y="45%" width="15%" height="34%" layer="1">
+	<!--<scrapercontent delay="500" shifttime="500" shifttype="left" shiftmode="slowed" >-->
+	<scrapercontent delay="500" fadetime="750" >
+		<area condition="isset{posterpath}++{showReplayPoster}" x="0" y="45%" width="15%" height="34%" layer="1">
 			<drawimage imagetype="skinpart" path="posterReplayBG" width="{areawidth}" height="{areaheight}"/>
 		</area>
-		<area condition="{hasposter}++{showReplayPoster}" x="2%" y="47%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
+		<area condition="isset{posterpath}++{showReplayPoster}" x="2%" y="47%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
 			<drawimage imagetype="image" path="{posterpath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
 		</area>
 	</scrapercontent>
