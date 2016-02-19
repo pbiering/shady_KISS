@@ -332,9 +332,11 @@
 		<area layer="2">
 			<drawtext condition="not{dummy}++not{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 			<drawtext condition="not{dummy}++{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrRed}" text="{title}" />
-			<!--<drawimage condition="not{dummy}++{switchtimer}" imagetype="skinpart" animtype="blink" animfreq="2000" path="orangeMarker" x="{areawidth} - {areaheight}*0.45" y="0" width="{areaheight}*0.45" height="{areaheight}*0.45*57/39"/>-->
 			<drawtext condition="{dummy}" x="5%" valign="center" width="94%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 		</area>
+		<!--<area layer="3">
+			<drawimage condition="not{dummy}++{switchtimer}" imagetype="skinpart" path="orangeMarker" x="{areawidth} - {areaheight}*0.45" y="0" width="{areaheight}*0.45" height="{areaheight}*0.45*57/39"/>
+			</area>-->
 	</grid>
 
 	<grid name="schedules_ver" x="6%" y="22%" width="90%" height="68%">

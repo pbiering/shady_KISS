@@ -3,6 +3,7 @@ shady-KISS-skin History
 
 2016-02-19:
 - Adjusted y-values in displayreplay, reverted last commit
+- Removed debug in displayreplay
 
 2016-02-18:
 - Changed scrapercontent in displayreplay from shifting to fading
