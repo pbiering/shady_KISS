@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2015-02-22:
+- Reimplemented support for plexplugin
+
 2016-02-19:
 - Adjusted y-values in displayreplay, reverted last commit
 - Removed debug in displayreplay
