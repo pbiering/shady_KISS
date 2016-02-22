@@ -114,8 +114,8 @@
         {value}         current value of selector, integer
         -->
 		<area condition="{intselector}" layer="6">
-			<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{text}" />
-			<drawtext x="90%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{stringvalue} " />
+			<drawtext debug="true" x="3%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{text}" />
+			<drawtext debug="true" x="90%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{intvalue} " />
 		</area>
         <!-- Bool Selector 
         {boolselector}  true
