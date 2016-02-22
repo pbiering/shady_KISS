@@ -180,10 +180,10 @@
         -->
 		<area condition="{channelselector}" width="90%" layer="6">
 			<drawtext x="3%" valign="center" font="{light}" fontsize="70%" color="{clrWhite}" text="{text}" />
-			<drawimage condition="{channellogoexisis}" imagetype="channellogo" path="{channelid}" x="{areawidth}-{areaheight}*1.3" valign="center" width="{areaheight}*0.7" height="{areaheight}*0.7" />
-			<drawtext name="channelnumberlogo" condition="{channellogoexisis}" x="{areawidth}-{areaheight}-{width(channelnumberlogo)}-40" valign="center" font="{light}" fontsize="70%" color="{clrWhite}" text="{channelnumber}" />
-			<drawtext condition="not{channellogoexisis}++{channelnumber}" x="75%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelnumber} {channelname} " />
-			<drawtext condition="not{channelnumber}" x="75%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelname} " />
+			<drawimage condition="{channellogoexisis}" imagetype="channellogo" path="{channelid}" x="72%" valign="center" width="{areaheight}*0.7" height="{areaheight}*0.7" />
+			<drawtext name="channelnumberlogo" condition="{channellogoexisis}" x="68%" valign="center" font="{light}" fontsize="70%" color="{clrWhite}" text="{channelnumber}" />
+			<drawtext condition="not{channellogoexisis}++{channelnumber}" x="68%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelnumber} {channelname} " />
+			<drawtext condition="not{channelnumber}" x="70%" valign="center" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelname} " />
 		</area>
         <!-- Weekday Selector 
         {weekdayselector}    true
@@ -425,7 +425,7 @@
 		<area condition="{timelineheader}++{timerset}" layer="6">
 			<drawimage condition="{channellogoexisis}" imagetype="channellogo" path="{channelid}" x="2%" y="30%" width="{areaheight}*0.5" height="{areaheight}*0.5" />
 			<drawtext condition="not{channellogoexisis}" x="2%" width="{areaheight}*0.7" y="40%" font="{light}" fontsize="20%" color="{clrWhite}" text="{channelname}"/>
-			<drawtext x="{areaheight}*0.9" y="38%" width="{areawidth}*0.9" font="{light}" fontsize="32%" color="{clrLightGray}" text="{eventstart} - {eventstop} (Rec. {timerstart} - {timerstop})  {eventtitle} - {eventshorttext}"/>
+			<drawtext x="{areaheight}*0.9" y="38%" width="{areawidth}*0.9" font="{light}" fontsize="32%" color="{clrLightGray}" text="{eventstart} - {eventstop} (Rec. {timerstart} - {timerstop})  {eventtitle}"/>
 		</area>
         <!-- Timeline Timer 
         {timelinetimer}             true

@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 
 2015-02-22:
+- Small fixes 
 - Fixed int-selector in tvguideng-recmenu
 - Improved display of progressbars in displaymenudefault
 - Reimplemented support for plexplugin
