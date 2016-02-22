@@ -109,8 +109,8 @@
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
 			</area>
 			<area x="59%" condition="not{separator}++{systeminfo}++{column3pb}" width="31%" layer="4">
-				<drawimage condition="not{sysinfoPBtheme}" x="0" y="0" valign="center" width="{column3pbsize}*20" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBSpec" />
-				<drawimage condition="{sysinfoPBtheme}" x="0" y="0" valign="center" width="{column3pbsize}*20" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
+				<drawimage condition="not{sysinfoPBtheme}" x="0" y="0" valign="center" width="{areawidth}" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBSpec" />
+				<drawimage condition="{sysinfoPBtheme}" x="0" y="0" valign="center" width="{areawidth}" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
 				<drawimage x="{column3pbsize}*20" y="0" valign="center" width="{column3pbtotalsize}*20-{column3pbsize}*20" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMask" />
 				<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 			</area>
@@ -137,7 +137,7 @@
 				</area>
 				<area x="29%" condition="{column4pb}" width="5%" layer="4">
 					<drawimage x="0" y="0" valign="center" width="{column4pbsize}*12" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
-					<drawimage x="{column4pbsize}*12" y="0" valign="center" width="{column4pbtotalsize}*12-{column4pbsize}*12" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMask" />
+					<drawimage x="{column4pbsize}*12" y="0" valign="center" width="{column4pbtotalsize}*12-{column4pbsize}*12" height="{areaheight}*0.35" imagetype="skinpart" path="PBMask" />
 					<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 					<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 				</area>
@@ -153,7 +153,7 @@
 				</area>
 				<area x="24%" condition="{column3pb}" width="5%" layer="4">
 					<drawimage x="0" y="0" valign="center" width="{areawidth}" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
-					<drawimage x="{column3pbsize}*12" y="0" valign="center" width="{column3pbtotalsize}*12-{column3pbsize}*12" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMask" />
+					<drawimage x="{column3pbsize}*12" y="0" valign="center" width="{column3pbtotalsize}*12-{column3pbsize}*12" height="{areaheight}*0.35" imagetype="skinpart" path="PBMask" />
 					<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 					<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 				</area>

@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 
 2015-02-22:
+- Improved display of progressbars in displaymenudefault
 - Reimplemented support for plexplugin
 
 2016-02-19:
