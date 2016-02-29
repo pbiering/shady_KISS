@@ -178,14 +178,12 @@
 					<drawtext condition="{current}" name="column2" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
 				</area>
+				
 				<area x="25%" condition="{column3pb}" width="8%" layer="4">
-					<drawimage x="0" y="0" valign="center" width="{column3pbtotalsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
+					<drawimage x="0" y="0" valign="center" width="{column3pbsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
 					<drawimage x="{column3pbsize}*18" y="0" valign="center" width="{column3pbtotalsize}*18-{column3pbsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="PBMask" />
 					<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
-					<drawimage x="{column3pbtotalsize}*18-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
-				</area>
-				<area x="25%" condition="{column3pb}" width="8%" layer="7">
-					<drawimage x="{column3pbsize}*18" y="0" valign="center" width="{column3pbtotalsize}*18-{column3pbsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="PBMask" />
+					<drawimage x="{areawidth}*0.94" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 				</area>
 <!--TODO in column4
 					char t = event && hasMatch ? (timerMatch == tmFull) ? 'T' : 't' : ' ';
@@ -198,8 +196,8 @@
 				<area condition="{column5set}++not{separator}" x="39%" width="59%" layer="4">
 					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column5}" />
 				</area>
-				<area condition="not{column2set}++{separator}" x="3%" width="70%" layer="4">
-					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				<area condition="not{column2set}++{separator}" x="3%" width="65%" layer="4">
+					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				</area>
 				<area condition="{column2set}++{separator}" x="3%" width="25%" layer="4">
 					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />

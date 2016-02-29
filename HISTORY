@@ -4,7 +4,8 @@ shady-KISS-skin History
 2016-02-29:
 - Fixed background of separator in displaymenuschedules
 - Added presenteventtitle to listitems in displaymenuchannel without currentelement
-- Added special display for timeredit, recordingedit and zaphistory-plugin in displaymenudefault 
+- Added special display for timeredit, recordingedit and zaphistory-plugin in displaymenudefault
+- Some tweaks for zaphistory
 
 2016-02-27:
 - Added presenteventtitle to listitems in displaymenuchannel
