@@ -297,21 +297,32 @@
 				<drawtext condition="empty{shorttext}not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
 <!-- Separator -->
-			<area condition="{separator}" x="0" width="16%" transparency="{transLists}" layer="3">
-				<drawimage x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackground" />
-			</area>
-			<area condition="{separator}++{whatson}" x="0%" width="16%" layer="4">
-				<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrSeparatorText}" text="{title}" />
-			</area>
-			<area condition="eq({indexcurrentInfo}, 0)++{separator}++isset{title}" x="19%" width="73%" layer="4">
-				<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
-			</area>
-			<area condition="eq({indexcurrentInfo}, 1)++{separator}++isset{title}" x="18%" width="47%" layer="4">
-				<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
-			</area>
-			<area condition="eq({indexcurrentInfo}, 2)++{separator}++isset{title}" x="18%" width="42%" layer="4">
-				<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
-			</area>
+			<areacontainer condition="{separator}">
+				<area condition="{whatson}||{whatsonnow}||{whatsonnext}" x="0" width="16%" transparency="{transLists}" layer="3">
+					<drawimage x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackgroundShort" />
+				</area>
+				<area condition="{whatsonfavorites}" x="0" width="24%" transparency="{transLists}" layer="3">
+					<drawimage x="3%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackground" />
+				</area>
+				<area condition="{whatson}" x="0%" width="16%" layer="4">
+					<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+				<area condition="eq({indexcurrentInfo}, 0)++isset{title}" x="19%" width="73%" layer="4">
+					<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+				<area condition="eq({indexcurrentInfo}, 1)++isset{title}" x="18%" width="47%" layer="4">
+					<drawtext condition="{whatsonnow}||{whatsonnext}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+				<area condition="eq({indexcurrentInfo}, 1)++isset{title}++{whatsonfavorites}" x="25%" width="41%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+				<area condition="eq({indexcurrentInfo}, 2)++isset{title}" x="18%" width="42%" layer="4">
+					<drawtext condition="{whatsonnow}||{whatsonnext}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+				<area condition="eq({indexcurrentInfo}, 2)++isset{title}++{whatsonfavorites}" x="25%" width="36%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+			</areacontainer>
 		</listelement>
 
 		<currentelement delay="0" fadetime="{currentelementsFadeTime}">
