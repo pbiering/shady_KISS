@@ -97,7 +97,6 @@
     -->
 	<!--<devices mode="full|light">
 	</devices>-->
-
 	<ecminfo>
 		<area condition="gt({ecmtime}, 0)++{ecmInfo}" x="59%" y="96%" width="40%" height="4%" layer="3">
 			<drawtext x="0" y="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="System: {cardsystem}    CAID: {caid}    Reader: {reader}    Hops: {hops}    ECM: {ecmtime}ms" />

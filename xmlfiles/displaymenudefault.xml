@@ -43,7 +43,7 @@
 			<area condition="{separator}++not{fritzbox}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullSeparator" />
 			</area>
-			<area condition="{separator}++not{fritzbox}" x="1%" width="94%" layer="4">
+			<area condition="{separator}++not{fritzbox}++not{zaphistory}" x="1%" width="94%" layer="4">
 				<drawtext align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</area>
 <!--separators-fritzbox-Anrufdetails-->
@@ -72,11 +72,10 @@
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
 			</area>
 <!--div einspaltig-->
-			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++not{column2set}"  scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="98%" layer="4">
+			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++not{timeredit}++not{recordingedit}++not{column2set}"  scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="98%" layer="4">
 				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
-
 			<!--<area condition="not{separator}++{current}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '0')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
 				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActiveColor" />
@@ -161,21 +160,97 @@
 					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
 				</area>
 			</areacontainer>
-<!--remotetimers-->
-			<!--<areascroll condition="{remotetimers}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="5%" width="45%" layer="4">
-				<drawtext x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+<!--timeredit--><!--recordingedit-->
+			<areascroll condition="{recordingedit}||{timeredit}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="47%" layer="4">
+				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
-			<area x="50%" condition="{remotetimers}" width="42%" layer="4">
+			<area x="50%" condition="{recordingedit}||{timeredit}" width="43%" layer="4">
 				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
-			</area>-->
+			</area>
+<!--zaphistory-->
+			<areacontainer condition="{zaphistory}">
+				<area condition="{column5set}++not{separator}" x="3%" width="15%" layer="4">
+					<drawtext condition="{current}" name="column1" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				</area>
+				<area condition="{column5set}++not{separator}" x="19%" width="6%" layer="4">
+					<drawtext condition="{current}" name="column2" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
+				</area>
+				<area x="25%" condition="{column3pb}" width="8%" layer="4">
+					<drawimage x="0" y="0" valign="center" width="{column3pbtotalsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
+					<drawimage x="{column3pbsize}*18" y="0" valign="center" width="{column3pbtotalsize}*18-{column3pbsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="PBMask" />
+					<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
+					<drawimage x="{column3pbtotalsize}*18-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
+				</area>
+				<area x="25%" condition="{column3pb}" width="8%" layer="7">
+					<drawimage x="{column3pbsize}*18" y="0" valign="center" width="{column3pbtotalsize}*18-{column3pbsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="PBMask" />
+				</area>
+<!--TODO in column4
+					char t = event && hasMatch ? (timerMatch == tmFull) ? 'T' : 't' : ' ';
+					char v = event && event->Vps() && (event->Vps() - event->StartTime()) ? 'V' : ' ';
+					char r = event && event->IsRunning() ? '*' : ' ';
+-->
+				<area condition="{column5set}++not{separator}" x="34%" width="4%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column4}" />
+				</area>
+				<area condition="{column5set}++not{separator}" x="39%" width="59%" layer="4">
+					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column5}" />
+				</area>
+				<area condition="not{column2set}++{separator}" x="3%" width="70%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				</area>
+				<area condition="{column2set}++{separator}" x="3%" width="25%" layer="4">
+					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				</area>
+				<area condition="not{column4set}++not{separator}" x="3%" width="25%" layer="4">
+					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				</area>
+				<area condition="not{column4set}++{separator}" x="29%" width="25%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
+				</area>
+				<area condition="not{column4set}++not{separator}" x="29%" width="25%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
+				</area>
+				<area condition="not{column4set}++{separator}" x="55%" width="25%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column3}" />
+				</area>
+				<area condition="not{column4set}++not{separator}" x="55%" width="25%" layer="4">
+					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column3}" />
+				</area>
+			</areacontainer>
 <!--fritzbox-->
 <!--epgsearch-->
+			<!--<areacontainer condition="{epgsearch}++{column5set}">
+				<area x="3%" width="5%" layer="4">
+					<drawtext condition="{current}" name="column1" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				</area>
+				<areascroll scrollelement="column2" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="9%" width="60%" layer="4">
+					<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
+					<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
+				</areascroll>
+				<area x="70%" width="8%" layer="4">
+					<drawtext condition="{current}" name="column3" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column3}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column3}" />
+				</area>
+				<area x="79%" width="8%" layer="4">
+					<drawtext condition="{current}" name="column4" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column4}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column4}" />
+				</area>
+				<area x="88%" width="8%" layer="4">
+					<drawtext condition="{current}" name="column4" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column4}" />
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column4}" />
+				</area>
+			</areacontainer>-->
+<!--remotetimers-->
 <!--default-->
-			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
+			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++not{timeredit}++not{recordingedit}++not{zaphistory}++{column2set}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="4%" width="{column1width}" layer="4">
 				<drawtext condition="{current}" name="column1" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				<drawtext condition="not{current}" x="{column1x}" width="{column1width}" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
-			<area condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}" x="5%" width="87%" layer="4">
+			<area condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++not{timeredit}++not{recordingedit}++not{zaphistory}" x="5%" width="87%" layer="4">
 				<drawtext condition="{column2set}" x="{column2x}" valign="center" font="{light}" fontsize="70%" width="{column2width}" color="{clrLightGray}" text="{column2}" />
 				<drawtext condition="{column3set}" x="{column3x}" valign="center" font="{light}" fontsize="70%" width="{column3width}" color="{clrLightGray}" text="{column3}" />
 				<drawtext condition="{column4set}" x="{column4x}" valign="center" font="{light}" fontsize="70%" width="{column4width}" color="{clrLightGray}" text="{column4}" />
