@@ -179,11 +179,11 @@
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column2}" />
 				</area>
 				
-				<area x="25%" condition="{column3pb}" width="8%" layer="4">
+				<area x="25%" condition="{column3pb}" width="{areawidth}*0.075" layer="4">
 					<drawimage x="0" y="0" valign="center" width="{column3pbsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPB" />
 					<drawimage x="{column3pbsize}*18" y="0" valign="center" width="{column3pbtotalsize}*18-{column3pbsize}*18" height="{areaheight}*0.35" imagetype="skinpart" path="PBMask" />
 					<drawimage x="0" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
-					<drawimage x="{areawidth}*0.94" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
+					<drawimage x="{areawidth}-1" y="0" valign="center" width="1" height="{areaheight}*0.35" imagetype="skinpart" path="sysinfoPBMaskEnd" />
 				</area>
 <!--TODO in column4
 					char t = event && hasMatch ? (timerMatch == tmFull) ? 'T' : 't' : ' ';
