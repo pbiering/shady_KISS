@@ -1,5 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
+2016-02-01:
+- Added setup for channellist without running events
+- Added setup for statuscolumn in zaphistory-plugin
+
 
 2016-02-29:
 - Fixed background of separator in displaymenuschedules

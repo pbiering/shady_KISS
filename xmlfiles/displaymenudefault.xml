@@ -190,12 +190,17 @@
 					char v = event && event->Vps() && (event->Vps() - event->StartTime()) ? 'V' : ' ';
 					char r = event && event->IsRunning() ? '*' : ' ';
 -->
-				<area condition="{column5set}++not{separator}" x="34%" width="4%" layer="4">
+				<area condition="{column5set}++not{separator}++{zaphistoryStatusCol}" x="34%" width="4%" layer="4">
 					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column4}" />
 				</area>
-				<area condition="{column5set}++not{separator}" x="39%" width="59%" layer="4">
+				<area condition="{column5set}++not{separator}++{zaphistoryStatusCol}" x="39%" width="55%" layer="4">
 					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column5}" />
 				</area>
+				<area condition="{column5set}++not{separator}++not{zaphistoryStatusCol}" x="35%" width="59%" layer="4">
+					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column5}" />
+				</area>
+				
+				
 				<area condition="not{column2set}++{separator}" x="3%" width="65%" layer="4">
 					<drawtext x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				</area>
