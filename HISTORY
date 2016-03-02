@@ -1,5 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
+
+2016-02-02:
+- Adjusted width of zaphistory-progressbar
+
 2016-02-01:
 - Added setup for channellist without running events
 - Added setup for statuscolumn in zaphistory-plugin
