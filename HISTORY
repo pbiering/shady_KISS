@@ -2,7 +2,8 @@ shady-KISS-skin History
 -------------------------------------------
 
 2016-02-02:
-- Adjusted width of zaphistory-progressbar
+- Adjusted width of systeminfo-progressbar
+- Added setup for second column in settings and edit
 
 2016-02-01:
 - Added setup for channellist without running events

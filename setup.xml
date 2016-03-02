@@ -41,6 +41,7 @@
 			<parameter type="int" name="numLongSubmenuitems" min="12" max="18" displaytext="{tr(numLongSubmenuitems)}">15</parameter>
 			<parameter type="int" name="numShortSubmenuitems" min="12" max="18" displaytext="{tr(numShortSubmenuitems)}">15</parameter>
 			<parameter type="string" name="channelList" displaytext="{tr(channelList)}" options="onlyChannel,channelAndEvent">0</parameter>
+			<parameter type="string" name="column2Alignment" displaytext="{tr(column2Alignment)}" options="right-justified,left-justified">0</parameter>
 			<parameter type="string" name="currentInfo" displaytext="{tr(currentInfo)}" options="noCurrentInfo,tallCurrentInfo,wideCurrentInfo">1</parameter>
 			<parameter type="int" name="fontSizeInfoTitle" min="34" max="54" displaytext="{tr(fontSizeInfoTitle)}">34</parameter>
 			<parameter type="int" name="fontSizeInfoDetails" min="30" max="36" displaytext="{tr(fontSizeInfoDetails)}">30</parameter>
@@ -122,6 +123,18 @@
 		<token name="tr(channelAndEvent)">
 			<trans lang="en_EN">Channels and running event</trans>
 			<trans lang="de_DE">Kanäle und aktuelle Sendung</trans>
+		</token>
+		<token name="tr(column2Alignment)">
+			<trans lang="en_EN">Alignment second column (setup, edit)</trans>
+			<trans lang="de_DE">Ausichtung zweite Spalte (Setup, Edit)</trans>
+		</token>
+		<token name="tr(right-justified)">
+			<trans lang="en_EN">right-justified</trans>
+			<trans lang="de_DE">rechtsbündig</trans>
+		</token>
+		<token name="tr(left-justified)">
+			<trans lang="en_EN">left-justified</trans>
+			<trans lang="de_DE">linksbündig</trans>
 		</token>
 		<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (default=15)</trans>
@@ -286,13 +299,13 @@
 			<trans lang="de_DE">Ausrichtung Menü Aufzeichnungen</trans>
 		</token>
 		<token name="tr(horizontal)">
-            <trans lang="en_EN">horizontal</trans>
-            <trans lang="de_DE">horizontal</trans>
-        </token>
-        <token name="tr(vertical)">
-            <trans lang="en_EN">vertical</trans>
-            <trans lang="de_DE">vertikal</trans>
-        </token>
+			<trans lang="en_EN">horizontal</trans>
+			<trans lang="de_DE">horizontal</trans>
+		</token>
+		<token name="tr(vertical)">
+			<trans lang="en_EN">vertical</trans>
+			<trans lang="de_DE">vertikal</trans>
+		</token>
 		<token name="tr(recordingsmarker)">
 			<trans lang="en_EN">Menu Recordings</trans>
 			<trans lang="de_DE">Menü Aufzeichnungen</trans>

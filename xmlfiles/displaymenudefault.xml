@@ -65,23 +65,34 @@
 				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
-			<area x="50%" condition="not{separator}++{setup}++{column2set}" width="43%" layer="4">
+			<area x="50%" condition="not{separator}++{setup}++{column2set}++eq({indexcolumn2Alignment}, 0)" width="43%" layer="4">
 				<drawtext condition="strnotcontains({column1}, 'Marker')" align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+			</area>
+			<area x="50%" condition="not{separator}++{setup}++{column2set}++eq({indexcolumn2Alignment}, 1)" width="43%" layer="4">
+				<drawtext condition="strnotcontains({column1}, 'Marker')" align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 			</area>
 			<area x="3%" condition="not{separator}++{setup}++not{column2set}" width="93%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
 			</area>
+<!--timeredit--><!--recordingedit-->
+			<areascroll condition="{recordingedit}||{timeredit}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="47%" layer="4">
+				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+			</areascroll>
+			<areacontainer  condition="{recordingedit}||{timeredit}">
+				<area x="50%" condition="++eq({indexcolumn2Alignment}, 0)" width="43%" layer="4">
+					<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+				</area>
+				<area x="50%" condition="++eq({indexcolumn2Alignment}, 1)" width="43%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+				</area>
+			</areacontainer>
 <!--div einspaltig-->
 			<areascroll condition="not{separator}++not{setup}++not{systeminfo}++not{mailbox}++not{neutrinoepg}++not{timeredit}++not{recordingedit}++not{column2set}"  scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="98%" layer="4">
 				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</areascroll>
-			<!--<area condition="not{separator}++{current}" x="1%" width="94%" transparency="{transLists}" layer="3">
-				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '0')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive" />
-				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '1')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActiveColor" />
-				<drawimage condition="strcontains({column1}, ', 2=')++strequal({column2}, '2')" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullActive_Gradient" />
-			</area>-->
-				
+
 <!--recordings-->
 			<!--<area condition="{setup}++strcontains({column1}, '(4 = Detail')++strequal({column2}, '4')" x="50%" y="0" width="42%" layer="4">
 				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{tr(Detail_View)}" />
@@ -160,14 +171,6 @@
 					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
 				</area>
 			</areacontainer>
-<!--timeredit--><!--recordingedit-->
-			<areascroll condition="{recordingedit}||{timeredit}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="47%" layer="4">
-				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
-				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
-			</areascroll>
-			<area x="50%" condition="{recordingedit}||{timeredit}" width="43%" layer="4">
-				<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
-			</area>
 <!--zaphistory-->
 			<areacontainer condition="{zaphistory}">
 				<area condition="{column5set}++not{separator}" x="3%" width="15%" layer="4">
