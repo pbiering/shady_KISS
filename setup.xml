@@ -125,8 +125,8 @@
 			<trans lang="de_DE">Kanäle und aktuelle Sendung</trans>
 		</token>
 		<token name="tr(column2Alignment)">
-			<trans lang="en_EN">Alignment second column (setup, edit)</trans>
-			<trans lang="de_DE">Ausichtung zweite Spalte (Setup, Edit)</trans>
+			<trans lang="en_EN">Alignment second column (settings, edit)</trans>
+			<trans lang="de_DE">Ausrichtung zweite Spalte (Einstellungen, Editieren)</trans>
 		</token>
 		<token name="tr(right-justified)">
 			<trans lang="en_EN">right-justified</trans>

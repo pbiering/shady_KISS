@@ -4,6 +4,7 @@ shady-KISS-skin History
 2016-02-02:
 - Adjusted width of systeminfo-progressbar
 - Added setup for second column in settings and edit
+- Fixed typo, removed blinking of recording-marker in displaychannel
 
 2016-02-01:
 - Added setup for channellist without running events
