@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-02-03:
+- Added optional devices-widget for mainmenu
+
 2016-02-02:
 - Adjusted width of systeminfo-progressbar
 - Added setup for second column in settings and edit

@@ -18,6 +18,7 @@
 -->
 		<submenu name="Main-Menu" displaytext="{tr(mainMenu)}">
 			<parameter type="string" name="panelMain" displaytext="{tr(panelMain)}" options="none,showInfosAndOnlyTimers,showInfosAndTimers,showInfosAndTimersAndLastrecs">3</parameter>
+			<parameter type="string" name="widgets" displaytext="{tr(widgets)}" options="tempsLoadWeather,devicesWeather">0</parameter>
 			<parameter type="string" name="mainMenuOrientation" displaytext="{tr(mainMenuOrientation)}" options="right, left">0</parameter>
 			<parameter type="int" name="fadetimeTempsLoadWeatherDisc" min="0" max="500" displaytext="{tr(fadetimeTempsLoadWeatherDisc)}">0</parameter>
 			<parameter type="int" name="fadetimeTimersAndLastrecs" min="0" max="500" displaytext="{tr(fadetimeTimersAndLastrecs)}">0</parameter>
@@ -78,11 +79,11 @@
 	<translations>
 		<token name="tr(mainMenu)">
 			<trans lang="en_EN">Main menu</trans>
-			<trans lang="de_DE">Hauptmenü</trans>
+			<trans lang="de_DE">Hauptmen&#252;</trans>
 		</token>
 		<token name="tr(mainMenuOrientation)">
 			<trans lang="en_EN">Position list main- and setupmenu</trans>
-			<trans lang="de_DE">Position Liste Haupt- und Setupmenü</trans>
+			<trans lang="de_DE">Position Liste Haupt- und Setupmen&#252;</trans>
 		</token>
 		<token name="tr(left)">
 			<trans lang="en_EN">left</trans>
@@ -102,27 +103,27 @@
 		</token>
 		<token name="tr(numShortMenuitems)">
 			<trans lang="en_EN">Number of items in main and setup menu</trans>
-			<trans lang="de_DE">Anzahl der Elemente im Haupt- und Setupmenü</trans>
+			<trans lang="de_DE">Anzahl der Elemente im Haupt- und Setupmen&#252;</trans>
 		</token>
 		<token name="tr(numLongSubmenuitems)">
 			<trans lang="en_EN">Number of items in submenus (long)</trans>
-			<trans lang="de_DE">Anzahl der Elemente in Submenüs (lang)</trans>
+			<trans lang="de_DE">Anzahl der Elemente in Submen&#252;s (lang)</trans>
 		</token>
 		<token name="tr(numShortSubmenuitems)">
 			<trans lang="en_EN">Number of items in submenus (short)</trans>
-			<trans lang="de_DE">Anzahl der Elemente in Submenüs (kurz)</trans>
+			<trans lang="de_DE">Anzahl der Elemente in Submen&#252;s (kurz)</trans>
 		</token>
 		<token name="tr(channelList)">
 			<trans lang="en_EN">List menu channels</trans>
-			<trans lang="de_DE">Liste Menü Kanäle</trans>
+			<trans lang="de_DE">Liste Men&#252; Kan&#228;le</trans>
 		</token>
 		<token name="tr(onlyChannel)">
 			<trans lang="en_EN">Only channels</trans>
-			<trans lang="de_DE">Nur Kanäle</trans>
+			<trans lang="de_DE">Nur Kan&#228;le</trans>
 		</token>
 		<token name="tr(channelAndEvent)">
 			<trans lang="en_EN">Channels and running event</trans>
-			<trans lang="de_DE">Kanäle und aktuelle Sendung</trans>
+			<trans lang="de_DE">Kan&#228;le und aktuelle Sendung</trans>
 		</token>
 		<token name="tr(column2Alignment)">
 			<trans lang="en_EN">Alignment second column (settings, edit)</trans>
@@ -130,43 +131,55 @@
 		</token>
 		<token name="tr(right-justified)">
 			<trans lang="en_EN">right-justified</trans>
-			<trans lang="de_DE">rechtsbündig</trans>
+			<trans lang="de_DE">rechtsb&#252;ndig</trans>
 		</token>
 		<token name="tr(left-justified)">
 			<trans lang="en_EN">left-justified</trans>
-			<trans lang="de_DE">linksbündig</trans>
+			<trans lang="de_DE">linksb&#252;ndig</trans>
 		</token>
 		<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (default=15)</trans>
-			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmenü (default=15)</trans>
+			<trans lang="de_DE">Anzahl der Elemente im Aufnahmenmen&#252; (default=15)</trans>
 		</token>
 		<token name="tr(brightBackground)">
 			<trans lang="en_EN">Bright backgroundgradient</trans>
 			<trans lang="de_DE">Heller Hintergrundverlauf</trans>
 		</token>
 		<token name="tr(panelMain)">
-			<trans lang="en_EN">Panel with infos, timers and lastrecs</trans>
-			<trans lang="de_DE">Paneel mit Infos, Timern und Aufnahmen</trans>
+			<trans lang="en_EN">Panel with timers, lastrecs and widgets</trans>
+			<trans lang="de_DE">Paneel mit Timern, Aufnahmen und Widgets</trans>
 		</token>
 		<token name="tr(none)">
 			<trans lang="en_EN">No</trans>
 			<trans lang="de_DE">Nein</trans>
 		</token>
 		<token name="tr(showInfosAndOnlyTimers)">
-			<trans lang="en_EN">Show infos and only timers</trans>
-			<trans lang="de_DE">Zeige Infos und nur Timer</trans>
+			<trans lang="en_EN">Show only timers and widgets</trans>
+			<trans lang="de_DE">Zeige nur Timer und Widgets</trans>
 		</token>
 		<token name="tr(showInfosAndTimers)">
-			<trans lang="en_EN">Show infos and primarily timers</trans>
-			<trans lang="de_DE">Zeige Infos und vorrangig Timer</trans>
+			<trans lang="en_EN">Show widgets and primarily timers</trans>
+			<trans lang="de_DE">Zeige Widgets und vorrangig Timer</trans>
 		</token>
 		<token name="tr(showInfosAndTimersAndLastrecs)">
-			<trans lang="en_EN">Show infos, timers + at least last three recordings</trans>
-			<trans lang="de_DE">Zeige Infos, Timer + mind. letzte drei Aufnahmen</trans>
+			<trans lang="en_EN">Show widgets, timers + at least last three recordings</trans>
+			<trans lang="de_DE">Zeige Widgets, Timer + mind. letzte drei Aufnahmen</trans>
+		</token>
+		<token name="tr(widgets)">
+			<trans lang="en_EN">Widgets</trans>
+			<trans lang="de_DE">Widgets</trans>
+		</token>
+		<token name="tr(tempsLoadWeather)">
+			<trans lang="en_EN">Temps, load and weather</trans>
+			<trans lang="de_DE">Temps, Load und Wetter</trans>
+		</token>
+		<token name="tr(devicesWeather)">
+			<trans lang="en_EN">Devices and weather</trans>
+			<trans lang="de_DE">Devices und Wetter</trans>
 		</token>
 		<token name="tr(setupIconbar)">
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>
-			<trans lang="de_DE">Zeige Leiste mit Icons im Setup-Menü</trans>
+			<trans lang="de_DE">Zeige Leiste mit Icons im Setup-Men&#252;</trans>
 		</token>
 		<token name="tr(coloredButtons)">
 			<trans lang="en_EN">Colored active buttons</trans>
@@ -182,7 +195,7 @@
 		</token>
 		<token name="tr(gradient)">
 			<trans lang="en_EN">extensive gradient</trans>
-			<trans lang="de_DE">vollflächiger Farbverlauf</trans>
+			<trans lang="de_DE">vollfl&#228;chiger Farbverlauf</trans>
 		</token>
 		<token name="tr(tvgngDescriptionScroll)">
 			<trans lang="en_EN">Scroll descriptions in TVGuideNG</trans>
@@ -194,7 +207,7 @@
 		</token>
 		<token name="tr(currentInfo)">
 			<trans lang="en_EN">Info for active listitem</trans>
-			<trans lang="de_DE">Info für aktives Listenelement</trans>
+			<trans lang="de_DE">Info f&#252;r aktives Listenelement</trans>
 		</token>
 		<token name="tr(noCurrentInfo)">
 			<trans lang="en_EN">No</trans>
@@ -210,19 +223,19 @@
 		</token>
 		<token name="tr(fontSizeInfoTitle)">
 			<trans lang="en_EN">Fontsize title in info for active listelement</trans>
-			<trans lang="de_DE">Schriftgröße Titel in Info zum aktiven Listenelement</trans>
+			<trans lang="de_DE">Schriftgr&#246;&#223;e Titel in Info zum aktiven Listenelement</trans>
 		</token>
 		<token name="tr(fontSizeInfoDetails)">
 			<trans lang="en_EN">Fontsize date, time...in info for active listelement </trans>
-			<trans lang="de_DE">Schriftgröße Datum, Zeit ... in Info zum aktiven Listenelement</trans>
+			<trans lang="de_DE">Schriftgr&#246;&#223;e Datum, Zeit ... in Info zum aktiven Listenelement</trans>
 		</token>
 		<token name="tr(fontSizeInfoDescription)">
 			<trans lang="en_EN">Fontsize description in info for active listelement</trans>
-			<trans lang="de_DE">Schriftgröße Beschreibung in Info zum aktiven Listenelement</trans>
+			<trans lang="de_DE">Schriftgr&#246;&#223;e Beschreibung in Info zum aktiven Listenelement</trans>
 		</token>
 		<token name="tr(fontSizeDescr)">
 			<trans lang="en_EN">Fontsize detaildescriptions</trans>
-			<trans lang="de_DE">Schriftgröße Detail-Beschreibungen</trans>
+			<trans lang="de_DE">Schriftgr&#246;&#223;e Detail-Beschreibungen</trans>
 		</token>
 		<token name="tr(showPosterAndEPGpic)">
 			<trans lang="en_EN">Poster and EPGpic in Details</trans>
@@ -238,11 +251,11 @@
 		</token>
 		<token name="tr(transBackground)">
 			<trans lang="en_EN">Transparency backgrounds</trans>
-			<trans lang="de_DE">Transparenz Hintergründe</trans>
+			<trans lang="de_DE">Transparenz Hintergr&#252;nde</trans>
 		</token>
 		<token name="tr(transLists)">
 			<trans lang="en_EN">Transparency menulists</trans>
-			<trans lang="de_DE">Transparenz Menülisten</trans>
+			<trans lang="de_DE">Transparenz Men&#252;listen</trans>
 		</token>
 		<token name="tr(sysinfoPBtheme)">
 			<trans lang="en_EN">Bars in systeminfo-plugin in themecolors</trans>
@@ -250,7 +263,7 @@
 		</token>
 		<token name="tr(longElapsedBar)">
 			<trans lang="en_EN">Show elapsedbar beneath events (recordings, whatsonnow)</trans>
-			<trans lang="de_DE">Zeige Balken für abgelaufene Zeit unterhalb der Titel (Aufzeichnungen, Jetzt)</trans>
+			<trans lang="de_DE">Zeige Balken f&#252;r abgelaufene Zeit unterhalb der Titel (Aufzeichnungen, Jetzt)</trans>
 		</token>
 		<token name="tr(showTimeshiftTotal)">
 			<trans lang="en_EN">Show total time of timeshift-event in displayreplay</trans>
@@ -258,11 +271,11 @@
 		</token>
 		<token name="tr(showDiscUsage)">
 			<trans lang="en_EN">Show discusage in recordings- and timersmenu</trans>
-			<trans lang="de_DE">Zeige Festplattenausnutzung im Aufnahmen- und Timermenü</trans>
+			<trans lang="de_DE">Zeige Festplattenausnutzung im Aufnahmen- und Timermen&#252;</trans>
 		</token>
 		<token name="tr(showNumbering)">
 			<trans lang="en_EN">Show numbering in main- and setupmenu</trans>
-			<trans lang="de_DE">Zeige Nummerierung im Haupt- und Setupmenü</trans>
+			<trans lang="de_DE">Zeige Nummerierung im Haupt- und Setupmen&#252;</trans>
 		</token>
 <!--channelInfo-->
 		<token name="tr(channelInfo)">
@@ -296,7 +309,7 @@
 <!--RecordingMarkersProgress-->
 		<token name="tr(recmenuorientation)">
 			<trans lang="en_EN">Direction menu recordings</trans>
-			<trans lang="de_DE">Ausrichtung Menü Aufzeichnungen</trans>
+			<trans lang="de_DE">Ausrichtung Men&#252; Aufzeichnungen</trans>
 		</token>
 		<token name="tr(horizontal)">
 			<trans lang="en_EN">horizontal</trans>
@@ -308,19 +321,19 @@
 		</token>
 		<token name="tr(recordingsmarker)">
 			<trans lang="en_EN">Menu Recordings</trans>
-			<trans lang="de_DE">Menü Aufzeichnungen</trans>
+			<trans lang="de_DE">Men&#252; Aufzeichnungen</trans>
 		</token>
 		<token name="tr(03_new-recordingsMarker)">
 			<trans lang="en_EN">Marker for new recordings</trans>
-			<trans lang="de_DE">Marker für neue Aufnahmen</trans>
+			<trans lang="de_DE">Marker f&#252;r neue Aufnahmen</trans>
 		</token>
 		<token name="tr(05_notNewNotWatched-recordingsMarker)">
 			<trans lang="en_EN">Marker for recordings seen &lt; 85%</trans>
-			<trans lang="de_DE">Marker für Aufnahmen gesehen &lt; 85%</trans>
+			<trans lang="de_DE">Marker f&#252;r Aufnahmen gesehen &lt; 85%</trans>
 		</token>
 		<token name="tr(07_notNewWatched-recordingsMarker)">
 			<trans lang="en_EN">Marker for recordings seen &gt; 85%</trans>
-			<trans lang="de_DE">Marker für Aufnahmen gesehen &gt; 85%</trans>
+			<trans lang="de_DE">Marker f&#252;r Aufnahmen gesehen &gt; 85%</trans>
 		</token>
 <!--Shift- and fade-times-->
 		<token name="tr(shiftFadeTimes)">
@@ -338,7 +351,7 @@
 		</token>
 		<token name="tr(volumeShiftTime)">
 			<trans lang="en_EN">Shift-time volume</trans>
-			<trans lang="de_DE">Einfahrzeit Lautstärke</trans>
+			<trans lang="de_DE">Einfahrzeit Lautst&#228;rke</trans>
 		</token>
 		<token name="tr(messageShiftTime)">
 			<trans lang="en_EN">Shift-time messages</trans>
@@ -354,7 +367,7 @@
 		</token>
 		<token name="tr(channelPosterDelay)">
 			<trans lang="en_EN">Delay posters in channel-panel</trans>
-			<trans lang="de_DE">Verzögerung Poster im Kanal-Paneel</trans>
+			<trans lang="de_DE">Verz&#246;gerung Poster im Kanal-Paneel</trans>
 		</token>
 		<token name="tr(channelPosterFadeTime)">
 			<trans lang="en_EN">Fade-time posters in channel-panel</trans>
@@ -362,7 +375,7 @@
 		</token>
 		<token name="tr(channelWeatherDelay)">
 			<trans lang="en_EN">Delay weatherinfo in channel-panel</trans>
-			<trans lang="de_DE">Verzögerung Wetterinfo im Kanal-Paneel</trans>
+			<trans lang="de_DE">Verz&#246;gerung Wetterinfo im Kanal-Paneel</trans>
 		</token>
 		<token name="tr(channelWeatherFadeTime)">
 			<trans lang="en_EN">Fade-time weatherinfo in channel-panel</trans>
