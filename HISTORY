@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-02-06:
+- Fixed bug in translations of setup.xml
+
 2016-02-03:
 - Added optional devices-widget for mainmenu
 

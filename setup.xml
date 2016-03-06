@@ -60,7 +60,7 @@
 			<parameter type="string" name="coloredButtons" displaytext="{tr(coloredButtons)}" options="no,border,gradient">2</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">0</parameter>
 			<parameter type="int" name="fontSizeDescr" min="34" max="50" displaytext="{tr(fontSizeDescr)}">34</parameter>
-			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyOnlyPoster,posterAndEPGpic">0</parameter>
+			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyPoster,postersAndEPGpic">0</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 			<parameter type="bool" name="showReplayPoster" min="30" max="50" displaytext="{tr(showReplayPoster)}">0</parameter>
 			<parameter type="int" name="transBackground" min="0" max="25" displaytext="{tr(transBackground)}">10</parameter>
@@ -122,8 +122,8 @@
 			<trans lang="de_DE">Nur Kan&#228;le</trans>
 		</token>
 		<token name="tr(channelAndEvent)">
-			<trans lang="en_EN">Channels and running event</trans>
-			<trans lang="de_DE">Kan&#228;le und aktuelle Sendung</trans>
+			<trans lang="en_EN">Channel and running event</trans>
+			<trans lang="de_DE">Kanal und aktuelle Sendung</trans>
 		</token>
 		<token name="tr(column2Alignment)">
 			<trans lang="en_EN">Alignment second column (settings, edit)</trans>
@@ -131,11 +131,11 @@
 		</token>
 		<token name="tr(right-justified)">
 			<trans lang="en_EN">right-justified</trans>
-			<trans lang="de_DE">rechtsb&#252;ndig</trans>
+			<trans lang="de_DE">rechts-b&#252;ndig</trans>
 		</token>
 		<token name="tr(left-justified)">
 			<trans lang="en_EN">left-justified</trans>
-			<trans lang="de_DE">linksb&#252;ndig</trans>
+			<trans lang="de_DE">links-b&#252;ndig</trans>
 		</token>
 		<token name="tr(00_numRecordingsmenuitems)">
 			<trans lang="en_EN">Number of items in recordingsmenu (default=15)</trans>
@@ -241,11 +241,11 @@
 			<trans lang="en_EN">Poster and EPGpic in Details</trans>
 			<trans lang="de_DE">Poster und EPGpic in Details</trans>
 		</token>
-		<token name="tr(primarilyOnlyPoster)">
-			<trans lang="en_EN">Primarily only poster</trans>
-			<trans lang="de_DE">Vorrangig nur Poster</trans>
+		<token name="tr(primarilyPoster)">
+			<trans lang="en_EN">Primarily poster</trans>
+			<trans lang="de_DE">Vorrangig Poster</trans>
 		</token>
-		<token name="tr(posterAndEPGpic)">
+		<token name="tr(postersAndEPGpic)">
 			<trans lang="en_EN">If available both</trans>
 			<trans lang="de_DE">Wenn vorhanden beides</trans>
 		</token>
