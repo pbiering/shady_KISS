@@ -3,6 +3,7 @@ shady-KISS-skin History
 
 2016-03-07:
 - Removed scalingtv* in all views but main- and setupmenu
+- Removed Debug in displaymenudefault
 
 2016-02-06:
 - Fixed bug in translations of setup.xml
