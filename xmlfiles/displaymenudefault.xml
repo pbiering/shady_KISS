@@ -43,7 +43,7 @@
 			<area condition="{separator}++not{fritzbox}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullSeparator" />
 			</area>
-			<area condition="{separator}++not{fritzbox}++not{zaphistory}" x="1%" width="94%" layer="4">
+			<area condition="{separator}++not{fritzbox}++not{zaphistory}++not{timeredit}" x="1%" width="94%" layer="4">
 				<drawtext align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</area>
 <!--separators-fritzbox-Anrufdetails-->
@@ -75,16 +75,39 @@
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
 			</area>
 <!--timeredit--><!--recordingedit-->
-			<areascroll condition="{recordingedit}||{timeredit}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="47%" layer="4">
-				<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
-				<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
-			</areascroll>
 			<areacontainer  condition="{recordingedit}||{timeredit}">
-				<area x="50%" condition="++eq({indexcolumn2Alignment}, 0)" width="43%" layer="4">
+				<areascroll condition="not{column3set}++not{separator}" scrollelement="column1" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="3%" width="47%" layer="4">
+					<drawtext condition="{current}" name="column1" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+					<drawtext condition="not{current}" x="0" width="99%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
+				</areascroll>
+			</areacontainer>
+			<areacontainer  condition="{recordingedit}||{timeredit}">
+				<area x="50%" condition="eq({indexcolumn2Alignment}, 0)++not{column3set}++not{separator}" width="43%" layer="4">
 					<drawtext align="right" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 				</area>
-				<area x="50%" condition="++eq({indexcolumn2Alignment}, 1)" width="43%" layer="4">
+				<area x="50%" condition="eq({indexcolumn2Alignment}, 1)++not{column3set}++not{separator}" width="43%" layer="4">
 					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+				</area>
+				<area condition="{separator}" x="45%" width="20%" layer="4">
+					<drawtext valign="center" font="{light}" fontsize="70%" width="99%" color="{clrHigh}" text="{column1}  {column2}" />
+				</area>
+			</areacontainer>
+<!--timeredit conflicts-->
+			<areacontainer  condition="{column3set}++{timeredit}">
+				<area x="3%" width="2%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
+				</area>
+				<area x="5%" width="20%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+				</area>
+				<area x="25%" width="5%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
+				</area>
+				<area x="35%" width="5%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
+				</area>
+				<area x="45%" width="48%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
 				</area>
 			</areacontainer>
 <!--div einspaltig-->
