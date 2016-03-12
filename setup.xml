@@ -71,6 +71,7 @@
 			<parameter type="bool" name="showDiscUsage" displaytext="{tr(showDiscUsage)}">1</parameter>
 			<parameter type="bool" name="showNumbering" displaytext="{tr(showNumbering)}">1</parameter>
 			<parameter type="bool" name="zaphistoryStatusCol" displaytext="{tr(zaphistoryStatusCol)}">1</parameter>
+			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="kissStyle,fanartStyle">0</parameter>
 		</submenu>
 	</menu>
     <!--
@@ -389,6 +390,18 @@
 		<token name="tr(zaphistoryStatusCol)">
 			<trans lang="en_EN">Show statuscolumn in zayhistory</trans>
 			<trans lang="de_DE">Zeige Statusspalte in zaphistory</trans>
+		</token>
+		<token name="tr(plexDetail)">
+			<trans lang="en_EN">Background Plex-Detail</trans>
+			<trans lang="de_DE">Hintergrund Plex-Detail</trans>
+		</token>
+		<token name="tr(kissStyle)">
+			<trans lang="en_EN">KISS</trans>
+			<trans lang="de_DE">KISS</trans>
+		</token>
+		<token name="tr(fanartStyle)">
+			<trans lang="en_EN">Fanart</trans>
+			<trans lang="de_DE">Fanart</trans>
 		</token>
 	</translations>
 </setup>

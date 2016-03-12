@@ -384,5 +384,6 @@
     <fonts>
 		<font name="light">Open Sans:Light</font>
 		<font name="semibold">Open Sans:Semibold</font>
+		<font name="regular">Open Sans:Regular</font>
 	</fonts>
 </globals>
