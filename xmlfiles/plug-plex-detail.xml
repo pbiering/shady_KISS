@@ -134,7 +134,7 @@
 			</area>
 			<area x="30%" y="24%" width="65%" height="1%" layer="5">
 				<drawrectangle x="0" y="0" width="{areawidth}" height="30%" color="{clrRecMenuBorderTop}" />
-				<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrHigh}" />
+				<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrBar}" />
 			</area>
 			<area x="30%" y="27%" width="{areawidth}*0.075" height="4%" layer="5">
 				<drawimage name="stars" condition="gt({rating}, 0)" x="0" y="15%" width="{areawidth}" height="{areaheight}*0.5" imagetype="skinpart" path="starsFull" />
@@ -184,7 +184,7 @@
 			</area>
 			<area x="30%" y="29%" width="65%" height="1%" layer="5">
 				<drawrectangle x="0" y="0" width="{areawidth}" height="30%" color="{clrRecMenuBorderTop}" />
-				<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrHigh}" />
+				<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrBar}" />
 			</area>
 			<area x="30%" y="31%" width="{areawidth}*0.084" height="4%" layer="5">
 				<drawimage name="stars" condition="gt({rating}, 0)" x="0" y="15%" width="{areawidth}" height="{areaheight}*0.5" imagetype="skinpart" path="starsFull" />

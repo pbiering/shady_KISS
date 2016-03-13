@@ -25,6 +25,7 @@
         <!--plex-poster-->
 		<color name="clrPlexFill">EB080808</color>
 		<color name="clrDarkGray">FF808080</color>
+		<color name="clrBar">C8FF4500</color>
     </colors>
     <!--
     these variables can be used everywhere in the templates
