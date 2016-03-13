@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE displaychannel SYSTEM "../../../dtd/displaychannel.dtd">
 
-<displaychannel x="0" y="0" width="100%" height="100%" shifttime="{channelShiftTime}" shifttype="bottom" shiftmode="slowed">
+<displaychannel x="0" y="0" width="100%" height="100%" fadetime="{channelFadeTime}">
 	<background>
 			<area x="0" y="73%" width="100%" height="27%" layer="1">
 				<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannelPNGT"/>
 			</area>
 	</background>
 
-	<scrapercontent delay="300" fadetime="500" >
-		<area condition="isset{posterpath}++{showChannelinfoPosterInline}" x="84%" y="78%" width="8%" height="18%" layer="2">
+	<scrapercontent delay="250" fadetime="{channelFadeTime}">
+		<areacontainer condition="isset{posterpath}">
+			<area condition="eq({indexscrapContent}, 1)||eq({indexscrapContent}, 3)" x="84%" y="78%" width="8%" height="18%" layer="2">
 				<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="posterBG"/>
 			</area>
-		<area condition="isset{posterpath}++{showChannelinfoPosterInline}" x="68%" y="79%" width="{areaheight}*{posterwidth}/{posterheight}" height="15%" layer="3">
-			<drawimage x="2%" valign="center" width="{areawidth}" height="{areaheight}" imagetype="image" path="{posterpath}" />
-		</area>
-		<!--todo: bannersetup-->
-		<area condition="{isbanner}" x="0" y="59%" width="{areaheight}*0.13*{mediawidth}/{mediaheight}" height="13%" layer="2">
+			<area condition="eq({indexscrapContent}, 1)||eq({indexscrapContent}, 3)" x="68%" y="79%" width="{areaheight}*{posterwidth}/{posterheight}" height="15%" layer="3">
+				<drawimage x="2%" valign="center" width="{areawidth}" height="{areaheight}" imagetype="image" path="{posterpath}" />
+			</area>
+		</areacontainer>
+		<area condition="{isbanner}++gt({indexscrapContent}, 1)" x="1%" y="2%" width="{areaheight}*0.13*{mediawidth}/{mediaheight}" height="13%" layer="2">
 			<drawimage imagetype="image" path="{mediapath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
-		</area>
-		<!--<area condition="{hasposter}++{showChannelinfoPosterExtern}" x="0" y="40%" width="15%" height="34%" layer="1">
-			<drawimage imagetype="skinpart" path="posterReplayBG" width="{areawidth}" height="{areaheight}"/>
-		</area>
-		<area debug="true" condition="{hasposter}++{showChannelinfoPosterExtern}" x="2%" y="42%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
-			<drawimage imagetype="image" path="{posterpath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
-		</area>-->
+			</area>
 	</scrapercontent>
 
 	<channelinfo>

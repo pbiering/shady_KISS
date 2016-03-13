@@ -24,11 +24,11 @@
 			<parameter type="int" name="fadetimeTimersAndLastrecs" min="0" max="500" displaytext="{tr(fadetimeTimersAndLastrecs)}">0</parameter>
 		</submenu>
 		<submenu name="Channel-Info" displaytext="{tr(channelInfo)}">
+			<parameter type="string" name="scrapContent" displaytext="{tr(scrapContent)}" options="none,pInl,bTL,bAp">1</parameter>
 			<parameter type="bool" name="channelName" displaytext="{tr(channelName)}">1</parameter>
 			<parameter type="bool" name="dateTime" displaytext="{tr(dateTime)}">1</parameter>
 			<parameter type="bool" name="weatherInfo" displaytext="{tr(weatherInfo)}">0</parameter>
 			<parameter type="bool" name="ecmInfo" displaytext="{tr(ecmInfo)}">0</parameter>
-			<parameter type="bool" name="showChannelinfoPosterInline" displaytext="{tr(showChannelinfoPosterInline)}">0</parameter>
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarker)}">
 			<parameter type="string" name="recmenuorientation" displaytext="{tr(recmenuorientation)}" options="horizontal,vertical">1</parameter>
@@ -51,8 +51,7 @@
 		<submenu name="Shift-and-fade-times" displaytext="{tr(shiftFadeTimes)}">
 			<parameter type="int" name="volumeShiftTime" min="0" max="500" displaytext="{tr(volumeShiftTime)}">300</parameter>
 			<parameter type="int" name="messageShiftTime" min="0" max="500" displaytext="{tr(messageShiftTime)}">300</parameter>
-			<!--<parameter type="int" name="audioShiftTime" min="0" max="500" displaytext="{tr(audioShiftTime)}">300</parameter>-->
-			<parameter type="int" name="channelShiftTime" min="0" max="500" displaytext="{tr(channelShiftTime)}">300</parameter>
+			<parameter type="int" name="channelFadeTime" min="0" max="500" displaytext="{tr(channelFadeTime)}">0</parameter>
 			<parameter type="int" name="currentelementsFadeTime" min="0" max="500" displaytext="{tr(currentelementsFadeTime)}">0</parameter>
 		</submenu>
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
@@ -299,13 +298,21 @@
 			<trans lang="en_EN">Show ecm-infos</trans>
 			<trans lang="de_DE">Zeige ecm-Infos</trans>
 		</token>
-		<token name="tr(showChannelinfoPosterInline)">
-			<trans lang="en_EN">Show posters in Channel-Info (inline)</trans>
-			<trans lang="de_DE">Zeige Poster in der Kanalinfo (inline)</trans>
+		<token name="tr(scrapContent)">
+			<trans lang="en_EN">Banner and poster</trans>
+			<trans lang="de_DE">Banner und Poster</trans>
 		</token>
-		<token name="tr(showChannelinfoPosterExtern)">
-			<trans lang="en_EN">Show posters in Channel-Info (extern)</trans>
-			<trans lang="de_DE">Zeige Poster in der Kanalinfo (extern)</trans>
+		<token name="tr(pInl)">
+			<trans lang="en_EN">Show only poster in panel</trans>
+			<trans lang="de_DE">Zeige nur Poster im Paneel</trans>
+		</token>
+		<token name="tr(bTL)">
+			<trans lang="en_EN">Show only banner top left</trans>
+			<trans lang="de_DE">Zeige nur Banner oben links</trans>
+		</token>
+		<token name="tr(bAp)">
+			<trans lang="en_EN">Show banner and poster</trans>
+			<trans lang="de_DE">Zeige Banner und Poster</trans>
 		</token>
 <!--RecordingMarkersProgress-->
 		<token name="tr(recmenuorientation)">
@@ -362,9 +369,9 @@
 			<trans lang="en_EN">Shift-time audio</trans>
 			<trans lang="de_DE">Einfahrzeit Audio</trans>
 		</token>
-		<token name="tr(channelShiftTime)">
-			<trans lang="en_EN">Shift-time channel-panel</trans>
-			<trans lang="de_DE">Einfahrzeit Kanal-Paneel</trans>
+		<token name="tr(channelFadeTime)">
+			<trans lang="en_EN">Fadetime channel- and replay-panel</trans>
+			<trans lang="de_DE">Einblendzeit Kanal-und Wiedergabe-Paneel</trans>
 		</token>
 		<token name="tr(channelPosterDelay)">
 			<trans lang="en_EN">Delay posters in channel-panel</trans>

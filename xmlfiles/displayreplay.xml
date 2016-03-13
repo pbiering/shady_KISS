@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE displayreplay SYSTEM "../../../dtd/displayreplay.dtd">
 
-	<displayreplay x="0" y="0" width="100%" height="100%" fadetime="0" shifttime="300" shifttype="bottom" shiftmode="slowed">
+	<displayreplay x="0" y="0" width="100%" height="100%" fadetime="{channelFadeTime}">
 		<background>
 			<area x="0" y="79%" width="100%" height="18%" layer="1">
 				<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientReplayPNGT"/>
@@ -14,14 +14,15 @@
 	<backgroundmodeonly>
 	</backgroundmodeonly>
 
-	<scrapercontent delay="500" shifttime="500" shifttype="left" shiftmode="slowed" >
-	<!--<scrapercontent delay="0" fadetime="2000" >-->
-		<area condition="isset{posterpath}++{showReplayPoster}" x="0" y="45%" width="15%" height="34%" layer="1">
-			<drawimage imagetype="skinpart" path="posterReplayBG" width="{areawidth}" height="{areaheight}"/>
-		</area>
-		<area condition="isset{posterpath}++{showReplayPoster}" x="2%" y="47%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
-			<drawimage imagetype="image" path="{posterpath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
-		</area>
+	<scrapercontent delay="300" fadetime="{channelFadeTime}">
+		<areacontainer condition="isset{posterpath}++{showReplayPoster}">
+			<area x="1%" y="2%" width="15%" height="34%" layer="1">
+				<drawimage imagetype="skinpart" path="posterReplayBG" width="{areawidth}" height="{areaheight}"/>
+			</area>
+			<area x="3%" y="4%" width="{areaheight}*0.29*{posterwidth}/{posterheight}" height="29%" layer="2">
+				<drawimage imagetype="image" path="{posterpath}" align="center" valign="center" width="{areawidth}" height="{areaheight}"/>
+			</area>
+		</areacontainer>
 	</scrapercontent>
 
 	<rectitle>
