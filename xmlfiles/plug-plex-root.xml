@@ -204,7 +204,7 @@
 			<drawimage name="thumb" condition="not{hasseriesthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="70%" />
 			<drawimage name="thumb" condition="{hasseriesthumb}" imagetype="image" path="{seriesthumb}" align="center" x="0" y="0" width="80%" height="70%" />
 			<drawrectangle x="10%" y="{height(thumb)}*0.92" width="{viewoffset}/{duration}*{areawidth}*0.8" height="1%" color="{clrHigh}" />
-			<drawtext condition="eq({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext condition="eq({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{seriestitle}  {title}" />
 			<drawtext condition="lt({viewgroup}, 4)" name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{seriestitle}" />
 			<drawtext name="season" x="10%" y="{posy(title)} + {height(title)}" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{printf('S%02d E%02d', season, episode)}" />
 		</area>
@@ -216,12 +216,13 @@
 		<area condition="{isshow}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="80%" />
 			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="70%" />
-			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray" text="{title}" />
 		</area>
 		<area condition="{isseason}" layer="3">
 			<drawimage name="thumb" condition="not{hasthumb}" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="70%" />
 			<drawimage name="thumb" condition="{hasthumb}" imagetype="image" path="{thumb}" align="center" x="0" y="0" width="80%" height="70%" />
-			<drawtext name="title" x="10%" y="{height(thumb)}*0.96" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{title}" />
+			<drawtext name="stitle" x="10%" y="73%" width="80%" font="{semibold}" fontsize="6%" color="{clrLightGray}" text="{seriestitle}" />
+			<drawtext x="10%" y="{posy(stitle)} + {height(stitle)}*3.2" width="80%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{title}" />
 		</area>
 		<area condition="{isdummy}" layer="3">
 			<drawimage name="thumb" imagetype="skinpart" path="plexplaceholder" align="center" x="0" y="0" width="80%" height="70%" />
