@@ -133,7 +133,7 @@
 					<drawtext x="0" y="0" width="100%" font="{regular}" fontsize="75%" color="{clrLightGray}" text="{roles[actor]}, " />
 				</loop>
 			</area>
-			<areascroll orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="30%" y="40%" width="65%" height="30%" layer="5">
+			<areascroll orientation="vertical" mode="forthandback" delay="2000" scrollspeed="slow" x="30%" y="38%" width="65%" height="30%" layer="5">
 				<drawtextbox condition="isset{summary}" x="0" y="0" width="100%" font="{regular}" fontsize="{areaheight}*0.1" color="{clrLightGray}" text="{summary}" />
 			</areascroll>
 		</areacontainer>
@@ -198,7 +198,7 @@
 			<area x="4%" y="82%" width="21%" height="3%" layer="5">
 				<!--videoResolution-->
 				<drawimage condition="strequal({videoResolution}, '480')" x="0" y="20%" width="{areaheight}*0.7407*43/20" height="{areaheight}*0.7407" imagetype="icon" path="480p" />
-				<drawimage condition="strequal({videoResolution}, 'SD')" x="0" y="20%" width="{areaheight}*0.7407*27/20" height="{areaheight}*0.7407" imagetype="icon" path="SD" />
+				<drawimage condition="strequal({videoResolution}, 'sd')" x="0" y="20%" width="{areaheight}*0.7407*27/20" height="{areaheight}*0.7407" imagetype="icon" path="SD" />
 				<drawimage condition="strequal({videoResolution}, '720')" x="0" y="20%" width="{areaheight}*0.7407*42/20" height="{areaheight}*0.7407" imagetype="icon" path="720p" />
 				<drawimage condition="strequal({videoResolution}, '1080')" x="0" y="20%" width="{areaheight}*0.7407*52/20" height="{areaheight}*0.7407" imagetype="icon" path="1080p" />
 				<!--audioCodec-->
@@ -218,9 +218,9 @@
 		{offset}	offset for the position marker from the top of the scrollbar in percent
 	-->
 	<viewelement name="scrollbar">
-		<area condition="not{isepisode}" x="95%" y="70%" width="5%" height="15%" layer="4">
+		<area condition="not{isepisode}" x="95%" y="70%" width="5%" height="{areaheight}*0.158" layer="4">
 			 <drawimage condition="gt({height}, {areaheight})" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="shadowScrollSub" />
-			 <drawimage x="15%" y="{areaheight} * {offset} / 100" width="{areawidth}*0.1" height="{areaheight} * {height} / 100" imagetype="skinpart" path="scrollBar" />
+			 <drawimage x="15%" y="{areaheight} * {offset} / 100" width="{areawidth}*0.1" height="{areaheight}*{height}/100" imagetype="skinpart" path="scrollBar" />
 		</area>
 	</viewelement>
 	
@@ -236,13 +236,23 @@
 	{originallyAvailableDay}		Day of release/first aired
 	-->
 	
-	<grid name="extragrid" x="30%" y="70%" width="66%" height="20%"> 
-		<area layer="4">
-			<drawrectangle condition="not{current}" x="0" y="0" width="95%" height="75%" color="{clrRecMenuBorderTop}"/>
-			<drawrectangle condition="{current}" x="0" y="0" width="95%" height="75%" color="{clrBar}"/>
+	<grid name="extragrid" x="30%" y="68%" width="66%" height="26%"> 
+		<area height="{areaheight}*0.7692" layer="4">
+			<!--<drawrectangle condition="not{current}" x="0" y="0" width="95%" height="75%" color="{clrRecMenuBorderTop}"/>
+			<drawrectangle condition="{current}" x="0" y="0" width="95%" height="75%" color="{clrBar}"/>-->
+			<drawimage name="thumb" condition="{hasthumb}" align="left" imagetype="image" path="{thumb}" x="0" y="0" width="95%" height="{areawidth}*0.95*240/320" />
+			<drawrectangle x="0" y="0" width="95%" height="10%" color="{clrTransparent}"/>
+			<drawrectangle x="0" y="90%" width="95%" height="16%" color="{clrTransparent}"/>
+		</area>
+		<area condition="{current}" height="{areaheight}*0.7692" layer="5">
+			<drawimage name="play" x="0" y="10%" width="95%" height="80%" imagetype="skinpart" path="plexArrow"/>
+			<drawrectangle x="0" y="10%" width="1" height="{height(play)}" color="{clrBar}" />
+			<drawrectangle x="{width(play)}-1" y="10%" width="1" height="80%" color="{clrBar}" />
+			<drawrectangle x="0" y="10%" width="{width(play)}" height="1" color="{clrBar}" />
+			<drawrectangle x="0" y="{posy(play)}+{height(play)}-1" width="95%" height="1" color="{clrBar}" />
 		</area>
 		<area layer="5">
-			<drawtext name="title" x="0" y="80%" width="95%" font="{light}" fontsize="13%" color="{clrLightGray}" text="{title}" />
+			<drawtext name="title" x="0" y="72%" width="95%" font="{regular}" fontsize="{areaheight}*0.1025" color="{clrLightGray}" text="{title}" />
 		</area> 
 	</grid>
 	
