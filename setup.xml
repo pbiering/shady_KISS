@@ -31,6 +31,7 @@
 			<parameter type="bool" name="ecmInfo" displaytext="{tr(ecmInfo)}">0</parameter>
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarker)}">
+			<parameter type="bool" name="replayPGBG" displaytext="{tr(replayPGBG)}">0</parameter>
 			<parameter type="string" name="recmenuorientation" displaytext="{tr(recmenuorientation)}" options="horizontal,vertical">1</parameter>
 			<parameter type="int" name="00_numRecordingsmenuitems" min="12" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
 			<parameter type="int" name="03_new-recordingsMarker" min="0" max="9" displaytext="{tr(03_new-recordingsMarker)}">2</parameter>
@@ -330,8 +331,12 @@
 			<trans lang="de_DE">vertikal</trans>
 		</token>
 		<token name="tr(recordingsmarker)">
-			<trans lang="en_EN">Menu Recordings</trans>
-			<trans lang="de_DE">Men&#252; Aufzeichnungen</trans>
+			<trans lang="en_EN">Recordings</trans>
+			<trans lang="de_DE">Aufzeichnungen</trans>
+		</token>
+		<token name="tr(replayPGBG)">
+			<trans lang="en_EN">Bright background of replayprogressbar</trans>
+			<trans lang="de_DE">Heller Hntergrund der Wiedergabeprogressbar</trans>
 		</token>
 		<token name="tr(03_new-recordingsMarker)">
 			<trans lang="en_EN">Marker for new recordings</trans>

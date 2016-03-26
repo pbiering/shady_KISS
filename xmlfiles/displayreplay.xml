@@ -38,10 +38,13 @@
 	</rectitle>
 
 	<progressbar>
-		<area condition="not{timeshift}" x="9%" y="{areaheight}*0.8694" width="82%" height="{areaheight}*0.0287" layer="3">
+		<area condition="{replayPGBG}" x="9%" y="{areaheight}*0.8694" width="82%" height="{areaheight}*0.0287" layer="3">
+			<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayProgressBright" />
+		</area>
+		<area condition="not{timeshift}" x="9%" y="{areaheight}*0.8694" width="82%" height="{areaheight}*0.0287" layer="4">
 			<drawimage x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayProgress" />
 		</area>
-		<area condition="{timeshift}" x="9%" y="{areaheight}*0.8704" width="82%" height="{areaheight}*0.0287" layer="3">
+		<area condition="{timeshift}" x="9%" y="{areaheight}*0.8704" width="82%" height="{areaheight}*0.0287" layer="4">
 			<drawimage x="0" y="20%" width="{total}/{timeshifttotal}*{areawidth}" height="60%" imagetype="skinpart" path="replayTimeshift" />
 			<drawimage x="0" y="0" width="{current}/{timeshifttotal}*{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayProgress" />
 		</area>
