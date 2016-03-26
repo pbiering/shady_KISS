@@ -54,23 +54,25 @@
 			<parameter type="int" name="channelFadeTime" min="0" max="500" displaytext="{tr(channelFadeTime)}">0</parameter>
 			<parameter type="int" name="currentelementsFadeTime" min="0" max="500" displaytext="{tr(currentelementsFadeTime)}">0</parameter>
 		</submenu>
+		<submenu name="Plugins" displaytext="Plugins">
+			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="kissStyle,fanartStyle">0</parameter>
+			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
+			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
+			<parameter type="bool" name="zaphistoryStatusCol" displaytext="{tr(zaphistoryStatusCol)}">1</parameter>
+		</submenu>
 		<submenu name="Miscellaneous" displaytext="{tr(miscellaneous)}">
 			<parameter type="bool" name="brightBackground" displaytext="{tr(brightBackground)}">0</parameter>
 			<parameter type="string" name="coloredButtons" displaytext="{tr(coloredButtons)}" options="no,border,gradient">2</parameter>
 			<parameter type="bool" name="setupIconbar" displaytext="{tr(setupIconbar)}">0</parameter>
 			<parameter type="int" name="fontSizeDescr" min="34" max="50" displaytext="{tr(fontSizeDescr)}">34</parameter>
 			<parameter type="string" name="showPosterAndEPGpic" displaytext="{tr(showPosterAndEPGpic)}" options="primarilyPoster,postersAndEPGpic">0</parameter>
-			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
 			<parameter type="bool" name="showReplayPoster" min="30" max="50" displaytext="{tr(showReplayPoster)}">0</parameter>
 			<parameter type="int" name="transBackground" min="0" max="25" displaytext="{tr(transBackground)}">10</parameter>
 			<parameter type="int" name="transLists" min="0" max="20" displaytext="{tr(transLists)}">5</parameter>
-			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
 			<parameter type="bool" name="longElapsedBar" displaytext="{tr(longElapsedBar)}">0</parameter>
 			<parameter type="bool" name="showTimeshiftTotal" displaytext="{tr(showTimeshiftTotal)}">1</parameter>
 			<parameter type="bool" name="showDiscUsage" displaytext="{tr(showDiscUsage)}">1</parameter>
 			<parameter type="bool" name="showNumbering" displaytext="{tr(showNumbering)}">1</parameter>
-			<parameter type="bool" name="zaphistoryStatusCol" displaytext="{tr(zaphistoryStatusCol)}">1</parameter>
-			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="kissStyle,fanartStyle">0</parameter>
 		</submenu>
 	</menu>
     <!--
@@ -407,8 +409,8 @@
 			<trans lang="de_DE">KISS</trans>
 		</token>
 		<token name="tr(fanartStyle)">
-			<trans lang="en_EN">Fanart</trans>
-			<trans lang="de_DE">Fanart</trans>
+			<trans lang="en_EN">Art</trans>
+			<trans lang="de_DE">Art</trans>
 		</token>
 	</translations>
 </setup>
