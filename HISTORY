@@ -1,6 +1,10 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-03-29:
+- Changed optional bright cutmarks in displayreplay
+- Added rewind- and fastforward-speed
+
 2016-03-26:
 - Some more stuff for plex II
 - Added setup-submenu für pluginspecific settings

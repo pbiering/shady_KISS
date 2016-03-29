@@ -335,8 +335,8 @@
 			<trans lang="de_DE">Aufzeichnungen</trans>
 		</token>
 		<token name="tr(replayPGBG)">
-			<trans lang="en_EN">Bright background of replayprogressbar</trans>
-			<trans lang="de_DE">Heller Hntergrund der Wiedergabeprogressbar</trans>
+			<trans lang="en_EN">Bright cutbars in replayprogressbar</trans>
+			<trans lang="de_DE">Helle Schnittbalken in der Wiedergabeprogressbar</trans>
 		</token>
 		<token name="tr(03_new-recordingsMarker)">
 			<trans lang="en_EN">Marker for new recordings</trans>

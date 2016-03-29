@@ -38,9 +38,6 @@
 	</rectitle>
 
 	<progressbar>
-		<area condition="{replayPGBG}" x="9%" y="{areaheight}*0.8694" width="82%" height="{areaheight}*0.0287" layer="3">
-			<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayProgressBright" />
-		</area>
 		<area condition="not{timeshift}" x="9%" y="{areaheight}*0.8694" width="82%" height="{areaheight}*0.0287" layer="4">
 			<drawimage x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayProgress" />
 		</area>
@@ -53,12 +50,14 @@
 	<cutmarks>
 		<area condition="not{timeshift}" x="9%" y="{areaheight}*0.8694" width="82%" height="{areaheight}*0.0287" layer="4">
 			<loop name="marks" x="0" y="0" orientation="absolute">
+				<!-- draw bar to next mark if mark is startmark-->
+				<drawrectangle condition="{marks[startmark]}++not{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="38%" width="{marks[endposition]}/{marks[total]}*{areawidth} - {marks[position]}/{marks[total]}*{areawidth}" height="30%" color="{clrBlack}" />
+				<drawimage condition="{marks[startmark]}++{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="38%" width="{marks[endposition]}/{marks[total]}*{areawidth} - {marks[position]}/{marks[total]}*{areawidth}" height="30%" imagetype="skinpart" path="pgGrad"/>
 				<!-- draw mark -->
-				<drawrectangle condition="not{marks[active]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
+				<drawrectangle condition="not{marks[active]}++not{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" color="{clrBlack}" />
+				<drawimage condition="not{marks[active]}++{replayPGBG}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="1" height="100%" imagetype="skinpart" path="cutMark" />
 				<!-- draw active mark -->
 				<drawrectangle condition="{marks[active]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="0" width="2" height="100%" color="{clrGreen}" />
-				<!-- draw bar to next mark if mark is startmark-->
-				<drawrectangle condition="{marks[startmark]}" x="{marks[position]}/{marks[total]}*{areawidth}" y="38%" width="{marks[endposition]}/{marks[total]}*{areawidth} - {marks[position]}/{marks[total]}*{areawidth}" height="30%" color="{clrBlack}" />
 			</loop>
 		</area>
 
@@ -92,29 +91,39 @@
 	</time>
 	
 	<controlicons>
-		<area x="1%" y="79%" width="3%" height="4%" layer="3">
+		<area x="2%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{rewind}++ not{rewind1x}++not{rewind2x}++ not{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWD"/>
 		</area>
-		<area x="1%" y="79%" width="3%" height="4%" layer="3">
+		<area x="2%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{rewind}||{rewind1x}||{rewind2x}||{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWDActive"/>
 		</area>
-		<area x="4%" y="79%" width="3%" height="4%" layer="3">
+		<area x="5%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPause"/>
 		</area>
-		<area x="4%" y="79%" width="3%" height="4%" layer="3">
+		<area x="5%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPauseActive"/>
 		</area>
-		<area x="7%" y="79%" width="3%" height="4%" layer="3">
+		<area x="8%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlay"/>
 		</area>
-		<area x="7%" y="79%" width="3%" height="4%" layer="3">
+		<area x="8%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlayActive"/>
 		</area>
-		<area x="11%" y="79%" width="3%" height="4%" layer="3">
+		<area x="12%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="not{forward}++ not{forward1x}++not{forward2x}++ not{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWD"/>
 		</area>
-		<area x="11%" y="79%" width="3%" height="4%" layer="3">
+		<area x="12%" y="79%" width="3%" height="4%" layer="3">
 			<drawimage condition="{forward}||{forward1x}||{forward2x}||{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWDActive"/>
+		</area>
+		<area x="15%" y="79%" width="3%" height="4%" layer="3">
+			<drawtext condition="{forward1x}" x="0" y="10%" font="{light}" fontsize="90%" color="{clrLightGray}" text="1x"/>
+			<drawtext condition="{forward2x}" x="0" y="10%" font="{light}" fontsize="90%" color="{clrLightGray}" text="2x"/>
+			<drawtext condition="{forward3x}" x="0" y="10%" font="{light}" fontsize="90%" color="{clrLightGray}" text="3x"/>
+		</area>
+		<area x="0" y="79%" width="3%" height="4%" layer="3">
+			<drawtext condition="{rewind1x}" x="15%" y="10%" font="{light}" fontsize="90%" color="{clrLightGray}" text="1x"/>
+			<drawtext condition="{rewind2x}" x="15%" y="10%" font="{light}" fontsize="90%" color="{clrLightGray}" text="2x"/>
+			<drawtext condition="{rewind3x}" x="15%" y="10%" font="{light}" fontsize="90%" color="{clrLightGray}" text="3x"/>
 		</area>
 	</controlicons>
 	
