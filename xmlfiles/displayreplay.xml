@@ -146,29 +146,39 @@
 		<area x="0" y="90%" width="100%" height="5%" layer="1">
 			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayControlsBG"/>
 		</area>
-		<area x="13%" y="90%" width="3%" height="4%" layer="3">
+		<area x="13%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="not{rewind}++ not{rewind1x}++not{rewind2x}++ not{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWD"/>
 		</area>
-		<area x="13%" y="90%" width="3%" height="4%" layer="3">
+		<area x="13%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="{rewind}||{rewind1x}||{rewind2x}||{rewind3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recRWDActive"/>
 		</area>
-		<area x="17%" y="90%" width="3%" height="4%" layer="3">
+		<area x="17%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="not{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPause"/>
 		</area>
-		<area x="17%" y="90%" width="3%" height="4%" layer="3">
+		<area x="17%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="{pause}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPauseActive"/>
 		</area>
-		<area x="21%" y="90%" width="3%" height="4%" layer="3">
+		<area x="21%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="not{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlay"/>
 		</area>
-		<area x="21%" y="90%" width="3%" height="4%" layer="3">
+		<area x="21%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="{play}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recPlayActive"/>
 		</area>
-		<area x="25%" y="90%" width="3%" height="4%" layer="3">
+		<area x="25%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="not{forward}++ not{forward1x}++not{forward2x}++ not{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWD"/>
 		</area>
-		<area x="25%" y="90%" width="3%" height="4%" layer="3">
+		<area x="25%" y="{areaheight}*0.9031" width="3%" height="4%" layer="3">
 			<drawimage condition="{forward}||{forward1x}||{forward2x}||{forward3x}" x="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="recFWDActive"/>
+		</area>
+		<area x="29%" y="90%" width="3%" height="5%" layer="3">
+			<drawtext condition="{forward1x}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="1x"/>
+			<drawtext condition="{forward2x}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="2x"/>
+			<drawtext condition="{forward3x}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="3x"/>
+		</area>
+		<area x="10%" y="90%" width="3%" height="5%" layer="3">
+			<drawtext condition="{rewind1x}" x="15%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="1x"/>
+			<drawtext condition="{rewind2x}" x="15%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="2x"/>
+			<drawtext condition="{rewind3x}" x="15%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="3x"/>
 		</area>
 	</controliconsmodeonly>
 	

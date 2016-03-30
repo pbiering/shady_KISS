@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-03-30:
+- Added rewind- and fastforward-speed in controliconsmodeonly
+
 2016-03-29:
 - Changed optional bright cutmarks in displayreplay
 - Added rewind- and fastforward-speed
