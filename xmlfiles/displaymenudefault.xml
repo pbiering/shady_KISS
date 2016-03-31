@@ -43,7 +43,7 @@
 			<area condition="{separator}++not{fritzbox}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonFullSeparator" />
 			</area>
-			<area condition="{separator}++not{fritzbox}++not{zaphistory}++not{timeredit}" x="1%" width="94%" layer="4">
+			<area condition="{separator}++not{fritzbox}++not{zaphistory}++not{timeredit}++not{recordingedit}" x="1%" width="94%" layer="4">
 				<drawtext align="center" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{column1}" />
 			</area>
 <!--separators-fritzbox-Anrufdetails-->
@@ -88,8 +88,8 @@
 				<area x="50%" condition="eq({indexcolumn2Alignment}, 1)++not{column3set}++not{separator}" width="43%" layer="4">
 					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
 				</area>
-				<area condition="{separator}" x="45%" width="20%" layer="4">
-					<drawtext valign="center" font="{light}" fontsize="70%" width="99%" color="{clrHigh}" text="{column1}  {column2}" />
+				<area condition="{separator}" x="1%" width="94%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrHigh}" text="{column1}  {column2}" />
 				</area>
 			</areacontainer>
 <!--timeredit conflicts-->

@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-0-31:
+- Fixed condition with recordingedit
+
 2016-03-30:
 - Added rewind- and fastforward-speed in controliconsmodeonly
 
