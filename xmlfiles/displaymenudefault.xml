@@ -93,7 +93,7 @@
 				</area>
 			</areacontainer>
 <!--timeredit conflicts-->
-			<areacontainer  condition="{column3set}++{timeredit}">
+			<areacontainer  condition="{column5set}++not{column6set}++{timeredit}">
 				<area x="3%" width="2%" layer="4">
 					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
 				</area>
@@ -108,6 +108,26 @@
 				</area>
 				<area x="45%" width="48%" layer="4">
 					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
+				</area>
+			</areacontainer>
+			<areacontainer  condition="{column6set}++{timeredit}">
+				<area x="3%" width="2%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
+				</area>
+				<area x="5%" width="5%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+				</area>
+				<area x="10%" width="10%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
+				</area>
+				<area x="23%" width="5%" layer="4">
+					<drawtext align="center" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column4}" />
+				</area>
+				<area x="31%" width="5%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
+				</area>
+				<area x="37%" width="54%" layer="4">
+					<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column6}" />
 				</area>
 			</areacontainer>
 <!--div einspaltig-->
