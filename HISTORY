@@ -4,6 +4,7 @@ shady-KISS-skin History
 2016-04-04:
 - Small fix for timeredit
 - Added setup for channelname in displaychannel
+- Enlarged height of channelpanel
 
 2016-04-02:
 - Fixed timerconflictmenu
