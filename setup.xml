@@ -25,7 +25,7 @@
 		</submenu>
 		<submenu name="Channel-Info" displaytext="{tr(channelInfo)}">
 			<parameter type="string" name="scrapContent" displaytext="{tr(scrapContent)}" options="none,pInl,bTL,bAp">1</parameter>
-			<parameter type="bool" name="channelName" displaytext="{tr(channelName)}">1</parameter>
+			<parameter type="string" name="channelName" displaytext="{tr(channelName)}" options="scroll, wide">0</parameter>
 			<parameter type="bool" name="dateTime" displaytext="{tr(dateTime)}">1</parameter>
 			<parameter type="bool" name="weatherInfo" displaytext="{tr(weatherInfo)}">0</parameter>
 			<parameter type="bool" name="ecmInfo" displaytext="{tr(ecmInfo)}">0</parameter>
@@ -288,6 +288,14 @@
 		<token name="tr(channelName)">
 			<trans lang="en_EN">Show Channelname</trans>
 			<trans lang="de_DE">Zeige Kanalnamen</trans>
+		</token>
+		<token name="tr(scroll)">
+			<trans lang="en_EN">Short centered above logo</trans>
+			<trans lang="de_DE">Kurz, zentriert &#252;ber dem Logo</trans>
+		</token>
+		<token name="tr(wide)">
+			<trans lang="en_EN">Long, left-justified </trans>
+			<trans lang="de_DE">Lang, links-b&#252;ndig</trans>
 		</token>
 		<token name="tr(dateTime)">
 			<trans lang="en_EN">Show date and time</trans>
