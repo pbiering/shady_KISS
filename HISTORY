@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-04-05:
+- Filled bottommost line of OSD with Black (workaround for .....?)
+
 2016-04-04:
 - Small fix for timeredit
 - Added setup for channelname in displaychannel

@@ -3,7 +3,7 @@
 
 <displaychannel x="0" y="0" width="100%" height="100%" fadetime="{channelFadeTime}">
 	<background>
-			<area debug="true" x="0" y="73%" width="100%" height="{areaheight}*0.2713" layer="1">
+			<area x="0" y="73%" width="100%" height="{areaheight}*0.2713" layer="1">
 				<drawimage condition="eq({indexchannelName}, 0)" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannelPNGT"/>
 				<drawimage condition="eq({indexchannelName}, 1)" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientChannelPNGT1"/>
 			</area>

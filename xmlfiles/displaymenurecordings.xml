@@ -1,5 +1,8 @@
 <menurecordings x="0" y="0" width="100%" height="100%" orientation="{recmenuorientation}" fadetime="0" >
 	<background orientation="vertical">
+		<area x="0" y="{areaheight}*0.999" width="100%" height="{areaheight}*0.001" layer="1">
+			<fill color="{clrBlack}" />
+		</area>
 		<area x="0" y="0" width="100%" height="100%" transparency="{transBackground}" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
@@ -19,6 +22,9 @@
 	</background>
 	
 	<background orientation="horizontal">
+		<area x="0" y="{areaheight}*0.999" width="100%" height="{areaheight}*0.001" layer="1">
+			<fill color="{clrBlack}" />
+		</area>
 		<area x="0" y="0" width="100%" height="100%" transparency="{transBackground}" layer="1">
 			<drawimage condition="not{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNG" />
 			<drawimage condition="{brightBackground}" x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="gradientPNGBright" />
