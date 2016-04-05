@@ -155,35 +155,35 @@
 				</area>
 
 				<area condition="not{folder}" x="91%" width="2%" layer="4">
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 				</area>
 
 				<areascroll condition="{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
@@ -213,35 +213,35 @@
 				</area>
 
 				<area condition="not{folder}" x="66%" width="2%" layer="4">
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 				</area>
 
 				<areascroll condition="{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
@@ -271,35 +271,35 @@
 				</area>
 
 				<area condition="not{folder}" x="61%" width="2%" layer="4">
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="not{new}++not{watched}++eq({05_notNewNotWatched-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 1)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="blueMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 2)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="darkGrayMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 3)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="green_blueMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 4)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 5)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="lightGrayMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 6)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="orangeMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 7)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 8)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="turquoiseMarker" />
-					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="0" width="{areaheight}*0.68" height="{areaheight}" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 3)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 4)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 5)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="lightGrayMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 6)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="orangeMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 7)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 8)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="turquoiseMarker" />
+					<drawimage condition="not{new}++{watched}++eq({07_notNewWatched-recordingsMarker}, 9)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 				</area>
 
 				<areascroll condition="{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">

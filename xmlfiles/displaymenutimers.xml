@@ -61,9 +61,9 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
 				</area>
 				<area x="91%" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="redFL" />
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-					<drawimage condition="not{flagactive}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 				</area>
 				<areascroll scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="65%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
@@ -79,9 +79,9 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
 				</area>
 				<area x="66%" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="redFL" />
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-					<drawimage condition="not{flagactive}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 				</area>
 				<areascroll scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="39%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
@@ -97,9 +97,9 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
 				</area>
 				<area x="61%" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="redFL" />
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="greenFL" />
-					<drawimage condition="not{flagactive}" x="0" y="0" width="{areaheight}*0.7" height="{areaheight}" imagetype="skinpart" path="yellowFL" />
+					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
+					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
 				</area>
 				<areascroll scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="26%" width="34%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
