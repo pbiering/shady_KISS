@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-04-07:
+- Added marker for switchtimer in tvguideng
+
 2016-04-05:
 - Filled bottommost line of OSD with Black (workaround for .....?)
 - Reduced size if coloured markers

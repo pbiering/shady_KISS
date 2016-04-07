@@ -340,9 +340,12 @@
 			<drawtext condition="not{dummy}++{timer}" x="5%" y="15%" width="94%" font="{light}" fontsize="65%" color="{clrRed}" text="{title}" />
 			<drawtext condition="{dummy}" x="5%" valign="center" width="94%" font="{light}" fontsize="65%" color="{clrLightGray}" text="{title}" />
 		</area>
-		<!--<area layer="3">
-			<drawimage condition="not{dummy}++{switchtimer}" imagetype="skinpart" path="orangeMarker" x="{areawidth} - {areaheight}*0.45" y="0" width="{areaheight}*0.45" height="{areaheight}*0.45*57/39"/>
-			</area>-->
+		<area layer="3">
+			<drawimage condition="not{dummy}++{switchtimer}" imagetype="icon" path="switchMarkerBack" x="{areawidth}-{areaheight}*0.3" y="{areaheight}-{areaheight}*0.9" width="{areaheight}*0.25" height="{areaheight}*0.25"/>
+		</area>
+		<area layer="4">
+			<drawimage condition="not{dummy}++{switchtimer}" imagetype="icon" animtype="blink" animfreq="700" path="switchMarker" x="{areawidth}-{areaheight}*0.3" y="{areaheight}-{areaheight}*0.9" width="{areaheight}*0.25" height="{areaheight}*0.25"/>
+		</area>
 	</grid>
 
 	<grid name="schedules_ver" x="6%" y="22%" width="90%" height="68%">
@@ -351,13 +354,19 @@
 			<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_ver" />
 			<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Color_ver" />
 			<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="100%" height="100%" imagetype="skinpart" path="buttonRootCurrentTVG_Gradient_ver" />
-			<drawrectangle x="0" y="0" width="100%" height="2" color="{clrBlack}" />			
+			<drawrectangle x="0" y="0" width="100%" height="2" color="{clrBlack}" />
 			<drawrectangle x="0" y="2" width="100%" height="2" color="{clrRecMenuBorderTop}" />
 		</area>
 		<area layer="2">
 			<drawtextbox name="title" condition="not{dummy}++not{timer}" x="8%" y="8%" width="84%" font="{light}" fontsize="{areawidth}*0.15" color="{clrLightGray}" text="{title}" />
 			<drawtextbox name="title" condition="not{dummy}++{timer}" x="8%" y="8%" width="84%" font="{light}" fontsize="{areawidth}*0.15" color="{clrRed}" text="{title}" />
 			<drawtextbox condition="{dummy}" x="8%" y="5%" width="84%" font="{light}" fontsize="{areawidth}*0.15" color="{clrLightGray}" text="{title}" />
+		</area>
+		<area layer="3">
+			<drawimage condition="not{dummy}++{switchtimer}" imagetype="icon" path="switchMarkerBack" x="{areawidth}-{areawidth}*0.15" y="{areaheight}-{areawidth}*0.15" width="{areawidth}*0.1" height="{areawidth}*0.1"/>
+		</area>
+		<area layer="4">
+			<drawimage condition="not{dummy}++{switchtimer}" imagetype="icon" animtype="blink" animfreq="700" path="switchMarker" x="{areawidth}-{areawidth}*0.15" y="{areaheight}-{areawidth}*0.15" width="{areawidth}*0.1" height="{areawidth}*0.1"/>
 		</area>
 	</grid>
 
