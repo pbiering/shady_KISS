@@ -23,7 +23,8 @@
         <color name="clrRecMenuBorderBottom">FF171717</color>
         <color name="clrRecMenuConflTop">FF373938</color>
         <!--plex-poster-->
-		<color name="clrPlexFill">EB000000</color>
+		<color name="clrPlexFillBright">C81E1E1E</color>
+		<color name="clrPlexFillDark">D7000000</color>
 		<color name="clrDarkGray">FF808080</color>
 		<color name="clrBar">C8009CD7</color>
     </colors>

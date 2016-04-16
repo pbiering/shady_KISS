@@ -5,6 +5,7 @@ shady-KISS-skin History
 - Added svgtemplates/skinparts for compatibility with skindesigner-0.9.6
 - Modified ratingstars for plugplex
 - Reworked plug-plex-detail
+- New arrow for plex-trailer
 
 2016-04-07:
 - Added marker for switchtimer in tvguideng
