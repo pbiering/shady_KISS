@@ -199,7 +199,7 @@
 			<drawtext x="65%" y="{posy(title)} + {height(title)}*2.2" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{audioCodec}" />
 			<drawtext x="10%" y="{posy(title)} + {height(title)}*3.2" width="40%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{duration} min" />
 			<drawtext x="65%" y="{posy(title)} + {height(title)}*3.2" width="30%" font="{light}" fontsize="6%" color="{clrLightGray}" text="{year}" />
-			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFull" x="10%" y="{posy(title)}+{height(title)}*1.25" width="{areaheight}*0.25" height="{areaheight}*0.04" />
+			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFullBG" x="10%" y="{posy(title)}+{height(title)}*1.25" width="{areaheight}*0.25" height="{areaheight}*0.04" />
 			<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="{posy(title)}+{height(title)}*1.25" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}*0.04" color="{clrTransparent}" />
 		</area>
 		<area condition="{ismovie}" layer="5">
@@ -263,7 +263,7 @@
 			<drawtext x="86%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{duration}min" />
 			<drawtext x="81%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{audioCodec}" />
 			<drawtext x="76%" y="5%" width="9%" font="{light}" fontsize="14%" color="{clrLightGray}" text="{container}" />
-			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFull" x="68%" y="7%" width="{areaheight}*0.52" height="{areaheight}*0.1" />
+			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFullBG" x="68%" y="7%" width="{areaheight}*0.52" height="{areaheight}*0.1" />
 			<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="7%" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}*0.1" color="{clrTransparent}" />
 		</area>
 		<area condition="{ismovie}" layer="5">
@@ -319,7 +319,7 @@
 			<drawtext x="82%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{audioCodec}" />
 			<drawtext x="87%" y="10%" width="5%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{year}" />
 			<drawtext x="93%" y="10%" width="6%" font="{light}" fontsize="45%" color="{clrLightGray}" text="{duration}min" />
-			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFull" x="67%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
+			<drawimage name="stars" condition="gt({rating}, 0)" imagetype="skinpart" path="starsFullBG" x="67%" y="15%" width="{areaheight}*1.56" height="{areaheight}*0.3" />
 			<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="15%" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}*0.3" color="{clrTransparent}" />
 		</area>
 		<area condition="{ismovie}" layer="5">

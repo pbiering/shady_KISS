@@ -122,7 +122,7 @@
 				<drawrectangle x="0" y="0" width="74%" height="30%" color="{clrBar}" />
 			</area>
 			<area x="30%" y="26%" width="65%" height="4%" layer="5">
-				<drawimage name="stars" condition="gt({rating}, 0)" x="44%" y="15%" width="{areawidth}*0.1154" height="{areaheight}*0.5" imagetype="skinpart" path="starsFull" />
+				<drawimage name="stars" condition="gt({rating}, 0)" x="44%" y="15%" width="{areawidth}*0.1154" height="{areaheight}*0.5" imagetype="skinpart" path="starsFullBG" />
 				<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="0" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}" color="{clrTransparent}" />
 				<drawtext x="0" y="0" align="right" width="80%" font="{regular}" fontsize="84%" color="{clrLightGray}" text="{duration}min" />
 				<loop name="genres" x="0" y="0" orientation="horizontal" width="{areawidth}" height="4%" rowheight="{areaheight}">
@@ -167,7 +167,7 @@
 			</area>
 
 			<area x="30%" y="31%" width="{areawidth}*0.084" height="4%" layer="5">
-				<drawimage name="stars" condition="gt({rating}, 0)" x="0" y="15%" width="{areawidth}" height="{areaheight}*0.5" imagetype="skinpart" path="starsFull" />
+				<drawimage name="stars" condition="gt({rating}, 0)" x="0" y="15%" width="{areawidth}" height="{areaheight}*0.5" imagetype="skinpart" path="starsFullBG" />
 				<drawrectangle condition="gt({rating}, 0)" x="{posx(stars)}+{width(stars)}*{rating}/100" y="0" width="{width(stars)}-{rating}/100*{width(stars)}" height="{areaheight}" color="{clrTransparent}" />
 			</area>
 			<area x="30%" y="31%" width="{areawidth}*0.084" height="4%" layer="5">
