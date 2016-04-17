@@ -3,6 +3,7 @@ shady-KISS-skin History
 
 2016-04-17:
 - First steps with epg2vdr
+- Fixed patch for epg2vdr
 
 2016-04-15:
 - Added svgtemplates/skinparts for compatibility with skindesigner-0.9.6

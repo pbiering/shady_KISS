@@ -1,19 +1,8 @@
 diff --git a/coreengine/definitions.h b/coreengine/definitions.h
-index b07943f..a6b6a74 100644
+index b07943f..da4ec54 100644
 --- a/coreengine/definitions.h
 +++ b/coreengine/definitions.h
-@@ -879,6 +879,10 @@ enum class eCeMenuChannelsLT {
-     shorttext,
-     start,
-     stop,
-+    state,
-+    stateinfo,
-+    action,
-+    vdrname,
-     count
- };
- 
-@@ -894,6 +898,10 @@ enum class eLeMenuTimersST {
+@@ -894,6 +894,10 @@ enum class eLeMenuTimersST {
      eventtitle,
      eventstart,
      eventstop,
@@ -24,7 +13,7 @@ index b07943f..a6b6a74 100644
      count
  };
  
-@@ -910,6 +918,8 @@ enum class eLeMenuTimersIT {
+@@ -910,6 +914,8 @@ enum class eLeMenuTimersIT {
      flagvps,
      flagrecording,
      flagpending,
@@ -33,7 +22,7 @@ index b07943f..a6b6a74 100644
      count
  };
  
-@@ -929,6 +939,10 @@ enum class eCeMenuTimersST {
+@@ -929,6 +935,10 @@ enum class eCeMenuTimersST {
      eventdescription,
      posterpath,
      bannerpath,
@@ -44,7 +33,7 @@ index b07943f..a6b6a74 100644
      count
  };
  
-@@ -952,6 +966,8 @@ enum class eCeMenuTimersIT {
+@@ -952,6 +962,8 @@ enum class eCeMenuTimersIT {
      hasbanner,
      bannerwidth,
      bannerheight,
@@ -54,7 +43,7 @@ index b07943f..a6b6a74 100644
  };
  
 diff --git a/coreengine/listelements.c b/coreengine/listelements.c
-index 1ebfa94..251fbcf 100644
+index 1ebfa94..7cc2dcd 100644
 --- a/coreengine/listelements.c
 +++ b/coreengine/listelements.c
 @@ -1,5 +1,6 @@
@@ -124,12 +113,7 @@ index 1ebfa94..251fbcf 100644
      InheritTokenContainer();
  }
  
-@@ -1403,10 +1429,23 @@ bool cCeMenuTimers::Parse(bool forced) {
-         tokenContainer->AddStringToken((int)eCeMenuTimersST::eventstart, *event->GetTimeString());
-         tokenContainer->AddStringToken((int)eCeMenuTimersST::eventstop, *event->GetEndTimeString());
-         tokenContainer->AddStringToken((int)eCeMenuTimersST::eventshorttext, event->ShortText());
--        tokenContainer->AddStringToken((int)eCeMenuTimersST::eventdescription, event->Description());
-+        tokenContainer->AddStringToken((int)eCeMenuTimersST::eventdescription, event->Description());
+@@ -1407,6 +1433,19 @@ bool cCeMenuTimers::Parse(bool forced) {
          if (LoadFullScrapInfo(event, NULL))
              SetScraperPosterBannerTimer(tokenContainer);
      }
