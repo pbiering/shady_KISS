@@ -1,6 +1,10 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-04-20:
+- Added setup for epg2vdrShowHostname
+- Added setup if skindesigner is patched for epg2vdr
+
 2016-04-18:
 - New icons for remote-timer
 

@@ -56,6 +56,8 @@
 			<parameter type="int" name="currentelementsFadeTime" min="0" max="500" displaytext="{tr(currentelementsFadeTime)}">0</parameter>
 		</submenu>
 		<submenu name="Plugins" displaytext="Plugins">
+			<parameter type="bool" name="epg2vdr-skdPatch" displaytext="{tr(epg2vdr-skdPatch)}">0</parameter>
+			<parameter type="bool" name="epg2vdrShowHostname" displaytext="{tr(epg2vdrShowHostname)}">1</parameter>
 			<parameter type="string" name="plexDetail" displaytext="{tr(plexDetail)}" options="kissStyle,fanartStyle">0</parameter>
 			<parameter type="bool" name="sysinfoPBtheme" displaytext="{tr(sysinfoPBtheme)}">1</parameter>
 			<parameter type="bool" name="tvgngDescriptionScroll" displaytext="{tr(tvgngDescriptionScroll)}">0</parameter>
@@ -97,11 +99,11 @@
 			<trans lang="de_DE">rechts</trans>
 		</token>
 		<token name="tr(menuItems)">
-			<trans lang="en_EN">VDR-Lists-Setup </trans>
+			<trans lang="en_EN">VDR-Lists-Setup</trans>
 			<trans lang="de_DE">VDR-Listen-Setup</trans>
 		</token>
 		<token name="tr(miscellaneous)">
-			<trans lang="en_EN">Miscellaneous </trans>
+			<trans lang="en_EN">Miscellaneous</trans>
 			<trans lang="de_DE">Sonstiges</trans>
 		</token>
 		<token name="tr(numShortMenuitems)">
@@ -229,7 +231,7 @@
 			<trans lang="de_DE">Schriftgr&#246;&#223;e Titel in Info zum aktiven Listenelement</trans>
 		</token>
 		<token name="tr(fontSizeInfoDetails)">
-			<trans lang="en_EN">Fontsize date, time...in info for active listelement </trans>
+			<trans lang="en_EN">Fontsize date, time...in info for active listelement</trans>
 			<trans lang="de_DE">Schriftgr&#246;&#223;e Datum, Zeit ... in Info zum aktiven Listenelement</trans>
 		</token>
 		<token name="tr(fontSizeInfoDescription)">
@@ -294,7 +296,7 @@
 			<trans lang="de_DE">Kurz, zentriert &#252;ber dem Logo</trans>
 		</token>
 		<token name="tr(wide)">
-			<trans lang="en_EN">Long, left-justified </trans>
+			<trans lang="en_EN">Long, left-justified</trans>
 			<trans lang="de_DE">Lang, links-b&#252;ndig</trans>
 		</token>
 		<token name="tr(dateTime)">
@@ -412,6 +414,14 @@
 		<token name="tr(zaphistoryStatusCol)">
 			<trans lang="en_EN">Show statuscolumn in zayhistory</trans>
 			<trans lang="de_DE">Zeige Statusspalte in zaphistory</trans>
+		</token>
+		<token name="tr(epg2vdr-skdPatch)">
+			<trans lang="en_EN">Skindesigner is patched for epg2vdr</trans>
+			<trans lang="de_DE">Skindesigner ist gepatcht für epg2vdr</trans>
+		</token>	
+		<token name="tr(epg2vdrShowHostname)">
+			<trans lang="en_EN">Shown hostname of remote-timers in epg2vdr-menu 'Timer'</trans>
+			<trans lang="de_DE">Zeige Hostname der Remote-Timer im epg2vdr-Menü 'Timer'</trans>
 		</token>
 		<token name="tr(plexDetail)">
 			<trans lang="en_EN">Background Plex-Detail</trans>
