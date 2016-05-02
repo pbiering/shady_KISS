@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-05-02:
+- Added setup for number of hostnamechars in epg2vdr-menu Timer
+
 2016-04-20:
 - Added setup for epg2vdrShowHostname
 - Added setup if skindesigner is patched for epg2vdr
