@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-05-03:
+- Show even local hostname in epg2vdr-menu Timer
+
 2016-05-02:
 - Added setup for number of hostnamechars in epg2vdr-menu Timer
 - Removed areascroll of fritzbox-separators
