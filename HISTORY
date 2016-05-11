@@ -3,6 +3,7 @@ shady-KISS-skin History
 
 2016-05-11:
 - Reimplemented 'isRecording' and added 'current- and nextrecording' in displaychannel
+- Added icon for remotetimers in mainmenu
 
 2016-05-08:
 - Fixes for epg2vdr and running timers
