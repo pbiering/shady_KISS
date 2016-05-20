@@ -60,36 +60,29 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
 				</area>
-				<area condition="not{epg2vdr-skdPatch}" x="{areawidth}*0.905" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+				<area condition="not{isremote}" x="{areawidth}*0.905" width="2%" layer="4">
+					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="inactiveMarker" />
 					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				</area>
-				<areascroll condition="not{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="25%" width="66%" layer="3">
-					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-				</areascroll>
-				<area condition="not{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.905" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
-				</area>
-				<area condition="{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.905" width="2%" layer="4">
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
+				<area condition="{isremote}" x="{areawidth}*0.905" width="2%" layer="4">
+					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>
-				<areascroll condition="not{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="25%" width="66%" layer="3">
-					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-				</areascroll>
-				<areascroll condition="{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.66" layer="3">
+				<areascroll condition="{epg2vdrShowHostname}++isset{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.66" layer="3">
 					<drawtext name="vdrname" valign="center" width="{areawidth}*0.0125*{hostnameChars}" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname}"/>
 					<drawrectangle x="{areawidth}*0.0125*{hostnameChars}" y="1" width="1" height="{areaheight}-2" color="{clrBlack}" />
 					<drawrectangle x="{areawidth}*0.0125*{hostnameChars}+1" y="1" width="1" height="{areaheight}-2" color="{clrRecMenuConflTop}" />
 					<drawtext condition="{current}" x="{areawidth}*0.0125*{hostnameChars}+10" name="timertext" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 					<drawtext condition="not{current}" x="{areawidth}*0.0125*{hostnameChars}+10" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
+				<areascroll condition="not{epg2vdrShowHostname}||empty{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="25%" width="66%" layer="3">
+					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+				</areascroll>
+				
 			</areacontainer>
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
@@ -99,33 +92,25 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
 				</area>
-				<area condition="not{epg2vdr-skdPatch}" x="{areawidth}*0.665" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+				<area condition="not{isremote}" x="{areawidth}*0.665" width="2%" layer="4">
+					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="inactiveMarker" />
 					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />	
 				</area>
-				<areascroll condition="not{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="40%" layer="3">
-					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-				</areascroll>				
-				<area condition="not{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.665" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
-				</area>
-				<area condition="{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.665" width="2%" layer="4">
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
+				<area condition="{isremote}" x="{areawidth}*0.665" width="2%" layer="4">
+					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>
-				<areascroll condition="{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.4" layer="3">
+				<areascroll condition="{epg2vdrShowHostname}++isset{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.4" layer="3">
 					<drawtext name="vdrname" valign="center" width="{areawidth}*0.0205*{hostnameChars}" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname}"/>
 					<drawrectangle x="{areawidth}*0.0205*{hostnameChars}" y="1" width="1" height="{areaheight}-2" color="{clrBlack}" />
 					<drawrectangle x="{areawidth}*0.0205*{hostnameChars}+1" y="1" width="1" height="{areaheight}-2" color="{clrRecMenuConflTop}" />
 					<drawtext condition="{current}" x="{areawidth}*0.0205*{hostnameChars}+10" name="timertext" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 					<drawtext condition="not{current}" x="{areawidth}*0.0205*{hostnameChars}+10" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
-				<areascroll condition="not{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="40%" layer="3">
+				<areascroll condition="not{epg2vdrShowHostname}||empty{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="40%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
@@ -138,33 +123,25 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="1%" y="0" width="{areawidth}*0.991" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient"/>
 				</area>
-				<area condition="not{epg2vdr-skdPatch}" x="{areawidth}*0.615" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+				<area condition="not{isremote}" x="{areawidth}*0.615" width="2%" layer="4">
+					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="inactiveMarker" />
 					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				</area>
-				<areascroll condition="not{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="35%" layer="3">
-					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
-				</areascroll>				
-				<area condition="not{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.615" width="2%" layer="4">
-					<drawimage condition="{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
-				</area>
-				<area condition="{isremote}++{epg2vdr-skdPatch}" x="{areawidth}*0.615" width="2%" layer="4">
-					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
-					<drawimage condition="not{flagactive}"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
+				<area condition="{isremote}" x="{areawidth}*0.615" width="2%" layer="4">
+					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
+					<drawimage condition="not{flagactive}" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>
-				<areascroll condition="{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.35" layer="3">
+				<areascroll condition="{epg2vdrShowHostname}++isset{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.35" layer="3">
 					<drawtext name="vdrname" valign="center" width="{areawidth}*0.0235*{hostnameChars}" font="{light}" fontsize="70%" color="{clrLightGray}" text="{vdrname}"/>
 					<drawrectangle x="{areawidth}*0.0235*{hostnameChars}" y="1" width="1" height="{areaheight}-2" color="{clrBlack}" />
 					<drawrectangle x="{areawidth}*0.0235*{hostnameChars}+1" y="1" width="1" height="{areaheight}-2" color="{clrRecMenuConflTop}" />
 					<drawtext condition="{current}" x="{areawidth}*0.0235*{hostnameChars}+10" name="timertext" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 					<drawtext condition="not{current}" x="{areawidth}*0.0235*{hostnameChars}+10" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>
-				<areascroll condition="not{epg2vdrShowHostname}++{epg2vdr-skdPatch}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="35%" layer="3">
+				<areascroll condition="not{epg2vdrShowHostname}||empty{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="35%" layer="3">
 					<drawtext condition="{current}" name="timertext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				</areascroll>

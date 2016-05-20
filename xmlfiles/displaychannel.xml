@@ -127,9 +127,15 @@
 	</signalquality>
 
 	<epginfo>
+		<area condition="{currentrecording}" x="{areawidth}*0.104" y="78%" width="2%" height="7%" layer="3">
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.5*39/57" height="50%" valign="center" />
+		</area>
+		<area condition="{nextrecording}" x="{areawidth}*0.104" y="88%" width="2%" height="7%" layer="3">
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.5*39/57" height="50%" valign="center" />
+		</area>
+		
 		 <area x="12%" y="78%" width="11%" height="7%" layer="3">
-			<drawtext condition="not{currentrecording}" x="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}"/>
-			<drawtext condition="{currentrecording}" x="0" valign="center" font="{light}" fontsize="65%" color="{clrRed}" text="{currentstart} - {currentstop}"/>
+			<drawtext x="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{currentstart} - {currentstop}"/>
 		</area>
 		
 		<area x="24%" y="78%" width="50%" height="7%" layer="3">
@@ -141,8 +147,7 @@
 			<drawtext y="55%" align="right" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="+{currentremaining}/{currentduration}min" />			
 		</area>		
 		<area x="12%" y="88%" width="11%" height="7%" layer="3">
-			<drawtext condition="not{nextrecording}" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nextstart} - {nextstop}"/>
-			<drawtext condition="{nextrecording}" valign="center" font="{light}" fontsize="65%" color="{clrRed}" text="{nextstart} - {nextstop}"/>
+			<drawtext valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nextstart} - {nextstop}"/>
 		</area>
 		<area x="24%" y="88%" width="50%" height="7%" layer="3">
 			<drawtext condition="empty{nextsubtitle}" x="0" y="0" valign="center" font="{light}" fontsize="65%" color="{clrLightGray}" text="{nexttitle}"/>

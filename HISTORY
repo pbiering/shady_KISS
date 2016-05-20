@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-05-20:
+- Adjustments for timerstates in timermenus and displaychannel
+
 2016-05-11:
 - Reimplemented 'isRecording' and added 'current- and nextrecording' in displaychannel
 - Added icon for remotetimers in mainmenu
