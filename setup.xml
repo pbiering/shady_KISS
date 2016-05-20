@@ -57,7 +57,6 @@
 		</submenu>
 		<submenu name="Plugins" displaytext="Plugins">
 			<parameter type="separator" name="epg2vdr" displaytext="Plugin epg2vdr"/>
-			<parameter type="bool" name="epg2vdr-skdPatch" displaytext="{tr(epg2vdr-skdPatch)}">0</parameter>
 			<parameter type="bool" name="epg2vdrShowHostname" displaytext="{tr(epg2vdrShowHostname)}">1</parameter>
 			<parameter type="int" name="hostnameChars" min="5" max="12" displaytext="{tr(hostnameChars)}">8</parameter>
 			<parameter type="separator" name="plex" displaytext="Plugin plex"/>
@@ -416,14 +415,9 @@
 			<trans lang="en_EN">Fade-time infos beside lists</trans>
 			<trans lang="de_DE">Einblendzeit Infos neben Listen</trans>
 		</token>
-		
 		<token name="tr(zaphistoryStatusCol)">
 			<trans lang="en_EN">Show statuscolumn in zayhistory</trans>
 			<trans lang="de_DE">Zeige Statusspalte in zaphistory</trans>
-		</token>
-		<token name="tr(epg2vdr-skdPatch)">
-			<trans lang="en_EN">Skindesigner is patched for epg2vdr</trans>
-			<trans lang="de_DE">Skindesigner ist gepatcht für epg2vdr</trans>
 		</token>	
 		<token name="tr(epg2vdrShowHostname)">
 			<trans lang="en_EN">Shown hostname of remote-timers in epg2vdr-menu 'Timer'</trans>
