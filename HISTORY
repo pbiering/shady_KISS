@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2016-05-24:
+- Adjusted position aof timericons
+
 2016-05-20:
 - Adjustments for timerstates in timermenus and displaychannel
 - Removed setup for epg2vdr-skdPatch

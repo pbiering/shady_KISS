@@ -65,6 +65,8 @@
 		<color name="clrPlexFillDark">D7000000</color>
 		<color name="clrDarkGray">FF808080</color>
 		<color name="clrBar">FF780B02</color>
+		<!--background timericons-->
+		<color name="clrIconsBG">A7000000</color>
 	</colors>
     <!--
     these variables can be used everywhere in the templates

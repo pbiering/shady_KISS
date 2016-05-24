@@ -60,13 +60,18 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient"/>
 				</area>
-				<area condition="not{isremote}" x="{areawidth}*0.905" width="2%" layer="4">
+				<!--<area x="{areawidth}*0.908" width="{areawidth}*0.037" layer="3">
+					<drawrectangle x="0" y="1" width="1" height="{areaheight}-2" color="{clrBlack}" />
+					<drawrectangle x="1" y="1" width="1" height="{areaheight}-2" color="{clrRecMenuConflTop}" />
+					<drawrectangle x="2" y="1" width="{areawidth}-2" height="{areaheight}-2" color="{clrIconsBG}" />
+				</area>-->
+				<area condition="not{isremote}" x="{areawidth}*0.92" width="2%" layer="4">
 					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="inactiveMarker" />
 					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
 					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				</area>
-				<area condition="{isremote}" x="{areawidth}*0.905" width="2%" layer="4">
+				<area condition="{isremote}" x="{areawidth}*0.921" width="2%" layer="4">
 					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
@@ -98,7 +103,7 @@
 					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />	
 				</area>
-				<area condition="{isremote}" x="{areawidth}*0.665" width="2%" layer="4">
+				<area condition="{isremote}" x="{areawidth}*0.666" width="2%" layer="4">
 					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
@@ -129,7 +134,7 @@
 					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				</area>
-				<area condition="{isremote}" x="{areawidth}*0.615" width="2%" layer="4">
+				<area condition="{isremote}" x="{areawidth}*0.616" width="2%" layer="4">
 					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
