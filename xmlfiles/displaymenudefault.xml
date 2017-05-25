@@ -74,7 +74,20 @@
 			</area>
 			<area x="40%" condition="{separator}++{column3pb}" width="50%" layer="4">
 				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
-			</area>				
+			</area>
+			
+			<area x="4%" condition="{separator}++{column5set}++not{column3pb}" width="4%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column1}" />
+			</area>
+			<area x="8%" condition="{separator}++{column5set}++not{column3pb}" width="9%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column2}" />
+			</area>
+			<area x="17%" condition="{separator}++{column5set}++not{column3pb}" width="{areawidth}*0.135" layer="4">
+				<drawtext align="center" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column3}" />
+			</area>
+			<area x="40%" condition="{separator}++{column5set}++not{column3pb}" width="50%" layer="4">
+				<drawtext align="left" valign="center" font="{light}" fontsize="70%" width="99%" color="{clrLightGray}" text="{column5}" />
+			</area>
 <!--separators-fritzbox-Anrufdetails-->
 			<area condition="{separator}++{fritzbox}" x="1%" width="94%" transparency="{transLists}" layer="3">
 				<drawimage condition="not{current}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong1" />

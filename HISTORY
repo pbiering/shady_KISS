@@ -2,6 +2,7 @@ shady-KISS-skin History
 -------------------------------------------
 
 2017-05-25:
+- Fixed bgprocess
 - Fixed separators with two columns and separators in mailbox-plugin
 
 2016-05-28:
