@@ -40,7 +40,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 				</area>
 				<area condition="{timerfull}" x="92%" width="2%" layer="4">
-				<drawimage x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
 				</area>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -53,7 +56,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="66%" width="2%" layer="4">
-					<drawimage x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
 				</area>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -66,7 +72,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="61%" width="2%" layer="4">
-					<drawimage x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
 				</area>
 			</areacontainer>
 <!--noCurrentInfo-->
@@ -79,7 +88,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 				</area>
 				<area condition="{timerfull}" x="92%" width="2%" layer="4">
-				<drawimage x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
 				</area>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -92,7 +104,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="66%" width="2%" layer="4">
-					<drawimage x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
 				</area>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -105,7 +120,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
 				<area condition="{timerfull}" x="61%" width="2%" layer="4">
-					<drawimage x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
 				</area>
 			</areacontainer>
 <!-- WHATSON -->

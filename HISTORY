@@ -1,6 +1,10 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2018-02-23:
+- Added  for switchtimer provided by horchi@vdrportal
+
+
 2017-05-25:
 - Fixed bgprocess
 - Fixed separators with two columns and separators in mailbox-plugin
