@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -45,14 +45,14 @@
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient821"
-       id="radialGradient827"
+       id="radialGradient817"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.02407107,-3.5223485,3.646761,0.02490054,-684.09774,1151.4441)"
        cx="256"
        cy="256.10001"
        fx="256"
        fy="256.10001"
-       r="245"
-       gradientTransform="matrix(1.1873986,-0.01302237,0.0129415,1.1790433,-51.288403,-42.519288)"
-       gradientUnits="userSpaceOnUse" />
+       r="245" />
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -73,8 +73,8 @@
      fit-margin-bottom="0"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:zoom="10.75"
-     inkscape:cx="13.617976"
+     inkscape:zoom="5.375"
+     inkscape:cx="11.85707"
      inkscape:cy="17.529469"
      inkscape:window-x="0"
      inkscape:window-y="32"
@@ -82,12 +82,12 @@
      inkscape:current-layer="svg2" />
   <g
      id="g4"
-     style="fill:url(#radialGradient827);fill-opacity:1;stroke:none;stroke-width:0.61678375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.98"
+     style="fill:url(#radialGradient817);fill-opacity:1;stroke:none;stroke-width:0.61678375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.98"
      transform="matrix(0.0486293,0,0,0.04864953,-0.44915773,-0.45907448)">
     <path
        d="m 480.6,315.2 -52.1,0 0,-38.7 52.1,0 c 11.3,0 20.4,-9.1 20.4,-20.4 0,-11.3 -9.1,-20.4 -20.4,-20.4 l -204.2,0 0,-38.7 52.1,0 c 11.3,0 20.4,-9.1 20.4,-20.4 l 0,-145 c 0,-11.3 -9.1,-20.4 -20.4,-20.4 l -145,0 c -11.3,0 -20.4,9.1 -20.4,20.4 l 0,145 c 0,11.3 9.1,20.4 20.4,20.4 l 52.1,0 0,38.7 -204.2,0 c -11.3,0 -20.4,9.1 -20.4,20.4 0,11.3 9.1,20.4 20.4,20.4 l 52.1,0 0,37.6 -52.1,0 c -11.3,0 -20.4,9.1 -20.4,20.4 l 0,145 c 0,11.3 9.1,20.4 20.4,20.4 l 145.1,0 c 11.3,0 20.4,-9.1 20.4,-20.4 l 0,-145 c 0,-11.3 -9.1,-20.4 -20.4,-20.4 l -52.1,0 0,-37.6 263.2,0 0,38.7 -52.1,0 c -11.3,0 -20.4,9.1 -20.4,20.4 l 0,145 c 0,11.3 9.1,20.4 20.4,20.4 l 145.1,0 c 11.3,0 20.4,-9.1 20.4,-20.4 l 0,-145 c 0,-11.3 -9.1,-20.4 -20.4,-20.4 z M 203.9,51.8 l 104.3,0 0,104.2 -104.3,0 0,-104.2 z m -47.8,407.3 -104.3,0 0,-104.2 104.3,0 0,104.2 z m 304.1,1.1 -104.3,0 0,-104.2 104.3,0 0,104.2 z"
        id="path6"
-       style="fill:url(#radialGradient827);fill-opacity:1;stroke:none;stroke-width:0.61678375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient817);fill-opacity:1;stroke:none;stroke-width:0.61678375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

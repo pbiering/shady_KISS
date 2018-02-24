@@ -59,7 +59,7 @@
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
-					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
 				</area>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -75,7 +75,7 @@
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
-					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
 				</area>
 			</areacontainer>
 <!--noCurrentInfo-->
@@ -91,7 +91,7 @@
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
-					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
 				</area>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -107,7 +107,7 @@
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
-					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
 				</area>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -123,7 +123,7 @@
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteRec" />
-					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteTimer" />
+					<drawimage condition="{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="icon" path="remoteSwitchTimer" />
 				</area>
 			</areacontainer>
 <!-- WHATSON -->
