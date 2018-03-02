@@ -30,7 +30,8 @@
 	</background>
 
 	<header>
-		<area x="57%" y="86%" width="15%" height="6%" layer="3">
+		<area x="14%" y="2%" width="50%" height="7%" layer="4">
+			<drawtext condition="strnotequal({title}, 'VDR')" valign="center" fontsize="80%" font="{light}" color="{clrLightGray}" text="{title}" />
 		</area>
 	</header>
 
