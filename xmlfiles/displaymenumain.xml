@@ -21,16 +21,16 @@
 			<drawimage condition="eq({indexmainMenuOrientation},0)" x="0" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeader" />
 			<drawimage condition="eq({indexmainMenuOrientation},1)" x="{areawidth}*0.028" width="{areawidth}*0.972" height="{areaheight}*0.972" imagetype="skinpart" path="gradientHeaderLeft" />
 		</area>
-		<area condition="eq({indexmainMenuOrientation},0)" x="2%" y="0" width="10%" height="10%" layer="4">
-			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
-		</area>
-		<area condition="eq({indexmainMenuOrientation},1)" x="4%" y="0" width="10%" height="10%" layer="4">
-			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
-		</area>
 	</background>
 
 	<header>
-		<area x="14%" y="2%" width="50%" height="7%" layer="4">
+		<area condition="eq({indexmainMenuOrientation},0)++strequal({title}, 'VDR')" x="2%" y="0" width="10%" height="10%" layer="4">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
+		</area>
+		<area condition="eq({indexmainMenuOrientation},1)++strequal({title}, 'VDR')" x="4%" y="0" width="10%" height="10%" layer="4">
+			<drawimage x="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="VDR" />
+		</area>
+		<area x="3%" y="2%" width="62%" height="7%" layer="4">
 			<drawtext condition="strnotequal({title}, 'VDR')" valign="center" fontsize="80%" font="{light}" color="{clrLightGray}" text="{title}" />
 		</area>
 	</header>
