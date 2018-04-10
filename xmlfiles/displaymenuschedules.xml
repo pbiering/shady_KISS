@@ -34,6 +34,7 @@
 			<areacontainer condition="eq({indexcurrentInfo}, 0)++not{whatsonfavorites}">
 				<area x="17%" width="78%" transparency="{transLists}" layer="3">
 					<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong"/>
+					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorLong"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
@@ -49,6 +50,7 @@
 			<areacontainer condition="eq({indexcurrentInfo}, 1)++not{whatsonfavorites}">
 				<area x="17%" width="52%" transparency="{transLists}" layer="3">
 					<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
+					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
@@ -64,6 +66,7 @@
 			<areacontainer condition="eq({indexcurrentInfo}, 2)++not{whatsonfavorites}">
 				<area x="17%" width="47%" transparency="{transLists}" layer="3">
 					<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
+					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
@@ -79,6 +82,7 @@
 			<areacontainer condition="eq({indexcurrentInfo}, 0)++{whatsonfavorites}">
 				<area x="24%" width="71%" transparency="{transLists}" layer="3">
 					<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLong"/>
+					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorLong"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
@@ -94,6 +98,7 @@
 			<areacontainer condition="eq({indexcurrentInfo}, 1)++{whatsonfavorites}">
 				<area x="24%" width="45%" transparency="{transLists}" layer="3">
 					<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
+					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
@@ -109,6 +114,7 @@
 			<areacontainer condition="eq({indexcurrentInfo}, 2)++{whatsonfavorites}">
 				<area x="24%" width="40%" transparency="{transLists}" layer="3">
 					<drawimage condition="not{current}++not{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMedium"/>
+					<drawimage condition="not{current}++{separator}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
@@ -249,7 +255,9 @@
 			 <areascroll condition="eq({indexcurrentInfo}, 0)++not{separator}++{whatsonnext}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="19%" width="73%" layer="4">
 				<drawtext condition="isset{title}++empty{shorttext}++{current}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 				<drawtext condition="isset{title}++empty{shorttext}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
+				
 				<drawtext condition="isset{title}++isset{shorttext}++{current}" name="menutext" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title} - {shorttext}"/>
+				
 				<drawtext condition="isset{title}++isset{shorttext}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title} - {shorttext}"/>
 			</areascroll>
 <!--tallCurrentInfo-->
@@ -310,43 +318,29 @@
 				<drawtext condition="empty{shorttext}not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}"/>
 			</areascroll>
 <!-- Separator -->
-			<areacontainer condition="{separator}++{whatson}">
-				<area x="0" width="24%" transparency="{transLists}" layer="3">
-					<drawimage x="3%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackground" />
-				</area>
-				<area condition="eq({indexcurrentInfo}, 0)" x="24%" width="71%" transparency="{transLists}" layer="3">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorLong"/>
-				</area>
-				<area condition="isset{title}" x="0%" width="24%" layer="4">
-					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrSeparatorText}" text="{title}" />
-				</area>
-				<area condition="eq({indexcurrentInfo}, 1)" x="24%" width="45%" transparency="{transLists}" layer="3">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
-				</area>
-				<area condition="eq({indexcurrentInfo}, 2)" x="24%" width="40%" transparency="{transLists}" layer="3">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
-				</area>
-			</areacontainer>	
-			<areacontainer condition="{separator}++not{whatson}">
-				<area x="0" width="16%" transparency="{transLists}" layer="3">
+			<areacontainer condition="{separator}">
+				<area condition="{whatson}||{whatsonnow}||{whatsonnext}" x="0" width="16%" transparency="{transLists}" layer="3">
 					<drawimage x="5%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackgroundShort" />
 				</area>
-				<area condition="eq({indexcurrentInfo}, 0)" x="17%" width="78%" transparency="{transLists}" layer="3">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorLong"/>
+				<area condition="{whatsonfavorites}" x="0" width="24%" transparency="{transLists}" layer="3">
+					<drawimage x="3%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellSepBackground" />
+				</area>
+				<area condition="{whatson}" x="0%" width="16%" layer="4">
+					<drawtext condition="isset{title}" x="0" align="center" valign="center" font="{light}" fontsize="60%" color="{clrSeparatorText}" text="{title}" />
 				</area>
 				<area condition="eq({indexcurrentInfo}, 0)++isset{title}" x="19%" width="73%" layer="4">
+					<drawtext condition="{whatsonnow}||{whatsonnext}||{whatsonfavorites}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+				<area condition="eq({indexcurrentInfo}, 1)++isset{title}" x="18%" width="47%" layer="4">
+					<drawtext condition="{whatsonnow}||{whatsonnext}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
+				</area>
+				<area condition="eq({indexcurrentInfo}, 1)++isset{title}++{whatsonfavorites}" x="25%" width="41%" layer="4">
 					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
 				</area>
-				<area condition="eq({indexcurrentInfo}, 1)" x="17%" width="52%" transparency="{transLists}" layer="3">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
+				<area condition="eq({indexcurrentInfo}, 2)++isset{title}" x="18%" width="42%" layer="4">
+					<drawtext condition="{whatsonnow}||{whatsonnext}" x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
 				</area>
-				<area condition="eq({indexcurrentInfo}, 1)++isset{title}" x="17%" width="52%" layer="4">
-					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
-				</area>
-				<area condition="eq({indexcurrentInfo}, 2)" x="17%" width="47%" transparency="{transLists}" layer="3">
-					<drawimage x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonSeparatorMedium"/>
-				</area>
-				<area condition="eq({indexcurrentInfo}, 2)++isset{title}" x="17%" width="47%" layer="4">
+				<area condition="eq({indexcurrentInfo}, 2)++isset{title}++{whatsonfavorites}" x="25%" width="36%" layer="4">
 					<drawtext x="0" align="center" valign="center" font="{light}" fontsize="70%" color="{clrSeparatorText}" text="{title}" />
 				</area>
 			</areacontainer>
