@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2018-05-01:
+- Fixed state-markers if no epgd/epg2vdr ist used
+
 2018-04-10:
 - Rearranged separators in displaymenuschedules
 

@@ -68,14 +68,14 @@
 				<area condition="not{isremote}" x="{areawidth}*0.92" width="2%" layer="4">
 					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="inactiveMarker" />
 					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="strequal({type}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="isset{type}++strequal({type}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				</area>
 				<area condition="{isremote}" x="{areawidth}*0.921" width="2%" layer="4">
 					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
-					<drawimage condition="strequal({type}, 'V')"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
+					<drawimage condition="isset{type}++strequal({type}, 'V')"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>
 				<areascroll condition="{epg2vdrShowHostname}++isset{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.66" layer="3">
@@ -102,14 +102,14 @@
 				<area condition="not{isremote}" x="{areawidth}*0.665" width="2%" layer="4">
 					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="inactiveMarker" />
 					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="strequal({type}, 'V')"  x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="isset{type}++strequal({type}, 'V')"  x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />	
 				</area>
 				<area condition="{isremote}" x="{areawidth}*0.666" width="2%" layer="4">
 					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
-					<drawimage condition="strequal({type}, 'V')"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
+					<drawimage condition="isset{type}++strequal({type}, 'V')"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>
 				<areascroll condition="{epg2vdrShowHostname}++isset{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.4" layer="3">
@@ -135,14 +135,14 @@
 				<area condition="not{isremote}" x="{areawidth}*0.615" width="2%" layer="4">
 					<drawimage condition="not{flagactive}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="inactiveMarker" />
 					<drawimage condition="{flagactive}++not{flagrecording}" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="greenMarker" />
-					<drawimage condition="strequal({type}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
+					<drawimage condition="isset{type}++strequal({type}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{flagrecording}" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="isset{state}++strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 				</area>
 				<area condition="{isremote}" x="{areawidth}*0.616" width="2%" layer="4">
 					<drawimage condition="{flagactive}++strnotequal({state}, 'R')" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOn" />
 					<drawimage condition="not{flagactive}" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteOff" />
-					<drawimage condition="strequal({type}, 'V')"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
+					<drawimage condition="isset{type}++strequal({type}, 'V')"  x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteSwitchTimer" />
 					<drawimage condition="strequal({state}, 'R')" animtype="blink" animfreq="1000" x="0" y="28%" width="{areaheight}*0.44" height="{areaheight}*0.44" imagetype="icon" path="remoteRec" />
 				</area>
 				<areascroll condition="{epg2vdrShowHostname}++isset{state}" scrollelement="timertext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="{areawidth}*0.255" width="{areawidth}*0.35" layer="3">
