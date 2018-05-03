@@ -81,6 +81,7 @@
 			<parameter type="bool" name="showTimeshiftTotal" displaytext="{tr(showTimeshiftTotal)}">1</parameter>
 			<parameter type="bool" name="showDiscUsage" displaytext="{tr(showDiscUsage)}">1</parameter>
 			<parameter type="bool" name="showNumbering" displaytext="{tr(showNumbering)}">1</parameter>
+			<parameter type="bool" name="timerBlink" displaytext="{tr(timerBlink)}">1</parameter>
 		</submenu>
 	</menu>
     <!--
@@ -502,7 +503,7 @@
 			<trans lang="it_IT">Mostra stato colonna in zaphistory</trans>
 		</token>	
 		<token name="tr(epg2vdrShowHostname)">
-			<trans lang="en_EN">Shown hostname of remote-timers in epg2vdr-menu 'Timer'</trans>
+			<trans lang="en_EN">Show hostname of remote-timers in epg2vdr-menu 'Timer'</trans>
 			<trans lang="de_DE">Zeige Hostname der Remote-Timer im epg2vdr-Menü 'Timer'</trans>
 			<trans lang="it_IT">Mostra hostname di timers in remoto nel menù epg2vdr 'Timer'</trans>
 		</token>
@@ -526,5 +527,13 @@
 			<trans lang="de_DE">Art</trans>
 			<trans lang="it_IT">Arte</trans>
 		</token>
+		<token name="tr(timerBlink)">
+			<trans lang="en_EN">Blinking marker for recording timer in timermenu</trans>
+			<trans lang="de_DE">Blinkender Aufnahmemarker für Timer im Timermenü</trans>
+		</token>
+		<!--<token name="tr(timerBlink)">
+			<trans lang="en_EN">Blinking marker for recording timer in timermenu</trans>
+			<trans lang="de_DE">Blinkender Marker für aufnehmenden Timer im Timermenü</trans>
+		</token>-->
 	</translations>
 </setup>

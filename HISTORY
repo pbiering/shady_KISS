@@ -1,6 +1,9 @@
 shady-KISS-skin History
 -------------------------------------------
 
+2018-05-03:
+- Configurable blinking marker for recording timer in timermenu
+
 2018-05-01:
 - Fixed state-markers if no epgd/epg2vdr ist used
 
