@@ -337,7 +337,7 @@
 		<area condition="eq({indexmainMenuOrientation},0)++eq({indexwidgets},1)" x="{areawidth}*0.798" y="80%" width="16%" height="12%" layer="3">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
-				<drawimage cache="true" x="80%" y="8%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
+				<drawimage cache="true" x="75%" y="3%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
 				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="LiveTV, Recording" />
 				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="Recording" />
 				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="LiveTV" />
@@ -347,7 +347,7 @@
 		<area condition="eq({indexmainMenuOrientation},0)++eq({indexwidgets},2)" x="{areawidth}*0.798" y="80%" width="16%" height="18%" layer="3">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/3" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
-				<drawimage cache="true" x="80%" y="8%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
+				<drawimage cache="true" x="75%" y="3%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
 				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="LiveTV, Recording" />
 				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="Recording" />
 				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="LiveTV" />
@@ -357,7 +357,7 @@
 		<area condition="eq({indexmainMenuOrientation},1)++eq({indexwidgets},1)" x="4%" y="80%" width="16%" height="12%" layer="3">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
-				<drawimage cache="true" x="80%" y="8%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
+				<drawimage cache="true" x="75%" y="3%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
 				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="LiveTV, Recording" />
 				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="Recording" />
 				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="LiveTV" />
@@ -367,7 +367,7 @@
 		<area condition="eq({indexmainMenuOrientation},1)++eq({indexwidgets},2)" x="4%" y="80%" width="16%" height="18%" layer="3">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/3" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
-				<drawimage cache="true" x="80%" y="8%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
+				<drawimage cache="true" x="75%" y="3%" imagetype="channellogo" path="{devices[channelid]}" width="20%" height="25%" />
 				<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="LiveTV, Recording" />
 				<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrRed}" text="Recording" />
 				<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="{width(label)}*1.4" y="{areaheight}*0.03" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="LiveTV" />
