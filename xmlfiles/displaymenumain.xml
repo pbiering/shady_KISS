@@ -325,10 +325,10 @@
 	</lastrecordings>
 
 	<discusage delay="0" fadetime="{fadetimeTempsLoadWeatherDisc}">
-		<area condition="eq({indexmainMenuOrientation},0)" x="72%" y="73%" width="23%" height="6%" layer="3">
+		<area condition="eq({indexmainMenuOrientation},0)" x="72%" y="72%" width="23%" height="6%" layer="3">
 			<drawtext x="0" y="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{vdrusagestring}" />
 		</area>
-		<area condition="eq({indexmainMenuOrientation},1)" x="5%" y="73%" width="23%" height="6%" layer="3">
+		<area condition="eq({indexmainMenuOrientation},1)" x="5%" y="72%" width="23%" height="6%" layer="3">
 			<drawtext x="0" y="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{vdrusagestring}" />
 		</area>
 	</discusage>
