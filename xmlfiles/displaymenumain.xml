@@ -378,10 +378,10 @@
 
 	<temperatures condition="gt({indexpanelMain},0)++eq({indexwidgets},0)" delay="0" fadetime="{fadetimeTempsLoadWeatherDisc}" >
 		<area condition="eq({indexmainMenuOrientation},0)" x="81%" y="80%" width="14%" height="6%" layer="3">
-			<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="CPU: {cputemp}°C  GPU: {gputemp}°C"/>
+			<drawtext x="0" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="CPU: {cputemp}°C  GPU: {gputemp}°C"/>
 		</area>
 		<area condition="eq({indexmainMenuOrientation},1)++eq({indexwidgets},0)" x="4%" y="80%" width="14%" height="6%" layer="3">
-			<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="CPU: {cputemp}°C  GPU: {gputemp}°C"/>
+			<drawtext x="0" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="CPU: {cputemp}°C  GPU: {gputemp}°C"/>
 		</area>
 	</temperatures>
 
@@ -410,10 +410,10 @@
 
 	<systemload condition="gt({indexpanelMain},0)++eq({indexwidgets},0)" delay="0" fadetime="{fadetimeTempsLoadWeatherDisc}" >
 		<area condition="eq({indexmainMenuOrientation},0)" x="81%" y="86%" width="14%" height="6%" layer="3">
-			<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="System Load: {load}" />
+			<drawtext x="0" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="System Load: {load}" />
 		</area>
 		<area condition="eq({indexmainMenuOrientation},1)++eq({indexwidgets},0)" x="4%" y="86%" width="14%" height="6%" layer="3">
-			<drawtext x="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="System Load: {load}" />
+			<drawtext x="0" valign="center" font="{light}" fontsize="45%" color="{clrLightGray}" text="System Load: {load}" />
 		</area>
 	</systemload>
 
