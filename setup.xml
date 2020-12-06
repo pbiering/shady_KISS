@@ -18,7 +18,7 @@
 -->
 		<submenu name="Main-Menu" displaytext="{tr(mainMenu)}">
 			<parameter type="string" name="panelMain" displaytext="{tr(panelMain)}" options="none,showInfosAndOnlyTimers,showInfosAndTimers,showInfosAndTimersAndLastrecs">3</parameter>
-			<parameter type="string" name="widgets" displaytext="{tr(widgets)}" options="tempsLoadWeather,devicesWeather">0</parameter>
+			<parameter type="string" name="widgets" displaytext="{tr(widgets)}" options="tempsLoadWeather,devicesWeather,devices">0</parameter>
 			<parameter type="string" name="mainMenuOrientation" displaytext="{tr(mainMenuOrientation)}" options="right, left">0</parameter>
 			<parameter type="int" name="fadetimeTempsLoadWeatherDisc" min="0" max="500" displaytext="{tr(fadetimeTempsLoadWeatherDisc)}">0</parameter>
 			<parameter type="int" name="fadetimeTimersAndLastrecs" min="0" max="500" displaytext="{tr(fadetimeTimersAndLastrecs)}">0</parameter>
@@ -212,6 +212,11 @@
 			<trans lang="en_EN">Devices and weather</trans>
 			<trans lang="de_DE">Devices und Wetter</trans>
 			<trans lang="it_IT">Devices e previsioni</trans>
+		</token>
+		<token name="tr(devices)">
+			<trans lang="en_EN">Devices</trans>
+			<trans lang="de_DE">Devices</trans>
+			<trans lang="it_IT">Devices</trans>
 		</token>
 		<token name="tr(setupIconbar)">
 			<trans lang="en_EN">Show iconbar in setup-menu</trans>
