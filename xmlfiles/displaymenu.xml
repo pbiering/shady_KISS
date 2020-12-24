@@ -24,12 +24,12 @@
 	</header>
 
 	<datetime>
-		<area x="63%" y="3%" width="23%" height="10%" layer="4">
+		<area x="63%" y="3%" width="24%" height="10%" layer="4">
 			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}, {dayleadingzero}. {monthnameshort}." />
 		</area>
 	</datetime>
 	<time>
-		<area x="85%" y="3%" width="10%" height="10%" layer="4">
+		<area x="88%" y="3%" width="7%" height="10%" layer="4">
 			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{printf('%02d:%02d', hour, min)}" />
 		</area>
 	</time>
