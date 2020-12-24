@@ -18,7 +18,7 @@
 	</background>
 
 	<header>
-		<area x="3%" y="2%" width="62%" height="7%" layer="4">
+		<area x="1%" y="2%" width="61%" height="7%" layer="4">
 			<drawtext x="0" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
 		</area>
 	</header>

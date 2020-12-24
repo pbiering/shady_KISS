@@ -48,8 +48,8 @@
 		<area x="0" y="6%" width="5%" height="4%" layer="4">
 			<drawtext x="0" y="25%"  align="center" font="{light}" fontsize="75%" color="{clrLightGray}" text="{usedpercent}%" />
 		</area>
-		<area x="6%" y="2%" width="60%" height="7%" layer="4">
-			<drawtext x="1%" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
+		<area x="6%" y="2%" width="56%" height="7%" layer="4">
+			<drawtext x="1%" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{title}" />
 		</area>
 	</header>
 	
