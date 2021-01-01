@@ -154,6 +154,11 @@
 					<drawimage condition="not{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cut" />
 				</area>
 
+				<area condition="not{folder}" x="83%" y="40%" width="{areaheight}*4" transparency="15" layer="4">
+					<drawimage condition="{isHD}" x="0" y="0" valign="center" width="{areaheight}*4" height="{areaheight}*4" imagetype="icon" path="hdActive" />
+					<drawimage condition="not{isHD}" x="0" y="0" valign="center" width="{areaheight}*4" height="{areaheight}*4" imagetype="icon" path="hdBG" />
+				</area>
+
 				<area condition="not{folder}" x="91%" width="2%" layer="4">
 					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 1)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
 					<drawimage condition="{new}++eq({03_new-recordingsMarker}, 2)" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="darkGrayMarker" />
@@ -210,6 +215,11 @@
 				<area condition="not{folder}" x="64%" width="{areaheight}" transparency="15" layer="4">
 					<drawimage condition="{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cutActive" />
 					<drawimage condition="not{cutted}" x="0" y="0" valign="center" width="{areaheight}*0.6" height="{areaheight}*0.6" imagetype="icon" path="cut" />
+				</area>
+
+				<area condition="not{folder}" x="58%" y="40%" width="{areaheight}*4" transparency="15" layer="4">
+					<drawimage condition="{isHD}" x="0" y="0" valign="center" width="{areaheight}*4" height="{areaheight}*4" imagetype="icon" path="hdActive" />
+					<drawimage condition="not{isHD}" x="0" y="0" valign="center" width="{areaheight}*4" height="{areaheight}*4" imagetype="icon" path="hdBG" />
 				</area>
 
 				<area condition="not{folder}" x="66%" width="2%" layer="4">
@@ -320,7 +330,7 @@
 					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
 				</area>
 				<area condition="not{folder}" x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext x="0" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
+					<drawtext x="0" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
 				</area>
 				<area condition="not{folder}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
@@ -346,7 +356,7 @@
 					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
 				</area>
 				<area condition="not{folder}" x="65%" y="7%" width="30%" height="5%" layer="4">
-					<drawtext x="0" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{daynumeric}.{month}.{year}   {time}   ({duration} min)" />
+					<drawtext x="0" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
 				</area>
 				<area condition="not{folder}" x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
