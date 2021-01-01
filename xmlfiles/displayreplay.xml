@@ -37,6 +37,16 @@
 		</area>
 	</rectitle>
 
+	<recinfo>
+		<area x="30%" y="91%" width="30%" height="7%" layer="3">
+			<drawtext condition="{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="HDTV"/>
+			<drawtext condition="not{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="SDTV"/>
+		</area>
+		<area x="40%" y="91%" width="30%" height="7%" layer="3">
+			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="Aspect: {aspect}   Resolution: {resolution}   Size: {screenwidth}x{screenheight}"/>
+		</area>
+	</recinfo>
+
 	<progressbar>
 		<area condition="not{timeshift}" x="9%" y="{areaheight}*0.8694" width="82%" height="{areaheight}*0.0287" layer="4">
 			<drawimage x="0" y="0" width="{current}/{total}*{areawidth}" height="{areaheight}" imagetype="skinpart" path="replayProgress" />
