@@ -26,6 +26,8 @@
 			<drawtext condition="isset{shorttext}" name="title" x="0" y="0" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
 			<drawtext condition="empty{shorttext}" name="title" x="0" y="0" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{epgname}"/>
 			<drawtext name="startstop" x="0" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="{recchannelname}      {printf('%02d.%02d.%04d', daynumeric, month, year)}      {duration}min"/>
+			<drawtext condition="{isHD}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="HDTV"/>
+			<drawtext condition="not{isHD}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="SDTV"/>
 		</area>
 	</detailheader>
 
@@ -59,7 +61,7 @@
 		<drawtextbox condition="eq({indexshowPosterAndEPGpic}, 0)++{recimg1avaialble}++isset{posterpath}" x="0" y="0" width="96%" float="topleft" floatwidth="{width(movieposter)}*1.2" floatheight="{height(movieposter)}*1.2" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{description}" />
 	</tab>
 	<tab name="{tr(recinfo)}" x="4%" y="25%" width="91%" height="63%" layer="3" scrollheight="{areaheight}/4">
-		<drawtextbox x="0" y="3%" width="96%" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{tr(recsize)}: {recordingsize}&#10;{tr(recsizecutted)}: {recordingsizecutted}&#10;{tr(reclength)}: {recordinglength}&#10;{tr(reclengthcutted)}: {recordinglengthcutted}&#10;{tr(bitrate)}: {recordingbitrate}&#10;{tr(format)}: {recordingformat}&#10;{tr(searchtimer)}: {searchtimer}&#10;" />
+		<drawtextbox x="0" y="3%" width="96%" font="{light}" fontsize="{fontSizeDescr}" color="{clrLightGray}" text="{tr(recsize)}: {recordingsize}&#10;{tr(recsizecutted)}: {recordingsizecutted}&#10;{tr(reclength)}: {recordinglength}&#10;{tr(reclengthcutted)}: {recordinglengthcutted}&#10;{tr(bitrate)}: {recordingbitrate}&#10;{tr(format)}: {recordingformat}&#10;FPS: {fps}&#10;{tr(searchtimer)}: {searchtimer}&#10;" />
 	</tab>
 
 	<tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="5%" y="27%" width="93%" height="63%" layer="3" scrollheight="{areaheight}*0.63">
