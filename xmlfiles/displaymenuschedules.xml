@@ -353,7 +353,7 @@
 					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{title}" />
 				</area>
 				<area x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{day} {daynumeric}.{month}.   {start} - {stop}   ({duration} min)" />
+					<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{day} {printf('%02d.%02d.', daynumeric, month)}   {start} - {stop}   ({duration} min)" />
 				</area>
 				<area x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
