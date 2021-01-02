@@ -175,7 +175,7 @@
 					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{eventtitle}" />
 				</area>
 				<area x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}   {printf('%02d.%02d.', daynumeric, month)}   {timerstart} - {timerstop}" />
+					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}   {printf('%02d.%02d.', day, month)}   {timerstart} - {timerstop}" />
 				</area>
 				<area x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
@@ -194,7 +194,7 @@
 					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{eventtitle}" />
 				</area>
 				<area x="65%" y="7%" width="30%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}   {printf('%02d.%02d.', daynumeric, month)}   {timerstart} - {timerstop}" />
+					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}   {printf('%02d.%02d.', day, month)}   {timerstart} - {timerstop}" />
 				</area>
 				<area x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
