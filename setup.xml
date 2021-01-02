@@ -32,6 +32,7 @@
 		</submenu>
 		<submenu name="Recordings" displaytext="{tr(recordingsmarker)}">
 			<parameter type="bool" name="replayPGBG" displaytext="{tr(replayPGBG)}">0</parameter>
+			<parameter type="bool" name="showepgname" displaytext="{tr(showepgname)}">0</parameter>
 			<parameter type="string" name="recmenuorientation" displaytext="{tr(recmenuorientation)}" options="horizontal,vertical">1</parameter>
 			<parameter type="int" name="00_numRecordingsmenuitems" min="12" max="18" displaytext="{tr(00_numRecordingsmenuitems)}">15</parameter>
 			<parameter type="int" name="03_new-recordingsMarker" min="0" max="9" displaytext="{tr(03_new-recordingsMarker)}">2</parameter>
@@ -424,6 +425,10 @@
 			<trans lang="en_EN">Bright cutbars in replayprogressbar</trans>
 			<trans lang="de_DE">Helle Schnittbalken in der Wiedergabeprogressbar</trans>
 			<trans lang="it_IT">Barre luminose nella barra avanzamento</trans>
+		</token>
+		<token name="tr(showepgname)">
+			<trans lang="en_EN">Show EPG instead of recording name</trans>
+			<trans lang="de_DE">Zeige EPG anstatt Aufnahme Name</trans>
 		</token>
 		<token name="tr(03_new-recordingsMarker)">
 			<trans lang="en_EN">Marker for new recordings</trans>

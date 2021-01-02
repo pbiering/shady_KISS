@@ -195,9 +195,13 @@
 					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
-				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="68%" layer="4">
-					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="65%" layer="4">
+					<drawtext condition="not{showepgname}++{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{showepgname}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="{showepgname}++{current}++empty{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{showepgname}++{current}++isset{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
+					<drawtext condition="{showepgname}++not{current}++empty{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{showepgname}++not{current}++isset{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
 				</areascroll>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -258,9 +262,13 @@
 					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
-				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="42%" layer="4">
-					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="39%" layer="4">
+					<drawtext condition="not{showepgname}++{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{showepgname}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="{showepgname}++{current}++empty{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{showepgname}++{current}++isset{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
+					<drawtext condition="{showepgname}++not{current}++empty{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{showepgname}++not{current}++isset{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
 				</areascroll>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -316,9 +324,13 @@
 					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
-				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">
-					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="34%" layer="4">
+					<drawtext condition="not{showepgname}++{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{showepgname}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="{showepgname}++{current}++empty{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{showepgname}++{current}++isset{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
+					<drawtext condition="{showepgname}++not{current}++empty{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
+					<drawtext condition="{showepgname}++not{current}++isset{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
 				</areascroll>
 			</areacontainer>
 		</listelement>
@@ -336,7 +348,7 @@
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
 					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
-					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="T: {epgname}&#10;&#10;S: {shorttext}&#10;&#10;{description}" />
 				</area>
 				<area condition="not{folder}++{currentInfo}" x="70%" y="1%" width="25%" height="6%" layer="6">
 					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{percentseen}/100" height="{areaheight}*0.05" color="{clrHigh}" />
