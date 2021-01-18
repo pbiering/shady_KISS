@@ -294,7 +294,7 @@
 				</area>-->
 				<area x="{areawidth}*0.135" width="10%" layer="4">
 				<drawtext condition="isset{title}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{start} - {stop}" />
-			</area>
+				</area>
 			</areacontainer>
 <!--noCurrentInfo-->
 			<areascroll condition="eq({indexcurrentInfo}, 0)++not{separator}++{whatsonfavorites}" scrollelement="menutext" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="25%" width="65%" layer="4">
