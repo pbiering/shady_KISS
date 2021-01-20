@@ -176,6 +176,14 @@
 			<drawimage condition="{isHD}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="hdActive" />
 			<drawimage condition="not{isHD}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="hdBG" />
 		</area>
+
+		<area x="30%" y="94%" width="30%" height="7%" layer="3">
+			<drawtext condition="{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="HDTV"/>
+			<drawtext condition="not{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="SDTV"/>
+		</area>
+		<area x="40%" y="94%" width="30%" height="7%" layer="3">
+			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="Aspect: {aspect}   Resolution: {resolution}   Size: {screenwidth}x{screenheight}"/>
+		</area>
 	</screenresolution>
 
 	<statusinfo>
