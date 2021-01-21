@@ -173,12 +173,14 @@
 	
 	<screenresolution >
 		<area x="90%" y="78%" width="10%" height="21%" layer="3">
-			<drawimage condition="{isHD}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="hdActive" />
+			<drawimage condition="{isHD}++not{isUHD}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="hdActive" />
+			<drawimage condition="{isUHD}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="uhdActive" />
 			<drawimage condition="not{isHD}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="hdBG" />
 		</area>
 
 		<area x="30%" y="94%" width="30%" height="7%" layer="3">
-			<drawtext condition="{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="HDTV"/>
+			<drawtext condition="{isHD}++not{isUHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="HDTV"/>
+			<drawtext condition="{isUHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="UHDTV"/>
 			<drawtext condition="not{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="SDTV"/>
 		</area>
 		<area x="40%" y="94%" width="30%" height="7%" layer="3">
