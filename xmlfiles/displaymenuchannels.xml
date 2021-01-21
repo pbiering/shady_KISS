@@ -117,9 +117,14 @@
 			<area condition="not{separator}" x="8%" width="6%" layer="4">
 				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="6%" y="5%" width="90%" height="90%" />
 			</area>
-			<area condition="not{separator}" x="60%" y="30%" width="6%" transparency="15" layer="4">
-				<drawimage condition="{isEncrypted}" align="center" valign="center" width="{areawidth}*3" height="{areaheight}*3" imagetype="icon" path="encrActive" />
-				<drawimage condition="not{isEncrypted}" align="center" valign="center" width="{areawidth}*3" height="{areaheight}*3" imagetype="icon" path="encrBG" />
+			<area condition="not{separator}" x="59%" y="-10%" width="6%" height="200%" transparency="15" layer="4">
+				<drawimage condition="not{isHD}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="hdBG" />
+				<drawimage condition="{isHD}++not{isUHD}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="hdActive" />
+				<drawimage condition="{isUHD}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="uhdActive" />
+			</area>
+			<area condition="not{separator}" x="59%" y="-10%" width="6%" height="200%" transparency="15" layer="4">
+				<drawimage condition="{isEncrypted}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="encrActive" />
+				<drawimage condition="not{isEncrypted}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="encrBG" />
 			</area>
 			<area condition="not{separator}" x="66%" y="-100%" width="4%" height="200%" transparency="15" layer="4">
 				<drawimage condition="{isRadio}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="radioActive" />
