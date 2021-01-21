@@ -115,7 +115,15 @@
 				<drawtext x="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%4d', number)}" />
 			</area>
 			<area condition="not{separator}" x="8%" width="6%" layer="4">
-				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="21%" y="20%" width="65%" height="65%" />
+				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="6%" y="5%" width="90%" height="90%" />
+			</area>
+			<area condition="not{separator}" x="60%" y="30%" width="6%" transparency="15" layer="4">
+				<drawimage condition="{isEncrypted}" align="center" valign="center" width="{areawidth}*3" height="{areaheight}*3" imagetype="icon" path="encrActive" />
+				<drawimage condition="not{isEncrypted}" align="center" valign="center" width="{areawidth}*3" height="{areaheight}*3" imagetype="icon" path="encrBG" />
+			</area>
+			<area condition="not{separator}" x="66%" y="-100%" width="4%" height="200%" transparency="15" layer="4">
+				<drawimage condition="{isRadio}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="radioActive" />
+				<drawimage condition="not{isRadio}" align="center" valign="center" width="{areawidth}*2" height="{areaheight}*2" imagetype="icon" path="radioBG" />
 			</area>
 		</listelement>
 
@@ -126,7 +134,7 @@
 					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{presenteventtitle}" />
 				</area>
 				<area condition="isset{presenteventtitle}" x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext align="center" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{presenteventstart} - {presenteventstop}      {presenteventduration}min" />
+					<drawtext align="center" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{presenteventstart} - {presenteventstop}      {presenteventduration} min" />
 				</area>
 				<area condition="isset{presenteventtitle}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="{hasposter}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
