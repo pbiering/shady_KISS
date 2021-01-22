@@ -43,7 +43,7 @@
 				<drawimage x="3%" y="0" width="{areawidth}*0.95" height="{areaheight}" imagetype="skinpart" path="cellTimers" />
 			</area>
 			<area x="1%" width="6%" layer="4">
-				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="13%" y="20%" width="65%" height="65%" />
+				<drawimage name="logo" imagetype="channellogo" path="{channelid}" x="6" y="5%" width="90%" height="90%" />
 			</area>
 			<area x="5%" width="10%" layer="4">
 				<drawtext x="25%" width="100%" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{dayname} {printf('%02d.%02d.', day, month)}" />
