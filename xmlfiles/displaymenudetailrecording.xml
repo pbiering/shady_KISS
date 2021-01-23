@@ -25,9 +25,11 @@
 		<area x="4%" y="13%" width="91%" height="12%" layer="3">
 			<drawtext condition="isset{shorttext}" name="title" x="0" y="0" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
 			<drawtext condition="empty{shorttext}" name="title" x="0" y="0" width="100%" font="{light}" fontsize="40%" color="{clrLightGray}" text="{epgname}"/>
-			<drawtext name="startstop" x="0" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="{recchannelname}      {printf('%02d.%02d.%04d', daynumeric, month, year)}      {duration}min"/>
-			<drawtext condition="{isHD}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="HDTV"/>
-			<drawtext condition="not{isHD}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="SDTV"/>
+			<drawtext name="startstop" x="0" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="{recchannelname}      {printf('%02d.%02d.%04d', daynumeric, month, year)}      {duration} min"/>
+			<drawtext condition="{isHD}++not{isUHD}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="HDTV"/>
+			<drawtext condition="{isUHD}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="UHDTV"/>
+			<drawtext condition="not{isHD}++not{isRadio}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="SDTV"/>
+			<drawtext condition="{isRadio}" x="50%" y="{posy(title)} + {height(title)}*1.15" font="{light}" fontsize="30%" color="{clrLightGray}" text="Radio"/>
 		</area>
 	</detailheader>
 
