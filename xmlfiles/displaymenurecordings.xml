@@ -350,7 +350,7 @@
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
 					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
-					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="T: {epgname}&#10;&#10;S: {shorttext}&#10;&#10;{description}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="C: {recchannelname}&#10;T: {epgname}&#10;S: {shorttext}&#10;&#10;{description}" />
 				</area>
 				<area condition="not{folder}++{currentInfo}" x="70%" y="1%" width="25%" height="6%" layer="6">
 					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{percentseen}/100" height="{areaheight}*0.05" color="{clrHigh}" />
