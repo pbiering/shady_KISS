@@ -6,7 +6,6 @@ shady-KISSpb-skin History
 - ReplayInfo: honor isUHD, display TV type and resolution/aspect
 - Add dedicated sized icons for UhdActive, HdActive, HdBG, RadioActive, EncActive, EncrBG, RadioBG
 - Add setup option for displaying only "devices"
-- Add setup option for displaying recordings based on EPG-Name
 - Add Channel and EPG info to RecordingsInfo info box
 - Many cosmetic fixes (spacing, logo sizes, ...)A
 

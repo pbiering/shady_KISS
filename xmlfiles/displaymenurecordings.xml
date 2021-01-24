@@ -196,12 +196,8 @@
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="65%" layer="4">
-					<drawtext condition="not{showepgname}++{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="not{showepgname}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="{showepgname}++{current}++empty{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="{showepgname}++{current}++isset{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
-					<drawtext condition="{showepgname}++not{current}++empty{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="{showepgname}++not{current}++isset{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 			</areacontainer>
 <!--tallCurrentInfo-->
@@ -265,12 +261,8 @@
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="39%" layer="4">
-					<drawtext condition="not{showepgname}++{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="not{showepgname}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="{showepgname}++{current}++empty{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="{showepgname}++{current}++isset{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
-					<drawtext condition="{showepgname}++not{current}++empty{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="{showepgname}++not{current}++isset{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 			</areacontainer>
 <!--wideCurrentInfo-->
@@ -327,12 +319,8 @@
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="34%" layer="4">
-					<drawtext condition="not{showepgname}++{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="not{showepgname}++not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
-					<drawtext condition="{showepgname}++{current}++empty{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="{showepgname}++{current}++isset{shorttext}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
-					<drawtext condition="{showepgname}++not{current}++empty{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname}"/>
-					<drawtext condition="{showepgname}++not{current}++isset{shorttext}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{epgname} - {shorttext}"/>
+					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
+					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
 			</areacontainer>
 		</listelement>
