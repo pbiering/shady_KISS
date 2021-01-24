@@ -39,11 +39,19 @@
 
 	<recinfo>
 		<area x="30%" y="91%" width="30%" height="7%" layer="3">
-			<drawtext condition="{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="HDTV"/>
+			<drawtext condition="{isUHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="UHDTV"/>
+			<drawtext condition="{isHD}++not{isUHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="HDTV"/>
 			<drawtext condition="not{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="SDTV"/>
+			<!-- TODO ?
+			<drawtext condition="not{isHD}++not{isRadio}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="SDTV"/>
+			<drawtext condition="{isRadio}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="Radio"/>
+			-->
 		</area>
 		<area x="40%" y="91%" width="30%" height="7%" layer="3">
 			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="Aspect: {aspect}   Resolution: {resolution}   Size: {screenwidth}x{screenheight}"/>
+			<!-- TODO ?
+			<drawtext condition="not{isRadio}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="Aspect: {aspect}   Resolution: {resolution}   Size: {screenwidth}x{screenheight}"/>
+			-->
 		</area>
 	</recinfo>
 
