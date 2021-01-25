@@ -429,8 +429,8 @@
 		</area>
         <!-- Timeline Timer 
         {timelinetimer}             true
-        {timerstart}                start of timer in tenth percent of complete 24h width
-        {timerwidth}                width of timer in tenth percent of complete 24h width
+        {timerstartpercent}         start of timer in tenth percent of complete 24h width
+        {timerwidthpercent}         width of timer in tenth percent of complete 24h width
         -->
 		<area condition="{timelinetimer}" layer="5">
 			<drawimage condition="not{current}" imagetype="skinpart" path="buttonRecMenuTVG" x="0" y="0" width="100%" height="100%"/>
@@ -440,7 +440,7 @@
 			<drawrectangle x="5%" y="{areaheight}-1" width="90%" height="1" color="{clrBlack}"/>
 		</area>
 		<area condition="{timelinetimer}" layer="6">
-			<drawrectangle x="{areawidth}*0.05 + {timerstart}*{areawidth}*0.9/1000" y="25%" width="{timerwidth}*{areawidth}*0.9/1000" height="50%" color="{clrActive}"/>
+			<drawrectangle x="{areawidth}*0.05 + {timerstartpercent}*{areawidth}*0.9/1000" y="25%" width="{timerwidthpercent}*{areawidth}*0.9/1000" height="50%" color="{clrActive}"/>
 		</area>
         <!-- Favorites 
         {favorite}                  true
