@@ -146,7 +146,7 @@
 	</controlicons>
 	
 	<endtime>
-		<area x="85%" y="91%" width="14%" height="7%" layer="3">
+		<area x="80%" y="91%" width="19%" height="7%" layer="3">
 			<drawtext y="37%" align="right" font="{light}" fontsize="40%" color="{clrLightGray}" text="{tr(replayends)}: {recend}" />
 		</area>
 	</endtime>
