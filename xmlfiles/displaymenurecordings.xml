@@ -74,7 +74,8 @@
 				<area condition="{current}" y="54%" height="46%" layer="4">
 					<drawtextbox align="center" maxlines="3" x="5%" y="10%" width="90%" height="38%" font="{light}" fontsize="9%" color="{clrLightGray}" text="{name}" />
 					<drawtext x="35%" y="47%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{percentseen}%" />
-					<drawtext x="35%" y="71%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{duration} min" />
+					<drawtext condition="not{isInUse}" x="35%" y="71%" font="{light}" fontsize="8%" color="{clrLightGray}" text="{duration} min" />
+					<drawtext condition="{isInUse}" x="35%" y="71%" font="{light}" fontsize="8%" color="{clrRed}" text="{duration} min" />
 					<drawtext x="5%" y="87%" font="{light}" fontsize="7%" color="{clrLightGray}" text="{date}" />
 					<drawtext y="87%" align="right" font="{light}" fontsize="7%" color="{clrLightGray}" text="{time}   " />
 				</area>
@@ -120,7 +121,8 @@
 					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />
 				</area>
 				<area x="14%" width="5%" layer="4">
-					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
+					<drawtext condition="not{isInUse}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
+					<drawtext condition="{isInUse}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{durationhours}:{durationminutes} " />
 				</area>
 				<area condition="not{longElapsedBar}" x="14%" y="1%" width="5%" height="6%" layer="4">
 					<drawrectangle x="0" y="{areaheight}*0.96" width="{areawidth}*0.9*{percentseen}/100" height="{areaheight}*0.03" color="{clrHigh}" />
@@ -332,7 +334,8 @@
 					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
 				</area>
 				<area condition="not{folder}" x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext x="0" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
+					<drawtext condition="not{isInUse}" x="0" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
+					<drawtext condition="{isInUse}" x="0" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrRed}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
 				</area>
 				<area condition="not{folder}" x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
@@ -358,7 +361,8 @@
 					<drawtext name="title" x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{name}" />
 				</area>
 				<area condition="not{folder}" x="65%" y="7%" width="30%" height="5%" layer="4">
-					<drawtext x="0" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
+					<drawtext condition="not{isInUse}" x="0" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
+					<drawtext condition="{isInUse}" x="0" y="25%" align="center" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrRed}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}   {time}   ({duration} min)" />
 				</area>
 				<area condition="not{folder}" x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
