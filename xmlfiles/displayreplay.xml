@@ -38,6 +38,9 @@
 	</rectitle>
 
 	<recinfo>
+		<area x="25%" y="91%" width="30%" height="7%" layer="3">
+			<drawtext condition="{isRecording}" y="37%" font="{light}" fontsize="40%" color="{clrRed}" text="REC"/>
+		</area>
 		<area x="30%" y="91%" width="30%" height="7%" layer="3">
 			<drawtext condition="{isUHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="UHDTV"/>
 			<drawtext condition="{isHD}++not{isUHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="HDTV"/>
