@@ -112,13 +112,16 @@
 					<drawimage x="4%" y="0" width="{areawidth}*0.96" height="{areaheight}" imagetype="skinpart" path="cellRecordings" />
 				</area>
 				<area condition="eq({00_numRecordingsmenuitems}, 12)" x="{areawidth}*0.01" width="8%" layer="4">
-					<drawtext align="center" valign="center" font="{light}" fontsize="57%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
+					<drawtext condition="not{isRecording}" align="center" valign="center" font="{light}" fontsize="57%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
+					<drawtext condition="{isRecording}" align="center" valign="center" font="{light}" fontsize="57%" color="{clrRed}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
 				</area>
 				<area condition="gt({00_numRecordingsmenuitems}, 12)" x="{areawidth}*0.01" width="8%" layer="4">
-					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
+					<drawtext condition="not{isRecording}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
+					<drawtext condition="{isRecording}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{printf('%02d.%02d.%d', daynumeric, month, year)}" />
 				</area>
 				<area x="9%" width="5%" layer="4">
-					<drawtext align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />
+					<drawtext condition="not{isRecording}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{time}" />
+					<drawtext condition="{isRecording}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{time}" />
 				</area>
 				<area x="14%" width="5%" layer="4">
 					<drawtext condition="not{isRecording}" align="center" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{durationhours}:{durationminutes} " />
