@@ -172,17 +172,17 @@
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
 				<area x="71%" y="{areaheight}*0.001" width="23%" height="6%" layer="4">
-					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{eventtitle}" />
+					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{eventtitle}" />
 				</area>
 				<area x="70%" y="7%" width="25%" height="8%" layer="4">
-					<drawtext x="4%" y="10%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}" />
-					<drawtext x="4%" y="60%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{printf('%02d.%02d.', day, month)}   {timerstart} - {timerstop}" />
+					<drawtext x="4%" y="10%" align="center" width="100%" font="{light}" fontsize="50%" color="{clrLightGray}" text="{channelnumber} - {channelname}" />
+					<drawtext x="4%" y="60%" align="center" width="100%" font="{light}" fontsize="50%%" color="{clrLightGray}" text="{dayname} {printf('%02d.%02d.', day, month)}  {timerstart} - {timerstop}" />
 				</area>
 				<area x="70%" y="15%" width="25%" height="{areaheight}*0.90" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
-					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
 				</area>
 <!--elapsed and duration not in skd-0.8.x-->
 				<!--<area condition="{currentInfo}++{running}" x="70%" y="1%" width="25%" height="6%" layer="4">
@@ -192,16 +192,16 @@
 <!--wideCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 2)">
 				<area x="66%" y="{areaheight}*0.001" width="28%" height="6%" layer="4">
-					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{eventtitle}" />
+					<drawtext x="0" y="5%" width="100%" align="center" valign="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{eventtitle}" />
 				</area>
 				<area x="65%" y="7%" width="30%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{channelnumber} - {channelname}   {printf('%02d.%02d.', day, month)}   {timerstart} - {timerstop}" />
+					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="60%" color="{clrLightGray}" text="{channelnumber} - {channelname}  {printf('%02d.%02d.', day, month)}  {timerstart} - {timerstop}" />
 				</area>
 				<area x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight} / {posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
-					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{eventdescription}" />
 				</area>
 <!--elapsed and duration not in skd-0.8.x-->
 				<!--<area condition="{currentInfo}++{running}" x="65%" y="1%" width="30%" height="6%" layer="4">

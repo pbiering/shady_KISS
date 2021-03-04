@@ -350,16 +350,16 @@
 <!--tallCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 1)">
 				<area x="71%" y="1%" width="23%" height="6%" layer="4">
-					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{title}" />
+					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
 				</area>
 				<area x="70%" y="7%" width="25%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{day} {printf('%02d.%02d.', daynumeric, month)}   {start} - {stop}   ({duration} min)" />
+					<drawtext x="4%" y="25%" width="100%" font="{light}" fontsize="75%" color="{clrLightGray}" text="{day} {printf('%02d.%02d.', daynumeric, month)}  {start} - {stop}  {duration} min" />
 				</area>
 				<area x="70%" y="12%" width="25%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight}/{posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
-					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
 				</area>
 				<area condition="{running}" x="70%" y="1%" width="25%" height="6%" layer="4">
 					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{elapsed}/{duration}" height="{areaheight}*0.03" color="{clrHigh}" />
@@ -368,16 +368,16 @@
 <!--wideCurrentInfo-->
 			<areacontainer condition="eq({indexcurrentInfo}, 2)">
 				<area x="66%" y="1%" width="28%" height="6%" layer="4">
-					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="{fontSizeInfoTitle}" color="{clrLightGray}" text="{title}" />
+					<drawtext x="0" y="5%" width="100%" align="center" font="{light}" fontsize="80%" color="{clrLightGray}" text="{title}" />
 				</area>
 				<area x="65%" y="7%" width="30%" height="5%" layer="4">
-					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="{fontSizeInfoDetails}" color="{clrLightGray}" text="{day} {daynumeric}.{month}.   {start} - {stop}   ({duration} min)" />
+					<drawtext x="4%" y="25%" align="center" width="100%" font="{light}" fontsize="75%" color="{clrLightGray}" text="{day} {daynumeric}.{month}.  {start} - {stop}  {duration} min" />
 				</area>
 				<area x="65%" y="12%" width="30%" height="{areaheight}*0.93" layer="4">
 					<drawimage condition="isset{posterpath}" imagetype="skinpart" path="posterBGCurrent" x="0" y="0" width="{areawidth}*0.48" height="{areawidth}*0.61"/>
 					<drawimage condition="isset{posterpath}" name="poster" imagetype="image" path="{posterpath}" x="4%" y="2%" width="{areawidth}*0.35" height="{areawidth}*0.35* {posterheight}/{posterwidth}"/>
-					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
-					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="{fontSizeInfoDescription}" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="isset{posterpath}" x="4%" y="2%" width="92%" height="92%" float="topleft" floatwidth="{width(poster)}*1.2" floatheight="{height(poster)}*1.1" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
+					<drawtextbox condition="empty{posterpath}" x="4%" y="2%" width="92%" height="92%" font="{light}" fontsize="4%" color="{clrLightGray}" text="{description}" />
 				</area>
 				<area condition="{running}" x="65%" y="1%" width="30%" height="6%" layer="4">
 					<drawrectangle x="2%" y="{areaheight}*0.92" width="{areawidth}*0.96*{elapsed}/{duration}" height="{areaheight}*0.03" color="{clrHigh}" />
