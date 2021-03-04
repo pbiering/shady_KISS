@@ -1,5 +1,8 @@
 shady-KISSpb-skin History
 -------------------------------------------
+2021-03-04
+- adjustments for low res OSD
+
 2021-01-24 (and earlier): REQUIRES skindesigner > 1.2.10
 - RecordingsInfo: honor isUHD, isRadio
 - ChannelInfo: honor isUHD, isRadio, display TV/Radio type and resolution/aspect/fps
