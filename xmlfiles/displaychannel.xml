@@ -183,7 +183,7 @@
 			<drawtext condition="{isUHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="UHDTV"/>
 			<drawtext condition="not{isHD}" y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="SDTV"/>
 		</area>
-		<area x="40%" y="94%" width="30%" height="7%" layer="3">
+		<area x="40%" y="94%" width="40%" height="7%" layer="3">
 			<drawtext y="37%" font="{light}" fontsize="40%" color="{clrLightGray}" text="Aspect: {aspect}   Resolution: {resolution}   Size: {screenwidth}x{screenheight}"/>
 		</area>
 	</screenresolution>
