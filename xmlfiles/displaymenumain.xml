@@ -161,11 +161,11 @@
 			</area>
 		</areacontainer>
 		<areacontainer condition="eq({indexmainMenuOrientation},1)">
-			<area condition="not{numtimerconflicts}" x="28%" y="73%" width="12%" height="6%" layer="3">
+			<area condition="not{numtimerconflicts}" x="28%" y="72%" width="19%" height="6%" layer="3">
 				<drawtext condition="gt({numtimers}, 1)" x="5%" y="15%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{numtimers} {tr(activetimers)}" />
 				<drawtext condition="eq({numtimers}, 1)" x="5%" y="15%" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{numtimers} {tr(activetimer)}" /> 
 			</area>
-			<area condition="{numtimerconflicts}" x="28%" y="73%" width="15%" height="6%" layer="3">
+			<area condition="{numtimerconflicts}" x="28%" y="72%" width="19%" height="6%" layer="3">
 				<drawtext condition="eq({numtimerconflicts}, 1)" x="5%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{numtimerconflicts} {tr(conflict)}!" />
 				<drawtext condition="gt({numtimerconflicts}, 1)" x="5%" y="0" valign="center" font="{light}" fontsize="60%" color="{clrRed}" text="{numtimerconflicts} {tr(conflicts)}!" />
 			</area>
