@@ -328,10 +328,25 @@
 		<area condition="eq({indexmainMenuOrientation},0)" x="72%" y="72%" width="23%" height="6%" layer="3">
 			<drawtext x="0" y="0" align="right" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{vdrusagestring}" />
 		</area>
-		<area condition="eq({indexmainMenuOrientation},1)" x="5%" y="72%" width="23%" height="6%" layer="3">
+		<area condition="eq({indexmainMenuOrientation},1)" x="4%" y="72%" width="23%" height="6%" layer="3">
 			<drawtext x="0" y="0" valign="center" font="{light}" fontsize="60%" color="{clrLightGray}" text="{vdrusagestring}" />
 		</area>
 	</discusage>
+
+	<vdrstatus delay="0" fadetime="0">
+		<area condition="eq({indexmainMenuOrientation},0)" x="70%" y="73%" width="6%" height="4%" layer="3">
+			<drawtext condition="{vdrIsRecording}"    align="center" valign="top" font="{light}" fontsize="50%" color="{clrRed}"   text="REC" />
+			<drawtext condition="not{vdrIsRecording}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrGreen}" text="FREE" />
+			<drawtext condition="{vdrIsRecordingsHandlersActive}||{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrTransRed}" text="BUSY" />
+			<drawtext condition="not{vdrIsRecordingsHandlersActive}++not{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrGreen}" text="IDLE" />
+		</area>
+		<area condition="eq({indexmainMenuOrientation},1)" x="22%" y="73%" width="6%" height="4%" layer="3">
+			<drawtext condition="{vdrIsRecording}"    align="center" valign="top" font="{light}" fontsize="50%" color="{clrRed}"   text="REC" />
+			<drawtext condition="not{vdrIsRecording}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrGreen}" text="FREE" />
+			<drawtext condition="{vdrIsRecordingsHandlersActive}||{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrTransRed}" text="BUSY" />
+			<drawtext condition="not{vdrIsRecordingsHandlersActive}++not{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrGreen}" text="IDLE" />
+		</area>
+	</vdrstatus>
 
 	<devices mode="light" delay="0" fadetime="0">
 		<area condition="eq({indexmainMenuOrientation},0)++eq({indexwidgets},1)" x="{areawidth}*0.798" y="80%" width="16%" height="12%" layer="3">
