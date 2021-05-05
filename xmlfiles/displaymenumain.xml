@@ -352,7 +352,7 @@
 		</area>
 	</vdrstatus>
 
-	<devices mode="light" delay="0" fadetime="0">
+	<devices delay="0" fadetime="0">
 		<area condition="eq({indexmainMenuOrientation},0)++eq({indexwidgets},1)" x="{areawidth}*0.798" y="80%" width="16%" height="12%" layer="3">
 			<loop name="devices" x="0" y="3%" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight}/2" overflow="cut">
 				<drawtext name="label" x="5" y="{areaheight}*0.04" font="{light}" fontsize="{rowheight}*0.35" color="{clrLightGray}" text="{devices[num]}: {devices[type]}" />
