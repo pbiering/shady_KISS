@@ -338,7 +338,7 @@
 			<drawtext condition="{vdrIsRecording}"    align="center" valign="top" font="{light}" fontsize="50%" color="{clrRed}"   text="REC" />
 			<drawtext condition="not{vdrIsRecording}++not{vdrHasTimers}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrGreen}" text="FREE" />
 			<drawtext condition="not{vdrIsRecording}++{vdrHasTimers}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrActive}" text="SCHED" />
-			<drawtext condition="{vdrIsRecordingsHandlersActive}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrTransRed}" text="BUSY" animtype="blink" animfreq="750" />
+			<drawtext condition="{vdrIsRecordingsHandlersActive}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrRed}" text="BUSY" animtype="blink" animfreq="750" />
 			<drawtext condition="not{vdrIsRecordingsHandlersActive}++{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrTransRed}" text="BUSY" />
 			<drawtext condition="not{vdrIsRecordingsHandlersActive}++not{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrGreen}" text="IDLE" />
 		</area>
@@ -346,7 +346,7 @@
 			<drawtext condition="{vdrIsRecording}"    align="center" valign="top" font="{light}" fontsize="50%" color="{clrRed}"   text="REC" />
 			<drawtext condition="not{vdrIsRecording}++not{vdrHasTimers}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrGreen}" text="FREE" />
 			<drawtext condition="not{vdrIsRecording}++{vdrHasTimers}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrActive}" text="SCHED" />
-			<drawtext condition="{vdrIsRecordingsHandlersActive}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrTransRed}" text="BUSY" animtype="blink" animfreq="750" />
+			<drawtext condition="{vdrIsRecordingsHandlersActive}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrRed}" text="BUSY" animtype="blink" animfreq="750" />
 			<drawtext condition="not{vdrIsRecordingsHandlersActive}++{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrTransRed}" text="BUSY" />
 			<drawtext condition="not{vdrIsRecordingsHandlersActive}++not{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrGreen}" text="IDLE" />
 		</area>

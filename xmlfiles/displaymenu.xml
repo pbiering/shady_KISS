@@ -24,10 +24,21 @@
 	</header>
 
 	<datetime>
-		<area x="65%" y="3%" width="30%" height="7%" layer="4">
-			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{dayname}, {dayleadingzero}. {monthnameshort}. {time}" />
+		<area x="82%" y="3%" width="14%" height="7%" layer="4">
+			<drawtext align="right" font="{light}" fontsize="55%" color="{clrLightGray}" text="{daynameshort} {dayleadingzero}. {monthnameshort} {time}" />
 		</area>
 	</datetime>
+
+	<vdrstatus>
+		<area x="78%" y="3%" width="4%" height="4%" layer="4">
+			<drawtext condition="{vdrIsRecording}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrRed}" text="REC" />
+			<drawtext condition="not{vdrIsRecording}++not{vdrHasTimers}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrGreen}" text="FREE" />
+			<drawtext condition="not{vdrIsRecording}++{vdrHasTimers}" align="center" valign="top" font="{light}" fontsize="50%" color="{clrActive}" text="SCHED" />
+			<drawtext condition="{vdrIsRecordingsHandlersActive}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrRed}" text="BUSY" animtype="blink" animfreq="750" />
+			<drawtext condition="not{vdrIsRecordingsHandlersActive}++{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrTransRed}" text="BUSY" />
+			<drawtext condition="not{vdrIsRecordingsHandlersActive}++not{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrGreen}" text="IDLE" />
+		</area>
+	</vdrstatus>
 
 	<message>
 		 <area x="0" y="89%" width="100%" height="11%" layer="4">
