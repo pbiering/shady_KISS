@@ -128,10 +128,10 @@
 
 	<epginfo>
 		<area condition="{currentrecording}" x="{areawidth}*0.104" y="78%" width="2%" height="7%" layer="3">
-			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.5*39/57" height="50%" valign="center" />
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.7*39/57" height="70%" valign="center" />
 		</area>
 		<area condition="{nextrecording}" x="{areawidth}*0.104" y="88%" width="2%" height="7%" layer="3">
-			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.5*39/57" height="50%" valign="center" />
+			<drawimage imagetype="skinpart" path="redMarker" width="{areaheight}*0.7*39/57" height="70%" valign="center" />
 		</area>
 		
 		<area x="12%" y="78%" width="13%" height="7%" layer="3">
