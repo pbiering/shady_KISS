@@ -213,12 +213,18 @@
 			<drawimage condition="not{hasVT}" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="icon" path="textBG" />
 		</area>
 		
+		<area x="78%" y="73%" width="13%" height="4%" layer="3">
+			<drawtext condition="{isRecording}" x="0" y="30%" align="center" font="{light}" fontsize="70%" color="{clrRed}" text="REC" />
+		</area>
+
+		<!--
 		<area condition="not{isRecording}" x="21%" y="85%" width="2%" height="{areawidth}" layer="5">
 			<drawimage x="0" y="0" width="{areawidth}*0.8" height="{areawidth}*0.8" imagetype="icon" path="recInactive" />
 		</area>
 		<area condition="{isRecording}" x="21%" y="85%" width="2%" height="{areawidth}" layer="5">
 			<drawimage animtype="blink" animfreq="1000" x="0" y="0" width="{areawidth}*0.8" height="{areawidth}*0.8" imagetype="icon" path="rec" />
 		</area>
+		-->
 	</statusinfo>
 
 	<audioinfo>
