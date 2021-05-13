@@ -333,6 +333,7 @@
 		</area>
 	</discusage>
 
+	<!-- if activated the one defined in header line will disappear
 	<vdrstatus delay="0" fadetime="0">
 		<area condition="eq({indexmainMenuOrientation},0)" x="70%" y="73%" width="6%" height="4%" layer="3">
 			<drawtext condition="{vdrIsRecording}"    align="center" valign="top" font="{light}" fontsize="50%" color="{clrRed}"   text="REC" />
@@ -351,6 +352,7 @@
 			<drawtext condition="not{vdrIsRecordingsHandlersActive}++not{vdrIsRecording}" align="center" valign="bottom" font="{light}" fontsize="50%" color="{clrGreen}" text="IDLE" />
 		</area>
 	</vdrstatus>
+	-->
 
 	<devices delay="0" fadetime="0">
 		<area condition="eq({indexmainMenuOrientation},0)++eq({indexwidgets},1)" x="{areawidth}*0.798" y="80%" width="16%" height="12%" layer="3">
