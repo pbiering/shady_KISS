@@ -39,6 +39,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
 				</area>
+				<area condition="{timerpartitial}" x="92%" width="2%" layer="4">
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+				</area>
 				<area condition="{timerfull}" x="92%" width="2%" layer="4">
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
@@ -54,6 +58,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
+				</area>
+				<area condition="{timerpartitial}" x="66%" width="2%" layer="4">
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
 				</area>
 				<area condition="{timerfull}" x="66%" width="2%" layer="4">
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
@@ -71,6 +79,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
+				<area condition="{timerpartitial}" x="61%" width="2%" layer="4">
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+				</area>
 				<area condition="{timerfull}" x="61%" width="2%" layer="4">
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
@@ -86,6 +98,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonLongActive" />
+				</area>
+				<area condition="{timerpartitial}" x="92%" width="2%" layer="4">
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
 				</area>
 				<area condition="{timerfull}" x="92%" width="2%" layer="4">
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
@@ -103,6 +119,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
 				</area>
+				<area condition="{timerpartitial}" x="66%" width="2%" layer="4">
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
+				</area>
 				<area condition="{timerfull}" x="66%" width="2%" layer="4">
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
 					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="blueMarker" />
@@ -118,6 +138,10 @@
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 2)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive_Gradient" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 1)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActiveColor" />
 					<drawimage condition="{current}++eq({indexcoloredButtons}, 0)" x="0" y="0" width="{areawidth}" height="{areaheight}" imagetype="skinpart" path="buttonMediumActive" />
+				</area>
+				<area condition="{timerpartitial}" x="61%" width="2%" layer="4">
+					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="yellowMarker" />
+					<drawimage condition="not{isremotetimer}++strequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="green_blueMarker" />
 				</area>
 				<area condition="{timerfull}" x="61%" width="2%" layer="4">
 					<drawimage condition="not{isremotetimer}++strnotequal({timertype}, 'V')" x="0" y="10%" width="{areaheight}*0.8*39/57" height="{areaheight}*0.8" imagetype="skinpart" path="redMarker" />
