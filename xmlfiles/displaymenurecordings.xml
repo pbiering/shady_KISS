@@ -328,7 +328,7 @@
 					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
-				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="34%" layer="4">
+				<areascroll condition="not{folder}" scrollelement="name" mode="forthandback" orientation="horizontal" delay="1000" scrollspeed="medium" x="21%" width="37%" layer="4">
 					<drawtext condition="{current}" name="name" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 					<drawtext condition="not{current}" x="0" valign="center" font="{light}" fontsize="70%" color="{clrLightGray}" text="{name}"/>
 				</areascroll>
