@@ -26,6 +26,9 @@
 		
 		<!--{marks[active]} in displayreplay-->
 		<color name="clrGreen">FF5FE200</color>
+
+		<!--info -->
+		<color name="clrBlue">FF007FE2</color>
 		
 		<!--inactive and startmarks in displayreplay
 		borders in tvguideng-root
